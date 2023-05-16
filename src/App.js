@@ -83,7 +83,7 @@ function Links() {
 
               <a href="/Faq" className="nav-link">FAQ</a>
 
-              <img className="logo" src="./img/logo.jpg" />
+              <img className="logo" src="./img/logo.png" />
 
 
 
