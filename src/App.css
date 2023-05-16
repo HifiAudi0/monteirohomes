@@ -1,6 +1,9 @@
-nav {
+.nav-link {
   color: white;
   z-index: 1;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 2px;
 }
 
 .navbar {
@@ -20,6 +23,13 @@ nav {
   z-index: 0;
   background-image:
     repeating-radial-gradient(circle, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.55));
+}
+
+.logo {
+  width: 200px;
+  height: 100px;
+  /* margin-left: -120%;
+  margin-right: 2.5rem; */
 }
 
 /* .bgImage {

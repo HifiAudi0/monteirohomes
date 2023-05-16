@@ -1,6 +1,9 @@
 import { BrowserRouter as Router, Route, Routes, Link, NavLink, useNavigate } from 'react-router-dom';
-// import { LinkContainer } from "react-router-bootstrap";
+import { LinkContainer } from "react-router-bootstrap";
+import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav';
 import './App.css';
+import './textRightToLeft.css';
 
 function App() {
   return (
@@ -20,26 +23,7 @@ function Home() {
     <>
       {/* <!-- NAV BAR --> */}
 
-      <nav className="navbar navbar-expand-lg navbar-dark mx-auto">
-
-        {/* <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <span className="navbar-toggler-icon"></span>
-  </button> */}
-
-        <div className="" id="navbarNavAltMarkup">
-          <div className="navbar-nav">
-            <a className="nav-link fw-bold fs-3 active " aria-current="page" href="#home">HOME</a>
-            <a className="nav-link fw-bold fs-3" href="#features">SERVICES</a>
-            <a className="nav-link fw-bold fs-3" href="#quote">QUOTE</a>
-            <a className="nav-link fw-bold fs-3" href="#faq">FAQ</a>
-            <a className="nav-link fw-bold fs-3" href="#contact">CONTACT</a>
-          </div>
-        </div>
-
-
-      </nav>
-
+      <div id="home"></div>
 
       <div className="bgImage">
 
@@ -51,6 +35,10 @@ function Home() {
 
       </div>
 
+      <div class="wrapper">
+        <p class="target ">MONTEIRO HOMES</p>
+      </div>
+
       <br />
       {/* <!-- NAV BAR ENDS --> */}
     </>
@@ -60,28 +48,53 @@ function Home() {
 function Links() {
   return (
     <>
-      <Router>
-        <img className="logo" src="./img/the_clean_getaway_logo_transparent.png" />
-        <div className="nav">
 
-          <a href="/Home" className="nav-link">HOME</a>
+      {/* <nav className="navbar navbar-expand-lg navbar-dark mx-auto">
 
-
-
-          <a href="/Services" className="nav-link">SERVICES</a>
-
-
-          <a href="/Faq" className="nav-link">FAQ</a>
-
-
-
-          <a href="/Quote" className="nav-link">QUOTE</a>
-
-
-          <a href="/Contact" className="nav-link">CONTACT</a>
-
-
+        <div className="" id="navbarNavAltMarkup">
+          <div className="navbar-nav">
+            <a className="nav-link fw-bold fs-3 active " aria-current="page" href="#home">HOME</a>
+            <a className="nav-link fw-bold fs-3" href="/Services">SERVICES</a>
+            <a className="nav-link fw-bold fs-3" href="#quote">QUOTE</a>
+            <a className="nav-link fw-bold fs-3" href="#faq">FAQ</a>
+            <a className="nav-link fw-bold fs-3" href="#contact">CONTACT</a>
+          </div>
         </div>
+
+
+      </nav> */}
+      <Router>
+        <Navbar scrolling dark expand="md" fixed="top"> {/* transparent bg */}
+
+          <Nav className="mx-auto">
+
+
+
+            <div className="nav">
+
+              <Link to={"/Home"} className="nav-link">HOME
+              </Link>
+
+
+              <LinkContainer to={"/Services"}>
+                <a href="/Services" id="" className="nav-link">SERVICES</a>
+              </LinkContainer>
+
+
+              <a href="/Faq" className="nav-link">FAQ</a>
+
+              <img className="logo" src="./img/logo.jpg" />
+
+
+
+              <a href="/Quote" className="nav-link">QUOTE</a>
+
+
+              <a href="/Contact" className="nav-link">CONTACT</a>
+
+
+            </div>
+          </Nav></Navbar>
 
         <Routes>
           <Route path="/" element={<Home />} />
@@ -102,6 +115,7 @@ function Links() {
 function Services() {
   return (
     <>
+      <h3 id="services">Services offerd:</h3>
     </>
   );
 }
