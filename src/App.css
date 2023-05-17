@@ -1,3 +1,12 @@
+h3 {
+  color: white;
+}
+
+p {
+  color: white;
+  font-size: 1.5rem;
+}
+
 .nav-link {
   color: grey;
   z-index: 1;
@@ -9,6 +18,11 @@
 .navbar {
   justify-content: center;
   text-transform: uppercase;
+}
+
+.services-dropdown {
+  text-transform: uppercase;
+  font-size: 2rem !important;
 }
 
 #background-video {
@@ -64,3 +78,48 @@
 }
 
 /* GALLERY PAGE */
+
+
+/* CONTACT PAGE */
+
+.socials {
+  position: relative;
+  left: 30%;
+  margin: 0 auto;
+  z-index: 3;
+}
+
+.home-socials {
+  margin: 20px;
+}
+
+.home-social-icons {
+  z-index: 2;
+  position: relative;
+}
+
+.social-icons {
+  text-decoration: none;
+  position: relative;
+
+}
+
+.home-social-text {
+  margin-left: 15px;
+  color: grey;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  /* text-shadow: 2px 2px white; */
+  text-decoration: none;
+}
+
+.social-text {
+  margin-left: 15px;
+  color: #063C5B;
+  font-size: 2.5rem;
+  font-weight: bolder;
+  text-shadow: 2px 2px #00ccff;
+  text-decoration: none;
+}
+
+/* CONTACT PAGE */
