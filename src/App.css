@@ -78,6 +78,23 @@ p {
 }
 
 /* POOLS */
+/* Kitchen */
+.kitchen-container {
+  top: 200px;
+  margin-top: 500px;
+}
+
+.kitchen {
+  margin-right: 50px;
+  margin-top: 50px;
+  height: 600px;
+  width: 400px;
+
+}
+
+
+
+/* Kitchen */
 
 /* GALLERY PAGE */
 .before-after {
