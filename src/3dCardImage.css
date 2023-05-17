@@ -28,6 +28,7 @@ body {
     perspective: 2500px;
     margin: 0 50px;
     border: 20px solid red;
+    float: left;
 }
 
 .cover-image {
@@ -41,6 +42,7 @@ body {
     position: absolute;
     width: 100%;
     z-index: -1;
+
 }
 
 .card:hover .wrapper {

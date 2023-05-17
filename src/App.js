@@ -6,6 +6,18 @@ import './App.css';
 import './textRightToLeft.css';
 import './3dCardImage.css';
 
+import { motion } from "framer-motion";
+import Accordion from "@mui/material/Accordion";
+import AccordionSummary from "@mui/material/AccordionSummary";
+import AccordionDetails from "@mui/material/AccordionDetails";
+import Typography from "@mui/material/Typography";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+
+import '@fontsource/roboto/300.css';
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto/500.css';
+import '@fontsource/roboto/700.css';
+
 function App() {
   return (
     <>
@@ -143,10 +155,11 @@ function Gallery() {
 
       <div class="card">
         <div class="wrapper">
-          <img src="https://ggayane.github.io/css-experiments/cards/force_mage-cover.jpg" class="cover-image" />
+          <img src="./img/before_kitchen.jpg" class="cover-image" />
         </div>
-        <img src="https://ggayane.github.io/css-experiments/cards/force_mage-title.png" class="title" />
-        <img src="https://ggayane.github.io/css-experiments/cards/force_mage-character.webp" class="character" />
+        <p class="title title-before before-after" >BEFORE</p>
+        <p class="title title-after before-after">AFTER</p>
+        <img src="./img/after_kitchen.jpg" class="character" />
       </div>
 
 
@@ -167,6 +180,74 @@ function Gallery() {
 function Faq() {
   return (
     <>
+
+      <Accordion className="accordion">
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel1a-content"
+          id="panel1a-header"
+        >
+          <Typography className="accordHeading">Is it Free to use?</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography className="accordPara">
+            Yes, it is free to use.
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
+      <Accordion className="accordion">
+        <AccordionSummary aria-controls="panel2a-content" id="panel2a-header">
+          <Typography className="accordHeading">How do I get started?</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography className="accordPara">
+            Just copy and paste the YouTube&#169;&trade; video URL into the form and click submit.
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
+      <Accordion className="accordion">
+        <AccordionSummary aria-controls="panel2a-content" id="panel2a-header">
+          <Typography className="accordHeading">Is it safe to use?</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography className="accordPara">
+            Yes, it is safe to use. This service is web-based meaning, no need to download or install anything on your computer.
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
+      <Accordion className="accordion">
+        <AccordionSummary aria-controls="panel2a-content" id="panel2a-header">
+          <Typography className="accordHeading">Does it work with any Youtube&#169;&trade; video?</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography className="accordPara">
+            Yes it works with almost any Youtube&#169;&trade; video, where an auto generated transcript is available.
+            Not sure if it will work with your video? Just try it out!
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
+      <Accordion className="accordion">
+        <AccordionSummary aria-controls="panel2a-content" id="panel2a-header">
+          <Typography className="accordHeading">Muting lasts for a few seconds or longer, why?</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography className="accordPara">
+            When a swear word is detected within a sentence, the muting will last until the end of the sentence. Not the start and end of any single word.
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
+      <Accordion className="accordion">
+        <AccordionSummary aria-controls="panel2a-content" id="panel2a-header">
+          <Typography className="accordHeading">What languages are currently supported?</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography className="accordPara">
+            The languages currently supported area: 🇺🇸 English, 🇪🇸 Spanish, 🇮🇹 Italian and 🇩🇪 German. More languages are coming soon, stay tuned!
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
+
+
     </>
   );
 }
