@@ -71,6 +71,14 @@ p {
   z-index: 1;
 }
 
+/* POOLS */
+.pool {
+  margin-right: 50px;
+  /* margin-top: 50px; */
+}
+
+/* POOLS */
+
 /* GALLERY PAGE */
 .before-after {
   font-size: 1.8rem;
@@ -145,10 +153,10 @@ p {
 
 .social-text {
   margin-left: 15px;
-  color: #063C5B;
+  color: white;
   font-size: 2.5rem;
   font-weight: bolder;
-  text-shadow: 2px 2px #00ccff;
+  text-shadow: 2px 2px grey;
   text-decoration: none;
 }
 

@@ -9,6 +9,7 @@ import React, { useState } from 'react';
 import './App.css';
 import './textRightToLeft.css';
 import './3dCardImage.css';
+// import './motion-container.css';
 
 import { motion } from "framer-motion";
 import Accordion from "@mui/material/Accordion";
@@ -27,7 +28,25 @@ import DropdownButton from 'react-bootstrap/DropdownButton';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
 
+const container = {
+  hidden: { opacity: 1, scale: 0 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      delayChildren: 0.3,
+      staggerChildren: 0.2
+    }
+  }
+};
 
+const item = {
+  hidden: { y: 20, opacity: 0 },
+  visible: {
+    y: 0,
+    opacity: 1
+  }
+};
 
 
 
@@ -237,9 +256,35 @@ function Garage() {
 function Pool() {
   return (
     <>
+      <br />  <br />  <br />  <br />  <br />  <br />  <br />  <br />  <br />  <br />  <br />
+      <motion.div
+        animate={{ x: 100 }}
+        transition={{ ease: "easeOut", duration: 2 }}
+      >
+        <Image src="./img/pools/pool1.jpg" className="pool" />
+      </motion.div>
+      <motion.div
+        animate={{ x: 100 }}
+        transition={{ ease: "easeOut", duration: 2 }}
+      >
+        <Image src="./img/pools/pool2.jpg" className="pool" />
+      </motion.div>
       <p>
         Whether your pool requires a complete overhaul or targeted upgrades, our experienced team is here to help. We understand that a pool is not only a place for relaxation and enjoyment but also a focal point of your outdoor space. Our pool renovation services encompass a wide range of solutions, including resurfacing, tile replacement, coping repairs, equipment upgrades, and lighting enhancements. We work closely with you to understand your specific needs and desires, providing expert advice and creative ideas to transform your pool into a stunning retreat. With meticulous attention to detail and using high-quality materials, we ensure a durable and aesthetically pleasing end result. Our skilled professionals manage the entire renovation process, from initial consultation and design to the final installation, ensuring a smooth and hassle-free experience for you. Whether you want to restore an old pool to its former glory or upgrade your pool with modern features, we have the expertise to deliver exceptional results. Enhance the beauty and functionality of your pool with our professional renovation services.
-      </p>
+      </p>         <motion.div
+        className="box"
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{
+          duration: 0.8,
+          delay: 0.5,
+          ease: [0, 0.71, 0.2, 1.01]
+        }}>
+        <Image src="./img/pools/pool3.jpg" className="pool" />
+      </motion.div>
+      <Image src="./img/pools/pool4.jpg" className="pool" />
+      <Image src="./img/pools/pool5.jpg" className="pool" />
+
     </>
   );
 }
@@ -415,7 +460,7 @@ function Quote() {
 function Contact() {
   return (
     <>
-      <h3>Don't hestaite get in touch with us today!</h3>
+      <h3>Don't hesitate get in touch with us today!</h3>
       <div className="socials">
 
         {/* transparent bg */}
