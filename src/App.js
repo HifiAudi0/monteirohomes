@@ -4,6 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import './App.css';
 import './textRightToLeft.css';
+import './3dCardImage.css';
 
 function App() {
   return (
@@ -35,7 +36,7 @@ function Home() {
 
       </div>
 
-      <div class="wrapper">
+      <div class="text-container">
         <p class="target ">MONTEIRO HOMES</p>
       </div>
 
@@ -85,7 +86,7 @@ function Links() {
 
               <img className="logo" src="./img/logo.png" />
 
-
+              <a href="/Gallery" className="nav-link">GALLERY</a>
 
               <a href="/Quote" className="nav-link">QUOTE</a>
 
@@ -101,7 +102,8 @@ function Links() {
           <Route path="/Home" element={<Home />} />
           <Route path="/Services" element={<Services />} />
           <Route path="/Faq" element={<Faq />} />
-          <Route path="/Faq" element={<Quote />} />
+          <Route path="/Gallery" element={<Gallery />} />
+          <Route path="/Quote" element={<Quote />} />
           <Route path="/Contact" element={<Contact />} />
           <Route path="*">
 
@@ -115,7 +117,49 @@ function Links() {
 function Services() {
   return (
     <>
-      <h3 id="services">Services offerd:</h3>
+
+
+
+
+    </>
+  );
+}
+
+function Gallery() {
+  return (
+    <>
+      <h3>Before</h3>
+      {/* <a href="https://www.mythrillfiction.com/the-dark-rider" alt="Mythrill" target="_blank"> */}
+      <div class="card">
+        <div class="wrapper">
+          <img src="./img/before_basement.jpg" class="cover-image" />
+        </div>
+        <p class="title title-before before-after" >BEFORE</p>
+        <p class="title title-after before-after">AFTER</p>
+        <img src="./img/after_basement.jpg" class="character" />
+      </div>
+      {/* </a> */}
+
+
+      <div class="card">
+        <div class="wrapper">
+          <img src="https://ggayane.github.io/css-experiments/cards/force_mage-cover.jpg" class="cover-image" />
+        </div>
+        <img src="https://ggayane.github.io/css-experiments/cards/force_mage-title.png" class="title" />
+        <img src="https://ggayane.github.io/css-experiments/cards/force_mage-character.webp" class="character" />
+      </div>
+
+
+
+      <div class="card">
+        <div class="wrapper">
+          <img src="./img/before_walkway.jpg" class="cover-image" />
+        </div>
+        <p class="title title-before before-after" >BEFORE</p>
+        <p class="title title-after before-after">AFTER</p>
+        <img src="./img/after_walkway.jpg" class="character" />
+      </div>
+
     </>
   );
 }
