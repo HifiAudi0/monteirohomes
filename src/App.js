@@ -4,6 +4,8 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import Image from 'react-bootstrap/Image';
 
+import React, { useState } from 'react';
+
 import './App.css';
 import './textRightToLeft.css';
 import './3dCardImage.css';
@@ -23,6 +25,10 @@ import '@fontsource/roboto/700.css';
 import Dropdown from 'react-bootstrap/Dropdown';
 import DropdownButton from 'react-bootstrap/DropdownButton';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+
+
+
+
 
 
 function App() {
@@ -251,9 +257,11 @@ function Deck() {
 function Gallery() {
   return (
     <>
-      <h3>Before</h3>
+
       {/* <a href="https://www.mythrillfiction.com/the-dark-rider" alt="Mythrill" target="_blank"> */}
+
       <div class="card">
+
         <div class="wrapper">
           <img src="./img/before_basement.jpg" class="cover-image" />
         </div>
@@ -289,75 +297,109 @@ function Gallery() {
 }
 
 function Faq() {
+
+
   return (
     <>
-      <h3>You have questions?</h3>
-      <h3>We have answers!</h3>
-      <Accordion className="accordion">
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel1a-content"
-          id="panel1a-header"
-        >
-          <Typography className="accordHeading">How much does it cost to do?....</Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography className="accordPara">
-            All our work is customized for your individual needs. We will provide you with a free estimate after we have a chance to discuss your project with you.
-          </Typography>
-        </AccordionDetails>
-      </Accordion>
-      <Accordion className="accordion">
-        <AccordionSummary aria-controls="panel2a-content" id="panel2a-header">
-          <Typography className="accordHeading">Why should I choose you?</Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography className="accordPara">
-            We are a family owned and operated business. We take great pride in our work and treat every project as if it were our own home. We are fully licensed and have been in business for over 8 years. We have many satisfied customers and would be happy to provide you with references.
-          </Typography>
-        </AccordionDetails>
-      </Accordion>
-      <Accordion className="accordion">
-        <AccordionSummary aria-controls="panel2a-content" id="panel2a-header">
-          <Typography className="accordHeading">What area's do you service?</Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography className="accordPara">
-            We provide our services all throughtout the GTA and surrounding areas. Including but not limited to: Georgetown, Milton, Oakville, Burlington, Etobicoke, Vaughan and more. If your unsure if we service your area, please contact us.
-          </Typography>
-        </AccordionDetails>
-      </Accordion>
-      <Accordion className="accordion">
-        <AccordionSummary aria-controls="panel2a-content" id="panel2a-header">
-          <Typography className="accordHeading">...</Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography className="accordPara">
+      <motion.div
+        initial={{ scale: 0 }}
+        animate={{ rotate: 360, scale: 1 }}
+        transition={{
+          type: "spring",
+          stiffness: 260,
+          damping: 20
+        }}>
+        <Image src="./img/faq.png" className="faq" /><br />
+      </motion.div >
 
-          </Typography>
-        </AccordionDetails>
-      </Accordion>
-      <Accordion className="accordion">
-        <AccordionSummary aria-controls="panel2a-content" id="panel2a-header">
-          <Typography className="accordHeading">...</Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography className="accordPara">
 
-          </Typography>
-        </AccordionDetails>
-      </Accordion>
-      <Accordion className="accordion">
-        <AccordionSummary aria-controls="panel2a-content" id="panel2a-header">
-          <Typography className="accordHeading">...</Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography className="accordPara">
+      <motion.div
+        initial={{ scale: 0 }}
+        animate={{ rotate: 360, scale: 1 }}
+        transition={{
+          type: "spring",
+          stiffness: 260,
+          damping: 20
+        }}>
+        <div>
+          <h3 className="faq-heading">You have questions?</h3>
+          <h3 className="faq-heading">We have answers!</h3>
+        </div>
+      </motion.div >
 
-          </Typography>
-        </AccordionDetails>
-      </Accordion>
+      <motion.div
+        initial={{ scale: 0 }}
+        animate={{ rotate: 360, scale: 1 }}
+        transition={{
+          type: "spring",
+          stiffness: 160,
+          damping: 20
+        }}>
+        <Accordion className="accordion">
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel1a-content"
+            id="panel1a-header"
+          >
+            <Typography className="accordHeading">How much does it cost to do?....</Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <Typography className="accordPara">
+              All our work is customized for your individual needs. We will provide you with a free estimate after we have a chance to discuss your project with you.
+            </Typography>
+          </AccordionDetails>
+        </Accordion>
+        <Accordion className="accordion">
+          <AccordionSummary aria-controls="panel2a-content" id="panel2a-header">
+            <Typography className="accordHeading">Why should I choose you?</Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <Typography className="accordPara">
+              We are a family owned and operated business. We take great pride in our work and treat every project as if it were our own home. We are fully licensed and have been in business for over 8 years. We have many satisfied customers and would be happy to provide you with references.
+            </Typography>
+          </AccordionDetails>
+        </Accordion>
+        <Accordion className="accordion">
+          <AccordionSummary aria-controls="panel2a-content" id="panel2a-header">
+            <Typography className="accordHeading">What area's do you service?</Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <Typography className="accordPara">
+              We provide our services all throughtout the GTA and surrounding areas. Including but not limited to: Georgetown, Milton, Oakville, Burlington, Etobicoke, Vaughan and more. If your unsure if we service your area, please contact us.
+            </Typography>
+          </AccordionDetails>
+        </Accordion>
+        <Accordion className="accordion">
+          <AccordionSummary aria-controls="panel2a-content" id="panel2a-header">
+            <Typography className="accordHeading">What payment methods do you accept?</Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <Typography className="accordPara">
+              We accept cash, cheque, e-transfer and credit card payments.
+            </Typography>
+          </AccordionDetails>
+        </Accordion>
+        <Accordion className="accordion">
+          <AccordionSummary aria-controls="panel2a-content" id="panel2a-header">
+            <Typography className="accordHeading">...</Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <Typography className="accordPara">
 
+            </Typography>
+          </AccordionDetails>
+        </Accordion>
+        <Accordion className="accordion">
+          <AccordionSummary aria-controls="panel2a-content" id="panel2a-header">
+            <Typography className="accordHeading">...</Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <Typography className="accordPara">
+
+            </Typography>
+          </AccordionDetails>
+        </Accordion>
+      </motion.div>
 
     </>
   );

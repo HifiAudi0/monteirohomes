@@ -98,6 +98,17 @@ p {
 }
 
 /* FAQ */
+.faq {
+  width: 200px;
+  height: 200px;
+  margin-left: 45%;
+}
+
+.faq-heading {
+
+  text-align: center;
+
+}
 
 /* CONTACT PAGE */
 
