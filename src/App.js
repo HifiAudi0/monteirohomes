@@ -56,8 +56,8 @@ function Home() {
       </div>
 
       <div class="text-container">
-        <p class="target ">MONTEIRO HOMES</p>
-      </div>
+        <p class="target ">MONTEIRO HOMES<br />SERVICING THE GTA</p>
+      </div >
 
       <br />
       {/* <!-- NAV BAR ENDS --> */}
@@ -140,11 +140,13 @@ function Links() {
               {/* <LinkContainer to={"/Products"}> */}
               <NavDropdown title="Services" className="nav-fontstyle">
                 <NavDropdown.Item className="nav-fontstyle" eventKey="4.1" href="/services">ALL SERVICES</NavDropdown.Item>
+                <NavDropdown.Divider />
                 <NavDropdown.Item className="nav-fontstyle" eventKey="4.1" href="/kitchen">KITCHEN</NavDropdown.Item>
                 <NavDropdown.Item className="nav-fontstyle" eventKey="4.2" href="/basement">BASEMENT</NavDropdown.Item>
                 <NavDropdown.Item className="nav-fontstyle" eventKey="4.3" href="/garage">GARAGE</NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item className="nav-fontstyle" eventKey="4.4" href="/pool">POOLS</NavDropdown.Item>
+                <NavDropdown.Item className="nav-fontstyle" eventKey="4.4" href="/deck">FENCING, DECKS & PATIOS</NavDropdown.Item>
               </NavDropdown>
               {/* </LinkContainer> */}
 
@@ -169,6 +171,10 @@ function Links() {
           <Route path="/Home" element={<Home />} />
           <Route path="/Services" element={<Services />} />
           <Route path="/kitchen" element={<Kitchen />} />
+          <Route path="/basement" element={<Basement />} />
+          <Route path="/garage" element={<Garage />} />
+          <Route path="/pool" element={<Pool />} />
+          <Route path="/deck" element={<Deck />} />
           <Route path="/Faq" element={<Faq />} />
           <Route path="/Gallery" element={<Gallery />} />
           <Route path="/Quote" element={<Quote />} />
@@ -197,7 +203,47 @@ function Services() {
 function Kitchen() {
   return (
     <>
-      <p>At our home renovation company, we specialize in providing top-notch kitchen remodeling services that will breathe new life into your culinary space. Our team of skilled professionals understands the significance of the kitchen as the heart of your home, and we are dedicated to creating a functional, stylish, and inviting space that meets your unique needs.<br /><br /> Whether you desire a complete kitchen overhaul or a targeted renovation, we offer a wide range of services to suit your requirements. From custom cabinetry and countertop installations to flooring upgrades and appliance replacements, we handle every aspect of your kitchen project with utmost care and attention to detail. Our team works closely with you to understand your vision, offering expert advice and guidance along the way.<br /><br /> We pride ourselves on using high-quality materials and employing innovative design techniques to ensure a stunning end result. With our kitchen renovation services, you can expect seamless project management, timely completion, and exceptional craftsmanship. Transform your kitchen into a space that reflects your style and enhances your daily life by entrusting us with your kitchen renovation project. Contact us today to get started on creating the kitchen of your dreams.</p>
+      <p>We specialize in providing top-notch kitchen remodeling services that will breathe new life into your culinary space. Our team of skilled professionals understands the significance of the kitchen as the heart of your home, and we are dedicated to creating a functional, stylish, and inviting space that meets your unique needs.<br /><br /> Whether you desire a complete kitchen overhaul or a targeted renovation, we offer a wide range of services to suit your requirements. From custom cabinetry and countertop installations to flooring upgrades and appliance replacements, we handle every aspect of your kitchen project with utmost care and attention to detail. Our team works closely with you to understand your vision, offering expert advice and guidance along the way.<br /><br /> We pride ourselves on using high-quality materials and employing innovative design techniques to ensure a stunning end result. With our kitchen renovation services, you can expect seamless project management, timely completion, and exceptional craftsmanship. Transform your kitchen into a space that reflects your style and enhances your daily life by entrusting us with your kitchen renovation project. Contact us today to get started on creating the kitchen of your dreams.</p>
+    </>
+  );
+}
+
+function Basement() {
+  return (
+    <>
+      <p>
+        Whether you envision a cozy entertainment area, a home office, a guest suite, or a personal gym, we have the expertise to bring your basement renovation dreams to life. Our dedicated team of professionals works closely with you to understand your vision and design a customized plan that maximizes the potential of your basement. From framing and insulation to drywall installation, flooring, and lighting, we handle every aspect of the renovation process with meticulous attention to detail. We also offer expertise in plumbing and electrical work to ensure that your basement meets all your requirements. With our commitment to quality craftsmanship and the use of premium materials, we create a finished basement that seamlessly blends with the rest of your home. Our project management approach ensures timely completion and open communication throughout the renovation process, providing you with peace of mind. Trust us to transform your basement into a functional and inviting space that suits your lifestyle and exceeds your expectations.
+      </p>
+    </>
+  );
+}
+
+function Garage() {
+  return (
+    <>
+      <p>
+        we take pride in offering comprehensive garage renovation services that will transform your garage into a functional and organized space. Whether you're looking to convert your garage into a workshop, create a home gym, or simply optimize its storage capabilities, our experienced team is here to help. We begin by understanding your specific goals and requirements, and then we design a customized plan to maximize the potential of your garage. Our services include everything from installing durable and easy-to-clean flooring to customizing storage solutions, such as cabinets, shelving, and overhead racks, to efficiently utilize the space. We can also assist with insulation, lighting, and electrical work to ensure that your garage is comfortable and well-lit. With our attention to detail and commitment to quality craftsmanship, we deliver outstanding results that not only enhance the functionality of your garage but also elevate its aesthetics. Our skilled team manages the entire renovation process, from concept to completion, ensuring a smooth and hassle-free experience for you. Turn your garage into a versatile and organized space that adds value to your home.
+      </p>
+    </>
+  );
+}
+
+function Pool() {
+  return (
+    <>
+      <p>
+        Whether your pool requires a complete overhaul or targeted upgrades, our experienced team is here to help. We understand that a pool is not only a place for relaxation and enjoyment but also a focal point of your outdoor space. Our pool renovation services encompass a wide range of solutions, including resurfacing, tile replacement, coping repairs, equipment upgrades, and lighting enhancements. We work closely with you to understand your specific needs and desires, providing expert advice and creative ideas to transform your pool into a stunning retreat. With meticulous attention to detail and using high-quality materials, we ensure a durable and aesthetically pleasing end result. Our skilled professionals manage the entire renovation process, from initial consultation and design to the final installation, ensuring a smooth and hassle-free experience for you. Whether you want to restore an old pool to its former glory or upgrade your pool with modern features, we have the expertise to deliver exceptional results. Enhance the beauty and functionality of your pool with our professional renovation services.
+      </p>
+    </>
+  );
+}
+
+function Deck() {
+  return (
+    <>
+      <p>
+        we offer a comprehensive range of services to transform your outdoor space, including deck, fencing, and patio renovations. Whether you're looking to revitalize your deck, upgrade your fencing, or create a stunning patio area, our experienced team is here to bring your vision to life. Our deck renovation services encompass everything from repairs and resurfacing to adding new features such as built-in seating, pergolas, or outdoor kitchens. We understand that your deck is a gathering place for family and friends, and we strive to create a functional and aesthetically pleasing space that enhances your outdoor living experience. When it comes to fencing, we provide a variety of options, including wood, vinyl, or metal fencing, tailored to your privacy and security needs. Our expert team ensures precise installation and durable materials that withstand the test of time. Additionally, our patio renovation services focus on transforming your outdoor area into a beautiful and functional space. We can assist with patio extensions, upgrades, or even a complete patio redesign to suit your style and lifestyle. Whether you desire a cozy outdoor lounge area or a space for outdoor dining and entertaining, we will work closely with you to create a personalized patio that meets your needs. With our attention to detail, quality craftsmanship, and use of premium materials, we guarantee exceptional results that exceed your expectations. Trust us to renovate your deck, fencing, and patio, and let us help you create an outdoor sanctuary for relaxation, entertainment, and enjoyment.
+      </p>
     </>
   );
 }
@@ -267,7 +313,7 @@ function Faq() {
         </AccordionSummary>
         <AccordionDetails>
           <Typography className="accordPara">
-
+            We are a family owned and operated business. We take great pride in our work and treat every project as if it were our own home. We are fully licensed and have been in business for over 8 years. We have many satisfied customers and would be happy to provide you with references.
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -277,13 +323,13 @@ function Faq() {
         </AccordionSummary>
         <AccordionDetails>
           <Typography className="accordPara">
-            We provide our services all throughtout the GTA and surrounding areas. Get in touch with us today about your home renovation project. We will make things right.
+            We provide our services all throughtout the GTA and surrounding areas. Including but not limited to: Georgetown, Milton, Oakville, Burlington, Etobicoke, Vaughan and more. If your unsure if we service your area, please contact us.
           </Typography>
         </AccordionDetails>
       </Accordion>
       <Accordion className="accordion">
         <AccordionSummary aria-controls="panel2a-content" id="panel2a-header">
-          <Typography className="accordHeading">?</Typography>
+          <Typography className="accordHeading">...</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography className="accordPara">
@@ -293,7 +339,7 @@ function Faq() {
       </Accordion>
       <Accordion className="accordion">
         <AccordionSummary aria-controls="panel2a-content" id="panel2a-header">
-          <Typography className="accordHeading">?</Typography>
+          <Typography className="accordHeading">...</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography className="accordPara">
@@ -303,7 +349,7 @@ function Faq() {
       </Accordion>
       <Accordion className="accordion">
         <AccordionSummary aria-controls="panel2a-content" id="panel2a-header">
-          <Typography className="accordHeading">?</Typography>
+          <Typography className="accordHeading">...</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography className="accordPara">

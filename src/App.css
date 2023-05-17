@@ -79,6 +79,25 @@ p {
 
 /* GALLERY PAGE */
 
+/* FAQ */
+.accordion {
+  width: 70%;
+  left: 10%;
+  background-color: #484A4C !important;
+
+}
+
+.accordHeading {
+  font-size: 1.5rem !important;
+  color: white;
+}
+
+.accordPara {
+  font-size: 1.2rem !important;
+  color: white;
+}
+
+/* FAQ */
 
 /* CONTACT PAGE */
 
