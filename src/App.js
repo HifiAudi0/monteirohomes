@@ -81,7 +81,7 @@ function Home() {
       </div>
 
       <div class="text-container">
-        <p class="target ">MONTEIRO HOMES<br />SERVICING THE GTA</p>
+        <p class="target">MONTEIRO HOMES<br />SERVICING THE GTA</p>
       </div >
 
       <br />
@@ -241,18 +241,19 @@ function Kitchen() {
             delay: 0.5,
             ease: [0, 0.71, 0.2, 1.01]
           }}>
-          <Image src="./img/kitchen/kitchen1.jpg" className="kitchen" />
-          <Image src="./img/kitchen/kitchen2.jpg" className="kitchen" />
-          <Image src="./img/kitchen/kitchen3.jpg" className="kitchen" />
-          <Image src="./img/kitchen/kitchen4.jpg" className="kitchen" />
-          <Image src="./img/kitchen/kitchen5.jpg" className="kitchen" />
-          <Image src="./img/kitchen/kitchen6.jpg" className="kitchen" />
-          <Image src="./img/kitchen/kitchen7.jpg" className="kitchen" />
-          <Image src="./img/kitchen/kitchen8.jpg" className="kitchen" />
-          <Image src="./img/kitchen/kitchen9.jpg" className="kitchen" />
-          <Image src="./img/kitchen/kitchen10.jpg" className="kitchen" />
-          <Image src="./img/kitchen/kitchen11.jpg" className="kitchen" />
+          <Image src="./img/kitchen/kitchen1.jpg" className="kitchen image-border" />
+          <Image src="./img/kitchen/kitchen2.jpg" className="kitchen image-border" />
+          <Image src="./img/kitchen/kitchen3.jpg" className="kitchen image-border" />
+          <Image src="./img/kitchen/kitchen4.jpg" className="kitchen image-border" />
+          <Image src="./img/kitchen/kitchen5.jpg" className="kitchen image-border" />
+          <Image src="./img/kitchen/kitchen6.jpg" className="kitchen image-border" />
+          <Image src="./img/kitchen/kitchen7.jpg" className="kitchen image-border" />
+          <Image src="./img/kitchen/kitchen8.jpg" className="kitchen image-border" />
+          <Image src="./img/kitchen/kitchen9.jpg" className="kitchen image-border" />
+          <Image src="./img/kitchen/kitchen10.jpg" className="kitchen image-border" />
+          <Image src="./img/kitchen/kitchen11.jpg" className="kitchen image-border" />
         </motion.div>
+        <br />   <br />
         <p>We specialize in providing top-notch kitchen remodeling services that will breathe new life into your culinary space. Our team of skilled professionals understands the significance of the kitchen as the heart of your home, and we are dedicated to creating a functional, stylish, and inviting space that meets your unique needs.<br /><br /> Whether you desire a complete kitchen overhaul or a targeted renovation, we offer a wide range of services to suit your requirements. From custom cabinetry and countertop installations to flooring upgrades and appliance replacements, we handle every aspect of your kitchen project with utmost care and attention to detail. Our team works closely with you to understand your vision, offering expert advice and guidance along the way.<br /><br /> We pride ourselves on using high-quality materials and employing innovative design techniques to ensure a stunning end result. With our kitchen renovation services, you can expect seamless project management, timely completion, and exceptional craftsmanship. Transform your kitchen into a space that reflects your style and enhances your daily life by entrusting us with your kitchen renovation project. Contact us today to get started on creating the kitchen of your dreams.</p>
       </div>
     </>
@@ -287,20 +288,21 @@ function Pool() {
         animate={{ x: 100 }}
         transition={{ ease: "easeOut", duration: 2 }}
       >
-        <Image src="./img/pools/pool1.jpg" className="pool" />
+        <Image src="./img/pools/pool1.jpg" className="pool image-border" />
       </motion.div>
       <motion.div
         animate={{ x: 100 }}
         transition={{ ease: "easeOut", duration: 2 }}
       >
-        <Image src="./img/pools/pool2.jpg" className="pool" />
+        <Image src="./img/pools/pool2.jpg" className="pool image-border" />
+        <br /> <br /> <br />
       </motion.div>
       <p>
         Whether your pool requires a complete overhaul or targeted upgrades, our experienced team is here to help. We understand that a pool is not only a place for relaxation and enjoyment but also a focal point of your outdoor space. Our pool renovation services encompass a wide range of solutions, including resurfacing, tile replacement, coping repairs, equipment upgrades, and lighting enhancements. We work closely with you to understand your specific needs and desires, providing expert advice and creative ideas to transform your pool into a stunning retreat. With meticulous attention to detail and using high-quality materials, we ensure a durable and aesthetically pleasing end result. Our skilled professionals manage the entire renovation process, from initial consultation and design to the final installation, ensuring a smooth and hassle-free experience for you. Whether you want to restore an old pool to its former glory or upgrade your pool with modern features, we have the expertise to deliver exceptional results. Enhance the beauty and functionality of your pool with our professional renovation services.
       </p>
-      <Image src="./img/pools/pool3.jpg" className="pool" />
-      <Image src="./img/pools/pool4.jpg" className="pool" />
-      <Image src="./img/pools/pool5.jpg" className="pool" />
+      <Image src="./img/pools/pool3.jpg" className="pool image-border" />
+      <Image src="./img/pools/pool4.jpg" className="pool image-border" />
+      <Image src="./img/pools/pool5.jpg" className="pool image-border" />
 
     </>
   );

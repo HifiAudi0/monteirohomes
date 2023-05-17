@@ -1,3 +1,7 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
 h3 {
   color: white;
 }
@@ -5,7 +9,12 @@ h3 {
 p {
   color: white;
   font-size: 1.5rem;
+  margin-left: 30px;
 }
+
+/* .target {
+  color: white;
+} */
 
 .nav-link {
   color: grey;
@@ -35,8 +44,8 @@ p {
   top: 0;
   bottom: 0;
   z-index: 0;
-  background-image:
-    repeating-radial-gradient(circle, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.55));
+  /* background-image:
+    repeating-radial-gradient(circle, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.55)); */
 }
 
 .logo {
@@ -75,6 +84,7 @@ p {
 .pool {
   margin-right: 50px;
   /* margin-top: 50px; */
+  margin-top: 30px;
 }
 
 /* POOLS */
@@ -87,9 +97,24 @@ p {
 .kitchen {
   margin-right: 50px;
   margin-top: 50px;
+  margin-left: 50px;
   height: 600px;
   width: 400px;
 
+
+}
+
+.image-border {
+  /* width: 400px;
+  height: 200px; */
+  border: 2px solid #fff;
+  /* background: url(img/tiger.png) no-repeat; */
+  -moz-box-shadow: 10px 10px 5px #ccc;
+  -webkit-box-shadow: 10px 10px 5px #ccc;
+  box-shadow: 10px 10px 5px #ccc;
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+  border-radius: 25px;
 }
 
 
@@ -151,6 +176,7 @@ p {
 .home-social-icons {
   z-index: 2;
   position: relative;
+  margin-right: 10px;
 }
 
 .social-icons {
