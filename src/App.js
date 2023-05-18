@@ -17,6 +17,8 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import Grid from '@mui/material/Grid';
+// import Item from '@mui/material/Item';
 
 import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
@@ -302,8 +304,29 @@ function Kitchen() {
 
 function Bath() {
   return (
-    <>
 
+    <>
+      <br />    <br />    <br />    <br />    <br />    <br />    <br />    <br />
+      <div className="bath-grid-container">
+        <div className="bath-grid-item">
+          <img src="./img/bath/bath1.jpg" className="bath-image image-border" />
+        </div>
+        <div className="bath-grid-item">
+          <img src="./img/bath/bath2.jpg" className="bath-image image-border" />
+        </div>
+        <div className="bath-grid-item">
+          <img src="./img/bath/bath3.jpg" className="bath-image image-border" />
+        </div>
+        <div className="bath-grid-item">
+          <img src="./img/bath/bath4.jpg" className="bath-image image-border" />
+        </div>
+
+        <img src="./img/bath/bath1.jpg" className="bath-image image-border" />
+        <img src="./img/bath/bath2.jpg" className="bath-image image-border" />
+        <img src="./img/bath/bath3.jpg" className="bath-image image-border" />
+        <img src="./img/bath/bath4.jpg" className="bath-image image-border" />
+      </div>
+      <p>we specialize in providing exceptional bathroom renovation services that will transform your bathroom into a luxurious and functional retreat. Our team of skilled professionals understands the importance of a well-designed and comfortable bathroom, and we are dedicated to creating a space that reflects your personal style and meets your specific needs.<br /> <br />  Whether you're looking to update your fixtures, replace outdated tiles, or completely remodel your bathroom, we offer a wide range of services to suit your requirements. Our expertise includes bathroom layout redesign, bathtub and shower installations, vanity and countertop replacements, flooring upgrades, and lighting enhancements.<br /> <br />  We work closely with you to understand your vision, offering creative solutions and expert advice to maximize the potential of your bathroom. With meticulous attention to detail and a commitment to using high-quality materials, we ensure a stunning end result that exceeds your expectations.<br /> <br />  From project management to timely completion, we handle every aspect of the renovation process with professionalism and care. Our goal is to create a bathroom that not only enhances your daily routine but also adds value to your home. Trust us with your bathroom renovation needs, and let us transform your bathroom into a space of relaxation, rejuvenation, and beauty. </p>
     </>
   );
 }
@@ -427,6 +450,7 @@ function Faq() {
 
   return (
     <>
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
       <motion.div
         initial={{ scale: 0 }}
         animate={{ rotate: 360, scale: 1 }}

@@ -104,6 +104,35 @@ p {
 
 /* POOLS */
 
+/* BATH */
+.bath-grid-container {
+  display: grid;
+  grid-template-columns: 35% 30% 35%;
+  grid-template-rows: 1200px;
+  padding: 10px;
+}
+
+.bath-grid-item {
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.bath-image {
+  /* margin-right: 50px;
+  margin-top: 50px;
+  margin-left: 50px; */
+  /* height: 1000px;
+  width: 700px; */
+  position: relative;
+  border: 180px solid rgb(0, 255, 81);
+  margin-right: 140px;
+}
+
+/* BATH */
+
 /* Kitchen */
 .grid-container {
   display: grid;
@@ -119,6 +148,8 @@ p {
   text-align: center;
   margin-right: 10px;
 }
+
+
 
 .kitchen-container {
   /* top: 200px;
