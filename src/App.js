@@ -246,18 +246,18 @@ function Kitchen() {
               <img src="./img/kitchen/kitchen1.jpg" className="kitchen image-border" />
             </div>
             <div className="grid-item">
-              <p className="kitchen-para">We specialize in providing top-notch kitchen remodeling services that will breathe new life into your culinary space.<br /><br /> Our team of skilled professionals understands the significance of the kitchen as the heart of your home, and we are dedicated to creating a functional, stylish, and inviting space that meets your unique needs.<br /><br /> Whether you desire a complete kitchen overhaul or a targeted renovation, we offer a wide range of services to suit your requirements.<br /><br /> From custom cabinetry and countertop installations to flooring upgrades and appliance replacements, we handle every aspect of your kitchen project with utmost care and attention to detail.<br /><br /> Our team works closely with you to understand your vision, offering expert advice and guidance along the way.<br /><br /> We pride ourselves on using high-quality materials and employing innovative design techniques to ensure a stunning end result<br /><br />. With our kitchen renovation services, you can expect seamless project management, timely completion, and exceptional craftsmanship.<br /><br /> Transform your kitchen into a space that reflects your style and enhances your daily life by entrusting us with your kitchen renovation project. Contact us today to get started on creating the kitchen of your dreams.</p>
-            </div>
-            <div className="grid-item">
               <img src="./img/kitchen/kitchen2.jpg" className="kitchen image-border kitchen-image-right" />
             </div>
 
             <div className="grid-item">
               <Image src="./img/kitchen/kitchen3.jpg" className="kitchen image-border" />
             </div>
-            <div className="grid-item">   </div>
+
             <div className="grid-item">
               <Image src="./img/kitchen/kitchen4.jpg" className="kitchen image-border" />
+            </div>
+            <div className="grid-item">
+              <p className="kitchen-para">We specialize in providing top-notch kitchen remodeling services that will breathe new life into your culinary space.<br /><br /> Our team of skilled professionals understands the significance of the kitchen as the heart of your home, and we are dedicated to creating a functional, stylish, and inviting space that meets your unique needs.<br /><br /> Whether you desire a complete kitchen overhaul or a targeted renovation, we offer a wide range of services to suit your requirements.<br /><br /> From custom cabinetry and countertop installations to flooring upgrades and appliance replacements, we handle every aspect of your kitchen project with utmost care and attention to detail.</p>
             </div>
             <div className="grid-item">
               <Image src="./img/kitchen/kitchen5.jpg" className="kitchen image-border" />
@@ -265,6 +265,8 @@ function Kitchen() {
 
             <div className="grid-item">
               <Image src="./img/kitchen/kitchen6.jpg" className="kitchen image-border" />
+            </div>
+            <div className="grid-item">    <p><br /><br /> Our team works closely with you to understand your vision, offering expert advice and guidance along the way.<br /><br /> We pride ourselves on using high-quality materials and employing innovative design techniques to ensure a stunning end result<br /><br />. With our kitchen renovation services, you can expect seamless project management, timely completion, and exceptional craftsmanship.<br /><br /> Transform your kitchen into a space that reflects your style and enhances your daily life by entrusting us with your kitchen renovation project. Contact us today to get started on creating the kitchen of your dreams.</p>
             </div>
             <div className="grid-item">
               <Image src="./img/kitchen/kitchen7.jpg" className="kitchen image-border" />
