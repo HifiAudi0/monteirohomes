@@ -166,7 +166,7 @@ function Links() {
               <NavDropdown title="Services" className="nav-fontstyle">
                 <NavDropdown.Item className="nav-fontstyle" eventKey="4.1" href="/services">ALL SERVICES</NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item className="nav-fontstyle" eventKey="4.1" href="/kitchen">KITCHEN</NavDropdown.Item>
+                <NavDropdown.Item className="nav-fontstyle" eventKey="4.1" href="/kitchen">KITCHEN & BATH</NavDropdown.Item>
                 <NavDropdown.Item className="nav-fontstyle" eventKey="4.2" href="/basement">BASEMENT</NavDropdown.Item>
                 <NavDropdown.Item className="nav-fontstyle" eventKey="4.3" href="/garage">GARAGE</NavDropdown.Item>
                 <NavDropdown.Divider />
@@ -241,21 +241,51 @@ function Kitchen() {
             delay: 0.5,
             ease: [0, 0.71, 0.2, 1.01]
           }}>
-          <Image src="./img/kitchen/kitchen1.jpg" className="kitchen image-border" />
-          <Image src="./img/kitchen/kitchen2.jpg" className="kitchen image-border" />
-          <Image src="./img/kitchen/kitchen3.jpg" className="kitchen image-border" />
-          <Image src="./img/kitchen/kitchen4.jpg" className="kitchen image-border" />
-          <Image src="./img/kitchen/kitchen5.jpg" className="kitchen image-border" />
-          <Image src="./img/kitchen/kitchen6.jpg" className="kitchen image-border" />
-          <Image src="./img/kitchen/kitchen7.jpg" className="kitchen image-border" />
-          <Image src="./img/kitchen/kitchen8.jpg" className="kitchen image-border" />
-          <Image src="./img/kitchen/kitchen9.jpg" className="kitchen image-border" />
-          <Image src="./img/kitchen/kitchen10.jpg" className="kitchen image-border" />
-          <Image src="./img/kitchen/kitchen11.jpg" className="kitchen image-border" />
-        </motion.div>
+          <div className="grid-container">
+            <div className="grid-item">
+              <img src="./img/kitchen/kitchen1.jpg" className="kitchen image-border" />
+            </div>
+            <div className="grid-item">
+              <p className="kitchen-para">We specialize in providing top-notch kitchen remodeling services that will breathe new life into your culinary space.<br /><br /> Our team of skilled professionals understands the significance of the kitchen as the heart of your home, and we are dedicated to creating a functional, stylish, and inviting space that meets your unique needs.<br /><br /> Whether you desire a complete kitchen overhaul or a targeted renovation, we offer a wide range of services to suit your requirements.<br /><br /> From custom cabinetry and countertop installations to flooring upgrades and appliance replacements, we handle every aspect of your kitchen project with utmost care and attention to detail.<br /><br /> Our team works closely with you to understand your vision, offering expert advice and guidance along the way.<br /><br /> We pride ourselves on using high-quality materials and employing innovative design techniques to ensure a stunning end result<br /><br />. With our kitchen renovation services, you can expect seamless project management, timely completion, and exceptional craftsmanship.<br /><br /> Transform your kitchen into a space that reflects your style and enhances your daily life by entrusting us with your kitchen renovation project. Contact us today to get started on creating the kitchen of your dreams.</p>
+            </div>
+            <div className="grid-item">
+              <img src="./img/kitchen/kitchen2.jpg" className="kitchen image-border kitchen-image-right" />
+            </div>
+
+            <div className="grid-item">
+              <Image src="./img/kitchen/kitchen3.jpg" className="kitchen image-border" />
+            </div>
+            <div className="grid-item">   </div>
+            <div className="grid-item">
+              <Image src="./img/kitchen/kitchen4.jpg" className="kitchen image-border" />
+            </div>
+            <div className="grid-item">
+              <Image src="./img/kitchen/kitchen5.jpg" className="kitchen image-border" />
+            </div>
+
+            <div className="grid-item">
+              <Image src="./img/kitchen/kitchen6.jpg" className="kitchen image-border" />
+            </div>
+            <div className="grid-item">
+              <Image src="./img/kitchen/kitchen7.jpg" className="kitchen image-border" />
+            </div>
+            <div className="grid-item">
+              <Image src="./img/kitchen/kitchen8.jpg" className="kitchen image-border" />
+            </div>
+            <div className="grid-item">
+              <Image src="./img/kitchen/kitchen9.jpg" className="kitchen image-border" />
+            </div>
+            <div className="grid-item">
+              <Image src="./img/kitchen/kitchen10.jpg" className="kitchen image-border" />
+            </div>
+            <div className="grid-item">
+              <Image src="./img/kitchen/kitchen11.jpg" className="kitchen image-border" />
+            </div>
+          </div>
+        </motion.div >
         <br />   <br />
-        <p>We specialize in providing top-notch kitchen remodeling services that will breathe new life into your culinary space. Our team of skilled professionals understands the significance of the kitchen as the heart of your home, and we are dedicated to creating a functional, stylish, and inviting space that meets your unique needs.<br /><br /> Whether you desire a complete kitchen overhaul or a targeted renovation, we offer a wide range of services to suit your requirements. From custom cabinetry and countertop installations to flooring upgrades and appliance replacements, we handle every aspect of your kitchen project with utmost care and attention to detail. Our team works closely with you to understand your vision, offering expert advice and guidance along the way.<br /><br /> We pride ourselves on using high-quality materials and employing innovative design techniques to ensure a stunning end result. With our kitchen renovation services, you can expect seamless project management, timely completion, and exceptional craftsmanship. Transform your kitchen into a space that reflects your style and enhances your daily life by entrusting us with your kitchen renovation project. Contact us today to get started on creating the kitchen of your dreams.</p>
-      </div>
+
+      </div >
     </>
   );
 }
@@ -323,39 +353,39 @@ function Gallery() {
     <>
 
       {/* <a href="https://www.mythrillfiction.com/the-dark-rider" alt="Mythrill" target="_blank"> */}
+      <div className="body-container">
+        <div class="card">
 
-      <div class="card">
-
-        <div class="wrapper">
-          <img src="./img/before_basement.jpg" class="cover-image" />
+          <div class="wrapper">
+            <img src="./img/before_basement.jpg" class="cover-image" />
+          </div>
+          <p class="title title-before before-after" >BEFORE</p>
+          <p class="title title-after before-after">AFTER</p>
+          <img src="./img/after_basement.jpg" class="character" />
         </div>
-        <p class="title title-before before-after" >BEFORE</p>
-        <p class="title title-after before-after">AFTER</p>
-        <img src="./img/after_basement.jpg" class="character" />
-      </div>
-      {/* </a> */}
+        {/* </a> */}
 
 
-      <div class="card">
-        <div class="wrapper">
-          <img src="./img/before_kitchen.jpg" class="cover-image" />
+        <div class="card">
+          <div class="wrapper">
+            <img src="./img/before_kitchen.jpg" class="cover-image" />
+          </div>
+          <p class="title title-before before-after" >BEFORE</p>
+          <p class="title title-after before-after">AFTER</p>
+          <img src="./img/after_kitchen.jpg" class="character" />
         </div>
-        <p class="title title-before before-after" >BEFORE</p>
-        <p class="title title-after before-after">AFTER</p>
-        <img src="./img/after_kitchen.jpg" class="character" />
-      </div>
 
 
 
-      <div class="card">
-        <div class="wrapper">
-          <img src="./img/before_walkway.jpg" class="cover-image" />
+        <div class="card">
+          <div class="wrapper">
+            <img src="./img/before_walkway.jpg" class="cover-image" />
+          </div>
+          <p class="title title-before before-after" >BEFORE</p>
+          <p class="title title-after before-after">AFTER</p>
+          <img src="./img/after_walkway.jpg" class="character" />
         </div>
-        <p class="title title-before before-after" >BEFORE</p>
-        <p class="title title-after before-after">AFTER</p>
-        <img src="./img/after_walkway.jpg" class="character" />
       </div>
-
     </>
   );
 }
@@ -370,6 +400,7 @@ function Faq() {
         animate={{ rotate: 360, scale: 1 }}
         transition={{
           type: "spring",
+
           stiffness: 260,
           damping: 20
         }}>
