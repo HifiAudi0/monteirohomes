@@ -66,7 +66,7 @@ function App() {
 function Home() {
   return (
     <>
-      {/* <!-- NAV BAR --> */}
+
 
       <div id="home"></div>
 
@@ -80,12 +80,12 @@ function Home() {
 
       </div>
 
-      <div class="text-container">
-        <p class="target">MONTEIRO HOMES<br />SERVICING THE GTA</p>
+      <div className="text-container">
+        <p id="target-id" className="target">MONTEIRO HOMES<br />SERVICING THE GTA<br />FULL HOME RENOVATION & DESIGN<br />CUSTOM FINANCING AVAILABLE</p>
       </div >
 
       <br />
-      {/* <!-- NAV BAR ENDS --> */}
+
 
 
       <div className="home-socials">
@@ -106,7 +106,7 @@ function Home() {
         </a>
 
 
-        <a className="home-social-icons " href="https://www.instagram.com/monteirohomes/" target="_blank">
+        <a className="home-social-icons" href="https://www.instagram.com/monteirohomes/" target="_blank">
           <Image className="rounded-circle glow-effect-links" src="./img/instagram.png" width="60px" height="60px" alt="Instagram logo" /><span className="home-social-text" p>instagram.com/monteirohomes/</span>
         </a>
 
@@ -166,7 +166,8 @@ function Links() {
               <NavDropdown title="Services" className="nav-fontstyle">
                 <NavDropdown.Item className="nav-fontstyle" eventKey="4.1" href="/services">ALL SERVICES</NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item className="nav-fontstyle" eventKey="4.1" href="/kitchen">KITCHEN & BATH</NavDropdown.Item>
+                <NavDropdown.Item className="nav-fontstyle" eventKey="4.1" href="/kitchen">KITCHEN</NavDropdown.Item>
+                <NavDropdown.Item className="nav-fontstyle" eventKey="4.1" href="/bath">BATHS</NavDropdown.Item>
                 <NavDropdown.Item className="nav-fontstyle" eventKey="4.2" href="/basement">BASEMENT</NavDropdown.Item>
                 <NavDropdown.Item className="nav-fontstyle" eventKey="4.3" href="/garage">GARAGE</NavDropdown.Item>
                 <NavDropdown.Divider />
@@ -196,6 +197,7 @@ function Links() {
           <Route path="/Home" element={<Home />} />
           <Route path="/Services" element={<Services />} />
           <Route path="/kitchen" element={<Kitchen />} />
+          <Route path="/bath" element={<Bath />} />
           <Route path="/basement" element={<Basement />} />
           <Route path="/garage" element={<Garage />} />
           <Route path="/pool" element={<Pool />} />
@@ -230,7 +232,12 @@ function Kitchen() {
     <>
 
       <br />  <br />  <br />  <br />  <br />  <br />  <br />  <br />  <br />  <br />  <br />
-      <h3>Kitchens</h3>
+
+      <div className="kitchenHeading">
+        <h3>Kitchen & Bath</h3>
+        <h4>We take pride in excellent quality and craftsmanship.</h4>
+      </div>
+
       <div className="kitchen-container">
         <motion.div
           className=""
@@ -257,6 +264,7 @@ function Kitchen() {
               <Image src="./img/kitchen/kitchen4.jpg" className="kitchen image-border" />
             </div>
             <div className="grid-item">
+              {/* <img className="kitchen-card-bg" src="./img/cardBg.png"></img> */}
               <p className="kitchen-para">We specialize in providing top-notch kitchen remodeling services that will breathe new life into your culinary space.<br /><br /> Our team of skilled professionals understands the significance of the kitchen as the heart of your home, and we are dedicated to creating a functional, stylish, and inviting space that meets your unique needs.<br /><br /> Whether you desire a complete kitchen overhaul or a targeted renovation, we offer a wide range of services to suit your requirements.<br /><br /> From custom cabinetry and countertop installations to flooring upgrades and appliance replacements, we handle every aspect of your kitchen project with utmost care and attention to detail.</p>
             </div>
             <div className="grid-item">
@@ -288,6 +296,14 @@ function Kitchen() {
         <br />   <br />
 
       </div >
+    </>
+  );
+}
+
+function Bath() {
+  return (
+    <>
+
     </>
   );
 }
@@ -329,12 +345,26 @@ function Pool() {
         <Image src="./img/pools/pool2.jpg" className="pool image-border" />
         <br /> <br /> <br />
       </motion.div>
-      <p>
-        Whether your pool requires a complete overhaul or targeted upgrades, our experienced team is here to help. We understand that a pool is not only a place for relaxation and enjoyment but also a focal point of your outdoor space. Our pool renovation services encompass a wide range of solutions, including resurfacing, tile replacement, coping repairs, equipment upgrades, and lighting enhancements. We work closely with you to understand your specific needs and desires, providing expert advice and creative ideas to transform your pool into a stunning retreat. With meticulous attention to detail and using high-quality materials, we ensure a durable and aesthetically pleasing end result. Our skilled professionals manage the entire renovation process, from initial consultation and design to the final installation, ensuring a smooth and hassle-free experience for you. Whether you want to restore an old pool to its former glory or upgrade your pool with modern features, we have the expertise to deliver exceptional results. Enhance the beauty and functionality of your pool with our professional renovation services.
+      <p className="poolPara">
+        <br /><br />
+        Whether your pool requires a complete overhaul or targeted upgrades, our experienced team is here to help. We understand that a pool is not only a place for relaxation and enjoyment but also a focal point of your outdoor space.<br /><br /> Our pool renovation services encompass a wide range of solutions, including resurfacing, tile replacement, coping repairs, equipment upgrades, and lighting enhancements. We work closely with you to understand your specific needs and desires, providing expert advice and creative ideas to transform your pool into a stunning retreat.<br /><br /> With meticulous attention to detail and using high-quality materials, we ensure a durable and aesthetically pleasing end result. Our skilled professionals manage the entire renovation process, from initial consultation and design to the final installation, ensuring a smooth and hassle-free experience for you.<br /><br /> Whether you want to restore an old pool to its former glory or upgrade your pool with modern features, we have the expertise to deliver exceptional results. Enhance the beauty and functionality of your pool with our professional renovation services.<br />
       </p>
-      <Image src="./img/pools/pool3.jpg" className="pool image-border" />
-      <Image src="./img/pools/pool4.jpg" className="pool image-border" />
-      <Image src="./img/pools/pool5.jpg" className="pool image-border" />
+      <motion.div
+        animate={{ x: 100 }}
+        transition={{ ease: "easeOut", duration: 2 }}
+      >
+        <Image src="./img/pools/pool3.jpg" className="pool image-border" />
+      </motion.div>
+      <motion.div
+        animate={{ x: 100 }}
+        transition={{ ease: "easeOut", duration: 2 }}>
+        <Image src="./img/pools/pool4.jpg" className="pool image-border" />
+      </motion.div>
+      <motion.div
+        animate={{ x: 100 }}
+        transition={{ ease: "easeOut", duration: 2 }}>
+        <Image src="./img/pools/pool5.jpg" className="pool image-border" />
+      </motion.div>
 
     </>
   );
@@ -472,7 +502,7 @@ function Faq() {
           </AccordionSummary>
           <AccordionDetails>
             <Typography className="accordPara">
-              We accept cash, cheque, e-transfer and credit card payments.
+              We accept cash, cheque, e-transfer. Credit cards are not accepted. Financing is available, please contact us for more information.
             </Typography>
           </AccordionDetails>
         </Accordion>

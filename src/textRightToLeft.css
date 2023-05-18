@@ -11,12 +11,11 @@ body {
     overflow-x: hidden;
     height: 1300px;
     margin-top: 500px;
-
 }
 
 .target {
     font-weight: bold;
-    color: #ffffff;
+    /* color: white; */
     animation-name: rightToLeft;
     animation-duration: 4.5s;
     animation-timing-function: linear;

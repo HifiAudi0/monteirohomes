@@ -12,12 +12,21 @@ p {
   margin-left: 30px;
 }
 
-/* .target {
-  color: white;
-} */
+.target {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: black;
+}
+
+#target-id {
+  background-image:
+    none;
+  z-index: 2;
+}
 
 .nav-link {
-  color: grey;
+  color: WHITE;
   z-index: 1;
   font-size: 2rem;
   font-weight: bold;
@@ -85,38 +94,40 @@ p {
   margin-right: 50px;
   /* margin-top: 50px; */
   margin-top: 30px;
+
+  float: left;
+}
+
+.poolPara {
+  float: left;
 }
 
 /* POOLS */
+
 /* Kitchen */
 .grid-container {
   display: grid;
   grid-template-columns: 35% 30% 35%;
   grid-template-rows: 1200px;
-  ;
-  /* background-color: #2196F3; */
   padding: 10px;
-
-
 }
 
 .grid-item {
-  /* background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8); */
+  /* background-color: rgba(255, 255, 255, 0.8); */
   padding: 20px;
   font-size: 30px;
   text-align: center;
-  /* float: left; */
-  border: 20px solid red;
   margin-right: 10px;
-
 }
 
 .kitchen-container {
   /* top: 200px;
   margin-top: 4500px; */
+}
 
-
+.kitchenHeading {
+  text-align: center;
+  color: white;
 }
 
 .kitchen {
@@ -126,6 +137,11 @@ p {
   height: 1000px;
   width: 700px;
   border: 180px solid rgb(0, 255, 81);
+}
+
+.kitchen-card-bg {
+  height: 2400px;
+  width: 700px;
 }
 
 .kitchen-para {
@@ -207,6 +223,9 @@ p {
 
 .home-socials {
   margin: 20px;
+  bottom: 0;
+  text-align: center;
+
 }
 
 .home-social-icons {
@@ -223,7 +242,7 @@ p {
 
 .home-social-text {
   margin-left: 15px;
-  color: grey;
+  color: white;
   font-size: 1.5rem;
   font-weight: bolder;
   /* text-shadow: 2px 2px white; */
