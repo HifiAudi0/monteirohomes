@@ -94,22 +94,22 @@ function Home() {
 
         {/* transparent bg */}
         <a className="home-social-icons" href="https://www.facebook.com/profile.php?id=100064311003388s" target="_blank">
-          <img className="rounded-circle glow-effect-links" src="./img/fb.png" width="60px" height="60px" alt="Facebook logo" /><span className="home-social-text" p>facebook.com/profile.php?id=100064311003388</span>
+          <img className="rounded-circle glow-effect-links" src="./img/fb.png" width="60px" height="60px" alt="Facebook logo" /><span className="home-social-text">facebook.com/profile.php?id=100064311003388</span>
         </a>
 
         <a className="home-social-icons" href="tel:905-599-1345">
-          <Image className="rounded-circle glow-effect-links" src="./img/phone.png" width="60px" height="60px" alt="A phone number to reach Saher at." />
-          <span className="home-social-text" p>Phil @ (647) 885-2384</span>
+          <Image className="rounded-circle glow-effect-links" src="./img/phone.png" width="60px" height="60px" alt="A phone number to reach Phil at." />
+          <span className="home-social-text">Phil @ (647) 885-2384</span>
         </a>
 
         <a className="home-social-icons" href="mailto:phil@monteirohomes.ca">
-          <img className="rounded-circle glow-effect-links" src="./img/email.png" width="60px" height="60px" alt="An email to each Saher at." />
+          <img className="rounded-circle glow-effect-links" src="./img/email.png" width="60px" height="60px" alt="An email to each Phil at." />
           <span className="home-social-text">phil@monteirohomes.ca</span>
         </a>
 
 
         <a className="home-social-icons" href="https://www.instagram.com/monteirohomes/" target="_blank">
-          <Image className="rounded-circle glow-effect-links" src="./img/instagram.png" width="60px" height="60px" alt="Instagram logo" /><span className="home-social-text" p>instagram.com/monteirohomes/</span>
+          <Image className="rounded-circle glow-effect-links" src="./img/instagram.png" width="60px" height="60px" alt="Instagram logo" /><span className="home-social-text">instagram.com/monteirohomes/</span>
         </a>
 
       </div>
@@ -236,8 +236,8 @@ function Kitchen() {
       <br />  <br />  <br />  <br />  <br />  <br />  <br />  <br />  <br />  <br />  <br />
 
       <div className="kitchenHeading">
-        <h3>Kitchen & Bath</h3>
-        <h4>We take pride in excellent quality and craftsmanship.</h4>
+        <h3>Elevate Your Culinary Space with Our Kitchen Renovation Services</h3>
+        <h4>Customized Solutions for a Beautiful and Functional Kitchen Transformation.</h4>
       </div>
 
       <div className="kitchen-container">
@@ -267,7 +267,10 @@ function Kitchen() {
             </div>
             <div className="grid-item">
               {/* <img className="kitchen-card-bg" src="./img/cardBg.png"></img> */}
-              <p className="kitchen-para">We specialize in providing top-notch kitchen remodeling services that will breathe new life into your culinary space.<br /><br /> Our team of skilled professionals understands the significance of the kitchen as the heart of your home, and we are dedicated to creating a functional, stylish, and inviting space that meets your unique needs.<br /><br /> Whether you desire a complete kitchen overhaul or a targeted renovation, we offer a wide range of services to suit your requirements.<br /><br /> From custom cabinetry and countertop installations to flooring upgrades and appliance replacements, we handle every aspect of your kitchen project with utmost care and attention to detail.</p>
+              <p className="kitchen-para alignedPara">We specialize in providing top-notch kitchen remodeling services that will breathe new life into your culinary space.<br /><br /> Our team of skilled professionals understands the significance of the kitchen as the heart of your home, and we are dedicated to creating a functional, stylish, and inviting space that meets your unique needs.<br /><br /> Whether you desire a complete kitchen overhaul or a targeted renovation, we offer a wide range of services to suit your requirements.<br /><br /> From custom cabinetry and countertop installations to flooring upgrades and appliance replacements, we handle every aspect of your kitchen project with utmost care and attention to detail.
+
+                <br /><br /> Our team works closely with you to understand your vision, offering expert advice and guidance along the way.<br /><br /> We pride ourselves on using high-quality materials and employing innovative design techniques to ensure a stunning end result.<br /><br /> With our kitchen renovation services, you can expect seamless project management, timely completion, and exceptional craftsmanship.<br /><br /> Transform your kitchen into a space that reflects your style and enhances your daily life by entrusting us with your kitchen renovation project. Contact us today to get started on creating the kitchen of your dreams.
+              </p>
             </div>
             <div className="grid-item">
               <Image src="./img/kitchen/kitchen5.jpg" className="kitchen image-border" />
@@ -276,8 +279,7 @@ function Kitchen() {
             <div className="grid-item">
               <Image src="./img/kitchen/kitchen6.jpg" className="kitchen image-border" />
             </div>
-            <div className="grid-item">    <p><br /><br /> Our team works closely with you to understand your vision, offering expert advice and guidance along the way.<br /><br /> We pride ourselves on using high-quality materials and employing innovative design techniques to ensure a stunning end result<br /><br />. With our kitchen renovation services, you can expect seamless project management, timely completion, and exceptional craftsmanship.<br /><br /> Transform your kitchen into a space that reflects your style and enhances your daily life by entrusting us with your kitchen renovation project. Contact us today to get started on creating the kitchen of your dreams.</p>
-            </div>
+
             <div className="grid-item">
               <Image src="./img/kitchen/kitchen7.jpg" className="kitchen image-border" />
             </div>
@@ -308,8 +310,8 @@ function Bath() {
     <>
       <br />    <br />    <br />    <br />    <br />    <br />    <br />    <br />
       <div className="kitchenHeading">
-        <h3>Bathrooms</h3>
-        <h4>We take pride in excellent quality and craftsmanship.</h4>
+        <h3>Transform Your Bathroom into a Personal Oasis</h3>
+        <h4>Professional Bathroom Renovation Services Tailored to Your Style and Needs.</h4>
       </div>
 
       <motion.div
@@ -343,7 +345,8 @@ function Bath() {
           </div>
 
           <div className="bath-grid-item">
-            <p>We specialize in providing exceptional bathroom renovation services that will transform your bathroom into a luxurious and functional retreat. Our team of skilled professionals understands the importance of a well-designed and comfortable bathroom, and we are dedicated to creating a space that reflects your personal style and meets your specific needs.<br /> <br />  Whether you're looking to update your fixtures, replace outdated tiles, or completely remodel your bathroom, we offer a wide range of services to suit your requirements. Our expertise includes bathroom layout redesign, bathtub and shower installations, vanity and countertop replacements, flooring upgrades, and lighting enhancements.<br /> <br /></p>            <p>  We work closely with you to understand your vision, offering creative solutions and expert advice to maximize the potential of your bathroom. With meticulous attention to detail and a commitment to using high-quality materials, we ensure a stunning end result that exceeds your expectations.<br /> <br />  From project management to timely completion, we handle every aspect of the renovation process with professionalism and care. Our goal is to create a bathroom that not only enhances your daily routine but also adds value to your home. Trust us with your bathroom renovation needs, and let us transform your bathroom into a space of relaxation, rejuvenation, and beauty. </p>
+            <p className="alignedPara">We specialize in providing exceptional bathroom renovation services that will transform your bathroom into a luxurious and functional retreat. Our team of skilled professionals understands the importance of a well-designed and comfortable bathroom, and we are dedicated to creating a space that reflects your personal style and meets your specific needs.<br /> <br />  Whether you're looking to update your fixtures, replace outdated tiles, or completely remodel your bathroom, we offer a wide range of services to suit your requirements. Our expertise includes bathroom layout redesign, bathtub and shower installations, vanity and countertop replacements, flooring upgrades, and lighting enhancements.<br /> <br />
+              We work closely with you to understand your vision, offering creative solutions and expert advice to maximize the potential of your bathroom. With meticulous attention to detail and a commitment to using high-quality materials, we ensure a stunning end result that exceeds your expectations.<br /> <br />  From project management to timely completion, we handle every aspect of the renovation process with professionalism and care. Our goal is to create a bathroom that not only enhances your daily routine but also adds value to your home. Trust us with your bathroom renovation needs, and let us transform your bathroom into a space of relaxation, rejuvenation, and beauty. </p>
           </div>
 
           <div className="bath-grid-item">
@@ -361,7 +364,7 @@ function Bath() {
           </div>
 
         </div >
-      </motion.div>
+      </motion.div >
 
 
     </>

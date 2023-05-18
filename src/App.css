@@ -19,14 +19,14 @@ p {
   color: black;
 }
 
-#target-id {
+/* #target-id {
   background-image:
     none;
   z-index: 2;
-}
+} */
 
 .nav-link {
-  color: WHITE;
+  color: black;
   z-index: 1;
   font-size: 2rem;
   font-weight: bold;
@@ -84,8 +84,8 @@ p {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image:
-    repeating-radial-gradient(circle, rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.75));
+  /* background-image:
+    repeating-radial-gradient(circle, rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.75)); */
   z-index: 1;
 }
 
@@ -133,6 +133,15 @@ p {
 
 /* BATH */
 
+.alignedPara {
+  text-align: center;
+  word-wrap: break-word;
+  word-break: break-all;
+  text-align-last: left;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
 /* Kitchen */
 .grid-container {
   display: grid;
@@ -170,6 +179,7 @@ p {
   border: 180px solid rgb(0, 255, 81);
 }
 
+
 .kitchen-card-bg {
   height: 2400px;
   width: 700px;
@@ -177,7 +187,7 @@ p {
 
 .kitchen-para {
   /* margin-right: 500px; */
-  margin-top: 500px;
+  /* margin-top: 500px; */
   float: left;
 }
 
@@ -253,9 +263,16 @@ p {
 }
 
 .home-socials {
-  margin: 20px;
+  /* margin: 20px; */
   bottom: 0;
   text-align: center;
+  width: 100%;
+  background-image:
+    repeating-radial-gradient(circle, rgba(255, 255, 255, 0.72), rgba(255, 255, 255, 0.75));
+  /* border: 20px solid green; */
+  /* object-fit: cover;
+  z-index: 2; */
+  position: absolute;
 
 }
 
@@ -263,6 +280,7 @@ p {
   z-index: 2;
   position: relative;
   margin-right: 10px;
+
 }
 
 .social-icons {
@@ -273,11 +291,21 @@ p {
 
 .home-social-text {
   margin-left: 15px;
-  color: white;
-  font-size: 1.5rem;
-  font-weight: bolder;
-  /* text-shadow: 2px 2px white; */
+  color: black;
+  font-size: 1.7rem;
+  font-weight: 900;
+  text-shadow: 1px 1px white;
+  letter-spacing: 2px;
+
+}
+
+a:hover,
+a:visited,
+a:link,
+a:active {
   text-decoration: none;
+  /* box-shadow: none !important;
+  border: 0 !important; */
 }
 
 .social-text {
