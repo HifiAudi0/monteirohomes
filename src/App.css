@@ -16,6 +16,17 @@ p {
   margin-left: 30px;
 }
 
+ul {
+  display: inline-block;
+  text-align: left;
+}
+
+li {
+  text-decoration: none;
+  list-style-type: none;
+  font-size: 1.5rem;
+}
+
 .target {
   font-size: 2rem;
   font-weight: bold;
@@ -224,6 +235,12 @@ p {
   font-weight: bold;
 }
 
+.headingHover {
+  text-align: center;
+
+
+}
+
 /* GALLERY PAGE */
 
 /* FAQ */
@@ -328,12 +345,13 @@ a:active {
 .footer {
   color: white;
   text-transform: uppercase;
-  background-color: green;
+  background-color: #484A4C;
+
 }
 
 .footer-grid-container {
   display: grid;
-  grid-template-columns: 35% 30% 35%;
+  grid-template-columns: 25% 30% 45%;
   grid-template-rows: 400px;
   padding: 10px;
 }
@@ -344,73 +362,26 @@ a:active {
   font-size: 30px;
   text-align: center;
   margin-right: 10px;
+  /* border: 20px solid yellow; */
 }
+
+.footer-socail-icon {
+  margin-top: 20px;
+}
+
+.checkmark {
+  width: 30px;
+  height: 30px;
+}
+
+
+.hoursOfOperation {
+  color: greenyellow;
+}
+
 
 .social-text {
   font-size: 1.4rem;
 }
 
 /* FOOTER */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* (A) LIGHTBOX BACKGROUND */
-#lightbox {
-  /* (A1) COVERS FULLSCREEN */
-  position: fixed;
-  z-index: 999;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-
-  /* (A2) BACKGROUND */
-  background: rgba(0, 0, 0, 0.5);
-
-  /* (A3) CENTER IMAGE ON SCREEN */
-  display: flex;
-  align-items: center;
-  align-items: center;
-
-  /* (A4) HIDDEN BY DEFAULT */
-  visibility: hidden;
-  opacity: 0;
-
-  /* (A5) SHOW/HIDE ANIMATION */
-  transition: opacity ease 0.4s;
-}
-
-/* (A6) TOGGLE VISIBILITY */
-#lightbox.show {
-  visibility: visible;
-  opacity: 1;
-}
-
-/* (B) LIGHTBOX IMAGE */
-#lightbox img {
-  /* (B1) DIMENSIONS */
-  width: 100%;
-  height: auto;
-
-  /* (B2) IMAGE FIT */
-  /* contain | cover | fill | scale-down */
-  object-fit: cover;
-}
-
-/* /* (C) LIGHTBOX IMAGE - FULLSCREEN ALTERNATIVE * */
-#lightbox img {
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
-}

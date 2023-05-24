@@ -9,12 +9,14 @@
 
 .body-container {
     width: 100vw;
-    height: 100vh;
+    height: 50vh;
+    /* CHANGED */
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     background: #191c29;
+    /* border: 20px solid yellow; */
 }
 
 .card {
@@ -27,7 +29,7 @@
     padding: 0 36px;
     perspective: 2500px;
     margin: 0 50px;
-    border: 20px solid red;
+    /* border: 20px solid red; */
     float: left;
 }
 

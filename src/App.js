@@ -480,8 +480,10 @@ function Deck() {
 function Gallery() {
   return (
     <>
-
+      <br />  <br />  <br />  <br />  <br />  <br />  <br />  <br />  <br />
       {/* <a href="https://www.mythrillfiction.com/the-dark-rider" alt="Mythrill" target="_blank"> */}
+      <h3 className="headingHover">Hover over the image to see the AFTER image.</h3>
+
       <div className="body-container">
         <div class="card">
 
@@ -680,28 +682,35 @@ function Footer() {
         <div className="footer-grid-container">
           <div className="footer-grid-item">
 
-            <h4>Service areas:</h4>
+            <h4>Service areas</h4>
             <ul>
-              <li>
+              <li className="alignedPara">
+                <img className="checkmark" src='./img/checkmark.png' />
                 Georgetown
               </li>
-              <li>
+              <li className="alignedPara">
+                <img className="checkmark" src='./img/checkmark.png' />
                 Milton
               </li>
-              <li>
+              <li className="alignedPara">
+                <img className="checkmark" src='./img/checkmark.png' />
                 Oakville
               </li>
-              <li>
+              <li className="alignedPara">
+                <img className="checkmark" src='./img/checkmark.png' />
                 Burlington
               </li>
-              <li>
+              <li className="alignedPara">
+                <img className="checkmark" src='./img/checkmark.png' />
                 Etobicoke
               </li>
-              <li>
+              <li className="alignedPara">
+                <img className="checkmark" src='./img/checkmark.png' />
                 Vaughan
               </li>
-              <li>
-                an many more!
+              <li className="alignedPara">
+                <img className="checkmark" src='./img/checkmark.png' />
+                and many more!
               </li>
             </ul>
           </div>
@@ -714,6 +723,14 @@ function Footer() {
                 <h5>Custom Financing available</h5>
               </li>
             </ul>
+            <h4>OFFICE HOURS</h4>
+            <ul>
+              <li className="alignedPara">Monday <span p className="hoursOfOperation alignedPara">&nbsp; &nbsp; &nbsp; &nbsp; 9am - 5pm</span></li>
+              <li className="alignedPara">Tuesday <span p className="hoursOfOperation alignedPara">&nbsp;&nbsp; &nbsp;  &nbsp; &nbsp;9am - 5pm</span></li>
+              <li className="alignedPara">Wednesday <span p className="hoursOfOperation alignedPara">&nbsp; 9am - 5pm</span></li>
+              <li className="alignedPara">Thursday <span p className="hoursOfOperation alignedPara">&nbsp; &nbsp; &nbsp; 9am - 5pm</span></li>
+              <li className="alignedPara">Friday <span p className="hoursOfOperation alignedPara">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;9am - 5pm</span></li>
+            </ul>
           </div>
 
 
@@ -722,22 +739,22 @@ function Footer() {
 
               {/* transparent bg */}
               <a className="social-icons" href="https://www.facebook.com/profile.php?id=100064311003388s" target="_blank">
-                <img className="rounded-circle glow-effect-links" src="./img/fb.png" width="60px" height="60px" alt="Facebook logo" /><span className="social-text" p>facebook.com/profile.php?id=100064311003388</span>
+                <img className="rounded-circle glow-effect-links footer-socail-icon" src="./img/fb.png" width="60px" height="60px" alt="Facebook logo" /><span className="social-text" p>facebook.com/profile.php?id=100064311003388</span>
               </a><br />
 
               <a className="social-icons" href="tel:905-599-1345">
-                <Image className="rounded-circle glow-effect-links" src="./img/phone.png" width="60px" height="60px" alt="A phone number to reach Saher at." />
+                <Image className="rounded-circle glow-effect-links footer-socail-icon" src="./img/phone.png" width="60px" height="60px" alt="A phone number to reach Saher at." />
                 <span className="social-text" p>Phil @ (647) 885-2384</span>
               </a><br />
 
               <a className="social-icons" href="mailto:phil@monteirohomes.ca">
-                <img className="rounded-circle glow-effect-links" src="./img/email.png" width="60px" height="60px" alt="An email to each Saher at." />
+                <img className="rounded-circle glow-effect-links footer-socail-icon" src="./img/email.png" width="60px" height="60px" alt="An email to each Saher at." />
                 <span className="social-text">phil@monteirohomes.ca</span>
               </a><br />
 
 
               <a className="social-icons " href="https://www.instagram.com/monteirohomes/" target="_blank">
-                <Image className="rounded-circle glow-effect-links" src="./img/instagram.png" width="60px" height="60px" alt="Instagram logo" /><span className="social-text" p>instagram.com/monteirohomes/</span>
+                <Image className="rounded-circle glow-effect-links footer-socail-icon" src="./img/instagram.png" width="60px" height="60px" alt="Instagram logo" /><span className="social-text" p>instagram.com/monteirohomes/</span>
               </a>
 
             </div>
