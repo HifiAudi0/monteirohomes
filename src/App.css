@@ -2,6 +2,10 @@
   font-family: 'Roboto', sans-serif;
 }
 
+body {
+  background: #191c29
+}
+
 h3 {
   color: white;
 }
@@ -318,3 +322,32 @@ a:active {
 }
 
 /* CONTACT PAGE */
+
+
+/* FOOTER */
+.footer {
+  color: white;
+  text-transform: uppercase;
+  background-color: green;
+}
+
+.footer-grid-container {
+  display: grid;
+  grid-template-columns: 35% 30% 35%;
+  grid-template-rows: 400px;
+  padding: 10px;
+}
+
+.footer-grid-item {
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.social-text {
+  font-size: 1.4rem;
+}
+
+/* FOOTER */

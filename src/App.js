@@ -29,6 +29,8 @@ import Dropdown from 'react-bootstrap/Dropdown';
 import DropdownButton from 'react-bootstrap/DropdownButton';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
+import Button from 'react-bootstrap/Button';
+
 
 const container = {
   hidden: { opacity: 1, scale: 0 },
@@ -481,6 +483,8 @@ function Gallery() {
           <img src="./img/after_walkway.jpg" class="character" />
         </div>
       </div>
+
+      <Footer />
     </>
   );
 }
@@ -599,6 +603,7 @@ function Faq() {
 function Quote() {
   return (
     <>
+
     </>
   );
 }
@@ -606,7 +611,9 @@ function Quote() {
 function Contact() {
   return (
     <>
+      <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
       <h3>Don't hesitate get in touch with us today!</h3>
+      <p>We would love to hear from you! Please feel free to reach out to us with any inquiries or to discuss your upcoming project. Our team of experts is here to assist you every step of the way. Whether you have questions about our services, need a consultation, or want to schedule an appointment, we are just a phone call or email away. Don't hesitate to contact us and let us help you bring your home renovation dreams to life. We look forward to working with you!</p>
       <div className="socials">
 
         {/* transparent bg */}
@@ -630,6 +637,83 @@ function Contact() {
         </a>
 
       </div>
+    </>
+  );
+}
+
+function Footer() {
+  return (
+    <>
+      <footer className="footer">
+        <div className="footer-grid-container">
+          <div className="footer-grid-item">
+
+            <h4>Service areas:</h4>
+            <ul>
+              <li>
+                Georgetown
+              </li>
+              <li>
+                Milton
+              </li>
+              <li>
+                Oakville
+              </li>
+              <li>
+                Burlington
+              </li>
+              <li>
+                Etobicoke
+              </li>
+              <li>
+                Vaughan
+              </li>
+              <li>
+                an many more!
+              </li>
+            </ul>
+          </div>
+          <div className="footer-grid-item">
+
+            <h4>Monteiro Homes</h4>
+            <ul>
+
+              <li>
+                <h5>Custom Financing available</h5>
+              </li>
+            </ul>
+          </div>
+
+
+          <div className="footer-grid-item">
+            <div className="alignedPara">
+
+              {/* transparent bg */}
+              <a className="social-icons" href="https://www.facebook.com/profile.php?id=100064311003388s" target="_blank">
+                <img className="rounded-circle glow-effect-links" src="./img/fb.png" width="60px" height="60px" alt="Facebook logo" /><span className="social-text" p>facebook.com/profile.php?id=100064311003388</span>
+              </a><br />
+
+              <a className="social-icons" href="tel:905-599-1345">
+                <Image className="rounded-circle glow-effect-links" src="./img/phone.png" width="60px" height="60px" alt="A phone number to reach Saher at." />
+                <span className="social-text" p>Phil @ (647) 885-2384</span>
+              </a><br />
+
+              <a className="social-icons" href="mailto:phil@monteirohomes.ca">
+                <img className="rounded-circle glow-effect-links" src="./img/email.png" width="60px" height="60px" alt="An email to each Saher at." />
+                <span className="social-text">phil@monteirohomes.ca</span>
+              </a><br />
+
+
+              <a className="social-icons " href="https://www.instagram.com/monteirohomes/" target="_blank">
+                <Image className="rounded-circle glow-effect-links" src="./img/instagram.png" width="60px" height="60px" alt="Instagram logo" /><span className="social-text" p>instagram.com/monteirohomes/</span>
+              </a>
+
+            </div>
+          </div>
+        </div>
+
+      </footer>
+
     </>
   );
 }
