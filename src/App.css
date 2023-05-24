@@ -369,6 +369,16 @@ a:active {
   margin-top: 20px;
 }
 
+.footer-logo {
+  width: 100px;
+  height: 50px;
+}
+
+.footer-socials-heading {
+  text-align: left;
+  margin-left: 150px;
+}
+
 .checkmark {
   width: 30px;
   height: 30px;

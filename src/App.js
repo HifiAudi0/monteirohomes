@@ -223,7 +223,8 @@ function Links() {
 function Services() {
   return (
     <>
-
+      <br /><br /><br /><br /><br /><br /><br /><br />
+      <img src="./img/van.jpg" />
       <p>Welcome to our expert home renovation services! As a trusted and experienced contractor, we take great pride in transforming houses into dream homes. Our dedicated team of professionals is committed to delivering exceptional results that exceed your expectations. Whether you're looking to update your kitchen, remodel your bathroom, or renovate your entire living space, we have the expertise and skills to bring your vision to life.<br /><br /> We understand that every home is unique, and we work closely with our clients to create personalized designs that reflect their style and preferences. From concept to completion, we handle every aspect of the renovation process with meticulous attention to detail, ensuring a seamless and stress-free experience for our clients. Our services encompass a wide range of specialties, including flooring, painting, plumbing, electrical work, cabinetry, and more.<br /><br /> With a focus on quality craftsmanship and using premium materials, we strive to enhance the beauty, functionality, and value of your home. We are committed to delivering projects on time and within budget, without compromising on quality. Customer satisfaction is our top priority, and we go the extra mile to ensure that our clients are delighted with the final results. Trust us with your home renovation needs, and let us turn your house into the home of your dreams. Contact us today to discuss your project and schedule a consultation.
       </p>
 
@@ -716,7 +717,8 @@ function Footer() {
           </div>
           <div className="footer-grid-item">
 
-            <h4>Monteiro Homes</h4>
+
+            <h4> <img className="footer-logo" src="./img/logo.png" />Monteiro Homes</h4>
             <ul>
 
               <li>
@@ -734,8 +736,11 @@ function Footer() {
           </div>
 
 
+
           <div className="footer-grid-item">
+            <h4 className="footer-socials-heading">Socials</h4>
             <div className="alignedPara">
+
 
               {/* transparent bg */}
               <a className="social-icons" href="https://www.facebook.com/profile.php?id=100064311003388s" target="_blank">
