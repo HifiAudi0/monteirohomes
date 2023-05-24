@@ -10,6 +10,7 @@ import './App.css';
 import './textRightToLeft.css';
 import './3dCardImage.css';
 // import './motion-container.css';
+import './imageZoom.css';
 
 import { motion } from "framer-motion";
 import Accordion from "@mui/material/Accordion";
@@ -232,10 +233,23 @@ function Services() {
 }
 
 function Kitchen() {
+
+
+
+
   return (
+
     <>
+      <ImageZoom />
 
       <br />  <br />  <br />  <br />  <br />  <br />  <br />  <br />  <br />  <br />  <br />
+
+      {/* <!-- (A) LIGHTBOX CONTAINER --> */}
+      <div id="lightbox"></div>
+
+
+
+
 
       <div className="kitchenHeading">
         <h3>Elevate Your Culinary Space with Our Kitchen Renovation Services</h3>
@@ -254,18 +268,18 @@ function Kitchen() {
           }}>
           <div className="grid-container">
             <div className="grid-item">
-              <img src="./img/kitchen/kitchen1.jpg" className="kitchen image-border" />
+              <img src="./img/kitchen/kitchen1.jpg" className="kitchen image-border zoomD" />
             </div>
             <div className="grid-item">
-              <img src="./img/kitchen/kitchen2.jpg" className="kitchen image-border kitchen-image-right" />
-            </div>
-
-            <div className="grid-item">
-              <Image src="./img/kitchen/kitchen3.jpg" className="kitchen image-border" />
+              <img src="./img/kitchen/kitchen2.jpg" className="kitchen image-border kitchen-image-right zoomD" />
             </div>
 
             <div className="grid-item">
-              <Image src="./img/kitchen/kitchen4.jpg" className="kitchen image-border" />
+              <Image src="./img/kitchen/kitchen3.jpg" className="kitchen image-border zoomD" />
+            </div>
+
+            <div className="grid-item">
+              <Image src="./img/kitchen/kitchen4.jpg" className="kitchen image-border zoomD" />
             </div>
             <div className="grid-item">
               {/* <img className="kitchen-card-bg" src="./img/cardBg.png"></img> */}
@@ -275,41 +289,53 @@ function Kitchen() {
               </p>
             </div>
             <div className="grid-item">
-              <Image src="./img/kitchen/kitchen5.jpg" className="kitchen image-border" />
+              <Image src="./img/kitchen/kitchen5.jpg" className="kitchen image-border zoomD" />
             </div>
 
             <div className="grid-item">
-              <Image src="./img/kitchen/kitchen6.jpg" className="kitchen image-border" />
+              <Image src="./img/kitchen/kitchen6.jpg" className="kitchen image-border zoomD" />
             </div>
 
             <div className="grid-item">
-              <Image src="./img/kitchen/kitchen7.jpg" className="kitchen image-border" />
+              <Image src="./img/kitchen/kitchen7.jpg" className="kitchen image-border zoomD" />
             </div>
             <div className="grid-item">
-              <Image src="./img/kitchen/kitchen8.jpg" className="kitchen image-border" />
+              <Image src="./img/kitchen/kitchen8.jpg" className="kitchen image-border zoomD" />
             </div>
             <div className="grid-item">
-              <Image src="./img/kitchen/kitchen9.jpg" className="kitchen image-border" />
+              <Image src="./img/kitchen/kitchen9.jpg" className="kitchen image-border zoomD" />
             </div>
             <div className="grid-item">
-              <Image src="./img/kitchen/kitchen10.jpg" className="kitchen image-border" />
+              <Image src="./img/kitchen/kitchen10.jpg" className="kitchen image-border zoomD" />
             </div>
             <div className="grid-item">
-              <Image src="./img/kitchen/kitchen11.jpg" className="kitchen image-border" />
+              <Image src="./img/kitchen/kitchen11.jpg" className="kitchen image-border zoomD" />
             </div>
           </div>
         </motion.div >
         <br />   <br />
 
       </div >
+
+
+      <Footer />
     </>
   );
 }
+
+
+
 
 function Bath() {
   return (
 
     <>
+
+      <ImageZoom />
+
+      {/* <!-- (A) LIGHTBOX CONTAINER --> */}
+      <div id="lightbox"></div>
+
       <br />    <br />    <br />    <br />    <br />    <br />    <br />    <br />
       <div className="kitchenHeading">
         <h3>Transform Your Bathroom into a Personal Oasis</h3>
@@ -333,17 +359,17 @@ function Bath() {
         <div className="bath-grid-container">
           <div className="bath-grid-item">
 
-            <img src="./img/bath/bath1.jpg" className="bath-image image-border" />
+            <img src="./img/bath/bath1.jpg" className="bath-image image-border zoomD" />
 
           </div>
           <div className="bath-grid-item">
-            <img src="./img/bath/bath2.jpg" className="bath-image image-border" />
+            <img src="./img/bath/bath2.jpg" className="bath-image image-border zoomD" />
           </div>
           <div className="bath-grid-item">
-            <img src="./img/bath/bath3.jpg" className="bath-image image-border" />
+            <img src="./img/bath/bath3.jpg" className="bath-image image-border zoomD" />
           </div>
           <div className="bath-grid-item">
-            <img src="./img/bath/bath4.jpg" className="bath-image image-border" />
+            <img src="./img/bath/bath4.jpg" className="bath-image image-border zoomD" />
           </div>
 
           <div className="bath-grid-item">
@@ -352,17 +378,17 @@ function Bath() {
           </div>
 
           <div className="bath-grid-item">
-            <img src="./img/bath/bath5.jpg" className="bath-image image-border" />
+            <img src="./img/bath/bath5.jpg" className="bath-image image-border zoomD" />
           </div>
           <div className="bath-grid-item">
-            <img src="./img/bath/bath6.jpg" className="bath-image image-border" />
+            <img src="./img/bath/bath6.jpg" className="bath-image image-border zoomD" />
           </div>
 
           <div className="bath-grid-item">
-            <img src="./img/bath/bath7.jpg" className="bath-image image-border" />
+            <img src="./img/bath/bath7.jpg" className="bath-image image-border zoomD" />
           </div>
           <div className="bath-grid-item">
-            <img src="./img/bath/bath9.jpg" className="bath-image image-border" />
+            <img src="./img/bath/bath9.jpg" className="bath-image image-border zoomD" />
           </div>
 
         </div >
@@ -396,18 +422,24 @@ function Garage() {
 function Pool() {
   return (
     <>
+      <ImageZoom />
+
+      {/* <!-- (A) LIGHTBOX CONTAINER --> */}
+      <div id="lightbox"></div>
+
+
       <br />  <br />  <br />  <br />  <br />  <br />  <br />  <br />  <br />  <br />  <br />
       <motion.div
         animate={{ x: 100 }}
         transition={{ ease: "easeOut", duration: 2 }}
       >
-        <Image src="./img/pools/pool1.jpg" className="pool image-border" />
+        <Image src="./img/pools/pool1.jpg" className="pool image-border zoomD" />
       </motion.div>
       <motion.div
         animate={{ x: 100 }}
         transition={{ ease: "easeOut", duration: 2 }}
       >
-        <Image src="./img/pools/pool2.jpg" className="pool image-border" />
+        <Image src="./img/pools/pool2.jpg" className="pool image-border zoomD" />
         <br /> <br /> <br />
       </motion.div>
       <p className="poolPara">
@@ -418,17 +450,17 @@ function Pool() {
         animate={{ x: 100 }}
         transition={{ ease: "easeOut", duration: 2 }}
       >
-        <Image src="./img/pools/pool3.jpg" className="pool image-border" />
+        <Image src="./img/pools/pool3.jpg" className="pool image-border zoomD" />
       </motion.div>
       <motion.div
         animate={{ x: 100 }}
         transition={{ ease: "easeOut", duration: 2 }}>
-        <Image src="./img/pools/pool4.jpg" className="pool image-border" />
+        <Image src="./img/pools/pool4.jpg" className="pool image-border zoomD" />
       </motion.div>
       <motion.div
         animate={{ x: 100 }}
         transition={{ ease: "easeOut", duration: 2 }}>
-        <Image src="./img/pools/pool5.jpg" className="pool image-border" />
+        <Image src="./img/pools/pool5.jpg" className="pool image-border zoomD" />
       </motion.div>
 
     </>
@@ -714,6 +746,35 @@ function Footer() {
 
       </footer>
 
+    </>
+  );
+}
+
+function ImageZoom() {
+  window.onload = () => {
+    // (A) GET LIGHTBOX & ALL .ZOOMD IMAGES
+    let all = document.getElementsByClassName("zoomD"),
+      lightbox = document.getElementById("lightbox");
+
+    // (B) CLICK TO SHOW IMAGE IN LIGHTBOX
+    // * SIMPLY CLONE INTO LIGHTBOX & SHOW
+    if (all.length > 0) {
+      for (let i of all) {
+        i.onclick = () => {
+          let clone = i.cloneNode();
+          clone.className = "";
+          lightbox.innerHTML = "";
+          lightbox.appendChild(clone);
+          lightbox.className = "show";
+        };
+      }
+    }
+
+    // (C) CLICK TO CLOSE LIGHTBOX
+    lightbox.onclick = () => lightbox.className = "";
+  };
+  return (
+    <>
     </>
   );
 }
