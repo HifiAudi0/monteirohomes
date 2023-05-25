@@ -191,7 +191,9 @@ function Links() {
               <a href="/Quote" className="nav-link">QUOTE</a>
 
 
-              <a href="/Contact" className="nav-link">CONTACT</a>
+
+
+              <a href="/Contact" className="nav-link">CONTACT & ABOUT US</a>
 
 
             </div>
@@ -647,31 +649,19 @@ function Contact() {
   return (
     <>
       <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
+
+      <h3>About Us</h3>
+      <h3>Family-Owned Contractor with 8 Years of Trusted Service</h3>
+      <p>Welcome to our family-owned contracting business, where we have been proudly serving our community for the past 8 years. As a small business, we understand the importance of personalized service and building strong relationships with our clients. With a passion for craftsmanship and a commitment to excellence, we have earned a reputation for delivering top-quality work and exceeding customer expectations. Our team of skilled professionals brings a wealth of experience and expertise to every project, ensuring attention to detail and meticulous execution. From home renovations and remodeling to repairs and installations, we offer a comprehensive range of services tailored to meet your specific needs. As a family-owned business, we prioritize open communication, honesty, and integrity in all our interactions. We take pride in our work, treating every project as if it were our own, and ensuring customer satisfaction is our top priority. With us, you can expect personalized attention, reliable service, and a finished result that will transform your space into something exceptional. Trust our family to enhance your home with our trusted contracting services.</p><br /><br /><br />
+
+      <h3>Contact Us</h3>
       <h3>Don't hesitate get in touch with us today!</h3>
       <p>We would love to hear from you! Please feel free to reach out to us with any inquiries or to discuss your upcoming project. Our team of experts is here to assist you every step of the way. Whether you have questions about our services, need a consultation, or want to schedule an appointment, we are just a phone call or email away. Don't hesitate to contact us and let us help you bring your home renovation dreams to life. We look forward to working with you!</p>
-      <div className="socials">
-
-        {/* transparent bg */}
-        <a className="social-icons" href="https://www.facebook.com/profile.php?id=100064311003388s" target="_blank">
-          <img className="rounded-circle glow-effect-links" src="./img/fb.png" width="60px" height="60px" alt="Facebook logo" /><span className="social-text" p>facebook.com/profile.php?id=100064311003388</span>
-        </a><br />
-
-        <a className="social-icons" href="tel:905-599-1345">
-          <Image className="rounded-circle glow-effect-links" src="./img/phone.png" width="60px" height="60px" alt="A phone number to reach Saher at." />
-          <span className="social-text" p>Phil @ (647) 885-2384</span>
-        </a><br />
-
-        <a className="social-icons" href="mailto:phil@monteirohomes.ca">
-          <img className="rounded-circle glow-effect-links" src="./img/email.png" width="60px" height="60px" alt="An email to each Saher at." />
-          <span className="social-text">phil@monteirohomes.ca</span>
-        </a><br />
 
 
-        <a className="social-icons " href="https://www.instagram.com/monteirohomes/" target="_blank">
-          <Image className="rounded-circle glow-effect-links" src="./img/instagram.png" width="60px" height="60px" alt="Instagram logo" /><span className="social-text" p>instagram.com/monteirohomes/</span>
-        </a>
 
-      </div>
+
+      <Footer />
     </>
   );
 }

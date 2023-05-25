@@ -22,6 +22,7 @@
 
     /* (A5) SHOW/HIDE ANIMATION */
     transition: opacity ease 0.4s;
+
 }
 
 /* (A6) TOGGLE VISIBILITY */
@@ -29,6 +30,7 @@
     visibility: visible;
     opacity: 1;
 }
+
 
 /* (B) LIGHTBOX IMAGE */
 #lightbox img {
