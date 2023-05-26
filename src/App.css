@@ -409,7 +409,7 @@ a:active {
   color: white;
   text-transform: uppercase;
   background-color: #484A4C;
-  position: fixed;
+  /* position: fixed; */
   left: 0;
   bottom: 0;
   width: 100%;
