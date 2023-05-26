@@ -4,7 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import Image from 'react-bootstrap/Image';
 
-import React, { useState } from 'react';
+import React, { useState, useCallback, useMemo, useRef } from 'react';
 
 import './App.css';
 import './textRightToLeft.css';
@@ -31,6 +31,12 @@ import DropdownButton from 'react-bootstrap/DropdownButton';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
 import Button from 'react-bootstrap/Button';
+
+import { useForm } from "react-hook-form";
+import * as Yup from "yup";
+
+import Card from 'react-bootstrap/Card';
+import ListGroup from 'react-bootstrap/ListGroup';
 
 
 const container = {
@@ -652,6 +658,8 @@ function Contact() {
   // document.querySelector("#ContactFormOne").classList.add = "hide";
   // document.querySelector("#ContactFormTwo").classList.add = "hide";
 
+
+
   return (
     <>
       <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
@@ -665,10 +673,148 @@ function Contact() {
       <p>We would love to hear from you! Please feel free to reach out to us with any inquiries or to discuss your upcoming project. Our team of experts is here to assist you every step of the way. Whether you have questions about our services, need a consultation, or want to schedule an appointment, we are just a phone call or email away. Don't hesitate to contact us and let us help you bring your home renovation dreams to life. We look forward to working with you!</p>
 
 
+      {/* <ContactForm /> */}
+
+
+
+      {/* <a href="mailto:phil@monteirohomes.ca">                <img className="rounded-circle glow-effect-links footer-socail-icon" src="./img/email.png" width="60px" height="60px" alt="An email to each Saher at." />Make an appointment</a> */}
+
+
+
+      <Card style={{ width: '18rem' }} className="contactCard">
+        <Card.Img variant="top" src="./img/customerSupport.jpeg" />
+        <Card.Body>
+          <Card.Title className="contactCardTitle">Get in touch with us today!</Card.Title>
+          {/* <Card.Text>
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </Card.Text> */}
+        </Card.Body>
+        {/* <ListGroup className="list-group-flush">
+          <ListGroup.Item>Cras justo odio</ListGroup.Item>
+          <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
+          <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
+        </ListGroup> */}
+        <Card.Body>
+          <Card.Link href="mailto:phil@monteirohomes.ca" className="contactCardLink"><img className="rounded-circle glow-effect-links footer-socail-icon" src="./img/email.png" width="60px" height="60px" alt="An email to each Phil at." />Email us</Card.Link>
+          <Card.Link href="tel:905-599-1345" className="contactCardLink">     <Image className="rounded-circle glow-effect-links footer-socail-icon" src="./img/phone.png" width="60px" height="60px" alt="A phone number to reach Phil at." />Call us</Card.Link>
+        </Card.Body>
+      </Card >
+
+      {/* <a className="social-icons" href="tel:905-599-1345">
+                <Image className="rounded-circle glow-effect-links footer-socail-icon" src="./img/phone.png" width="60px" height="60px" alt="A phone number to reach Saher at." />
+                <span className="social-text" p>Phil @ (647) 885-2384</span>
+              </a><br /> */}
+
+      <br /><br />    <br /><br />    <br /><br />    <br /><br />
 
 
       <Footer />
     </>
+  );
+}
+
+function ContactForm() {
+
+
+  const useYupValidationResolver = (validationSchema) =>
+    useCallback(
+      async (data) => {
+        try {
+          const values = await validationSchema.validate(data, {
+            abortEarly: false,
+          });
+          return {
+            values,
+            errors: {},
+          };
+        } catch (errors) {
+          return {
+            values: {},
+            errors: errors.inner.reduce(
+              (allErrors, currentError) => ({
+                ...allErrors,
+                [currentError.path]: {
+                  type: currentError.type ?? "validation",
+                  message: currentError.message,
+                },
+              }),
+              {}
+            ),
+          };
+        }
+      },
+      [validationSchema]
+    );
+  const validationSchema = Yup.object().shape({
+    name: Yup.string().required("Name is required"),
+    email: Yup.string()
+      .email("Invalid email address")
+      .required("Email is required"),
+    phone: Yup.string().required("Phone is required"),
+    message: Yup.string().required("Message is required"),
+  });
+
+  const resolver = useYupValidationResolver(validationSchema);
+  const { handleSubmit, register } = useForm({ resolver });
+
+
+
+
+  return (
+    <>
+      <form onSubmit={handleSubmit((data) => console.log(data))}>
+        <label htmlFor="email">Email Address:</label><br />
+        <input
+          id="email"
+          type="email"
+          {...register("email")}
+        /><br />
+        <label for="name">Full name:</label><br />
+        <input
+          id="name"
+          type="name"
+          {...register("name")}
+        />
+        <label for="phone">Phone number:</label><br />
+        <input
+          id="phone"
+          type="phone"
+          {...register("name")}
+        />
+        <input type="submit" />
+      </form>
+    </>
+  );
+}
+
+// Use Controlled Components
+function ControlledInput() {
+
+  const [value, setValue] = useState('');
+
+  function handleChange(event) {
+    setValue(event.target.value);
+  }
+  return (
+    <input type="text" value={value} onChange={handleChange} />
+  );
+}
+// Don't Use Uncontrolled Components
+function UncontrolledInput() {
+
+  const inputRef = useRef();
+
+  function handleSubmit(event) {
+    event.preventDefault();
+    console.log(inputRef.current.value);
+  }
+
+  return (
+    <form onSubmit={handleSubmit}>
+      <input type="text" ref={inputRef} />
+      <button type="submit">Submit</button>
+    </form>
   );
 }
 
