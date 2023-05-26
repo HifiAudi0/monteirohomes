@@ -633,6 +633,8 @@ function Faq() {
         </Accordion>
       </motion.div>
 
+      <Footer />
+
     </>
   );
 }
@@ -646,6 +648,10 @@ function Quote() {
 }
 
 function Contact() {
+
+  // document.querySelector("#ContactFormOne").classList.add = "hide";
+  // document.querySelector("#ContactFormTwo").classList.add = "hide";
+
   return (
     <>
       <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
