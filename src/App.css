@@ -105,6 +105,48 @@ li {
   z-index: 1;
 }
 
+/* ALL SERVICES PAGE */
+.vanPic {
+  width: 400px;
+  height: 400px;
+
+  position: relative;
+  left: 30%;
+}
+
+.servicesImageContainer {
+  position: relative;
+  text-align: center;
+  color: white;
+
+}
+
+.servicesImageContainerBefore {
+  margin-left: 30%;
+}
+
+.servicesPara {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.beforeAfterImg {
+  width: 400px;
+  height: 400px;
+  margin-left: 25px;
+  margin-top: 25px;
+}
+
+.beforeAfterText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  font-weight: bold;
+}
+
+/* ALL SERVICES PAGE */
+
 /* POOLS */
 .pool {
   margin-right: 50px;

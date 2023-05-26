@@ -8,7 +8,7 @@ import React, { useState, useCallback, useMemo, useRef } from 'react';
 
 import './App.css';
 import './textRightToLeft.css';
-import './3dCardImage.css';
+// import './3dCardImage.css';
 // import './motion-container.css';
 import './imageZoom.css';
 
@@ -174,7 +174,7 @@ function Links() {
               </Dropdown> */}
 
               {/* <LinkContainer to={"/Products"}> */}
-              <NavDropdown title="Services" className="nav-fontstyle">
+              <NavDropdown title="Services & Gallery" className="nav-fontstyle">
                 <NavDropdown.Item className="nav-fontstyle" eventKey="4.1" href="/services">ALL SERVICES</NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item className="nav-fontstyle" eventKey="4.1" href="/kitchen">KITCHEN</NavDropdown.Item>
@@ -191,8 +191,8 @@ function Links() {
               <a href="/Faq" className="nav-link">FAQ</a>
 
               <img className="logo" src="./img/logo.png" />
-
-              <a href="/Gallery" className="nav-link">GALLERY</a>
+              {/* 
+              <a href="/Gallery" className="nav-link">GALLERY</a> */}
 
               <a href="/Quote" className="nav-link">QUOTE</a>
 
@@ -216,7 +216,7 @@ function Links() {
           <Route path="/pool" element={<Pool />} />
           <Route path="/deck" element={<Deck />} />
           <Route path="/Faq" element={<Faq />} />
-          <Route path="/Gallery" element={<Gallery />} />
+          {/* <Route path="/Gallery" element={<Gallery />} /> */}
           <Route path="/Quote" element={<Quote />} />
           <Route path="/Contact" element={<Contact />} />
           <Route path="*">
@@ -232,9 +232,59 @@ function Services() {
   return (
     <>
       <br /><br /><br /><br /><br /><br /><br /><br />
-      <img src="./img/van.jpg" />
-      <p>Welcome to our expert home renovation services! As a trusted and experienced contractor, we take great pride in transforming houses into dream homes. Our dedicated team of professionals is committed to delivering exceptional results that exceed your expectations. Whether you're looking to update your kitchen, remodel your bathroom, or renovate your entire living space, we have the expertise and skills to bring your vision to life.<br /><br /> We understand that every home is unique, and we work closely with our clients to create personalized designs that reflect their style and preferences. From concept to completion, we handle every aspect of the renovation process with meticulous attention to detail, ensuring a seamless and stress-free experience for our clients. Our services encompass a wide range of specialties, including flooring, painting, plumbing, electrical work, cabinetry, and more.<br /><br /> With a focus on quality craftsmanship and using premium materials, we strive to enhance the beauty, functionality, and value of your home. We are committed to delivering projects on time and within budget, without compromising on quality. Customer satisfaction is our top priority, and we go the extra mile to ensure that our clients are delighted with the final results. Trust us with your home renovation needs, and let us turn your house into the home of your dreams. Contact us today to discuss your project and schedule a consultation.
+      <img src="./img/van.jpg" className="vanPic" />
+
+      <br /><br />
+      <p className="servicesPara">Welcome to our expert home renovation services! As a trusted and experienced contractor, we take great pride in transforming houses into dream homes. Our dedicated team of professionals is committed to delivering exceptional results that exceed your expectations. Whether you're looking to update your kitchen, remodel your bathroom, or renovate your entire living space, we have the expertise and skills to bring your vision to life.<br /><br /> We understand that every home is unique, and we work closely with our clients to create personalized designs that reflect their style and preferences. From concept to completion, we handle every aspect of the renovation process with meticulous attention to detail, ensuring a seamless and stress-free experience for our clients. Our services encompass a wide range of specialties, including flooring, painting, plumbing, electrical work, cabinetry, and more.<br /><br /> With a focus on quality craftsmanship and using premium materials, we strive to enhance the beauty, functionality, and value of your home. We are committed to delivering projects on time and within budget, without compromising on quality. Customer satisfaction is our top priority, and we go the extra mile to ensure that our clients are delighted with the final results. Trust us with your home renovation needs, and let us turn your house into the home of your dreams. Contact us today to discuss your project and schedule a consultation.
       </p>
+
+      {/* <a href="https://www.mythrillfiction.com/the-dark-rider" alt="Mythrill" target="_blank"> */}
+      {/* <h3 className="headingHover">Hover over the image to see the AFTER image.</h3> */}
+
+
+      {/* <span p>BEFORE</span>
+      <span p>AFTER</span> */}
+      <span className="servicesImageContainer servicesImageContainerBefore">
+
+        <img src="./img/before_basement.jpg" className="beforeImgOne beforeAfterImg" />
+
+        <p class="beforeAfterText">BEFORE</p>
+      </span>
+
+
+      {/* </a> */}
+      <span className="servicesImageContainer ">
+        <img src="./img/after_basement.jpg" className="afterImgOne beforeAfterImg" />
+        <p class="beforeAfterText">AFTER</p>
+      </span >
+      <br />
+
+      <span className="servicesImageContainer servicesImageContainerBefore">
+        <img src="./img/before_kitchen.jpg" class="beforeImgTwo beforeAfterImg" />
+        <p class="beforeAfterText">BEFORE</p>
+      </span >
+
+      <span className="servicesImageContainer">
+        <img src="./img/after_kitchen.jpg" class="afterImgTwo beforeAfterImg" />
+        <p class="beforeAfterText">AFTER</p>
+      </span >
+      <br />
+
+
+
+
+
+      <span className="servicesImageContainer servicesImageContainerBefore">
+        <img src="./img/before_walkway.jpg" class="beforeImgThree beforeAfterImg" />
+        <p class="beforeAfterText">BEFORE</p>
+      </span >
+      <span className="servicesImageContainer">
+        {/* <p class="title title-before before-after" >BEFORE</p>
+        <p class="title title-after before-after">AFTER</p> */}
+        <img src="./img/after_walkway.jpg" class="afterImgThree beforeAfterImg" />
+        <p class="beforeAfterText">AFTER</p>
+      </span >
+      <br />
 
 
     </>
