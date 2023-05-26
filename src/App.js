@@ -391,7 +391,7 @@ function Kitchen() {
 
       </div >
 
-
+      <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />    <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
       <Footer />
     </>
   );
@@ -467,8 +467,8 @@ function Bath() {
 
         </div >
       </motion.div >
-
-
+      <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />    <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
+      <Footer />
     </>
   );
 }
@@ -704,6 +704,7 @@ function Faq() {
         </Accordion>
       </motion.div>
 
+      <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
       <Footer />
 
     </>
@@ -763,8 +764,8 @@ function Contact() {
           <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
         </ListGroup> */}
         <Card.Body>
-          <Card.Link href="mailto:phil@monteirohomes.ca" className="contactCardLink"><img className="rounded-circle glow-effect-links footer-socail-icon" src="./img/email.png" width="60px" height="60px" alt="An email to each Phil at." />Email us</Card.Link>
-          <Card.Link href="tel:905-599-1345" className="contactCardLink">     <Image className="rounded-circle glow-effect-links footer-socail-icon" src="./img/phone.png" width="60px" height="60px" alt="A phone number to reach Phil at." />Call us</Card.Link>
+          <Card.Link href="mailto:phil@monteirohomes.ca" className="contactCardLink"><img className="rounded-circle glow-effect-links footer-socail-icon" src="./img/email.png" width="60px" height="60px" alt="An email to each Phil at." /><span p className="contactCardText">Email us</span></Card.Link><br />
+          <Card.Link href="tel:905-599-1345" className="contactCardLink">     <Image className="rounded-circle glow-effect-links footer-socail-icon" src="./img/phone.png" width="60px" height="60px" alt="A phone number to reach Phil at." /><span p className="contactCardText">Call us</span></Card.Link>
         </Card.Body>
       </Card >
 
@@ -775,7 +776,7 @@ function Contact() {
 
       <br /><br />    <br /><br />    <br /><br />    <br /><br />
 
-
+      <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
       <Footer />
     </>
   );
