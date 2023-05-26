@@ -467,3 +467,50 @@ a:active {
 .hide {
   display: none;
 }
+
+
+/* MEDIA QUERIES */
+
+/* above iPad */
+@media only screen and (min-width: 768px) and (max-width: 1400px) {
+
+  /* Bath */
+  .bath-grid-container {
+    grid-template-columns: 50% 50%;
+  }
+
+  /* Kitchen */
+  .grid-container {
+    grid-template-columns: 50% 50%;
+  }
+
+  /* Footer */
+  .footer-grid-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+
+}
+
+/* iPad and below */
+@media only screen and (max-width: 768px) {
+
+  /* Bath */
+  .bath-grid-container {
+    grid-template-columns: 100%;
+  }
+
+  /* Kitchen */
+  .grid-container {
+    grid-template-columns: 100%;
+  }
+
+  /* Footer */
+  .footer-grid-container {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+}
+
+/* MEDIA QUERIES */
