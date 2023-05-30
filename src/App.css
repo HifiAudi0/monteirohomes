@@ -105,6 +105,8 @@ li {
   z-index: 1;
 }
 
+
+
 /* ALL SERVICES PAGE */
 .vanPic {
   width: 400px;
@@ -331,21 +333,49 @@ li {
 .home-socials {
   /* margin: 20px; */
   bottom: 0;
-  text-align: center;
+  text-align: left;
   width: 100%;
   background-image:
     repeating-radial-gradient(circle, rgba(255, 255, 255, 0.72), rgba(255, 255, 255, 0.75));
   /* border: 20px solid green; */
   /* object-fit: cover;
   z-index: 2; */
-  position: absolute;
+  position: fixed;
 
+  left: 0;
+
+
+
+}
+
+.home-social-responsiveness {
+  display: none;
+}
+
+.home-socials-large-screens {
+  display: block;
 }
 
 .home-social-icons {
   z-index: 2;
   position: relative;
   margin-right: 10px;
+  width: 60px;
+  height: 60px;
+
+}
+
+.home-socials-icons-large-screens {
+  /* text-align: left;
+  word-wrap: break-word;
+  word-break: break-all;
+  text-align-last: left;
+  margin-left: 0px;
+  text-decoration: none; */
+  /* left: -150px;
+  margin-left: -300px; */
+  /* border: 5px solid green; */
+  margin-left: 350px;
 
 }
 
@@ -480,6 +510,8 @@ a:active {
 /* above iPad */
 @media only screen and (min-width: 768px) and (max-width: 1400px) {
 
+
+
   /* Bath */
   .bath-grid-container {
     grid-template-columns: 50% 50%;
@@ -501,6 +533,41 @@ a:active {
 
 /* iPad and below */
 @media only screen and (max-width: 768px) {
+
+  .nav-link {
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+
+  /* Home page */
+  .home-social-text {
+    font-size: 0.7rem;
+    font-weight: 900;
+    text-shadow: 1px 1px white;
+    letter-spacing: 1px;
+  }
+
+  .home-socials {
+    text-align: left;
+  }
+
+  .home-social-icons {
+    width: 30px;
+    height: 30px;
+  }
+
+  .home-social-responsiveness {
+    display: block;
+  }
+
+  .home-socials-large-screens {
+    display: none;
+  }
+
+  .home-socials-icons-large-screens {
+    margin: 0;
+  }
 
   /* Bath */
   .bath-grid-container {

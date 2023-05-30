@@ -110,26 +110,30 @@ function Home() {
       <div className="home-socials">
 
         {/* transparent bg */}
-        <a className="home-social-icons" href="https://www.facebook.com/profile.php?id=100064311003388s" target="_blank">
-          <img className="rounded-circle glow-effect-links" src="./img/fb.png" width="60px" height="60px" alt="Facebook logo" /><span className="home-social-text">facebook.com/profile.php?id=100064311003388</span>
-        </a>
+        <a href="https://www.facebook.com/profile.php?id=100064311003388s" target="_blank">
+          <img className="rounded-circle home-social-icons" src="./img/fb.png" alt="Facebook logo" />
+          <span className="home-social-text">facebook.com/profile.php?id=100064311003388</span>
+        </a><br className="home-social-responsiveness" />
 
-        <a className="home-social-icons" href="tel:905-599-1345">
-          <Image className="rounded-circle glow-effect-links" src="./img/phone.png" width="60px" height="60px" alt="A phone number to reach Phil at." />
+        <a href="tel:905-599-1345">
+          <Image className="rounded-circle home-social-icons" src="./img/phone.png" alt="A phone number to reach Phil at." />
           <span className="home-social-text">Phil @ (647) 885-2384</span>
-        </a>
+        </a><br className="home-social-responsiveness" /><br className="home-socials-large-screens" />
 
-        <a className="home-social-icons" href="mailto:phil@monteirohomes.ca">
-          <img className="rounded-circle glow-effect-links" src="./img/email.png" width="60px" height="60px" alt="An email to each Phil at." />
+        <a href="mailto:phil@monteirohomes.ca">
+          <img className="rounded-circle home-social-icons" src="./img/email.png" alt="An email to each Phil at." />
           <span className="home-social-text">phil@monteirohomes.ca</span>
+        </a><br className="home-social-responsiveness" />
+
+
+        <a href="https://www.instagram.com/monteirohomes/" target="_blank">
+          <span className="home-socials-icons-large-screens">
+            <Image className="rounded-circle home-social-icons" src="./img/instagram.png" alt="Instagram logo" />
+            <span className="home-social-text">instagram.com/monteirohomes/</span>
+          </span>
         </a>
 
-
-        <a className="home-social-icons" href="https://www.instagram.com/monteirohomes/" target="_blank">
-          <Image className="rounded-circle glow-effect-links" src="./img/instagram.png" width="60px" height="60px" alt="Instagram logo" /><span className="home-social-text">instagram.com/monteirohomes/</span>
-        </a>
-
-      </div>
+      </div >
     </>
   );
 }
@@ -956,7 +960,7 @@ function Footer() {
             <div className="alignedPara">
 
 
-              {/*            
+
               <a className="social-icons" href="https://www.facebook.com/profile.php?id=100064311003388s" target="_blank">
                 <img className="rounded-circle glow-effect-links footer-socail-icon" src="./img/fb.png" width="60px" height="60px" alt="Facebook logo" /><span className="social-text" p>facebook.com/profile.php?id=100064311003388</span>
               </a><br />
@@ -974,10 +978,10 @@ function Footer() {
 
               <a className="social-icons " href="https://www.instagram.com/monteirohomes/" target="_blank">
                 <Image className="rounded-circle glow-effect-links footer-socail-icon" src="./img/instagram.png" width="60px" height="60px" alt="Instagram logo" /><span className="social-text" p>instagram.com/monteirohomes/</span>
-              </a> */}
+              </a>
 
 
-              <a className="social-icons" href="https://www.facebook.com/profile.php?id=100064311003388s" target="_blank">
+              {/* <a className="social-icons" href="https://www.facebook.com/profile.php?id=100064311003388s" target="_blank">
                 <FacebookRoundedIcon className="footer-social-material-icon" sx={{ fontSize: 40 }} style={{ color: 'white' }} />
                 <span className="social-text" p>Facebook</span>
 
@@ -997,7 +1001,7 @@ function Footer() {
               <a className="social-icons " href="https://www.instagram.com/monteirohomes/" target="_blank">
                 <InstagramIcon className="footer-social-material-icon" sx={{ fontSize: 40 }} style={{ color: 'white' }} />
                 <span className="social-text" p>Instagram</span>
-              </a>
+              </a> */}
 
             </div>
           </div>
