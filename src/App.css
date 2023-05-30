@@ -42,7 +42,7 @@ li {
 } */
 
 .nav-link {
-  color: black;
+  color: white;
   z-index: 1;
   font-size: 2rem;
   font-weight: bold;
@@ -105,6 +105,10 @@ li {
   z-index: 1;
 }
 
+.footer-social-icon {
+  width: 60px;
+  height: 60px;
+}
 
 
 /* ALL SERVICES PAGE */
@@ -323,6 +327,7 @@ li {
 
 /* CONTACT PAGE */
 
+
 .socials {
   position: relative;
   left: 30%;
@@ -415,8 +420,26 @@ a:active {
 
 /* CONTACT PAGE */
 
+.contact-grid-container {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 600px;
+  padding: 10px;
+}
+
+.contact-grid-item {
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  margin-right: 10px;
+  margin: 20px;
+  border: 2px solid white;
+}
+
 .contactCard {
   background-color: #484A4C;
+  margin-left: 20%;
 
 }
 
@@ -463,7 +486,7 @@ a:active {
   border: 1px dotted white;
 }
 
-.footer-socail-icon {
+.footer-social-icon {
   margin-top: 20px;
   font-size: 30;
 }
@@ -525,14 +548,25 @@ a:active {
   /* Footer */
   .footer-grid-container {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 100%;
   }
 
+  .contact-grid-container {
+    grid-template-columns: 100%;
+    margin-top: 50px;
+  }
+
+  .contact-grid-item {}
+
+  .contactCard {
+    margin-left: 150px;
+    border: 20px solid red;
+  }
 
 }
 
 /* iPad and below */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
 
   .nav-link {
     font-size: 1rem;
@@ -583,6 +617,26 @@ a:active {
   .footer-grid-container {
     display: grid;
     grid-template-columns: 100%;
+  }
+
+  .social-text {
+    font-size: 0.8rem;
+  }
+
+  .contact-grid-container {
+    grid-template-columns: 100%;
+    margin-top: 250px;
+  }
+
+  .contact-grid-item {}
+
+  .contactCard {
+    margin-left: 0;
+  }
+
+  .footer-social-icon {
+    width: 30px;
+    height: 30px;
   }
 }
 
