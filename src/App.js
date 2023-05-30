@@ -165,13 +165,13 @@ function Links() {
 
 
 
-            <div className="nav">
-
-              <Link to={"/Home"} className="nav-link" id="navLink">HOME
-              </Link>
 
 
-              {/* <Dropdown>
+            <Link to={"/Home"} className="nav-link" id="navLink">HOME
+            </Link>
+
+
+            {/* <Dropdown>
                 <Dropdown.Toggle id="dropdown-button-dark-example1" className="services-dropdown" variant="secondary">
                   Services
                 </Dropdown.Toggle>
@@ -187,36 +187,35 @@ function Links() {
                 </Dropdown.Menu>
               </Dropdown> */}
 
-              {/* <LinkContainer to={"/Products"}> */}
-              <NavDropdown title="Services & Gallery" className="nav-fontstyle">
-                <NavDropdown.Item className="nav-fontstyle" eventKey="4.1" href="/services">ALL SERVICES</NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item className="nav-fontstyle" eventKey="4.1" href="/kitchen">KITCHEN</NavDropdown.Item>
-                <NavDropdown.Item className="nav-fontstyle" eventKey="4.1" href="/bath">BATHS</NavDropdown.Item>
-                <NavDropdown.Item className="nav-fontstyle" eventKey="4.2" href="/basement">BASEMENT</NavDropdown.Item>
-                <NavDropdown.Item className="nav-fontstyle" eventKey="4.3" href="/garage">GARAGE</NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item className="nav-fontstyle" eventKey="4.4" href="/pool">POOLS</NavDropdown.Item>
-                <NavDropdown.Item className="nav-fontstyle" eventKey="4.4" href="/deck">FENCING, DECKS & PATIOS</NavDropdown.Item>
-              </NavDropdown>
-              {/* </LinkContainer> */}
+            {/* <LinkContainer to={"/Products"}> */}
+            <NavDropdown title="Services & Gallery" className="nav-fontstyle">
+              <NavDropdown.Item className="nav-fontstyle" eventKey="4.1" href="/services">ALL SERVICES</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item className="nav-fontstyle" eventKey="4.1" href="/kitchen">KITCHEN</NavDropdown.Item>
+              <NavDropdown.Item className="nav-fontstyle" eventKey="4.1" href="/bath">BATHS</NavDropdown.Item>
+              <NavDropdown.Item className="nav-fontstyle" eventKey="4.2" href="/basement">BASEMENT</NavDropdown.Item>
+              <NavDropdown.Item className="nav-fontstyle" eventKey="4.3" href="/garage">GARAGE</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item className="nav-fontstyle" eventKey="4.4" href="/pool">POOLS</NavDropdown.Item>
+              <NavDropdown.Item className="nav-fontstyle" eventKey="4.4" href="/deck">FENCING, DECKS & PATIOS</NavDropdown.Item>
+            </NavDropdown>
+            {/* </LinkContainer> */}
 
 
-              <a href="/Faq" className="nav-link">FAQ</a>
+            <a href="/Faq" className="nav-link">FAQ</a>
 
-              <img className="logo" src="./img/logo.png" />
-              {/* 
+            <img className="logo" src="./img/logo.png" />
+            {/* 
               <a href="/Gallery" className="nav-link">GALLERY</a> */}
 
-              <a href="/Quote" className="nav-link">QUOTE</a>
+            <a href="/Quote" className="nav-link">QUOTE</a>
 
 
 
 
-              <a href="/Contact" className="nav-link">CONTACT & ABOUT US</a>
+            <a href="/Contact" className="nav-link">CONTACT & ABOUT US</a>
 
 
-            </div>
           </Nav></Navbar>
 
         <Routes>
@@ -232,6 +231,7 @@ function Links() {
           <Route path="/Faq" element={<Faq />} />
           {/* <Route path="/Gallery" element={<Gallery />} /> */}
           <Route path="/Quote" element={<Quote />} />
+          <Route path="/Contact" element={<Contact />} />
           <Route path="/Contact" element={<Contact />} />
           <Route path="*">
 
