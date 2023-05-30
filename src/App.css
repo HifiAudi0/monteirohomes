@@ -435,6 +435,12 @@ a:active {
 
 .footer-socail-icon {
   margin-top: 20px;
+  font-size: 30;
+}
+
+.footer-social-material-icon {
+  width: 100px;
+  height: 100px;
 }
 
 .footer-logo {

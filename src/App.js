@@ -38,6 +38,10 @@ import * as Yup from "yup";
 import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
 
+import FacebookRoundedIcon from '@mui/icons-material/FacebookRounded';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import EmailIcon from '@mui/icons-material/Email';
+import SmartphoneIcon from '@mui/icons-material/Smartphone';
 
 const container = {
   hidden: { opacity: 1, scale: 0 },
@@ -891,7 +895,7 @@ function Footer() {
     <>
       <footer className="footer">
         <div className="footer-grid-container">
-          <div className="footer-grid-item">
+          <div className="footer-grid-ite footer-grid-service-responsive">
 
             <h4>Service areas</h4>
             <ul>
@@ -952,7 +956,7 @@ function Footer() {
             <div className="alignedPara">
 
 
-              {/* transparent bg */}
+              {/*            
               <a className="social-icons" href="https://www.facebook.com/profile.php?id=100064311003388s" target="_blank">
                 <img className="rounded-circle glow-effect-links footer-socail-icon" src="./img/fb.png" width="60px" height="60px" alt="Facebook logo" /><span className="social-text" p>facebook.com/profile.php?id=100064311003388</span>
               </a><br />
@@ -970,6 +974,29 @@ function Footer() {
 
               <a className="social-icons " href="https://www.instagram.com/monteirohomes/" target="_blank">
                 <Image className="rounded-circle glow-effect-links footer-socail-icon" src="./img/instagram.png" width="60px" height="60px" alt="Instagram logo" /><span className="social-text" p>instagram.com/monteirohomes/</span>
+              </a> */}
+
+
+              <a className="social-icons" href="https://www.facebook.com/profile.php?id=100064311003388s" target="_blank">
+                <FacebookRoundedIcon className="footer-social-material-icon" sx={{ fontSize: 40 }} style={{ color: 'white' }} />
+                <span className="social-text" p>Facebook</span>
+
+              </a><br />
+
+              <a className="social-icons" href="tel:905-599-1345">
+                <SmartphoneIcon className="footer-social-material-icon" sx={{ fontSize: 40 }} style={{ color: 'white' }} />
+                <span className="social-text" p>Phone</span>
+              </a><br />
+
+              <a className="social-icons" href="mailto:phil@monteirohomes.ca">
+                <EmailIcon className="footer-social-material-icon" sx={{ fontSize: 40 }} style={{ color: 'white' }} />
+                <span className="social-text">Email</span>
+              </a><br />
+
+
+              <a className="social-icons " href="https://www.instagram.com/monteirohomes/" target="_blank">
+                <InstagramIcon className="footer-social-material-icon" sx={{ fontSize: 40 }} style={{ color: 'white' }} />
+                <span className="social-text" p>Instagram</span>
               </a>
 
             </div>
