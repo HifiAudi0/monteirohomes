@@ -8,6 +8,7 @@
     width: 100vw;
     height: 100vh;
 
+
     /* (A2) BACKGROUND */
     background: rgba(0, 0, 0, 0.5);
 
@@ -40,12 +41,12 @@
 
     /* (B2) IMAGE FIT */
     /* contain | cover | fill | scale-down */
-    object-fit: cover;
+    /* object-fit: cover; */
 }
 
 /* /* (C) LIGHTBOX IMAGE - FULLSCREEN ALTERNATIVE * */
 #lightbox img {
     width: 100vw;
     height: 100vh;
-    object-fit: cover;
+    /* object-fit: cover; */
 }

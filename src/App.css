@@ -112,13 +112,7 @@ li {
 
 
 /* ALL SERVICES PAGE */
-.vanPic {
-  width: 400px;
-  height: 400px;
 
-  position: relative;
-  left: 30%;
-}
 
 .servicesImageContainer {
   position: relative;
@@ -226,6 +220,8 @@ li {
 
 
 
+
+
 .kitchen-container {
   /* top: 200px;
   margin-top: 4500px; */
@@ -242,7 +238,7 @@ li {
   margin-left: 50px; */
   height: 1000px;
   width: 700px;
-  border: 180px solid rgb(0, 255, 81);
+
 }
 
 
@@ -324,6 +320,35 @@ li {
   text-align: center;
 
 }
+
+/* ABOUT PAGE */
+.about-grid-container {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 700px;
+  padding: 10px;
+}
+
+.about-grid-item {
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  margin-right: 10px;
+  margin: 20px;
+  border: 2px solid white;
+}
+
+.vanPic {
+  width: 400px;
+  height: 400px;
+
+  position: relative;
+  margin-top: 100px;
+}
+
+/* ABOUT PAGE */
+
 
 /* CONTACT PAGE */
 
@@ -531,7 +556,7 @@ a:active {
 /* MEDIA QUERIES */
 
 /* above iPad */
-@media only screen and (min-width: 768px) and (max-width: 1400px) {
+@media only screen and (min-width: 768px) and (max-width: 1450px) {
 
 
 
@@ -551,6 +576,21 @@ a:active {
     grid-template-columns: 100%;
   }
 
+  /* ABOUT PAGE */
+  .about-grid-container {
+
+    grid-template-rows: 900px;
+  }
+
+
+  .vanPic {
+    width: 300px;
+    height: 300px;
+    margin-top: 200px;
+  }
+
+  /* ABOUT PAGE */
+
   .contact-grid-container {
     grid-template-columns: 100%;
     margin-top: 50px;
@@ -566,7 +606,7 @@ a:active {
 }
 
 /* iPad and below */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
 
   .nav-link {
     font-size: 1rem;
@@ -603,6 +643,19 @@ a:active {
     margin: 0;
   }
 
+  .kitchen {
+    /* margin-right: 50px;
+    margin-top: 50px;
+    margin-left: 50px; */
+    height: 700px;
+    width: 500px;
+    width: 100%;
+
+
+
+
+  }
+
   /* Bath */
   .bath-grid-container {
     grid-template-columns: 100%;
@@ -623,6 +676,20 @@ a:active {
     font-size: 0.8rem;
   }
 
+  /* ABOUT PAGE */
+  .about-grid-container {
+    grid-template-columns: 100%;
+    grid-template-rows: 1200px;
+  }
+
+  .vanPic {
+    width: 300px;
+    height: 300px;
+    margin-top: 200px;
+  }
+
+  /* ABOUT PAGE */
+
   .contact-grid-container {
     grid-template-columns: 100%;
     margin-top: 250px;
@@ -639,5 +706,7 @@ a:active {
     height: 30px;
   }
 }
+
+
 
 /* MEDIA QUERIES */
