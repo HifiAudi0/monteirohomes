@@ -925,9 +925,12 @@ function Footer() {
     <>
       <footer className="footer">
         <div className="footer-grid-container">
-          <div className="footer-grid-ite footer-grid-service-responsive">
+          <div className="footer-grid-item footer-grid-service-responsive">
+
+
 
             <h4>Service areas</h4>
+            <br />
             <ul>
               <li className="alignedPara">
                 <img className="checkmark" src='./img/checkmark.png' />
@@ -1002,7 +1005,7 @@ function Footer() {
               </a><br />
 
 
-              <a className="social-icons " href="https://www.instagram.com/monteirohomes/" target="_blank">
+              <a className="social-icons" href="https://www.instagram.com/monteirohomes/" target="_blank">
                 <Image className="rounded-circle glow-effect-links footer-social-icon" src="./img/instagram.png" width="60px" height="60px" alt="Instagram logo" /><span className="social-text" p>instagram.com/monteirohomes/</span>
               </a>
 

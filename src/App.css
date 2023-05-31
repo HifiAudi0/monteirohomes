@@ -552,13 +552,18 @@ a:active {
   display: none;
 }
 
-
 /* MEDIA QUERIES */
 
 /* above iPad */
 @media only screen and (min-width: 768px) and (max-width: 1450px) {
 
+  .social-icons {
+    margin-left: 25%;
+  }
 
+  .footer-socials-heading {
+    margin-left: 35%;
+  }
 
   /* Bath */
   .bath-grid-container {
