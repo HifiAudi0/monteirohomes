@@ -533,11 +533,16 @@ function Pool() {
     <>
       <ImageZoom />
 
+
+
       {/* <!-- (A) LIGHTBOX CONTAINER --> */}
       <div id="lightbox"></div>
 
 
-      <br />  <br />  <br />  <br />  <br />  <br />  <br />  <br />  <br />  <br />  <br />
+      <br />  <br />  <br />  <br />  <br />  <br />
+
+      <h3 className="basementHeading">Pools</h3>
+      <h4 className="basementHeading">Completely custom built heated pools with all the bells and whistles.</h4>
       <motion.div
         animate={{ x: 100 }}
         transition={{ ease: "easeOut", duration: 2 }}
@@ -551,8 +556,16 @@ function Pool() {
         <Image src="./img/pools/pool2.jpg" className="pool image-border zoomD" alt="A picture of a finished pool renovation." />
         <br /> <br /> <br />
       </motion.div>
-      <p className="poolPara">
+
+      <p className="poolPara alignedPara">
         <br /><br />
+        <br />  <br />  <br />  <br />  <br />  <br />
+        <br />  <br />  <br />  <br />
+        <div className="poolLineBreaks">
+          <br />  <br />  <br />  <br />  <br />  <br />
+          <br />  <br />  <br />  <br />  <br />  <br />
+          <br />  <br />
+        </div>
         Whether your pool requires a complete overhaul or targeted upgrades, our experienced team is here to help. We understand that a pool is not only a place for relaxation and enjoyment but also a focal point of your outdoor space.<br /><br /> Our pool renovation services encompass a wide range of solutions, including resurfacing, tile replacement, coping repairs, equipment upgrades, and lighting enhancements. We work closely with you to understand your specific needs and desires, providing expert advice and creative ideas to transform your pool into a stunning retreat.<br /><br /> With meticulous attention to detail and using high-quality materials, we ensure a durable and aesthetically pleasing end result. Our skilled professionals manage the entire renovation process, from initial consultation and design to the final installation, ensuring a smooth and hassle-free experience for you.<br /><br /> Whether you want to restore an old pool to its former glory or upgrade your pool with modern features, we have the expertise to deliver exceptional results. Enhance the beauty and functionality of your pool with our professional renovation services.<br />
       </p>
       <motion.div
@@ -571,6 +584,19 @@ function Pool() {
         transition={{ ease: "easeOut", duration: 2 }}>
         <Image src="./img/pools/pool5.jpg" className="pool image-border zoomD" alt="A picture of a finished pool renovation." />
       </motion.div>
+
+      <br /> <br /> <br /> <br /> <br /> <br />
+      <br />  <br />  <br />  <br />  <br />  <br />
+      <br />  <br />  <br />  <br />  <br />  <br />
+      <br />  <br />  <br />  <br />  <br />  <br />
+      <br />  <br />  <br />  <br />  <br />  <br />
+      <div className="poolLineBreaks">
+        <br />  <br />  <br />  <br />  <br />  <br />
+
+        <br />  <br />  <br />  <br />  <br />  <br />
+        <br />  <br />  <br />  <br />  <br />  <br />
+      </div>
+      <Footer />
 
     </>
   );

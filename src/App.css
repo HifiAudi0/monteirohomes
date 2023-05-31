@@ -162,8 +162,13 @@ li {
   float: left;
 }
 
+.poolLineBreaks {
+  display: none;
+}
+
 .poolPara {
-  float: left;
+  padding-left: 100px;
+  margin-right: 400px;
 }
 
 /* POOLS */
@@ -615,6 +620,11 @@ body>footer {
     margin-right: 200px;
   }
 
+  /* Pools */
+  .poolLineBreaks {
+    display: block;
+  }
+
   /* Decks */
   /* Fencing, Deck and Patio */
   .deckPara {
@@ -720,6 +730,19 @@ body>footer {
     width: 100%;
   }
 
+  /* Pools */
+  .pool {
+    width: 25rem;
+  }
+
+  .poolLineBreaks {
+    display: block;
+  }
+
+  .poolPara {
+    padding-left: 50px;
+    margin-right: 50px;
+  }
 
 
   /* Bath */
