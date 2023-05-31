@@ -515,9 +515,15 @@ function Basement() {
 function Garage() {
   return (
     <>
-      <p>
-        we take pride in offering comprehensive garage renovation services that will transform your garage into a functional and organized space. Whether you're looking to convert your garage into a workshop, create a home gym, or simply optimize its storage capabilities, our experienced team is here to help. We begin by understanding your specific goals and requirements, and then we design a customized plan to maximize the potential of your garage. Our services include everything from installing durable and easy-to-clean flooring to customizing storage solutions, such as cabinets, shelving, and overhead racks, to efficiently utilize the space. We can also assist with insulation, lighting, and electrical work to ensure that your garage is comfortable and well-lit. With our attention to detail and commitment to quality craftsmanship, we deliver outstanding results that not only enhance the functionality of your garage but also elevate its aesthetics. Our skilled team manages the entire renovation process, from concept to completion, ensuring a smooth and hassle-free experience for you. Turn your garage into a versatile and organized space that adds value to your home.
-      </p>
+      <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
+      <h3 className="basementHeading">Garage's</h3>
+      <h4></h4>
+      <div className="bath-grid-container">
+
+        <p className="basementPar">
+          we take pride in offering comprehensive garage renovation services that will transform your garage into a functional and organized space. Whether you're looking to convert your garage into a workshop, create a home gym, or simply optimize its storage capabilities, our experienced team is here to help. We begin by understanding your specific goals and requirements, and then we design a customized plan to maximize the potential of your garage. Our services include everything from installing durable and easy-to-clean flooring to customizing storage solutions, such as cabinets, shelving, and overhead racks, to efficiently utilize the space. We can also assist with insulation, lighting, and electrical work to ensure that your garage is comfortable and well-lit. With our attention to detail and commitment to quality craftsmanship, we deliver outstanding results that not only enhance the functionality of your garage but also elevate its aesthetics. Our skilled team manages the entire renovation process, from concept to completion, ensuring a smooth and hassle-free experience for you. Turn your garage into a versatile and organized space that adds value to your home.
+        </p>
+      </div>
     </>
   );
 }
@@ -573,9 +579,29 @@ function Pool() {
 function Deck() {
   return (
     <>
-      <p>
-        we offer a comprehensive range of services to transform your outdoor space, including deck, fencing, and patio renovations. Whether you're looking to revitalize your deck, upgrade your fencing, or create a stunning patio area, our experienced team is here to bring your vision to life. Our deck renovation services encompass everything from repairs and resurfacing to adding new features such as built-in seating, pergolas, or outdoor kitchens..<br /><br /> We understand that your deck is a gathering place for family and friends, and we strive to create a functional and aesthetically pleasing space that enhances your outdoor living experience. When it comes to fencing, we provide a variety of options, including wood, vinyl, or metal fencing, tailored to your privacy and security needs. Our expert team ensures precise installation and durable materials that withstand the test of time..<br /><br /> Additionally, our patio renovation services focus on transforming your outdoor area into a beautiful and functional space. We can assist with patio extensions, upgrades, or even a complete patio redesign to suit your style and lifestyle. Whether you desire a cozy outdoor lounge area or a space for outdoor dining and entertaining, we will work closely with you to create a personalized patio that meets your needs..<br /><br /> With our attention to detail, quality craftsmanship, and use of premium materials, we guarantee exceptional results that exceed your expectations. Trust us to renovate your deck, fencing, and patio, and let us help you create an outdoor sanctuary for relaxation, entertainment, and enjoyment.
-      </p>
+      <h3 className="basementHeading">Fenching, Decks and Patios</h3>
+      <h4></h4>
+      <div className="bath-grid-container">
+
+        <div className="bath-grid-item">
+          <img src="./img/fencingDeckpatio/patio1.jpg" className="bath-image image-border zoomD" alt="A picture of a finished patio renovation." />
+        </div>
+        <p className="alignedPara deckPara">
+          <br />
+          We offer a comprehensive range of services to transform your outdoor space, including deck, fencing, and patio renovations. Whether you're looking to revitalize your deck, upgrade your fencing, or create a stunning patio area, our experienced team is here to bring your vision to life. Our deck renovation services encompass everything from repairs and resurfacing to adding new features such as built-in seating, pergolas, or outdoor kitchens..<br /><br /> We understand that your deck is a gathering place for family and friends, and we strive to create a functional and aesthetically pleasing space that enhances your outdoor living experience. When it comes to fencing, we provide a variety of options, including wood, vinyl, or metal fencing, tailored to your privacy and security needs. Our expert team ensures precise installation and durable materials that withstand the test of time..<br /><br /> Additionally, our patio renovation services focus on transforming your outdoor area into a beautiful and functional space. We can assist with patio extensions, upgrades, or even a complete patio redesign to suit your style and lifestyle. Whether you desire a cozy outdoor lounge area or a space for outdoor dining and entertaining, we will work closely with you to create a personalized patio that meets your needs..<br /><br /> With our attention to detail, quality craftsmanship, and use of premium materials, we guarantee exceptional results that exceed your expectations. Trust us to renovate your deck, fencing, and patio, and let us help you create an outdoor sanctuary for relaxation, entertainment, and enjoyment.   <br />   <br />   <br />
+        </p>
+        <div className="bath-grid-item">
+          <br />   <br />   <br /> <br />
+          <img src="./img/fencingDeckpatio/patio2.jpg" className="bath-image image-border zoomD" alt="A picture of a finished patio renovation." />
+        </div>
+
+        <div className="bath-grid-item">
+          <br />   <br />   <br /> <br />
+          <img src="./img/fencingDeckpatio/patio3.jpg" className="bath-image image-border zoomD" alt="A picture of a finished patio renovation." />
+        </div>
+      </div>
+      <br /> <br />  <br /> <br />
+      <Footer />
     </>
   );
 }

@@ -295,6 +295,11 @@ li {
   text-align: center;
 }
 
+/* Fencing, Deck and Patio */
+.deckPara {
+  margin-left: -45px;
+  margin-right: 50px;
+}
 
 
 /* GALLERY PAGE */
@@ -608,6 +613,14 @@ body>footer {
   .basementPara {
     margin-left: 200px;
     margin-right: 200px;
+  }
+
+  /* Decks */
+  /* Fencing, Deck and Patio */
+  .deckPara {
+    margin-left: 125px;
+    margin-right: 50px;
+    margin-bottom: 100px;
   }
 
   /* Footer */
