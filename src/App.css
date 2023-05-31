@@ -620,6 +620,11 @@ a:active {
   }
 
   /* Home page */
+
+  .text-container {
+    margin-top: 200px;
+  }
+
   .home-social-text {
     font-size: 0.7rem;
     font-weight: 900;
