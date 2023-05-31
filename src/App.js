@@ -92,7 +92,7 @@ function Home() {
       <div className="bgImage">
 
         <video id="background-video" autoPlay loop muted>
-          <source id="video-src" src="./img/bg.mp4" type="video/mp4">
+          <source id="video-src" src="./img/bg.mp4" type="video/mp4" alt="A video of a beautify custom built home living rooma and patio." >
           </source>
           Did not load video.
         </video>
@@ -203,7 +203,7 @@ function Links() {
 
             <a href="/Faq" className="nav-link">FAQ</a>
 
-            <img className="logo" src="./img/logo.png" />
+            <img className="logo" src="./img/logo.png" alt="A picture of the Monterio homes logo." />
             {/* 
               <a href="/Gallery" className="nav-link">GALLERY</a> */}
 
@@ -268,27 +268,27 @@ function Services() {
       <span p>AFTER</span> */}
       <span className="servicesImageContainer servicesImageContainerBefore">
 
-        <img src="./img/before_basement.jpg" className="beforeImgOne beforeAfterImg" />
+        <img src="./img/before_basement.jpg" className="beforeImgOne beforeAfterImg" alt="A basement picture before renovation." />
 
-        <p class="beforeAfterText">BEFORE</p>
+        <p className="beforeAfterText">BEFORE</p>
       </span>
 
 
       {/* </a> */}
       <span className="servicesImageContainer ">
-        <img src="./img/after_basement.jpg" className="afterImgOne beforeAfterImg" />
-        <p class="beforeAfterText">AFTER</p>
+        <img src="./img/after_basement.jpg" className="afterImgOne beforeAfterImg" alt="A basement picture after renovation." />
+        <p className="beforeAfterText">AFTER</p>
       </span >
       <br />
 
       <span className="servicesImageContainer servicesImageContainerBefore">
-        <img src="./img/before_kitchen.jpg" class="beforeImgTwo beforeAfterImg" />
-        <p class="beforeAfterText">BEFORE</p>
+        <img src="./img/before_kitchen.jpg" className="beforeImgTwo beforeAfterImg" alt="A kitchen picture before renovation." />
+        <p className="beforeAfterText">BEFORE</p>
       </span >
 
       <span className="servicesImageContainer">
-        <img src="./img/after_kitchen.jpg" class="afterImgTwo beforeAfterImg" />
-        <p class="beforeAfterText">AFTER</p>
+        <img src="./img/after_kitchen.jpg" className="afterImgTwo beforeAfterImg" alt="A kitchen picture after renovation." />
+        <p className="beforeAfterText">AFTER</p>
       </span >
       <br />
 
@@ -297,14 +297,14 @@ function Services() {
 
 
       <span className="servicesImageContainer servicesImageContainerBefore">
-        <img src="./img/before_walkway.jpg" class="beforeImgThree beforeAfterImg" />
-        <p class="beforeAfterText">BEFORE</p>
+        <img src="./img/before_walkway.jpg" className="beforeImgThree beforeAfterImg" alt="A walkway picture before renovation." />
+        <p className="beforeAfterText">BEFORE</p>
       </span >
       <span className="servicesImageContainer">
-        {/* <p class="title title-before before-after" >BEFORE</p>
-        <p class="title title-after before-after">AFTER</p> */}
-        <img src="./img/after_walkway.jpg" class="afterImgThree beforeAfterImg" />
-        <p class="beforeAfterText">AFTER</p>
+        {/* <p className="title title-before before-after" >BEFORE</p>
+        <p className="title title-after before-after">AFTER</p> */}
+        <img src="./img/after_walkway.jpg" className="afterImgThree beforeAfterImg" alt="A walkway picture after renovation." />
+        <p className="beforeAfterText">AFTER</p>
       </span >
       <br /> <br /> <br /> <br />
 
@@ -351,18 +351,18 @@ function Kitchen() {
           }}>
           <div className="grid-container">
             <div className="grid-item">
-              <img src="./img/kitchen/kitchen1.jpg" className="kitchen image-border zoomD" />
+              <img src="./img/kitchen/kitchen1.jpg" className="kitchen image-border zoomD" alt="A picture of a finished kitchen renovation." />
             </div>
             <div className="grid-item">
-              <img src="./img/kitchen/kitchen2.jpg" className="kitchen image-border kitchen-image-right zoomD" />
-            </div>
-
-            <div className="grid-item">
-              <Image src="./img/kitchen/kitchen3.jpg" className="kitchen image-border zoomD" />
+              <img src="./img/kitchen/kitchen2.jpg" className="kitchen image-border kitchen-image-right zoomD" alt="A picture of a finished kitchen renovation." />
             </div>
 
             <div className="grid-item">
-              <Image src="./img/kitchen/kitchen4.jpg" className="kitchen image-border zoomD" />
+              <Image src="./img/kitchen/kitchen3.jpg" className="kitchen image-border zoomD" alt="A picture of a finished kitchen renovation." />
+            </div>
+
+            <div className="grid-item">
+              <Image src="./img/kitchen/kitchen4.jpg" className="kitchen image-border zoomD" alt="A picture of a finished kitchen renovation." />
             </div>
             <div className="grid-item">
               {/* <img className="kitchen-card-bg" src="./img/cardBg.png"></img> */}
@@ -372,27 +372,27 @@ function Kitchen() {
               </p>
             </div>
             <div className="grid-item">
-              <Image src="./img/kitchen/kitchen5.jpg" className="kitchen image-border zoomD" />
+              <Image src="./img/kitchen/kitchen5.jpg" className="kitchen image-border zoomD" alt="A picture of a finished kitchen renovation." />
             </div>
 
             <div className="grid-item">
-              <Image src="./img/kitchen/kitchen6.jpg" className="kitchen image-border zoomD" />
+              <Image src="./img/kitchen/kitchen6.jpg" className="kitchen image-border zoomD" alt="A picture of a finished kitchen renovation." />
             </div>
 
             <div className="grid-item">
-              <Image src="./img/kitchen/kitchen7.jpg" className="kitchen image-border zoomD" />
+              <Image src="./img/kitchen/kitchen7.jpg" className="kitchen image-border zoomD" alt="A picture of a finished kitchen renovation." />
             </div>
             <div className="grid-item">
-              <Image src="./img/kitchen/kitchen8.jpg" className="kitchen image-border zoomD" />
+              <Image src="./img/kitchen/kitchen8.jpg" className="kitchen image-border zoomD" alt="A picture of a finished kitchen renovation." />
             </div>
             <div className="grid-item">
-              <Image src="./img/kitchen/kitchen9.jpg" className="kitchen image-border zoomD" />
+              <Image src="./img/kitchen/kitchen9.jpg" className="kitchen image-border zoomD" alt="A picture of a finished kitchen renovation." />
             </div>
             <div className="grid-item">
-              <Image src="./img/kitchen/kitchen10.jpg" className="kitchen image-border zoomD" />
+              <Image src="./img/kitchen/kitchen10.jpg" className="kitchen image-border zoomD" alt="A picture of a finished kitchen renovation." />
             </div>
             <div className="grid-item">
-              <Image src="./img/kitchen/kitchen11.jpg" className="kitchen image-border zoomD" />
+              <Image src="./img/kitchen/kitchen11.jpg" className="kitchen image-border zoomD" alt="A picture of a finished kitchen renovation." />
             </div>
           </div>
         </motion.div >
@@ -442,17 +442,17 @@ function Bath() {
         <div className="bath-grid-container">
           <div className="bath-grid-item">
 
-            <img src="./img/bath/bath1.jpg" className="bath-image image-border zoomD" />
+            <img src="./img/bath/bath1.jpg" className="bath-image image-border zoomD" alt="A picture of a finished bathroom renovation." />
 
           </div>
           <div className="bath-grid-item">
-            <img src="./img/bath/bath2.jpg" className="bath-image image-border zoomD" />
+            <img src="./img/bath/bath2.jpg" className="bath-image image-border zoomD" alt="A picture of a finished bathroom renovation." />
           </div>
           <div className="bath-grid-item">
-            <img src="./img/bath/bath3.jpg" className="bath-image image-border zoomD" />
+            <img src="./img/bath/bath3.jpg" className="bath-image image-border zoomD" alt="A picture of a finished bathroom renovation." />
           </div>
           <div className="bath-grid-item">
-            <img src="./img/bath/bath4.jpg" className="bath-image image-border zoomD" />
+            <img src="./img/bath/bath4.jpg" className="bath-image image-border zoomD" alt="A picture of a finished bathroom renovation." />
           </div>
 
           <div className="bath-grid-item">
@@ -461,17 +461,17 @@ function Bath() {
           </div>
 
           <div className="bath-grid-item">
-            <img src="./img/bath/bath5.jpg" className="bath-image image-border zoomD" />
+            <img src="./img/bath/bath5.jpg" className="bath-image image-border zoomD" alt="A picture of a finished bathroom renovation." />
           </div>
           <div className="bath-grid-item">
-            <img src="./img/bath/bath6.jpg" className="bath-image image-border zoomD" />
+            <img src="./img/bath/bath6.jpg" className="bath-image image-border zoomD" alt="A picture of a finished bathroom renovation." />
           </div>
 
           <div className="bath-grid-item">
-            <img src="./img/bath/bath7.jpg" className="bath-image image-border zoomD" />
+            <img src="./img/bath/bath7.jpg" className="bath-image image-border zoomD" alt="A picture of a finished bathroom renovation." />
           </div>
           <div className="bath-grid-item">
-            <img src="./img/bath/bath9.jpg" className="bath-image image-border zoomD" />
+            <img src="./img/bath/bath9.jpg" className="bath-image image-border zoomD" alt="A picture of a finished bathroom renovation." />
           </div>
 
         </div >
@@ -516,13 +516,13 @@ function Pool() {
         animate={{ x: 100 }}
         transition={{ ease: "easeOut", duration: 2 }}
       >
-        <Image src="./img/pools/pool1.jpg" className="pool image-border zoomD" />
+        <Image src="./img/pools/pool1.jpg" className="pool image-border zoomD" alt="A picture of a finished pool renovation." />
       </motion.div>
       <motion.div
         animate={{ x: 100 }}
         transition={{ ease: "easeOut", duration: 2 }}
       >
-        <Image src="./img/pools/pool2.jpg" className="pool image-border zoomD" />
+        <Image src="./img/pools/pool2.jpg" className="pool image-border zoomD" alt="A picture of a finished pool renovation." />
         <br /> <br /> <br />
       </motion.div>
       <p className="poolPara">
@@ -533,17 +533,17 @@ function Pool() {
         animate={{ x: 100 }}
         transition={{ ease: "easeOut", duration: 2 }}
       >
-        <Image src="./img/pools/pool3.jpg" className="pool image-border zoomD" />
+        <Image src="./img/pools/pool3.jpg" className="pool image-border zoomD" alt="A picture of a finished pool renovation." />
       </motion.div>
       <motion.div
         animate={{ x: 100 }}
         transition={{ ease: "easeOut", duration: 2 }}>
-        <Image src="./img/pools/pool4.jpg" className="pool image-border zoomD" />
+        <Image src="./img/pools/pool4.jpg" className="pool image-border zoomD" alt="A picture of a finished pool renovation." />
       </motion.div>
       <motion.div
         animate={{ x: 100 }}
         transition={{ ease: "easeOut", duration: 2 }}>
-        <Image src="./img/pools/pool5.jpg" className="pool image-border zoomD" />
+        <Image src="./img/pools/pool5.jpg" className="pool image-border zoomD" alt="A picture of a finished pool renovation." />
       </motion.div>
 
     </>
@@ -568,36 +568,36 @@ function Gallery() {
       <h3 className="headingHover">Hover over the image to see the AFTER image.</h3>
 
       <div className="body-container">
-        <div class="card">
+        <div className="card">
 
-          <div class="wrapper">
-            <img src="./img/before_basement.jpg" class="cover-image" />
+          <div className="wrapper">
+            <img src="./img/before_basement.jpg" className="cover-image" alt="A basement picture before renovation." />
           </div>
-          <p class="title title-before before-after" >BEFORE</p>
-          <p class="title title-after before-after">AFTER</p>
-          <img src="./img/after_basement.jpg" class="character" />
+          <p className="title title-before before-after" >BEFORE</p>
+          <p className="title title-after before-after">AFTER</p>
+          <img src="./img/after_basement.jpg" className="character" alt="A basement picture after renovation." />
         </div>
         {/* </a> */}
 
 
-        <div class="card">
-          <div class="wrapper">
-            <img src="./img/before_kitchen.jpg" class="cover-image" />
+        <div className="card">
+          <div className="wrapper">
+            <img src="./img/before_kitchen.jpg" className="cover-image" alt="A kitchen picture before renovation." />
           </div>
-          <p class="title title-before before-after" >BEFORE</p>
-          <p class="title title-after before-after">AFTER</p>
-          <img src="./img/after_kitchen.jpg" class="character" />
+          <p className="title title-before before-after" >BEFORE</p>
+          <p className="title title-after before-after">AFTER</p>
+          <img src="./img/after_kitchen.jpg" className="character" alt="A kitchen picture after renovation." />
         </div>
 
 
 
-        <div class="card">
-          <div class="wrapper">
-            <img src="./img/before_walkway.jpg" class="cover-image" />
+        <div className="card">
+          <div className="wrapper">
+            <img src="./img/before_walkway.jpg" className="cover-image" alt="A walkway picture before revnoation." />
           </div>
-          <p class="title title-before before-after" >BEFORE</p>
-          <p class="title title-after before-after">AFTER</p>
-          <img src="./img/after_walkway.jpg" class="character" />
+          <p className="title title-before before-after" >BEFORE</p>
+          <p className="title title-after before-after">AFTER</p>
+          <img src="./img/after_walkway.jpg" className="character" alt="A walkway picture after renovation." />
         </div>
       </div>
 
@@ -621,7 +621,7 @@ function Faq() {
           stiffness: 260,
           damping: 20
         }}>
-        <Image src="./img/faq.png" className="faq" /><br />
+        <Image src="./img/faq.png" className="faq" alt="A picture illustrating frequently asked questions." /><br />
       </motion.div >
 
 
@@ -737,7 +737,7 @@ function About() {
 
         <div className="about-grid-item">
 
-          <img src="./img/van.jpg" className="vanPic" />
+          <img src="./img/van.jpg" className="vanPic" alt="A picture of the Monterio Homes logo on the company van." />
         </div>
 
         <div className="about-grid-item">
@@ -771,7 +771,7 @@ function Contact() {
           <h3>Contact Us</h3>
 
           <Card style={{ width: '18rem' }} className="contactCard">
-            <Card.Img variant="top" src="./img/customerSupport.jpeg" />
+            <Card.Img variant="top" src="./img/customerSupport.jpeg" alt="A picture of a customer support reprensenative on the phone." />
             <Card.Body>
               <Card.Title className="contactCardTitle">Get in touch with us today!</Card.Title>
               {/* <Card.Text>
@@ -933,31 +933,31 @@ function Footer() {
             <br />
             <ul>
               <li className="alignedPara">
-                <img className="checkmark" src='./img/checkmark.png' />
+                <img className="checkmark" src='./img/checkmark.png' alt="A picture of a checkmark indicating we service the following area." />
                 Georgetown
               </li>
               <li className="alignedPara">
-                <img className="checkmark" src='./img/checkmark.png' />
+                <img className="checkmark" src='./img/checkmark.png' alt="A picture of a checkmark indicating we service the following area." />
                 Milton
               </li>
               <li className="alignedPara">
-                <img className="checkmark" src='./img/checkmark.png' />
+                <img className="checkmark" src='./img/checkmark.png' alt="A picture of a checkmark indicating we service the following area." />
                 Oakville
               </li>
               <li className="alignedPara">
-                <img className="checkmark" src='./img/checkmark.png' />
+                <img className="checkmark" src='./img/checkmark.png' alt="A picture of a checkmark indicating we service the following area." />
                 Burlington
               </li>
               <li className="alignedPara">
-                <img className="checkmark" src='./img/checkmark.png' />
+                <img className="checkmark" src='./img/checkmark.png' alt="A picture of a checkmark indicating we service the following area." />
                 Etobicoke
               </li>
               <li className="alignedPara">
-                <img className="checkmark" src='./img/checkmark.png' />
+                <img className="checkmark" src='./img/checkmark.png' alt="A picture of a checkmark indicating we service the following area." />
                 Vaughan
               </li>
               <li className="alignedPara">
-                <img className="checkmark" src='./img/checkmark.png' />
+                <img className="checkmark" src='./img/checkmark.png' alt="A picture of a checkmark indicating we service the following area." />
                 and many more!
               </li>
             </ul>
@@ -965,7 +965,7 @@ function Footer() {
           <div className="footer-grid-item">
 
 
-            <h4> <img className="footer-logo" src="./img/logo.png" />Monteiro Homes</h4>
+            <h4> <img className="footer-logo" src="./img/logo.png" alt="A picture of the Monteiro Homes logo." />Monteiro Homes</h4>
             <ul>
 
               <li>
@@ -995,12 +995,12 @@ function Footer() {
               </a><br />
 
               <a className="social-icons" href="tel:905-599-1345">
-                <Image className="rounded-circle glow-effect-links footer-social-icon" src="./img/phone.png" width="60px" height="60px" alt="A phone number to reach Saher at." />
+                <Image className="rounded-circle glow-effect-links footer-social-icon" src="./img/phone.png" width="60px" height="60px" alt="A phone number icon to reach Phil at." />
                 <span className="social-text" p>Phil @ (647) 885-2384</span>
               </a><br />
 
               <a className="social-icons" href="mailto:phil@monteirohomes.ca">
-                <img className="rounded-circle glow-effect-links footer-social-icon" src="./img/email.png" width="60px" height="60px" alt="An email to each Saher at." />
+                <img className="rounded-circle glow-effect-links footer-social-icon" src="./img/email.png" width="60px" height="60px" alt="An email icon to each Phil at." />
                 <span className="social-text">phil@monteirohomes.ca</span>
               </a><br />
 
