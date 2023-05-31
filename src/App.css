@@ -4,7 +4,11 @@
 
 body {
   background: #191c29;
+}
 
+html,
+body {
+  height: 100%;
 }
 
 h3 {
@@ -278,6 +282,21 @@ li {
 
 /* Kitchen */
 
+/* BASEMENT page */
+
+.basementHeading {
+  text-align: center;
+  color: white;
+}
+
+.basementPara {
+  margin-left: 450px;
+  margin-right: 450px;
+  text-align: center;
+}
+
+
+
 /* GALLERY PAGE */
 .before-after {
   font-size: 1.8rem;
@@ -494,7 +513,14 @@ a:active {
   bottom: 0;
   width: 100%;
   text-align: center;
+  /* position: fixed; */
 
+}
+
+body>footer {
+  position: sticky;
+  top: 100vh;
+  bottom: 0;
 }
 
 .footer-grid-container {
@@ -576,6 +602,12 @@ a:active {
   /* Kitchen */
   .grid-container {
     grid-template-columns: 50% 50%;
+  }
+
+  /* Basement */
+  .basementPara {
+    margin-left: 200px;
+    margin-right: 200px;
   }
 
   /* Footer */
@@ -690,6 +722,12 @@ a:active {
   /* Kitchen */
   .grid-container {
     grid-template-columns: 100%;
+  }
+
+  /* Basement */
+  .basementPara {
+    margin-left: 50px;
+    margin-right: 50px;
   }
 
   /* Footer */

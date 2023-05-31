@@ -400,7 +400,7 @@ function Kitchen() {
 
       </div >
 
-      <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />    <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
+      <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />    <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
       <Footer />
     </>
   );
@@ -485,8 +485,28 @@ function Bath() {
 function Basement() {
   return (
     <>
-      <p>
-        Whether you envision a cozy entertainment area, a home office, a guest suite, or a personal gym, we have the expertise to bring your basement renovation dreams to life. Our dedicated team of professionals works closely with you to understand your vision and design a customized plan that maximizes the potential of your basement. From framing and insulation to drywall installation, flooring, and lighting, we handle every aspect of the renovation process with meticulous attention to detail. We also offer expertise in plumbing and electrical work to ensure that your basement meets all your requirements. With our commitment to quality craftsmanship and the use of premium materials, we create a finished basement that seamlessly blends with the rest of your home. Our project management approach ensures timely completion and open communication throughout the renovation process, providing you with peace of mind. Trust us to transform your basement into a functional and inviting space that suits your lifestyle and exceeds your expectations.
+      <br /> <br /> <br /> <br />
+
+      <h3 className="basementHeading">Basements</h3>
+      <h4 className="basementHeading">Transform your basement area, everything is custom built to suite your budget and needs.</h4>
+
+      <span className="servicesImageContainer servicesImageContainerBefore">
+
+        <img src="./img/before_basement.jpg" className="beforeImgOne beforeAfterImg" alt="A basement picture before renovation." />
+
+        <p className="beforeAfterText">BEFORE</p>
+      </span>
+
+
+      {/* </a> */}
+      <span className="servicesImageContainer ">
+        <img src="./img/after_basement.jpg" className="afterImgOne beforeAfterImg" alt="A basement picture after renovation." />
+        <p className="beforeAfterText">AFTER</p>
+      </span >
+      <br /> <br /> <br />
+
+      <p className="alignedPara basementPara">
+        Whether you envision a cozy entertainment area, a home office, a guest suite, or a personal gym, we have the expertise to bring your basement renovation dreams to life. Our dedicated team of professionals works closely with you to understand your vision and design a customized plan that maximizes the potential of your basement.<br /> <br />  From framing and insulation to drywall installation, flooring, and lighting, we handle every aspect of the renovation process with meticulous attention to detail. We also offer expertise in plumbing and electrical work to ensure that your basement meets all your requirements. With our commitment to quality craftsmanship and the use of premium materials, we create a finished basement that seamlessly blends with the rest of your home.<br /> <br />  Our project management approach ensures timely completion and open communication throughout the renovation process, providing you with peace of mind. Trust us to transform your basement into a functional and inviting space that suits your lifestyle and exceeds your expectations.
       </p>
     </>
   );
