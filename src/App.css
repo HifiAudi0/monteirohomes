@@ -42,11 +42,12 @@ li {
 } */
 
 .nav-link {
-  color: white;
+  color: black;
   z-index: 1;
   font-size: 2rem;
   font-weight: bold;
   letter-spacing: 2px;
+  margin-top: -9px;
 }
 
 .navbar {
@@ -78,6 +79,7 @@ li {
   height: 100px;
   /* margin-left: -120%;
   margin-right: 2.5rem; */
+  z-index: 1;
 }
 
 /* .bgImage {
@@ -552,6 +554,7 @@ a:active {
   display: none;
 }
 
+
 /* MEDIA QUERIES */
 
 /* above iPad */
@@ -610,6 +613,8 @@ a:active {
 
 }
 
+
+
 /* iPad and below */
 @media only screen and (max-width: 768px) {
 
@@ -621,9 +626,6 @@ a:active {
 
   /* Home page */
 
-  .text-container {
-    margin-top: 200px;
-  }
 
   .home-social-text {
     font-size: 0.7rem;

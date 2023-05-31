@@ -109,7 +109,6 @@ function Home() {
 
       <div className="home-socials">
 
-        {/* transparent bg */}
         <a href="https://www.facebook.com/profile.php?id=100064311003388s" target="_blank">
           <img className="rounded-circle home-social-icons" src="./img/fb.png" alt="Facebook logo" />
           <span className="home-social-text">facebook.com/profile.php?id=100064311003388</span>
@@ -188,7 +187,7 @@ function Links() {
               </Dropdown> */}
 
             {/* <LinkContainer to={"/Products"}> */}
-            <NavDropdown title="Services & Gallery" className="nav-fontstyle">
+            <NavDropdown title="Services & Gallery" className="nav-fontstyle nav-link">
               <NavDropdown.Item className="nav-fontstyle" eventKey="4.1" href="/services">ALL SERVICES</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item className="nav-fontstyle" eventKey="4.1" href="/kitchen">KITCHEN</NavDropdown.Item>
