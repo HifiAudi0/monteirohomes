@@ -655,15 +655,18 @@ a:active {
     height: 700px;
     width: 500px;
     width: 100%;
-
-
-
-
   }
+
+
 
   /* Bath */
   .bath-grid-container {
     grid-template-columns: 100%;
+  }
+
+  .bath-image {
+    height: 800px;
+    width: 100%;
   }
 
   /* Kitchen */
