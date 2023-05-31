@@ -307,9 +307,10 @@ function Services() {
         <img src="./img/after_walkway.jpg" class="afterImgThree beforeAfterImg" />
         <p class="beforeAfterText">AFTER</p>
       </span >
-      <br />
+      <br /> <br /> <br /> <br />
 
 
+      <Footer />
     </>
   );
 }

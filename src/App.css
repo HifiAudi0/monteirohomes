@@ -648,6 +648,17 @@ a:active {
     margin: 0;
   }
 
+  /* SERVICES PAGE*/
+
+
+  .servicesImageContainerBefore {
+    margin-left: 0%;
+  }
+
+  .beforeAfterImg {
+    width: 90%;
+  }
+
   .kitchen {
     /* margin-right: 50px;
     margin-top: 50px;
