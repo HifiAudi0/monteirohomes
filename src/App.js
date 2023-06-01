@@ -89,15 +89,15 @@ function Home() {
 
       <div id="home"></div>
 
-      <div className="bgImage">
+      {/* <div className="bgImage"> */}
 
-        <video id="background-video" autoPlay loop muted>
-          <source id="video-src" src="./img/bg.mp4" type="video/mp4" alt="A video of a beautify custom built home living rooma and patio." >
-          </source>
-          Did not load video.
-        </video>
+      <video id="background-video" autoPlay loop muted>
+        <source id="video-src" src="./img/bg.mp4" type="video/mp4" alt="A video of a beautify custom built home living rooma and patio." >
+        </source>
+        Did not load video.
+      </video>
 
-      </div>
+      {/* </div> */}
 
       <div className="text-container">
         <p id="target-id" className="target">MONTEIRO HOMES<br />SERVICING THE GTA<br />FULL HOME RENOVATION & DESIGN<br />CUSTOM FINANCING AVAILABLE</p>
