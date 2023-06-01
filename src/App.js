@@ -4,7 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import Image from 'react-bootstrap/Image';
 
-import React, { useState, useCallback, useMemo, useRef } from 'react';
+import React, { useState, useCallback, useMemo, useRef, useEffect } from 'react';
 
 import './App.css';
 import './textRightToLeft.css';
@@ -63,6 +63,30 @@ const item = {
   }
 };
 
+var navLightColor = "white";
+var navDarkColor = "black";
+
+
+function ChangeNavColor(props) {
+  useEffect(() => {
+    const allNavLinks = document.querySelectorAll(".nav-link")
+
+    // console.log("PROPS..........", props.color);
+
+    allNavLinks.forEach((link) => {
+      // link.classList.add = "nav-color-dark";
+      //link.setAttribute("id", "nav-not-homepage");
+      link.style.color = props.color
+      // link.classList.remove("nav-color-light");
+    });
+  }, []);
+
+  return (
+    <>
+    </>
+  );
+}
+
 
 
 
@@ -84,7 +108,7 @@ function Home() {
   return (
     <>
 
-
+      <ChangeNavColor color={navDarkColor} />
 
 
       <div id="home"></div>
@@ -248,7 +272,7 @@ function Services() {
 
   return (
     <>
-
+      <ChangeNavColor color={navLightColor} />
 
 
       <br /><br /><br /><br /><br /><br /><br /><br />
@@ -321,6 +345,8 @@ function Kitchen() {
   return (
 
     <>
+      <ChangeNavColor color={navLightColor} />
+
       <ImageZoom />
 
       <br />  <br />  <br />  <br />  <br />  <br />  <br />  <br />  <br />  <br />  <br />
@@ -414,6 +440,8 @@ function Bath() {
 
     <>
 
+      <ChangeNavColor color={navLightColor} />
+
       <ImageZoom />
 
       {/* <!-- (A) LIGHTBOX CONTAINER --> */}
@@ -485,6 +513,9 @@ function Bath() {
 function Basement() {
   return (
     <>
+
+      <ChangeNavColor color={navLightColor} />
+
       <br /> <br /> <br /> <br />
 
       <h3 className="basementHeading">Basements</h3>
@@ -515,6 +546,8 @@ function Basement() {
 function Garage() {
   return (
     <>
+      <ChangeNavColor color={navLightColor} />
+
       <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
       <h3 className="basementHeading">Garage's</h3>
       <h4></h4>
@@ -531,6 +564,8 @@ function Garage() {
 function Pool() {
   return (
     <>
+      <ChangeNavColor color={navLightColor} />
+
       <ImageZoom />
 
 
@@ -605,6 +640,8 @@ function Pool() {
 function Deck() {
   return (
     <>
+      <ChangeNavColor color={navLightColor} />
+
       <h3 className="basementHeading">Fenching, Decks and Patios</h3>
       <h4></h4>
       <div className="bath-grid-container">
@@ -635,6 +672,8 @@ function Deck() {
 function Gallery() {
   return (
     <>
+      <ChangeNavColor color={navLightColor} />
+
       <br />  <br />  <br />  <br />  <br />  <br />  <br />  <br />  <br />
       {/* <a href="https://www.mythrillfiction.com/the-dark-rider" alt="Mythrill" target="_blank"> */}
       <h3 className="headingHover">Hover over the image to see the AFTER image.</h3>
@@ -683,6 +722,8 @@ function Faq() {
 
   return (
     <>
+      <ChangeNavColor color={navLightColor} />
+
       <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
       <motion.div
         initial={{ scale: 0 }}
@@ -795,6 +836,7 @@ function Faq() {
 function Quote() {
   return (
     <>
+      <ChangeNavColor color={navLightColor} />
 
     </>
   );
@@ -804,6 +846,8 @@ function Quote() {
 function About() {
   return (
     <>
+      <ChangeNavColor color={navLightColor} />
+
       <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
       <div className="about-grid-container">
 
@@ -825,15 +869,19 @@ function About() {
   );
 }
 
+
+
 function Contact() {
 
   // document.querySelector("#ContactFormOne").classList.add = "hide";
   // document.querySelector("#ContactFormTwo").classList.add = "hide";
 
 
-
   return (
     <>
+
+      <ChangeNavColor color={navLightColor} />
+
       <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
 
 
