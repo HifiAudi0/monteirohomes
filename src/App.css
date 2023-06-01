@@ -404,10 +404,18 @@ li {
   position: fixed;
 
   left: 0;
-
+  right: 0;
+  margin: 0 0;
+  text-align: center;
 
 
 }
+
+.home-social-email {
+  margin-left: 130px;
+}
+
+.home-social-instagram {}
 
 .home-social-responsiveness {
   display: none;
@@ -600,6 +608,12 @@ body>footer {
     margin-left: 25%;
   }
 
+  .home-social-email {
+
+    margin-left: 100px;
+
+  }
+
   .footer-socials-heading {
     margin-left: 35%;
   }
@@ -696,6 +710,10 @@ body>footer {
   .home-social-icons {
     width: 30px;
     height: 30px;
+  }
+
+  .home-social-email {
+    margin-left: 0px;
   }
 
   .home-social-responsiveness {

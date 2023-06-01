@@ -114,13 +114,13 @@ function Home() {
           <span className="home-social-text">facebook.com/profile.php?id=100064311003388</span>
         </a><br className="home-social-responsiveness" />
 
-        <a href="tel:905-599-1345">
+        <a href="tel:(647)885-2384">
           <Image className="rounded-circle home-social-icons" src="./img/phone.png" alt="A phone number to reach Phil at." />
           <span className="home-social-text">Phil @ (647) 885-2384</span>
         </a><br className="home-social-responsiveness" /><br className="home-socials-large-screens" />
 
         <a href="mailto:phil@monteirohomes.ca">
-          <img className="rounded-circle home-social-icons" src="./img/email.png" alt="An email to each Phil at." />
+          <img className="rounded-circle home-social-icons home-social-email" src="./img/email.png" alt="An email to each Phil at." />
           <span className="home-social-text">phil@monteirohomes.ca</span>
         </a><br className="home-social-responsiveness" />
 
@@ -856,9 +856,18 @@ function Contact() {
           <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
           <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
         </ListGroup> */}
+
             <Card.Body>
-              <Card.Link href="mailto:phil@monteirohomes.ca" className="contactCardLink"><img className="rounded-circle glow-effect-links footer-socail-icon" src="./img/email.png" width="60px" height="60px" alt="An email to each Phil at." /><span p className="contactCardText">Email us</span></Card.Link><br />
-              <Card.Link href="tel:905-599-1345" className="contactCardLink">     <Image className="rounded-circle glow-effect-links footer-socail-icon" src="./img/phone.png" width="60px" height="60px" alt="A phone number to reach Phil at." /><span p className="contactCardText">Call us</span></Card.Link>
+              <Card.Link href="mailto:phil@monteirohomes.ca" className="contactCardLink">
+                {/* <img className="rounded-circle glow-effect-links footer-socail-icon" src="./img/email.png" width="60px" height="60px" alt="An email to each Phil at." /> */}
+                {/* <span p className="contactCardText">Email us</span> */}
+
+                <Button variant="success">EMAIL US</Button>
+              </Card.Link>
+              <br />
+              {/* <Image className="rounded-circle glow-effect-links footer-socail-icon" src="./img/phone.png" width="60px" height="60px" alt="A phone number to reach Phil at." /> */}
+              {/* <span p className="contactCardText">Call us</span> */}
+              <a href="tel:(647)885-2384"> <Button variant="success">CALL US</Button></a>
             </Card.Body>
           </Card >
         </div>
@@ -1066,7 +1075,7 @@ function Footer() {
                 <img className="rounded-circle glow-effect-links footer-social-icon" src="./img/fb.png" width="60px" height="60px" alt="Facebook logo" /><span className="social-text" p>facebook.com/profile.php?id=100064311003388</span>
               </a><br />
 
-              <a className="social-icons" href="tel:905-599-1345">
+              <a className="social-icons" href="tel:647-885-2384">
                 <Image className="rounded-circle glow-effect-links footer-social-icon" src="./img/phone.png" width="60px" height="60px" alt="A phone number icon to reach Phil at." />
                 <span className="social-text" p>Phil @ (647) 885-2384</span>
               </a><br />
