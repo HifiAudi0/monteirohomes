@@ -907,15 +907,23 @@ function Contact() {
 
             <Card.Body>
               <Card.Link href="mailto:phil@monteirohomes.ca" className="contactCardLink">
-                {/* <img className="rounded-circle glow-effect-links footer-socail-icon" src="./img/email.png" width="60px" height="60px" alt="An email to each Phil at." /> */}
+
                 {/* <span p className="contactCardText">Email us</span> */}
 
-                <Button variant="success">EMAIL US</Button>
+                <Button className="buttonEmailUs" variant="success">
+                  <img className="rounded-circle glow-effect-links footer-socail-icon" src="./img/email.png" width="60px" height="60px" alt="An email to each Phil at." />
+                  <span className="buttonEmailUsText">EMAIL US</span>
+                </Button>
               </Card.Link>
               <br />
               {/* <Image className="rounded-circle glow-effect-links footer-socail-icon" src="./img/phone.png" width="60px" height="60px" alt="A phone number to reach Phil at." /> */}
               {/* <span p className="contactCardText">Call us</span> */}
-              <a href="tel:(647)885-2384"> <Button variant="success">CALL US</Button></a>
+              <a href="tel:(647)885-2384">
+                <Button className="buttonCallUs" variant="success">
+                  <Image className="rounded-circle glow-effect-links footer-socail-icon" src="./img/phone.png" width="60px" height="60px" alt="A phone number to reach Phil at." />
+                  <span className="buttonCallUsText">CALL US</span>
+                </Button>
+              </a>
             </Card.Body>
           </Card >
         </div>

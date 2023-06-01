@@ -32,6 +32,27 @@ li {
   font-size: 1.5rem;
 }
 
+.buttonEmailUs {
+  padding: 23px;
+}
+
+.buttonEmailUsText {
+  margin-left: 10px;
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+
+.buttonCallUs {
+  padding: 28px;
+  margin-top: 10px;
+}
+
+.buttonCallUsText {
+  margin-left: 10px;
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+
 .target {
   font-size: 2rem;
   font-weight: bold;
@@ -492,7 +513,7 @@ a:active {
 .contact-grid-container {
   display: grid;
   grid-template-columns: 30% 70%;
-  grid-template-rows: 600px;
+  grid-template-rows: 700px;
   padding: 10px;
 }
 
