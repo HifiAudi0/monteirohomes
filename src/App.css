@@ -1,6 +1,7 @@
 * {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', 'Roboto', sans-serif;
 }
+
 
 body {
   background: #191c29;
@@ -125,9 +126,9 @@ li {
   margin: auto;
   z-index: 1;
   border: 20px solid red;
-} */
+}
 
-/* .bgImage:before {
+.bgImage:before {
   content: '';
   position: absolute;
   top: 0;
@@ -435,6 +436,7 @@ li {
   text-align: center;
 
 
+
 }
 
 .home-social-email {
@@ -486,7 +488,7 @@ li {
   font-size: 1.7rem;
   font-weight: 900;
   text-shadow: 1px 1px white;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 
 }
 
