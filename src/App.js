@@ -274,6 +274,9 @@ function Services() {
     <>
       <ChangeNavColor color={navLightColor} />
 
+      <RemoveQuoteForm />
+
+
 
       <br /><br /><br /><br /><br /><br /><br /><br />
 
@@ -346,6 +349,9 @@ function Kitchen() {
 
     <>
       <ChangeNavColor color={navLightColor} />
+
+      <RemoveQuoteForm />
+
 
       <ImageZoom />
 
@@ -442,6 +448,9 @@ function Bath() {
 
       <ChangeNavColor color={navLightColor} />
 
+      <RemoveQuoteForm />
+
+
       <ImageZoom />
 
       {/* <!-- (A) LIGHTBOX CONTAINER --> */}
@@ -516,6 +525,9 @@ function Basement() {
 
       <ChangeNavColor color={navLightColor} />
 
+      <RemoveQuoteForm />
+
+
       <br /> <br /> <br /> <br />
 
       <h3 className="basementHeading">Basements</h3>
@@ -548,6 +560,9 @@ function Garage() {
     <>
       <ChangeNavColor color={navLightColor} />
 
+      <RemoveQuoteForm />
+
+
       <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
       <h3 className="basementHeading">Garage's</h3>
       <h4></h4>
@@ -566,8 +581,10 @@ function Pool() {
     <>
       <ChangeNavColor color={navLightColor} />
 
-      <ImageZoom />
+      <RemoveQuoteForm />
 
+
+      <ImageZoom />
 
 
       {/* <!-- (A) LIGHTBOX CONTAINER --> */}
@@ -642,6 +659,9 @@ function Deck() {
     <>
       <ChangeNavColor color={navLightColor} />
 
+      <RemoveQuoteForm />
+
+
       <h3 className="basementHeading">Fenching, Decks and Patios</h3>
       <h4></h4>
       <div className="bath-grid-container">
@@ -673,6 +693,9 @@ function Gallery() {
   return (
     <>
       <ChangeNavColor color={navLightColor} />
+
+      <RemoveQuoteForm />
+
 
       <br />  <br />  <br />  <br />  <br />  <br />  <br />  <br />  <br />
       {/* <a href="https://www.mythrillfiction.com/the-dark-rider" alt="Mythrill" target="_blank"> */}
@@ -723,6 +746,9 @@ function Faq() {
   return (
     <>
       <ChangeNavColor color={navLightColor} />
+
+      <RemoveQuoteForm />
+
 
       <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
       <motion.div
@@ -848,6 +874,8 @@ function About() {
     <>
       <ChangeNavColor color={navLightColor} />
 
+      <RemoveQuoteForm />
+
       <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
       <div className="about-grid-container">
 
@@ -869,7 +897,16 @@ function About() {
   );
 }
 
-
+function RemoveQuoteForm() {
+  const elements = document.getElementsByClassName("hbspt-form");
+  while (elements.length > 0) {
+    elements[0].parentNode.removeChild(elements[0]);
+  }
+  return (
+    <>
+    </>
+  );
+}
 
 function Contact() {
 
@@ -881,6 +918,9 @@ function Contact() {
     <>
 
       <ChangeNavColor color={navLightColor} />
+
+      <RemoveQuoteForm />
+
 
       <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
 
