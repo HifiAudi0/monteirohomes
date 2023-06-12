@@ -984,11 +984,12 @@ function About() {
         <div className="about-grid-item">
 
           <img src="./img/van.jpg" className="vanPic" alt="A picture of the Monterio Homes logo on the company van." />
+          <img className="canadianFlag" src="./img/canadianflag.jpeg" /><p>Support local businesses!</p>
         </div>
 
         <div className="about-grid-item">
           <h3>About Us</h3>
-          <h3>Family-Owned Contractor with 8 Years of Trusted Service</h3>
+          <h3>Canadian Family-Owned Contractor with 8 Years of Trusted Service</h3>
           <p>Welcome to our family-owned contracting business, where we have been proudly serving our community for the past 8 years. As a small business, we understand the importance of personalized service and building strong relationships with our clients..<br /><br /> With a passion for craftsmanship and a commitment to excellence, we have earned a reputation for delivering top-quality work and exceeding customer expectations. Our team of skilled professionals brings a wealth of experience and expertise to every project, ensuring attention to detail and meticulous execution..<br /><br /> From home renovations and remodeling to repairs and installations, we offer a comprehensive range of services tailored to meet your specific needs. As a family-owned business, we prioritize open communication, honesty, and integrity in all our interactions. We take pride in our work, treating every project as if it were our own, and ensuring customer satisfaction is our top priority..<br /><br /> With us, you can expect personalized attention, reliable service, and a finished result that will transform your space into something exceptional. Trust our family to enhance your home with our trusted contracting services.</p><br /><br />
         </div>
       </div>

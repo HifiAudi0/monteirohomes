@@ -383,7 +383,7 @@ li {
 .about-grid-container {
   display: grid;
   grid-template-columns: 30% 70%;
-  grid-template-rows: 700px;
+  grid-template-rows: 900px;
   padding: 10px;
 }
 
@@ -404,6 +404,13 @@ li {
   position: relative;
   margin-top: 100px;
 }
+
+.canadianFlag {
+  width: 150px;
+  height: 150px;
+  margin-top: 50px;
+}
+
 
 /* ABOUT PAGE */
 
@@ -776,6 +783,7 @@ body>footer {
 
     grid-template-rows: 900px;
   }
+
 
 
   .vanPic {
