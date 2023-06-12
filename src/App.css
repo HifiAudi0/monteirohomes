@@ -510,6 +510,12 @@ a:active {
   text-decoration: none;
 }
 
+/* Quote page */
+.quoteContainer {
+  color: white;
+  text-align: center;
+}
+
 /* CONTACT PAGE */
 
 .contact-grid-container {

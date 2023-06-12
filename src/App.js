@@ -860,11 +860,99 @@ function Faq() {
 }
 
 function Quote() {
+  // const node = document.createElement("div");
+  // node.classList.add("quoteContainer");
+  // const elements = document.getElementsByClassName("hbspt-form");
+
+  //  node.appendChild(elements[0]);
+  // document.body.insertAdjacentHTML('beforeend', elements[0]);
+
+
   return (
     <>
       <ChangeNavColor color={navLightColor} />
+      <RemoveQuoteForm />
+      <QuoteForm />
+
+
+      <div className="quoteContainer">
+        <h3>Some text here.......................</h3>
+      </div>
 
     </>
+  );
+}
+
+
+
+function QuoteForm() {
+  const [form, setForm] = useState({
+    name: '',
+    email: '',
+    message: '',
+  });
+  const [errors, setErrors] = useState({});
+
+  const handleChange = (e) => {
+    setForm({
+      ...form,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const validateForm = () => {
+    let formIsValid = true;
+    let errors = {};
+
+    // Name validation
+    if (!form.name) {
+      formIsValid = false;
+      errors['name'] = 'Name is required.';
+    }
+
+    // Email validation
+    if (!form.email) {
+      formIsValid = false;
+      errors['email'] = 'Email is required.';
+    } else {
+      let lastAtPos = form.email.lastIndexOf('@');
+      let lastDotPos = form.email.lastIndexOf('.');
+      if (!(lastAtPos < lastDotPos && lastAtPos > 0 && form.email.indexOf('@@') === -1 && lastDotPos > 2 && (form.email.length - lastDotPos) > 2)) {
+        formIsValid = false;
+        errors['email'] = 'Email is not valid.';
+      }
+    }
+
+    // Message validation
+    if (!form.message) {
+      formIsValid = false;
+      errors['message'] = 'Message is required.';
+    }
+
+    setErrors(errors);
+    return formIsValid;
+  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    if (validateForm()) {
+      // submit form
+    }
+  };
+
+  return (
+    // <form onSubmit={handleSubmit}>
+    // <form action="http://162.240.97.142:52940/sendMailFlask" method="POST">
+    <form action="http://www.monteirohomes.com/sendEmailPM.php" method="POST">
+      <input type='text' name='name' value={form.name} onChange={handleChange} placeholder='Your name' />
+      {errors['name'] && <span className="error">{errors['name']}</span>}
+      <input type='email' name='email' value={form.email} onChange={handleChange} placeholder='Your email' />
+      {errors['email'] && <span className="error">{errors['email']}</span>}
+      <textarea name='message' value={form.message} onChange={handleChange} placeholder='Your message' />
+      {errors['message'] && <span className="error">{errors['message']}</span>}
+      <button type='submit'>Send</button>
+    </form>
   );
 }
 
