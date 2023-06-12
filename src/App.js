@@ -43,6 +43,8 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import EmailIcon from '@mui/icons-material/Email';
 import SmartphoneIcon from '@mui/icons-material/Smartphone';
 
+import { InstagramEmbed } from 'react-social-media-embed';
+
 const container = {
   hidden: { opacity: 1, scale: 0 },
   visible: {
@@ -874,11 +876,6 @@ function Quote() {
       <RemoveQuoteForm />
       <QuoteForm />
 
-
-      <div className="quoteContainer">
-        <h3>Some text here.......................</h3>
-      </div>
-
     </>
   );
 }
@@ -944,15 +941,27 @@ function QuoteForm() {
   return (
     // <form onSubmit={handleSubmit}>
     // <form action="http://162.240.97.142:52940/sendMailFlask" method="POST">
-    <form action="http://www.monteirohomes.com/sendEmailPM.php" method="POST">
-      <input type='text' name='name' value={form.name} onChange={handleChange} placeholder='Your name' />
-      {errors['name'] && <span className="error">{errors['name']}</span>}
-      <input type='email' name='email' value={form.email} onChange={handleChange} placeholder='Your email' />
-      {errors['email'] && <span className="error">{errors['email']}</span>}
-      <textarea name='message' value={form.message} onChange={handleChange} placeholder='Your message' />
-      {errors['message'] && <span className="error">{errors['message']}</span>}
-      <button type='submit'>Send</button>
-    </form>
+    <>
+      <div className="quoteContainer">
+        <InstagramEmbed className="formInstagramPost" url="https://www.instagram.com/p/Cl1YH0nuzul/" />
+        <img src="./img/customerSupport2.jpeg" className="quoteImg" alt="A picture illustrating of a customer service rep." /><br /><br />
+        <form action="http://www.monteirohomes.com/sendEmailPM.php" method="POST" className="quoteForm">
+          <h3 className="formHeading">Get a free estimate today!</h3>
+          <label for="name" className="formLabels">Name (required)</label><br />
+          <input type='text' className="formInputText" name='name' value={form.name} onChange={handleChange} placeholder='Your name' /><br /><br />
+          {errors['name'] && <span className="error">{errors['name']}</span>}
+          <label for="email" className="formLabels">Emil address (required)</label><br />
+          <input type='email' className="formInputText" name='email' value={form.email} onChange={handleChange} placeholder='Your email' /><br /><br />
+          {errors['email'] && <span className="error">{errors['email']}</span>}
+          <label for="message" className="formLabels">Your message (required)</label><br />
+          <textarea name='message' className="formInputText" id="formInputMessage" value={form.message} onChange={handleChange} placeholder='Your message' /><br /><br />
+          {errors['message'] && <span className="error">{errors['message']}</span>}
+          <button type='submit' className="formSubmitBtn">SEND MESSAGE</button><br /><br />
+        </form>
+      </div>
+      <br /><br />
+      <Footer />
+    </>
   );
 }
 

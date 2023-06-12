@@ -514,6 +514,69 @@ a:active {
 .quoteContainer {
   color: white;
   text-align: center;
+
+}
+
+.quoteForm {
+  background-color: green;
+  width: 40%;
+  margin: 0 auto;
+  border: 2px dotted white;
+  text-align: center;
+}
+
+.quoteImg {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  /* left: 40%; */
+
+}
+
+.formInstagramPost {
+  width: 400px;
+}
+
+.formHeading {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.formLabels {
+  color: white;
+  font-size: 1.4rem;
+
+}
+
+.formInputText {
+  width: 300px;
+  text-align: center;
+
+}
+
+input {
+  padding: 5px;
+  margin: 5px 0;
+  outline: none;
+}
+
+input:focus,
+input:active {
+  border-color: transparent;
+  border-bottom: 5px solid #1c87c9;
+}
+
+#formInputMessage {
+  height: 250px;
+  width: 400px;
+}
+
+.formSubmitBtn {
+  background-color: white;
+  color: black;
+  padding: 20px;
+  font-size: 1.4rem;
+  font-weight: bolder;
 }
 
 /* CONTACT PAGE */
