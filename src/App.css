@@ -515,27 +515,48 @@ a:active {
   color: white;
   text-align: center;
 
+
+  display: grid;
+  grid-template-columns: 50% 50%;
+  /* grid-template-rows: 700px; */
+  padding: 10px;
+
+
+}
+
+.quote-grid-item {
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  /* margin-right: 10px;
+  margin: 20px; */
+  margin-left: 30%;
 }
 
 .quoteForm {
   background-color: green;
-  width: 40%;
-  margin: 0 auto;
+  width: 70%;
+  /* margin: 0 auto; */
   border: 2px dotted white;
-  text-align: center;
+  /* text-align: center; */
+  margin-left: -45%;
+  width: 500px;
 }
 
 .quoteImg {
   width: 400px;
   height: 400px;
   position: relative;
-  /* left: 40%; */
-
+  left: 70%;
 }
 
 .formInstagramPost {
   width: 400px;
+
 }
+
+
 
 .formHeading {
   text-transform: uppercase;
@@ -879,6 +900,28 @@ body>footer {
   .basementPara {
     margin-left: 50px;
     margin-right: 50px;
+  }
+
+  /* Quote */
+  .quoteContainer {
+
+    grid-template-columns: 100%;
+  }
+
+  .quoteForm {
+    margin-left: -30%;
+  }
+
+
+  .formInstagramPost {
+    left: 15%;
+    margin-left: -25%;
+
+  }
+
+
+  .quoteImg {
+    left: 15%;
   }
 
   /* Footer */
