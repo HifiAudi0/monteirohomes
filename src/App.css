@@ -532,9 +532,16 @@ a:active {
   color: white;
   font-size: 2.5rem;
   font-weight: bolder;
-  text-shadow: 2px 2px grey;
+  text-shadow: 2px 2px black;
   text-decoration: none;
+  letter-spacing: 1px;
 }
+
+.footer-service-area-text {
+  text-shadow: 2px 2px black;
+
+}
+
 
 /* Quote page */
 .quoteContainer {
@@ -818,16 +825,17 @@ body>footer {
 
   /* ABOUT PAGE */
 
-  .contact-grid-container {
+  /* .contact-grid-container {
     grid-template-columns: 100%;
     margin-top: 50px;
-  }
+  } */
 
-  .contact-grid-item {}
+  /* .contact-grid-item {} */
+
 
   .contactCard {
-    margin-left: 150px;
-    border: 20px solid red;
+    margin-left: 25px;
+    /* border: 20px solid red; */
   }
 
 }

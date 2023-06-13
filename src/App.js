@@ -1209,34 +1209,37 @@ function Footer() {
 
 
 
-            <h4>Service areas</h4>
-            <br />
+            <h3>Service areas</h3>
             <ul>
-              <li className="alignedPara">
+              <li className="alignedPara footer-service-area-text">
                 <img className="checkmark" src='./img/checkmark.png' alt="A picture of a checkmark indicating we service the following area." />
                 Georgetown
               </li>
-              <li className="alignedPara">
+              <li className="alignedPara footer-service-area-text">
                 <img className="checkmark" src='./img/checkmark.png' alt="A picture of a checkmark indicating we service the following area." />
                 Milton
               </li>
-              <li className="alignedPara">
+              <li className="alignedPara footer-service-area-text">
                 <img className="checkmark" src='./img/checkmark.png' alt="A picture of a checkmark indicating we service the following area." />
                 Oakville
               </li>
-              <li className="alignedPara">
+              <li className="alignedPara footer-service-area-text">
                 <img className="checkmark" src='./img/checkmark.png' alt="A picture of a checkmark indicating we service the following area." />
                 Burlington
               </li>
-              <li className="alignedPara">
+              <li className="alignedPara footer-service-area-text">
                 <img className="checkmark" src='./img/checkmark.png' alt="A picture of a checkmark indicating we service the following area." />
                 Etobicoke
               </li>
-              <li className="alignedPara">
+              <li className="alignedPara footer-service-area-text">
                 <img className="checkmark" src='./img/checkmark.png' alt="A picture of a checkmark indicating we service the following area." />
                 Vaughan
               </li>
-              <li className="alignedPara">
+              <li className="alignedPara footer-service-area-text">
+                <img className="checkmark" src='./img/checkmark.png' alt="A picture of a checkmark indicating we service the following area." />
+                Brampton
+              </li>
+              <li className="alignedPara footer-service-area-text">
                 <img className="checkmark" src='./img/checkmark.png' alt="A picture of a checkmark indicating we service the following area." />
                 and many more!
               </li>
@@ -1245,11 +1248,11 @@ function Footer() {
           <div className="footer-grid-item">
 
 
-            <h4> <img className="footer-logo" src="./img/logo.png" alt="A picture of the Monteiro Homes logo." />Monteiro Homes</h4>
+            <h3 className="footer-service-area-text"> <img className="footer-logo" src="./img/logo.png" alt="A picture of the Monteiro Homes logo." />Monteiro Homes</h3>
             <ul>
 
               <li>
-                <h5>Custom Financing available</h5>
+                <h5 className="footer-service-area-text">Custom Financing available</h5>
               </li>
             </ul>
             <h4>OFFICE HOURS</h4>
