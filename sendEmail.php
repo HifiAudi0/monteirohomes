@@ -74,7 +74,7 @@ try {
 #               "subject is here",
 #               "Message content goes here",
 );
-        echo"Message sent success. $txtBody";
+        echo"Message sent success.";
 }
 
 catch (Exception $e) {

@@ -2,6 +2,11 @@
   font-family: 'Open Sans', 'Roboto', sans-serif;
 }
 
+@font-face {
+  font-family: "Roboto";
+  src: url("../public/fonts/Roboto/Roboto-Medium.ttf") format('truetype');
+}
+
 
 body {
   background: #191c29;
@@ -105,6 +110,10 @@ li {
   z-index: 0;
   /* background-image:
     repeating-radial-gradient(circle, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.55)); */
+  background-image: url("../public/img/kitchen/kitchen8.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 100% 100%;
 }
 
 .logo {
@@ -450,7 +459,9 @@ li {
   margin-left: 130px;
 }
 
-.home-social-instagram {}
+.home-social-instagram {
+  margin-left: -40px;
+}
 
 .home-social-responsiveness {
   display: none;
@@ -467,6 +478,10 @@ li {
   width: 60px;
   height: 60px;
 
+}
+
+.home-social-icons-email {
+  left: 20px;
 }
 
 .home-socials-icons-large-screens {
@@ -497,6 +512,10 @@ li {
   text-shadow: 1px 1px white;
   letter-spacing: 1px;
 
+}
+
+.home-social-text-email {
+  margin-left: 50px;
 }
 
 a:hover,
@@ -739,6 +758,8 @@ body>footer {
 
   }
 
+
+
   .footer-socials-heading {
     margin-left: 35%;
   }
@@ -829,6 +850,10 @@ body>footer {
     letter-spacing: 1px;
   }
 
+  .home-social-text-email {
+    margin-left: 15px;
+  }
+
   .home-socials {
     text-align: left;
   }
@@ -838,8 +863,23 @@ body>footer {
     height: 30px;
   }
 
+  .home-social-icons-email {
+    left: 0px;
+  }
+
   .home-social-email {
     margin-left: 0px;
+  }
+
+  .home-social-instagram {
+    margin-left: 0px;
+  }
+
+  .home-social-text {
+
+    font-size: 1.2rem;
+    letter-spacing: 0px;
+
   }
 
   .home-social-responsiveness {

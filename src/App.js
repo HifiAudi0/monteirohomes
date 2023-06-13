@@ -146,14 +146,14 @@ function Home() {
         </a><br className="home-social-responsiveness" /><br className="home-socials-large-screens" />
 
         <a href="mailto:phil@monteirohomes.ca">
-          <img className="rounded-circle home-social-icons home-social-email" src="./img/email.png" alt="An email to each Phil at." />
-          <span className="home-social-text">phil@monteirohomes.ca</span>
+          <img className="rounded-circle home-social-icons home-social-icons-email home-social-email" src="./img/email.png" alt="An email to each Phil at." />
+          <span className="home-social-text home-social-text-email">phil@monteirohomes.ca</span>
         </a><br className="home-social-responsiveness" />
 
 
         <a href="https://www.instagram.com/monteirohomes/" target="_blank">
           <span className="home-socials-icons-large-screens">
-            <Image className="rounded-circle home-social-icons" src="./img/instagram.png" alt="Instagram logo" />
+            <Image className="rounded-circle home-social-icons home-social-instagram" src="./img/instagram.png" alt="Instagram logo" />
             <span className="home-social-text">instagram.com/monteirohomes/</span>
           </span>
         </a>
