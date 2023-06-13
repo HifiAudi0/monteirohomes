@@ -726,6 +726,9 @@ body>footer {
   height: 30px;
 }
 
+.daysOfOperation {
+  margin-left: -40px;
+}
 
 .hoursOfOperation {
   color: greenyellow;
@@ -960,6 +963,9 @@ body>footer {
     margin-left: -30%;
   }
 
+  .hoursOfOperation {
+    margin-left: -10px;
+  }
 
   .formInstagramPost {
     left: 15%;

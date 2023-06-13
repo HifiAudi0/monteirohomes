@@ -1254,11 +1254,11 @@ function Footer() {
             </ul>
             <h4>OFFICE HOURS</h4>
             <ul>
-              <li className="alignedPara">Monday <span p className="hoursOfOperation alignedPara">&nbsp; &nbsp; &nbsp; &nbsp; 9am - 5pm</span></li>
-              <li className="alignedPara">Tuesday <span p className="hoursOfOperation alignedPara">&nbsp;&nbsp; &nbsp;  &nbsp; &nbsp;9am - 5pm</span></li>
-              <li className="alignedPara">Wednesday <span p className="hoursOfOperation alignedPara">&nbsp; 9am - 5pm</span></li>
-              <li className="alignedPara">Thursday <span p className="hoursOfOperation alignedPara">&nbsp; &nbsp; &nbsp; 9am - 5pm</span></li>
-              <li className="alignedPara">Friday <span p className="hoursOfOperation alignedPara">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;9am - 5pm</span></li>
+              <li className="alignedPara daysOfOperation">Monday <span p className="hoursOfOperation alignedPara">&nbsp; &nbsp; &nbsp; &nbsp; 9am - 5pm</span></li>
+              <li className="alignedPara daysOfOperation">Tuesday <span p className="hoursOfOperation alignedPara">&nbsp;&nbsp; &nbsp;  &nbsp; &nbsp;9am - 5pm</span></li>
+              <li className="alignedPara daysOfOperation">Wednesday <span p className="hoursOfOperation alignedPara">&nbsp; 9am - 5pm</span></li>
+              <li className="alignedPara daysOfOperation">Thursday <span p className="hoursOfOperation alignedPara">&nbsp; &nbsp; &nbsp; 9am - 5pm</span></li>
+              <li className="alignedPara daysOfOperation">Friday <span p className="hoursOfOperation alignedPara">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;9am - 5pm</span></li>
             </ul>
           </div>
 
