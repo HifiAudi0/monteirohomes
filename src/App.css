@@ -476,8 +476,8 @@ button.active {
   bottom: 0;
   text-align: left;
   width: 100%;
-  background-image:
-    repeating-radial-gradient(circle, rgba(255, 255, 255, 0.72), rgba(255, 255, 255, 0.75));
+  /* background-image:
+    repeating-radial-gradient(circle, rgba(255, 255, 255, 0.72), rgba(255, 255, 255, 0.75)); */
   /* border: 20px solid green; */
   /* object-fit: cover;
   z-index: 2; */
@@ -799,15 +799,64 @@ body>footer {
 /* above iPad */
 @media only screen and (min-width: 768px) and (max-width: 1450px) {
 
+  /* Home page */
+
+
+  .home-social-text {
+    font-size: 0.7rem;
+    font-weight: 900;
+    text-shadow: 1px 1px white;
+    letter-spacing: 1px;
+  }
+
+  .home-social-text-email {
+    margin-left: 15px;
+  }
+
+  .home-socials {
+    text-align: left;
+  }
+
+  .home-social-icons {
+    width: 30px;
+    height: 30px;
+  }
+
+  .home-social-icons-email {
+    left: 0px;
+  }
+
+  .home-social-email {
+    margin-left: 0px;
+  }
+
+  .home-social-instagram {
+    margin-left: 0px;
+  }
+
+  .home-social-text {
+
+    font-size: 1.2rem;
+    letter-spacing: 0px;
+
+  }
+
+  .home-social-responsiveness {
+    display: block;
+  }
+
+  .home-socials-large-screens {
+    display: none;
+  }
+
+  .home-socials-icons-large-screens {
+    margin: 0;
+  }
+
   .social-icons {
     margin-left: 25%;
   }
 
-  .home-social-email {
-
-    margin-left: 100px;
-
-  }
 
 
 

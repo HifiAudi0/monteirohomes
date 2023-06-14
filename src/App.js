@@ -655,6 +655,11 @@ function Pool() {
       <br />  <br />  <br />  <br />  <br />  <br />
       <br />  <br />  <br />  <br />  <br />  <br />
       <br />  <br />  <br />  <br />  <br />  <br />
+
+      <br /> <br /> <br /> <br /> <br /> <br />
+      <br />  <br />  <br />  <br />  <br />  <br />
+
+      <br /> <br /> <br /> <br /> <br /> <br />
       <div className="poolLineBreaks">
         <br />  <br />  <br />  <br />  <br />  <br />
 
