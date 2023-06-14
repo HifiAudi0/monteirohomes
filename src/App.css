@@ -110,11 +110,32 @@ li {
   z-index: 0;
   /* background-image:
     repeating-radial-gradient(circle, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.55)); */
-  background-image: url("../public/img/kitchen/kitchen8.jpg");
+  /* background-image: url("../public/img/kitchen/kitchen8.jpg"); */
   background-repeat: no-repeat;
   background-size: cover;
   background-size: 100% 100%;
 }
+
+button {
+  background-color: #666;
+  border: medium none;
+  color: #fff;
+  display: block;
+  font-size: 18px;
+  left: 0;
+  margin: 0 auto;
+  padding: 8px 16px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  z-index: 1;
+}
+
+button.active {
+
+  background-color: #0077a2;
+}
+
 
 .logo {
   width: 200px;
@@ -555,6 +576,10 @@ a:active {
   padding: 10px;
 
 
+}
+
+.quoteHeading {
+  margin-left: 50%;
 }
 
 .quote-grid-item {

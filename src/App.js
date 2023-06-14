@@ -107,6 +107,27 @@ function App() {
 
 function Home() {
 
+  $(document).ready(function () {
+    var ctrlVideo = document.getElementById("background-video");
+
+    $('button').click(function () {
+      if ($('button').hasClass("active")) {
+
+        ctrlVideo.play();
+
+        $('button').html("Pause");
+        $('button').toggleClass("active");
+      } else {
+
+        ctrlVideo.pause();
+
+        $('button').html("play");
+        $('button').toggleClass("active");
+      }
+    });
+
+  });
+
   return (
     <>
 
@@ -117,11 +138,15 @@ function Home() {
 
       {/* <div className="bgImage"> */}
 
-      <video id="background-video" autoPlay loop muted>
-        <source id="video-src" src="./img/bg.mp4" type="video/mp4" alt="A video of a beautify custom built home living rooma and patio." >
+      {/* poster="./img/kitchen/kitchen8.jpg" */}
+      <button class="active">play</button>
+
+      <video id="background-video" playsinline autoPlay loop muted preload="auto">
+        <source id="video-src" src="./img/bg-480pSD.mp4" type="video/mp4" alt="A video of a beautify custom built home living rooma and patio." >
         </source>
         Did not load video.
       </video>
+
 
       {/* </div> */}
 
@@ -943,6 +968,7 @@ function QuoteForm() {
     // <form action="http://162.240.97.142:52940/sendMailFlask" method="POST">
     <>
       <div className="quoteContainer">
+        <h2 className="quoteHeading">Scroll down and get your FREE quote today!</h2><br />
 
         <img src="./img/customerSupport2.jpeg" className="quoteImg" alt="A picture illustrating of a customer service rep." /><br /><br />
         <div className="quote-grid-item">
