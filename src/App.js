@@ -45,6 +45,8 @@ import SmartphoneIcon from '@mui/icons-material/Smartphone';
 
 import { InstagramEmbed } from 'react-social-media-embed';
 
+// import $ from 'jquery';
+
 const container = {
   hidden: { opacity: 1, scale: 0 },
   visible: {
@@ -107,26 +109,6 @@ function App() {
 
 function Home() {
 
-  $(document).ready(function () {
-    var ctrlVideo = document.getElementById("background-video");
-
-    $('button').click(function () {
-      if ($('button').hasClass("active")) {
-
-        ctrlVideo.play();
-
-        $('button').html("Pause");
-        $('button').toggleClass("active");
-      } else {
-
-        ctrlVideo.pause();
-
-        $('button').html("play");
-        $('button').toggleClass("active");
-      }
-    });
-
-  });
 
   return (
     <>
@@ -139,9 +121,13 @@ function Home() {
       {/* <div className="bgImage"> */}
 
       {/* poster="./img/kitchen/kitchen8.jpg" */}
-      <button class="active">play</button>
+      {/* <button className="active">play</button> */}
 
-      <video id="background-video" playsinline autoPlay loop muted preload="auto">
+      {/* BUG FIX - Video would play full-screen (unwanted) on iOS devices.
+    The solution was to add the playsInline attribute to the video tag.
+    More importantly its "playsInline" in React. If you use "playsinline" it will not work. */}
+
+      <video id="background-video" playsInline autoPlay loop muted preload="auto">
         <source id="video-src" src="./img/bg-480pSD.mp4" type="video/mp4" alt="A video of a beautify custom built home living rooma and patio." >
         </source>
         Did not load video.
