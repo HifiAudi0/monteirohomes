@@ -1060,10 +1060,10 @@ function Contact() {
       </div> */}
 
       <div className="contact-grid-item">
-        <br /> <br /> <br /> <br /> <br />
-        <h3>Don't hesitate to get in touch with us today!</h3><br />
+        <br /> <br /> <br /> <br /> <br /> <br />
+        <h3 className="contactUsHeading">Don't hesitate to get in touch with us today!</h3><br />
         <p className="alignedPara contactPara">We would love to hear from you! Please feel free to reach out to us with any inquiries or to discuss your upcoming project. Our team of experts is here to assist you every step of the way.
-          <p className="alignedpara contactParaResponsive"><br /><br /> Whether you have questions about our services, need a consultation, or want to schedule an appointment, we are just a phone call or email away..<br /><br /> Don't hesitate to contact us and let us help you bring your home renovation dreams to life. We look forward to working with you!<br /><br /></p>
+          <span className="alignedpara contactPara contactParaResponsive"><br /><br /> Whether you have questions about our services, need a consultation, or want to schedule an appointment, we are just a phone call or email away..<br /><br /> Don't hesitate to contact us and let us help you bring your home renovation dreams to life. We look forward to working with you!<br /><br /></span>
         </p>
 
 
@@ -1120,7 +1120,7 @@ function Contact() {
               </a><br /> */}
 
 
-
+      <br /><br />
 
       <Footer />
     </>
