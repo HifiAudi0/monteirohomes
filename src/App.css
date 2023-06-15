@@ -441,14 +441,14 @@ button.active {
   text-shadow: 1px 1px black
 }
 
-.about-grid-container {
+/* .about-grid-container {
   display: grid;
   grid-template-columns: 30% 70%;
-  grid-template-rows: 900px;
+
   padding: 10px;
+  grid-template-rows: min-content;
 
-
-}
+} */
 
 .about-grid-item {
   /* background-color: rgba(255, 255, 255, 0.8); */
@@ -463,6 +463,12 @@ button.active {
   background-repeat: no-repeat;
   background-size: stretch;
   background-size: 100% 100%;
+  border: 5px solid black;
+  /* display: grid; */
+  /* grid-template-columns: 60%; */
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .vanPic {
@@ -470,15 +476,19 @@ button.active {
   height: 400px;
 
   position: relative;
-  margin-top: 100px;
+  /* margin-top: 100px; */
 
   box-shadow: 5px 5px 10px rgba(0, 0, 0);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .canadianFlag {
   width: 150px;
   height: 150px;
   margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
@@ -703,7 +713,7 @@ input:active {
 .contact-grid-container {
   display: grid;
   grid-template-columns: 30% 70%;
-  grid-template-rows: 700px;
+  grid-template-rows: 900px;
   padding: 10px;
 }
 
@@ -715,6 +725,7 @@ input:active {
   margin-right: 10px;
   margin: 20px;
   border: 2px solid white;
+
 }
 
 .contactCard {
@@ -821,7 +832,7 @@ body>footer {
 /* MEDIA QUERIES */
 
 /* above iPad */
-@media only screen and (min-width: 76px) and (max-width: 1450px) {
+@media only screen and (min-width: 768px) and (max-width: 1450px) {
 
   /* Home page */
 
@@ -925,16 +936,19 @@ body>footer {
 
   /* ABOUT PAGE */
   .about-grid-container {
-
+    grid-template-columns: 100%;
     grid-template-rows: 900px;
+    border: 20px solid green;
   }
+
+  .about-grid-item {}
 
 
 
   .vanPic {
-    width: 300px;
-    height: 300px;
-    margin-top: 200px;
+    width: 400px;
+    height: 450px;
+    /* margin-top: 200px; */
   }
 
   /* ABOUT PAGE */
@@ -1112,15 +1126,19 @@ body>footer {
   }
 
   /* ABOUT PAGE */
-  .about-grid-container {
+  /* .about-grid-container {
     grid-template-columns: 100%;
     grid-template-rows: 1200px;
+  } */
+
+  .about-grid-item {
+    width: 100%;
+
   }
 
   .vanPic {
-    width: 300px;
-    height: 300px;
-    margin-top: 200px;
+    width: 260px;
+    height: 250px;
   }
 
   /* ABOUT PAGE */
