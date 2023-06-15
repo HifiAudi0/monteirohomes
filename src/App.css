@@ -43,27 +43,7 @@ li {
   cursor: pointer;
 }
 
-.buttonEmailUs {
-  padding: 23px;
-  margin-bottom: 20px;
-}
 
-.buttonEmailUsText {
-  margin-left: 10px;
-  font-weight: 900;
-  font-size: 1.2rem;
-}
-
-.buttonCallUs {
-  padding: 28px;
-  margin-top: 20px;
-}
-
-.buttonCallUsText {
-  margin-left: 10px;
-  font-weight: 900;
-  font-size: 1.2rem;
-}
 
 .target {
   font-size: 2rem;
@@ -710,12 +690,12 @@ input:active {
 
 /* CONTACT PAGE */
 
-.contact-grid-container {
+/* .contact-grid-container {
   display: grid;
   grid-template-columns: 30% 70%;
   grid-template-rows: 900px;
   padding: 10px;
-}
+} */
 
 .contact-grid-item {
   /* background-color: rgba(255, 255, 255, 0.8); */
@@ -725,12 +705,60 @@ input:active {
   margin-right: 10px;
   margin: 20px;
   border: 2px solid white;
+  background-image: url("../public/img/aboutUsBg.jpeg");
+  background-repeat: no-repeat;
+  background-size: stretch;
+  background-size: 100% 100%;
+  border: 5px solid black;
+  /* display: grid; */
+  /* grid-template-columns: 60%; */
+  width: 100%;
+  height: 1260px;
+  margin-left: auto;
+  margin-right: auto;
+
 
 }
 
-.contactCard {
+.contactSupportImage {
+  width: 270px;
+  height: 270px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0);
+}
+
+.buttonEmailUs {
+  padding: 23px;
+  margin-bottom: -120px;
+  margin-top: -120px;
+  margin-left: 50px;
+  bottom: 75px;
+}
+
+.buttonEmailUsText {
+  margin-left: 10px;
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+
+.buttonCallUs {
+  padding: 28px;
+  margin-top: -70px;
+  margin-left: 310px;
+  bottom: 125px;
+}
+
+.buttonCallUsText {
+  margin-left: 10px;
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+
+/* .contactCard {
   background-color: #484A4C;
+  background-color: black;
   margin-left: 20%;
+  margin-left: auto;
+  margin-right: auto;
 
 }
 
@@ -741,6 +769,16 @@ input:active {
 .contactCardLink {
   color: white;
   font-size: 1.5rem;
+}
+
+.contactUsHeading {} */
+
+.contactPara {
+  color: #57BDEA;
+  color: white;
+  font-size: 1.7rem;
+  font-weight: 900;
+  text-shadow: 1px 1px black;
 }
 
 /* .contactCardText {
@@ -942,11 +980,11 @@ body>footer {
   }
 
   /* ABOUT PAGE */
-  .about-grid-container {
+  /* .about-grid-container {
     grid-template-columns: 100%;
     grid-template-rows: 900px;
     border: 20px solid green;
-  }
+  } */
 
   .about-grid-item {}
 
@@ -1155,16 +1193,43 @@ body>footer {
 
   /* ABOUT PAGE */
 
-  .contact-grid-container {
+  /* .contact-grid-container {
     grid-template-columns: 100%;
     margin-top: 250px;
+  } */
+
+  /* .contact-grid-item {} */
+
+  .contactSupportImage {
+    width: 270px;
+    height: 270px;
   }
 
-  .contact-grid-item {}
+  .buttonEmailUs {
+    margin-top: 120px;
+  }
 
-  .contactCard {
+  .buttonEmailUsText {
+    margin-left: 10px;
+  }
+
+  .buttonCallUs {
+    margin-top: -70px;
+    margin-left: 55px;
+    bottom: 15px;
+  }
+
+  .buttonCallUsText {
+    font-size: 1.2rem;
+  }
+
+  .contactParaResponsive {
+    display: none;
+  }
+
+  /* .contactCard {
     margin-left: 0;
-  }
+  } */
 
   .footer-social-icon {
     width: 30px;

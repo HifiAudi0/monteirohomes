@@ -1052,62 +1052,64 @@ function Contact() {
       <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
 
 
-      <div className="contact-grid-container">
+      {/* <div className="contact-grid-container"> */}
 
-        <div className="contact-grid-item">
-          <h3>Contact Us</h3>
+      {/* <div className="contact-grid-item">
+        <h3 className="contactUsHeading">Contact Us</h3>
 
-          <Card style={{ width: '18rem' }} className="contactCard">
-            <Card.Img variant="top" src="./img/customerSupport.jpeg" alt="A picture of a customer support reprensenative on the phone." />
-            <Card.Body>
-              <Card.Title className="contactCardTitle">Get in touch with us today!</Card.Title>
-              {/* <Card.Text>
+      </div> */}
+
+      <div className="contact-grid-item">
+        <br /> <br /> <br /> <br /> <br />
+        <h3>Don't hesitate to get in touch with us today!</h3><br />
+        <p className="alignedPara contactPara">We would love to hear from you! Please feel free to reach out to us with any inquiries or to discuss your upcoming project. Our team of experts is here to assist you every step of the way.
+          <p className="alignedpara contactParaResponsive"><br /><br /> Whether you have questions about our services, need a consultation, or want to schedule an appointment, we are just a phone call or email away..<br /><br /> Don't hesitate to contact us and let us help you bring your home renovation dreams to life. We look forward to working with you!<br /><br /></p>
+        </p>
+
+
+        <Image className="contactSupportImage" variant="top" src="./img/customerSupport.jpeg" alt="A picture of a customer support reprensenative on the phone." />
+
+
+        {/* <Card.Text>
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
           </Card.Text> */}
-            </Card.Body>
-            {/* <ListGroup className="list-group-flush">
+
+        {/* <ListGroup className="list-group-flush">
           <ListGroup.Item>Cras justo odio</ListGroup.Item>
           <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
           <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
         </ListGroup> */}
 
-            <Card.Body>
-              <Card.Link href="mailto:phil@monteirohomes.ca" className="contactCardLink">
 
-                {/* <span p className="contactCardText">Email us</span> */}
+        <a href="mailto:phil@monteirohomes.ca" className="contactCardLink">
 
-                {/* 
+          {/* <span p className="contactCardText">Email us</span> */}
+
+          {/* 
                 <button class="custom-btn btn-11">Read More</button> */}
 
-                <button className="buttonEmailUs custom-btn btn-11">
+          <button className="buttonEmailUs custom-btn btn-11">
 
-                  <img className="rounded-circle glow-effect-links footer-socail-icon" src="./img/email.png" width="60px" height="60px" alt="An email to each Phil at." />
-                  <span className="buttonEmailUsText">EMAIL US</span>
+            <img className="rounded-circle glow-effect-links footer-socail-icon" src="./img/email.png" width="60px" height="60px" alt="An email to each Phil at." />
+            <span className="buttonEmailUsText">EMAIL US</span>
 
-                </button>
-              </Card.Link>
-              <br />
-              {/* <Image className="rounded-circle glow-effect-links footer-socail-icon" src="./img/phone.png" width="60px" height="60px" alt="A phone number to reach Phil at." /> */}
-              {/* <span p className="contactCardText">Call us</span> */}
-              <a href="tel:(647)885-2384">
-                <button className="buttonEmailUs custom-btn btn-11">
-                  <Image className="rounded-circle glow-effect-links footer-socail-icon" src="./img/phone.png" width="60px" height="60px" alt="A phone number to reach Phil at." />
-                  <span className="buttonCallUsText">CALL US</span>
-                </button>
-              </a>
-            </Card.Body>
-          </Card >
-        </div>
+          </button>
+        </a>
+        <br />
+        {/* <Image className="rounded-circle glow-effect-links footer-socail-icon" src="./img/phone.png" width="60px" height="60px" alt="A phone number to reach Phil at." /> */}
+        {/* <span p className="contactCardText">Call us</span> */}
+        <a href="tel:(647)885-2384">
+          <button className="buttonCallUs custom-btn btn-11">
+            <Image className="rounded-circle glow-effect-links footer-socail-icon" src="./img/phone.png" width="60px" height="60px" alt="A phone number to reach Phil at." />
+            <span className="buttonCallUsText">CALL US</span>
+          </button>
+        </a>
+      </div >
 
-        <div className="contact-grid-item">
-          <h3>Don't hesitate to get in touch with us today!</h3><br />
-          <p className="alignedPara">We would love to hear from you! Please feel free to reach out to us with any inquiries or to discuss your upcoming project. Our team of experts is here to assist you every step of the way.<br /><br /> Whether you have questions about our services, need a consultation, or want to schedule an appointment, we are just a phone call or email away..<br /><br /> Don't hesitate to contact us and let us help you bring your home renovation dreams to life. We look forward to working with you!</p>
-        </div>
+      {/* <ContactForm /> */}
 
-        {/* <ContactForm /> */}
-
-      </div>
+      {/* </div> */}
 
       {/* <a href="mailto:phil@monteirohomes.ca">                <img className="rounded-circle glow-effect-links footer-socail-icon" src="./img/email.png" width="60px" height="60px" alt="An email to each Saher at." />Make an appointment</a> */}
 
