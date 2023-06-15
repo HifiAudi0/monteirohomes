@@ -1,0 +1,21 @@
+.textAnimation {
+    display: inline-block;
+    background: linear-gradient(60deg, currentColor 75%, rgba(0, 0, 0, 1) 95%, currentColor 95%);
+    background-size: 200%;
+    background-position: 200% 0%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: white;
+
+
+}
+
+.textAnimation:hover {
+    animation: text-link-hover 800ms ease;
+}
+
+@keyframes text-link-hover {
+    100% {
+        background-position: 50% 0%;
+    }
+}
