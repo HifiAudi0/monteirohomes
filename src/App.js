@@ -45,6 +45,8 @@ import SmartphoneIcon from '@mui/icons-material/Smartphone';
 
 import { InstagramEmbed } from 'react-social-media-embed';
 
+import './ButtonAnimation.css';
+
 // import $ from 'jquery';
 
 const container = {
@@ -1070,19 +1072,24 @@ function Contact() {
 
                 {/* <span p className="contactCardText">Email us</span> */}
 
-                <Button className="buttonEmailUs" variant="success">
+                {/* 
+                <button class="custom-btn btn-11">Read More</button> */}
+
+                <button className="buttonEmailUs custom-btn btn-11">
+
                   <img className="rounded-circle glow-effect-links footer-socail-icon" src="./img/email.png" width="60px" height="60px" alt="An email to each Phil at." />
                   <span className="buttonEmailUsText">EMAIL US</span>
-                </Button>
+
+                </button>
               </Card.Link>
               <br />
               {/* <Image className="rounded-circle glow-effect-links footer-socail-icon" src="./img/phone.png" width="60px" height="60px" alt="A phone number to reach Phil at." /> */}
               {/* <span p className="contactCardText">Call us</span> */}
               <a href="tel:(647)885-2384">
-                <Button className="buttonCallUs" variant="success">
+                <button className="buttonEmailUs custom-btn btn-11">
                   <Image className="rounded-circle glow-effect-links footer-socail-icon" src="./img/phone.png" width="60px" height="60px" alt="A phone number to reach Phil at." />
                   <span className="buttonCallUsText">CALL US</span>
-                </Button>
+                </button>
               </a>
             </Card.Body>
           </Card >
