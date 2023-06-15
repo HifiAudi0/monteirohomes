@@ -797,7 +797,7 @@ body>footer {
 /* MEDIA QUERIES */
 
 /* above iPad */
-@media only screen and (min-width: 768px) and (max-width: 1450px) {
+@media only screen and (min-width: 76px) and (max-width: 1450px) {
 
   /* Home page */
 
@@ -915,16 +915,17 @@ body>footer {
 
   /* ABOUT PAGE */
 
-  /* .contact-grid-container {
-    grid-template-columns: 100%;
+  .contact-grid-container {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1050px;
     margin-top: 50px;
-  } */
+  }
 
-  /* .contact-grid-item {} */
+  .contact-grid-item {}
 
 
   .contactCard {
-    margin-left: 25px;
+    margin-left: 30%;
     /* border: 20px solid red; */
   }
 
