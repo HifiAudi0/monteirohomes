@@ -1049,7 +1049,7 @@ function Contact() {
       <RemoveQuoteForm />
 
 
-      <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
+
 
 
       {/* <div className="contact-grid-container"> */}
@@ -1121,7 +1121,7 @@ function Contact() {
 
 
 
-      <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
+
       <Footer />
     </>
   );
