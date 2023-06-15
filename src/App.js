@@ -398,18 +398,18 @@ function Kitchen() {
           }}>
           <div className="grid-container">
             <div className="grid-item">
-              <img src="./img/kitchen/kitchen1.jpg" className="kitchen image-border zoomD" alt="A picture of a finished kitchen renovation." />
+              <img src="./img/kitchen/kitchen1.jpg" className="kitchen image-border zoomD pointer" alt="A picture of a finished kitchen renovation." />
             </div>
             <div className="grid-item">
-              <img src="./img/kitchen/kitchen2.jpg" className="kitchen image-border kitchen-image-right zoomD" alt="A picture of a finished kitchen renovation." />
-            </div>
-
-            <div className="grid-item">
-              <Image src="./img/kitchen/kitchen3.jpg" className="kitchen image-border zoomD" alt="A picture of a finished kitchen renovation." />
+              <img src="./img/kitchen/kitchen2.jpg" className="kitchen image-border kitchen-image-right zoomD pointer" alt="A picture of a finished kitchen renovation." />
             </div>
 
             <div className="grid-item">
-              <Image src="./img/kitchen/kitchen4.jpg" className="kitchen image-border zoomD" alt="A picture of a finished kitchen renovation." />
+              <Image src="./img/kitchen/kitchen3.jpg" className="kitchen image-border zoomD pointer" alt="A picture of a finished kitchen renovation." />
+            </div>
+
+            <div className="grid-item">
+              <Image src="./img/kitchen/kitchen4.jpg" className="kitchen image-border zoomD pointer" alt="A picture of a finished kitchen renovation." />
             </div>
             <div className="grid-item">
               {/* <img className="kitchen-card-bg" src="./img/cardBg.png"></img> */}
@@ -419,27 +419,27 @@ function Kitchen() {
               </p>
             </div>
             <div className="grid-item">
-              <Image src="./img/kitchen/kitchen5.jpg" className="kitchen image-border zoomD" alt="A picture of a finished kitchen renovation." />
+              <Image src="./img/kitchen/kitchen5.jpg" className="kitchen image-border zoomD pointer" alt="A picture of a finished kitchen renovation." />
             </div>
 
             <div className="grid-item">
-              <Image src="./img/kitchen/kitchen6.jpg" className="kitchen image-border zoomD" alt="A picture of a finished kitchen renovation." />
+              <Image src="./img/kitchen/kitchen6.jpg" className="kitchen image-border zoomD pointer" alt="A picture of a finished kitchen renovation." />
             </div>
 
             <div className="grid-item">
-              <Image src="./img/kitchen/kitchen7.jpg" className="kitchen image-border zoomD" alt="A picture of a finished kitchen renovation." />
+              <Image src="./img/kitchen/kitchen7.jpg" className="kitchen image-border zoomD pointer" alt="A picture of a finished kitchen renovation." />
             </div>
             <div className="grid-item">
-              <Image src="./img/kitchen/kitchen8.jpg" className="kitchen image-border zoomD" alt="A picture of a finished kitchen renovation." />
+              <Image src="./img/kitchen/kitchen8.jpg" className="kitchen image-border zoomD pointer" alt="A picture of a finished kitchen renovation." />
             </div>
             <div className="grid-item">
-              <Image src="./img/kitchen/kitchen9.jpg" className="kitchen image-border zoomD" alt="A picture of a finished kitchen renovation." />
+              <Image src="./img/kitchen/kitchen9.jpg" className="kitchen image-border zoomD pointer" alt="A picture of a finished kitchen renovation." />
             </div>
             <div className="grid-item">
-              <Image src="./img/kitchen/kitchen10.jpg" className="kitchen image-border zoomD" alt="A picture of a finished kitchen renovation." />
+              <Image src="./img/kitchen/kitchen10.jpg" className="kitchen image-border zoomD pointer" alt="A picture of a finished kitchen renovation." />
             </div>
             <div className="grid-item">
-              <Image src="./img/kitchen/kitchen11.jpg" className="kitchen image-border zoomD" alt="A picture of a finished kitchen renovation." />
+              <Image src="./img/kitchen/kitchen11.jpg" className="kitchen image-border zoomD pointer" alt="A picture of a finished kitchen renovation." />
             </div>
           </div>
         </motion.div >
@@ -494,17 +494,17 @@ function Bath() {
         <div className="bath-grid-container">
           <div className="bath-grid-item">
 
-            <img src="./img/bath/bath1.jpg" className="bath-image image-border zoomD" alt="A picture of a finished bathroom renovation." />
+            <img src="./img/bath/bath1.jpg" className="bath-image image-border zoomD pointer" alt="A picture of a finished bathroom renovation." />
 
           </div>
           <div className="bath-grid-item">
-            <img src="./img/bath/bath2.jpg" className="bath-image image-border zoomD" alt="A picture of a finished bathroom renovation." />
+            <img src="./img/bath/bath2.jpg" className="bath-image image-border zoomD pointer" alt="A picture of a finished bathroom renovation." />
           </div>
           <div className="bath-grid-item">
-            <img src="./img/bath/bath3.jpg" className="bath-image image-border zoomD" alt="A picture of a finished bathroom renovation." />
+            <img src="./img/bath/bath3.jpg" className="bath-image image-border zoomD pointer" alt="A picture of a finished bathroom renovation." />
           </div>
           <div className="bath-grid-item">
-            <img src="./img/bath/bath4.jpg" className="bath-image image-border zoomD" alt="A picture of a finished bathroom renovation." />
+            <img src="./img/bath/bath4.jpg" className="bath-image image-border zoomD pointer" alt="A picture of a finished bathroom renovation." />
           </div>
 
           <div className="bath-grid-item">
@@ -513,17 +513,17 @@ function Bath() {
           </div>
 
           <div className="bath-grid-item">
-            <img src="./img/bath/bath5.jpg" className="bath-image image-border zoomD" alt="A picture of a finished bathroom renovation." />
+            <img src="./img/bath/bath5.jpg" className="bath-image image-border zoomD pointer" alt="A picture of a finished bathroom renovation." />
           </div>
           <div className="bath-grid-item">
-            <img src="./img/bath/bath6.jpg" className="bath-image image-border zoomD" alt="A picture of a finished bathroom renovation." />
+            <img src="./img/bath/bath6.jpg" className="bath-image image-border zoomD pointer" alt="A picture of a finished bathroom renovation." />
           </div>
 
           <div className="bath-grid-item">
-            <img src="./img/bath/bath7.jpg" className="bath-image image-border zoomD" alt="A picture of a finished bathroom renovation." />
+            <img src="./img/bath/bath7.jpg" className="bath-image image-border zoomD pointer" alt="A picture of a finished bathroom renovation." />
           </div>
           <div className="bath-grid-item">
-            <img src="./img/bath/bath9.jpg" className="bath-image image-border zoomD" alt="A picture of a finished bathroom renovation." />
+            <img src="./img/bath/bath9.jpg" className="bath-image image-border zoomD pointer" alt="A picture of a finished bathroom renovation." />
           </div>
 
         </div >
@@ -614,13 +614,13 @@ function Pool() {
         animate={{ x: 100 }}
         transition={{ ease: "easeOut", duration: 2 }}
       >
-        <Image src="./img/pools/pool1.jpg" className="pool image-border zoomD" alt="A picture of a finished pool renovation." />
+        <Image src="./img/pools/pool1.jpg" className="pool image-border zoomD pointer" alt="A picture of a finished pool renovation." />
       </motion.div>
       <motion.div
         animate={{ x: 100 }}
         transition={{ ease: "easeOut", duration: 2 }}
       >
-        <Image src="./img/pools/pool2.jpg" className="pool image-border zoomD" alt="A picture of a finished pool renovation." />
+        <Image src="./img/pools/pool2.jpg" className="pool image-border zoomD pointer" alt="A picture of a finished pool renovation." />
         <br /> <br /> <br />
       </motion.div>
 
@@ -639,17 +639,17 @@ function Pool() {
         animate={{ x: 100 }}
         transition={{ ease: "easeOut", duration: 2 }}
       >
-        <Image src="./img/pools/pool3.jpg" className="pool image-border zoomD" alt="A picture of a finished pool renovation." />
+        <Image src="./img/pools/pool3.jpg" className="pool image-border zoomD pointer" alt="A picture of a finished pool renovation." />
       </motion.div>
       <motion.div
         animate={{ x: 100 }}
         transition={{ ease: "easeOut", duration: 2 }}>
-        <Image src="./img/pools/pool4.jpg" className="pool image-border zoomD" alt="A picture of a finished pool renovation." />
+        <Image src="./img/pools/pool4.jpg" className="pool image-border zoomD pointer" alt="A picture of a finished pool renovation." />
       </motion.div>
       <motion.div
         animate={{ x: 100 }}
         transition={{ ease: "easeOut", duration: 2 }}>
-        <Image src="./img/pools/pool5.jpg" className="pool image-border zoomD" alt="A picture of a finished pool renovation." />
+        <Image src="./img/pools/pool5.jpg" className="pool image-border zoomD pointer" alt="A picture of a finished pool renovation." />
       </motion.div>
 
       <br /> <br /> <br /> <br /> <br /> <br />
@@ -687,7 +687,7 @@ function Deck() {
       <div className="bath-grid-container">
 
         <div className="bath-grid-item">
-          <img src="./img/fencingDeckpatio/patio1.jpg" className="bath-image image-border zoomD" alt="A picture of a finished patio renovation." />
+          <img src="./img/fencingDeckpatio/patio1.jpg" className="bath-image image-border zoomD pointer" alt="A picture of a finished patio renovation." />
         </div>
         <p className="alignedPara deckPara">
           <br />
@@ -695,12 +695,12 @@ function Deck() {
         </p>
         <div className="bath-grid-item">
           <br />   <br />   <br /> <br />
-          <img src="./img/fencingDeckpatio/patio2.jpg" className="bath-image image-border zoomD" alt="A picture of a finished patio renovation." />
+          <img src="./img/fencingDeckpatio/patio2.jpg" className="bath-image image-border zoomD pointer" alt="A picture of a finished patio renovation." />
         </div>
 
         <div className="bath-grid-item">
           <br />   <br />   <br /> <br />
-          <img src="./img/fencingDeckpatio/patio3.jpg" className="bath-image image-border zoomD" alt="A picture of a finished patio renovation." />
+          <img src="./img/fencingDeckpatio/patio3.jpg" className="bath-image image-border zoomD pointer" alt="A picture of a finished patio renovation." />
         </div>
       </div>
       <br /> <br />  <br /> <br />

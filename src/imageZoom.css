@@ -38,7 +38,7 @@
     /* (B1) DIMENSIONS */
     width: 100%;
     height: auto;
-
+    cursor: pointer;
     /* (B2) IMAGE FIT */
     /* contain | cover | fill | scale-down */
     /* object-fit: cover; */
