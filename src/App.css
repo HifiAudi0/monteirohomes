@@ -628,8 +628,9 @@ a:active {
   margin-right: -50%; */
 
 .quoteHeading {
-  left: 50%;
-  position: relative;
+
+  text-align: center;
+  color: white;
 }
 
 /* .quote-grid-item {
@@ -1216,6 +1217,7 @@ body>footer {
 
   .quoteHeading {
     left: 0%;
+
   }
 
   .quoteForm {
