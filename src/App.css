@@ -382,23 +382,28 @@ button.active {
 
 /* FAQ */
 .accordion {
-  width: 70%;
-  left: 10%;
-  background-color: #484A4C !important;
+  width: 60%;
+  left: 20%;
+  background-color: #2f2f30 !important;
+  /* position: relative;
+  margin-left: 5%;
+  margin-right: auto;
+  display: block; */
 
 }
 
 .accordHeading {
-  font-size: 1.5rem !important;
-  color: white;
+  font-size: 1.8rem !important;
+  color: #0C7AFF;
+
+
 }
 
 .accordPara {
-  font-size: 1.2rem !important;
-  color: white;
+  font-size: 1.5rem !important;
+  color: #FFBF19;
 }
 
-/* FAQ */
 .faq {
   width: 200px;
   height: 200px;
@@ -408,6 +413,12 @@ button.active {
 .faq-heading {
 
   text-align: center;
+  color: #0C7AFF;
+
+}
+
+#faq-heading-answers {
+  color: #FFBF19;
 
 }
 
@@ -1169,6 +1180,17 @@ body>footer {
     margin-left: 50px;
     margin-right: 50px;
   }
+
+  /* FAQ */
+  .faq {
+    margin-left: 20%;
+  }
+
+  .accordion {
+    width: 90%;
+    left: 5%;
+  }
+
 
   /* Quote */
   /* .quoteContainer {

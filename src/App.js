@@ -772,7 +772,7 @@ function Faq() {
       <RemoveQuoteForm />
 
 
-      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+      <br /><br />
       <motion.div
         initial={{ scale: 0 }}
         animate={{ rotate: 360, scale: 1 }}
@@ -783,6 +783,7 @@ function Faq() {
           damping: 20
         }}>
         <Image src="./img/faq.png" className="faq" alt="A picture illustrating frequently asked questions." /><br />
+        <br />
       </motion.div >
 
 
@@ -796,7 +797,7 @@ function Faq() {
         }}>
         <div>
           <h3 className="faq-heading">You have questions?</h3>
-          <h3 className="faq-heading">We have answers!</h3>
+          <h3 className="faq-heading" id="faq-heading-answers">We have answers!</h3><br />
         </div>
       </motion.div >
 
@@ -852,29 +853,9 @@ function Faq() {
             </Typography>
           </AccordionDetails>
         </Accordion>
-        <Accordion className="accordion">
-          <AccordionSummary aria-controls="panel2a-content" id="panel2a-header">
-            <Typography className="accordHeading">...</Typography>
-          </AccordionSummary>
-          <AccordionDetails>
-            <Typography className="accordPara">
-
-            </Typography>
-          </AccordionDetails>
-        </Accordion>
-        <Accordion className="accordion">
-          <AccordionSummary aria-controls="panel2a-content" id="panel2a-header">
-            <Typography className="accordHeading">...</Typography>
-          </AccordionSummary>
-          <AccordionDetails>
-            <Typography className="accordPara">
-
-            </Typography>
-          </AccordionDetails>
-        </Accordion>
       </motion.div>
 
-      <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
+      <br /> <br />
       <Footer />
 
     </>
