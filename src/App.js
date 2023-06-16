@@ -971,6 +971,8 @@ function QuoteForm() {
       {/* </div> */}
       {/* <div className="quote-grid-item"> */}
       <form action="http://www.monteirohomes.com/sendEmailPM.php" method="POST" className="quoteForm">
+
+        <img className="logo" src="./img/logo.png" alt="A picture of the Monterio homes logo." />
         <h3 className="formHeading">Get a free estimate today!</h3>
         <label for="name" className="formLabels">Name (required)</label><br />
         <input type='text' className="formInputText" name='name' value={form.name} onChange={handleChange} placeholder='Your name' /><br /><br />
@@ -982,6 +984,7 @@ function QuoteForm() {
         <textarea name='message' className="formInputText" id="formInputMessage" value={form.message} onChange={handleChange} placeholder='Your message' /><br /><br />
         {errors['message'] && <span className="error">{errors['message']}</span>}
         <button type='submit' className="formSubmitBtn">SEND MESSAGE</button><br /><br />
+
       </form>
       {/* </div> */}
       {/* </div> */}
