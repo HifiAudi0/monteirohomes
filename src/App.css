@@ -595,55 +595,76 @@ a:active {
 
 
 /* Quote page */
-.quoteContainer {
+/* .quoteContainer {
   color: white;
   text-align: center;
-
-
   display: grid;
   grid-template-columns: 50% 50%;
-  /* grid-template-rows: 700px; */
   padding: 10px;
+} */
+/* grid-template-rows: 700px; */
 
 
-}
+
+/* text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative; */
+/* left: 50%;
+  margin-right: -50%; */
 
 .quoteHeading {
-  margin-left: 50%;
+  left: 50%;
+  position: relative;
 }
 
-.quote-grid-item {
-  /* background-color: rgba(255, 255, 255, 0.8); */
+/* .quote-grid-item {
   padding: 20px;
   font-size: 30px;
   text-align: center;
-  /* margin-right: 10px;
+  margin-left: 0%;
+} */
+
+/* background-color: rgba(255, 255, 255, 0.8); */
+/* margin-right: 10px;
   margin: 20px; */
-  margin-left: 30%;
-}
 
-.quoteForm {
-  background-color: green;
-  width: 70%;
-  /* margin: 0 auto; */
-  border: 2px dotted white;
-  /* text-align: center; */
-  margin-left: -45%;
-  width: 500px;
-}
-
-.quoteImg {
+.quoteImgSupport {
   width: 400px;
   height: 400px;
   position: relative;
-  left: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+
 }
 
 .formInstagramPost {
   width: 400px;
-
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  position: relative;
 }
 
+.quoteForm {
+  background-color: green;
+
+  /* margin: 0 auto; */
+  border: 2px solid black;
+  /* text-align: center; */
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  width: 400px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
 
 
 .formHeading {
@@ -660,6 +681,7 @@ a:active {
 .formInputText {
   width: 300px;
   text-align: center;
+  border: 2px solid black;
 
 }
 
@@ -677,7 +699,7 @@ input:active {
 
 #formInputMessage {
   height: 250px;
-  width: 400px;
+  width: 355px;
 }
 
 .formSubmitBtn {
@@ -1149,13 +1171,41 @@ body>footer {
   }
 
   /* Quote */
-  .quoteContainer {
+  /* .quoteContainer {
 
     grid-template-columns: 100%;
+    
+  } */
+
+  .quoteImgSupport {
+    width: 300px;
+    height: 300px;
+  }
+
+  .formInstagramPost {
+    /* width: 35px; */
+    /* left: 30%; */
+    /* left: 15%; */
+    /* margin-left: 155%;
+    left: 150%; */
+    padding-left: 60px;
+    padding-right: 80px;
+  }
+
+  .quoteHeading {
+    left: 0%;
   }
 
   .quoteForm {
-    margin-left: -30%;
+    /* margin-left: auto; */
+    width: 350px;
+
+  }
+
+
+  #formInputMessage {
+    height: 250px;
+    width: 305px;
   }
 
   .hoursOfOperation {
