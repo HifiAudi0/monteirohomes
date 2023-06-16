@@ -786,7 +786,7 @@ input:active {
   font-size: 1.7rem;
   font-weight: 900;
   text-shadow: 1px 1px black;
-  margin-right: 30px;
+  margin-right: 100px;
 }
 
 /* .contactCardText {
@@ -1229,6 +1229,10 @@ body>footer {
 
   .buttonCallUsText {
     font-size: 1.2rem;
+  }
+
+  .contactPara {
+    margin-right: 30px;
   }
 
   .contactParaResponsive {
