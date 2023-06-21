@@ -245,6 +245,8 @@ function Links() {
             <a href="/Faq" className="nav-link">FAQ</a>
 
             <img className="logo" src="./img/logo.png" alt="A picture of the Monterio homes logo." />
+
+
             {/* 
               <a href="/Gallery" className="nav-link">GALLERY</a> */}
 
@@ -264,7 +266,7 @@ function Links() {
           <Route path="/kitchen" element={<Kitchen />} />
           <Route path="/bath" element={<Bath />} />
           <Route path="/basement" element={<Basement />} />
-          <Route path="/garage" element={<Home />} />
+          <Route path="/garage" element={<Services />} />
           <Route path="/pool" element={<Pool />} />
           <Route path="/deck" element={<Deck />} />
           <Route path="/Faq" element={<Faq />} />
@@ -530,7 +532,7 @@ function Bath() {
 
         </div >
       </motion.div >
-      <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />    <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
+      <br /> <br /> <br />
       <Footer />
     </>
   );
@@ -620,18 +622,18 @@ function Pool() {
       <div id="lightbox"></div>
 
 
-      <br />  <br />  <br />  <br />  <br />  <br />
+      <br />  <br />
 
       <h3 className="basementHeading">Pools</h3>
       <h4 className="basementHeading">Completely custom built heated pools with all the bells and whistles.</h4>
       <motion.div
-        animate={{ x: 100 }}
-        transition={{ ease: "easeOut", duration: 2 }}
+        animate={{ x: 50 }}
+        transition={{ ease: "easeIn", duration: 2 }}
       >
         <Image src="./img/pools/pool1.jpg" className="pool image-border zoomD pointer" alt="A picture of a finished pool renovation." />
       </motion.div>
       <motion.div
-        animate={{ x: 100 }}
+        animate={{ x: 50 }}
         transition={{ ease: "easeOut", duration: 2 }}
       >
         <Image src="./img/pools/pool2.jpg" className="pool image-border zoomD pointer" alt="A picture of a finished pool renovation." />
@@ -639,49 +641,27 @@ function Pool() {
       </motion.div>
 
       <p className="poolPara alignedPara">
-        <br /><br />
-        <br />  <br />  <br />  <br />  <br />  <br />
-        <br />  <br />  <br />  <br />
-        <div className="poolLineBreaks">
-          <br />  <br />  <br />  <br />  <br />  <br />
-          <br />  <br />  <br />  <br />  <br />  <br />
-          <br />  <br />
-        </div>
         Whether your pool requires a complete overhaul or targeted upgrades, our experienced team is here to help. We understand that a pool is not only a place for relaxation and enjoyment but also a focal point of your outdoor space.<br /><br /> Our pool renovation services encompass a wide range of solutions, including resurfacing, tile replacement, coping repairs, equipment upgrades, and lighting enhancements. We work closely with you to understand your specific needs and desires, providing expert advice and creative ideas to transform your pool into a stunning retreat.<br /><br /> With meticulous attention to detail and using high-quality materials, we ensure a durable and aesthetically pleasing end result. Our skilled professionals manage the entire renovation process, from initial consultation and design to the final installation, ensuring a smooth and hassle-free experience for you.<br /><br /> Whether you want to restore an old pool to its former glory or upgrade your pool with modern features, we have the expertise to deliver exceptional results. Enhance the beauty and functionality of your pool with our professional renovation services.<br />
       </p>
       <motion.div
-        animate={{ x: 100 }}
+        animate={{ x: 50 }}
         transition={{ ease: "easeOut", duration: 2 }}
       >
         <Image src="./img/pools/pool3.jpg" className="pool image-border zoomD pointer" alt="A picture of a finished pool renovation." />
       </motion.div>
       <motion.div
-        animate={{ x: 100 }}
+        animate={{ x: 50 }}
         transition={{ ease: "easeOut", duration: 2 }}>
         <Image src="./img/pools/pool4.jpg" className="pool image-border zoomD pointer" alt="A picture of a finished pool renovation." />
       </motion.div>
       <motion.div
-        animate={{ x: 100 }}
+        animate={{ x: 50 }}
         transition={{ ease: "easeOut", duration: 2 }}>
         <Image src="./img/pools/pool5.jpg" className="pool image-border zoomD pointer" alt="A picture of a finished pool renovation." />
       </motion.div>
 
-      <br /> <br /> <br /> <br /> <br /> <br />
-      <br />  <br />  <br />  <br />  <br />  <br />
-      <br />  <br />  <br />  <br />  <br />  <br />
-      <br />  <br />  <br />  <br />  <br />  <br />
-      <br />  <br />  <br />  <br />  <br />  <br />
+      <br /> <br />
 
-      <br /> <br /> <br /> <br /> <br /> <br />
-      <br />  <br />  <br />  <br />  <br />  <br />
-
-      <br /> <br /> <br /> <br /> <br /> <br />
-      <div className="poolLineBreaks">
-        <br />  <br />  <br />  <br />  <br />  <br />
-
-        <br />  <br />  <br />  <br />  <br />  <br />
-        <br />  <br />  <br />  <br />  <br />  <br />
-      </div>
       <Footer />
 
     </>
@@ -1300,8 +1280,8 @@ function Footer() {
 
 
 
-              <a className="social-icons textAnimation" href="https://www.facebook.com/profile.php?id=100064311003388s" target="_blank">
-                <img className="rounded-circle glow-effect-links footer-social-icon" src="./img/fb.png" width="60px" height="60px" alt="Facebook logo" /><span className="social-text" p>facebook.com/profile.php?id=100064311003388</span>
+              <a className="social-icons textAnimation" href="https://www.facebook.com/profile.php?id=100064311003388" target="_blank">
+                <img className="rounded-circle glow-effect-links footer-social-icon" src="./img/fb.png" width="60px" height="60px" alt="Facebook logo" /><span className="social-text" p>facebook.com/monteirohomes</span>
               </a><br />
 
               <a className="social-icons textAnimation" href="tel:647-885-2384">
