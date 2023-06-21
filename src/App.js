@@ -234,7 +234,7 @@ function Links() {
               <NavDropdown.Item className="nav-fontstyle" eventKey="4.1" href="/kitchen">KITCHEN</NavDropdown.Item>
               <NavDropdown.Item className="nav-fontstyle" eventKey="4.1" href="/bath">BATHS</NavDropdown.Item>
               <NavDropdown.Item className="nav-fontstyle" eventKey="4.2" href="/basement">BASEMENT</NavDropdown.Item>
-              <NavDropdown.Item className="nav-fontstyle" eventKey="4.3" href="/garage">GARAGE</NavDropdown.Item>
+              <NavDropdown.Item className="nav-fontstyle" eventKey="4.3" href="/garage" disabled>GARAGE</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item className="nav-fontstyle" eventKey="4.4" href="/pool">POOLS</NavDropdown.Item>
               <NavDropdown.Item className="nav-fontstyle" eventKey="4.4" href="/deck">FENCING, DECKS & PATIOS</NavDropdown.Item>
@@ -264,7 +264,7 @@ function Links() {
           <Route path="/kitchen" element={<Kitchen />} />
           <Route path="/bath" element={<Bath />} />
           <Route path="/basement" element={<Basement />} />
-          <Route path="/garage" element={<Garage />} />
+          <Route path="/garage" element={<Home />} />
           <Route path="/pool" element={<Pool />} />
           <Route path="/deck" element={<Deck />} />
           <Route path="/Faq" element={<Faq />} />
@@ -372,7 +372,7 @@ function Kitchen() {
 
       <ImageZoom />
 
-      <br />  <br />  <br />  <br />  <br />  <br />  <br />  <br />  <br />  <br />  <br />
+      <br />  <br />  <br />
 
       {/* <!-- (A) LIGHTBOX CONTAINER --> */}
       <div id="lightbox"></div>
@@ -578,6 +578,8 @@ function Basement() {
       <p className="alignedPara basementPara">
         Whether you envision a cozy entertainment area, a home office, a guest suite, or a personal gym, we have the expertise to bring your basement renovation dreams to life. Our dedicated team of professionals works closely with you to understand your vision and design a customized plan that maximizes the potential of your basement.<br /> <br />  From framing and insulation to drywall installation, flooring, and lighting, we handle every aspect of the renovation process with meticulous attention to detail. We also offer expertise in plumbing and electrical work to ensure that your basement meets all your requirements. With our commitment to quality craftsmanship and the use of premium materials, we create a finished basement that seamlessly blends with the rest of your home.<br /> <br />  Our project management approach ensures timely completion and open communication throughout the renovation process, providing you with peace of mind. Trust us to transform your basement into a functional and inviting space that suits your lifestyle and exceeds your expectations.
       </p>
+      <br /><br />
+      <Footer />
     </>
   );
 }

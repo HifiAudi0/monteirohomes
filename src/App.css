@@ -60,10 +60,11 @@ li {
 
 .nav-link {
   z-index: 1;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: bold;
   letter-spacing: 4px;
   margin-top: -9px;
+  margin-right: 20px;
 }
 
 /* .nav-color-dark {
@@ -275,7 +276,7 @@ button.active {
 .grid-container {
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 1200px;
+  /* grid-template-rows: 1200px; */
   padding: 10px;
 }
 
@@ -308,6 +309,10 @@ button.active {
   margin-left: 50px; */
   height: 1000px;
   width: 700px;
+  width: auto;
+  /* min-width: 100%; */
+  max-width: 100%;
+  height: auto;
 
 }
 
@@ -1162,9 +1167,9 @@ body>footer {
     /* margin-right: 50px;
     margin-top: 50px;
     margin-left: 50px; */
-    height: 700px;
+    /* height: 700px;
     width: 500px;
-    width: 100%;
+    width: 100%; */
   }
 
   /* Pools */
