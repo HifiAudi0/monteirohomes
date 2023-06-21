@@ -62,7 +62,7 @@ li {
   z-index: 1;
   font-size: 2rem;
   font-weight: bold;
-  letter-spacing: 2px;
+  letter-spacing: 4px;
   margin-top: -9px;
 }
 
@@ -187,7 +187,7 @@ button.active {
 }
 
 .servicesImageContainerBefore {
-  margin-left: 30%;
+  /* margin-left: 30%; */
 }
 
 .servicesPara {
@@ -348,6 +348,23 @@ button.active {
 
 /* BASEMENT page */
 
+/* .basementImage {
+  width: 400px;
+  height: 400px;
+  margin-left: 25px;
+  margin-top: 25px;
+
+
+} */
+/* margin-right: 25px; */
+/* margin-right: 25px; */
+/* display: inline-block; */
+/* position: relative; */
+
+/* left: 0;
+  right: 0; */
+/* text-align: center; */
+
 .basementHeading {
   text-align: center;
   color: white;
@@ -451,7 +468,7 @@ button.active {
   box-shadow: 5px 5px 10px rgba(0, 0, 0);
   /* border: 2px solid white; */
   background-image: url("../public/img/canadian-bg.png");
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-size: stretch;
   background-size: 100% 100%;
   border: 5px solid black;
@@ -460,6 +477,11 @@ button.active {
   width: 60%;
   margin-left: auto;
   margin-right: auto;
+}
+
+.about-grid-item-top {
+  background-color: #FF212B;
+  background-image: unset;
 }
 
 .vanPic {
@@ -628,7 +650,6 @@ a:active {
   margin-right: -50%; */
 
 .quoteHeading {
-
   text-align: center;
   color: white;
 }
@@ -1253,8 +1274,14 @@ body>footer {
     grid-template-columns: 100%;
   }
 
+
+  .footer-social-icon {
+    width: 30px;
+    height: 30px;
+  }
+
   .social-text {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 
   /* ABOUT PAGE */
@@ -1317,10 +1344,6 @@ body>footer {
     margin-left: 0;
   } */
 
-  .footer-social-icon {
-    width: 30px;
-    height: 30px;
-  }
 }
 
 

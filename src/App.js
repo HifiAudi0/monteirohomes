@@ -552,7 +552,7 @@ function Basement() {
 
       <span className="servicesImageContainer servicesImageContainerBefore">
 
-        <img src="./img/before_basement.jpg" className="beforeImgOne beforeAfterImg" alt="A basement picture before renovation." />
+        <img src="./img/before_basement.jpg" className="beforeAfterImg zoomD pointer" alt="A basement picture before renovation." />
 
         <p className="beforeAfterText">BEFORE</p>
       </span>
@@ -560,9 +560,19 @@ function Basement() {
 
       {/* </a> */}
       <span className="servicesImageContainer ">
-        <img src="./img/after_basement.jpg" className="afterImgOne beforeAfterImg" alt="A basement picture after renovation." />
+        <img src="./img/after_basement.jpg" className="beforeAfterImg zoomD pointer" alt="A basement picture after renovation." />
         <p className="beforeAfterText">AFTER</p>
       </span >
+      <span className="servicesImageContainer  servicesImageContainerBefore">
+        <img src="./img/basement/basement1.jpg" className="beforeAfterImg zoomD pointer" alt="A basement picture after renovation." />
+      </span>
+      <span className="servicesImageContainer ">
+        <img src="./img/basement/basement2.jpg" className="beforeAfterImg zoomD pointer" alt="A basement picture after renovation." />
+      </span>
+      <br />
+      <span className="servicesImageContainer  servicesImageContainerBefore">
+        <img src="./img/basement/basement3.jpg" className="beforeAfterImg zoomD pointer" alt="A basement picture after renovation." />
+      </span>
       <br /> <br /> <br />
 
       <p className="alignedPara basementPara">
@@ -689,7 +699,7 @@ function Deck() {
       <div className="bath-grid-container">
 
         <div className="bath-grid-item">
-          <img src="./img/fencingDeckpatio/patio1.jpg" className="bath-image image-border zoomD pointer" alt="A picture of a finished patio renovation." />
+          <img src="./img/fencingDeckPatio/patio1.jpg" className="bath-image image-border zoomD pointer" alt="A picture of a finished patio renovation." />
         </div>
         <p className="alignedPara deckPara">
           <br />
@@ -697,12 +707,12 @@ function Deck() {
         </p>
         <div className="bath-grid-item">
           <br />   <br />   <br /> <br />
-          <img src="./img/fencingDeckpatio/patio2.jpg" className="bath-image image-border zoomD pointer" alt="A picture of a finished patio renovation." />
+          <img src="./img/fencingDeckPatio/patio2.jpg" className="bath-image image-border zoomD pointer" alt="A picture of a finished patio renovation." />
         </div>
 
         <div className="bath-grid-item">
           <br />   <br />   <br /> <br />
-          <img src="./img/fencingDeckpatio/patio3.jpg" className="bath-image image-border zoomD pointer" alt="A picture of a finished patio renovation." />
+          <img src="./img/fencingDeckPatio/patio3.jpg" className="bath-image image-border zoomD pointer" alt="A picture of a finished patio renovation." />
         </div>
       </div>
       <br /> <br />  <br /> <br />
@@ -988,7 +998,7 @@ function About() {
 
       {/* <div className="about-grid-container"> */}
 
-      <div className="about-grid-item">
+      <div className="about-grid-item about-grid-item-top">
 
         <img src="./img/van.jpg" className="vanPic" alt="A picture of the Monterio Homes logo on the company van." />
         <br /><img className="canadianFlag" src="./img/canadianflag.jpeg" /><br /><br /><p>Support local Canadian businesses</p>
