@@ -676,28 +676,25 @@ function Deck() {
       <RemoveQuoteForm />
 
 
-      <h3 className="basementHeading">Fenching, Decks and Patios</h3>
-      <h4></h4>
-      <div className="bath-grid-container">
+      <h3 className="basementHeading">Enhance Your Outdoor Living with Our Fencing, Deck & Patio Renovation Services</h3>
+      <h4 className="basementHeading">Customized Solutions for Beautiful and Functional Outdoor Spaces</h4>
+      <div className="decks-grid-container">
 
-        <div className="bath-grid-item">
-          <img src="./img/fencingDeckPatio/patio1.jpg" className="bath-image image-border zoomD pointer" alt="A picture of a finished patio renovation." />
+        <div className="deck-grid-item">
+          <img src="./img/fencingDeckPatio/patio1.jpg" className="decks-image image-border zoomD pointer" alt="A picture of a finished patio renovation." />
+        </div>
+        <div className="decks-grid-item">
+          <img src="./img/fencingDeckPatio/patio2.jpg" className="decks-image image-border zoomD pointer" alt="A picture of a finished patio renovation." />
+        </div>
+
+        <div className="decks-grid-item">
+          <img src="./img/fencingDeckPatio/patio3.jpg" className="decks-image image-border zoomD pointer" alt="A picture of a finished patio renovation." />
         </div>
         <p className="alignedPara deckPara">
           <br />
-          We offer a comprehensive range of services to transform your outdoor space, including deck, fencing, and patio renovations. Whether you're looking to revitalize your deck, upgrade your fencing, or create a stunning patio area, our experienced team is here to bring your vision to life. Our deck renovation services encompass everything from repairs and resurfacing to adding new features such as built-in seating, pergolas, or outdoor kitchens..<br /><br /> We understand that your deck is a gathering place for family and friends, and we strive to create a functional and aesthetically pleasing space that enhances your outdoor living experience. When it comes to fencing, we provide a variety of options, including wood, vinyl, or metal fencing, tailored to your privacy and security needs. Our expert team ensures precise installation and durable materials that withstand the test of time..<br /><br /> Additionally, our patio renovation services focus on transforming your outdoor area into a beautiful and functional space. We can assist with patio extensions, upgrades, or even a complete patio redesign to suit your style and lifestyle. Whether you desire a cozy outdoor lounge area or a space for outdoor dining and entertaining, we will work closely with you to create a personalized patio that meets your needs..<br /><br /> With our attention to detail, quality craftsmanship, and use of premium materials, we guarantee exceptional results that exceed your expectations. Trust us to renovate your deck, fencing, and patio, and let us help you create an outdoor sanctuary for relaxation, entertainment, and enjoyment.   <br />   <br />   <br />
+          We offer a comprehensive range of services to transform your outdoor space, including deck, fencing, and patio renovations.<br /><br /> Whether you're looking to revitalize your deck, upgrade your fencing, or create a stunning patio area, our experienced team is here to bring your vision to life. Our deck renovation services encompass everything from repairs and resurfacing to adding new features such as built-in seating, pergolas, or outdoor kitchens..<br /><br /> We understand that your deck is a gathering place for family and friends, and we strive to create a functional and aesthetically pleasing space that enhances your outdoor living experience.<br /><br /> When it comes to fencing, we provide a variety of options, including wood, vinyl, or metal fencing, tailored to your privacy and security needs. Our expert team ensures precise installation and durable materials that withstand the test of time..<br /><br /> Additionally, our patio renovation services focus on transforming your outdoor area into a beautiful and functional space.<br /><br /> We can assist with patio extensions, upgrades, or even a complete patio redesign to suit your style and lifestyle. Whether you desire a cozy outdoor lounge area or a space for outdoor dining and entertaining, we will work closely with you to create a personalized patio that meets your needs..<br /><br /> With our attention to detail, quality craftsmanship, and use of premium materials, we guarantee exceptional results that exceed your expectations. Trust us to renovate your deck, fencing, and patio, and let us help you create an outdoor sanctuary for relaxation, entertainment, and enjoyment.   <br />   <br />   <br />
         </p>
-        <div className="bath-grid-item">
-          <br />   <br />   <br /> <br />
-          <img src="./img/fencingDeckPatio/patio2.jpg" className="bath-image image-border zoomD pointer" alt="A picture of a finished patio renovation." />
-        </div>
-
-        <div className="bath-grid-item">
-          <br />   <br />   <br /> <br />
-          <img src="./img/fencingDeckPatio/patio3.jpg" className="bath-image image-border zoomD pointer" alt="A picture of a finished patio renovation." />
-        </div>
       </div>
-      <br /> <br />  <br /> <br />
       <Footer />
     </>
   );
