@@ -294,12 +294,9 @@ function Services() {
       <ChangeNavColor color={navLightColor} />
 
       <RemoveQuoteForm />
-
-
-
-      <br /><br /><br /><br /><br /><br /><br /><br />
-
-
+      <br /><br />
+      <h3 className="basementHeading">Comprehensive Renovation Services for Your Dream Home Transformation</h3>
+      <h4 className="basementHeading">From Kitchen to Bathroom, Deck to Basement - We've Got You Covered!</h4>
 
 
       <br /><br />
@@ -314,7 +311,7 @@ function Services() {
       <span p>AFTER</span> */}
       <span className="servicesImageContainer servicesImageContainerBefore">
 
-        <img src="./img/before_basement.jpg" className="beforeImgOne beforeAfterImg" alt="A basement picture before renovation." />
+        <img src="./img/before_basement.jpg" className="beforeAfterImg" alt="A basement picture before renovation." />
 
         <p className="beforeAfterText">BEFORE</p>
       </span>
@@ -322,18 +319,18 @@ function Services() {
 
       {/* </a> */}
       <span className="servicesImageContainer ">
-        <img src="./img/after_basement.jpg" className="afterImgOne beforeAfterImg" alt="A basement picture after renovation." />
+        <img src="./img/after_basement.jpg" className="beforeAfterImg" alt="A basement picture after renovation." />
         <p className="beforeAfterText">AFTER</p>
       </span >
       <br />
 
       <span className="servicesImageContainer servicesImageContainerBefore">
-        <img src="./img/before_kitchen.jpg" className="beforeImgTwo beforeAfterImg" alt="A kitchen picture before renovation." />
+        <img src="./img/before_kitchen.jpg" className="beforeAfterImg" alt="A kitchen picture before renovation." />
         <p className="beforeAfterText">BEFORE</p>
       </span >
 
       <span className="servicesImageContainer">
-        <img src="./img/after_kitchen.jpg" className="afterImgTwo beforeAfterImg" alt="A kitchen picture after renovation." />
+        <img src="./img/after_kitchen.jpg" className="beforeAfterImg" alt="A kitchen picture after renovation." />
         <p className="beforeAfterText">AFTER</p>
       </span >
       <br />
