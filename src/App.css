@@ -486,6 +486,10 @@ button.active {
 
 }
 
+.faqLineBreaks {
+  display: block;
+}
+
 /* ABOUT PAGE */
 .canadianFlagIcon {
   width: 75px;
@@ -1269,6 +1273,10 @@ body>footer {
   .accordion {
     width: 90%;
     left: 5%;
+  }
+
+  .faqLineBreaks {
+    display: none;
   }
 
 
