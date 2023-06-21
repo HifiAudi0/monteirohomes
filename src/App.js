@@ -139,9 +139,10 @@ function Home() {
 
 
       {/* </div> */}
+      <img className="companyName" src="./img/companyName.svg" />
 
       <div className="text-container">
-        <p id="target-id" className="target">MONTEIRO HOMES<br />SERVICING THE GTA<br />FULL HOME RENOVATION & DESIGN<br />CUSTOM FINANCING AVAILABLE</p>
+        <p id="target-id" className="target">SERVICING THE GTA<br />FULL HOME RENOVATION & DESIGN<br />CUSTOM FINANCING AVAILABLE</p>
       </div >
 
       <br />
@@ -256,7 +257,7 @@ function Links() {
             <a href="/About" className="nav-link">ABOUT US</a>
 
             <a href="/Contact" className="nav-link">CONTACT</a>
-
+            <br />
           </Nav></Navbar>
 
         <Routes>

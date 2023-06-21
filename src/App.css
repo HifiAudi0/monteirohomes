@@ -67,6 +67,19 @@ li {
   margin-right: 20px;
 }
 
+.companyName {
+  z-index: 3;
+  width: 400px;
+  height: 200px;
+  /* border: 100px solid red; */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 100px;
+  display: block;
+  position: relative;
+  margin-top: -70px;
+}
+
 /* .nav-color-dark {
   color: black;
 }
@@ -227,7 +240,7 @@ button.active {
   margin-left: auto;
   margin-right: auto;
   display: block;
-  border: 50px solid green;
+  /* border: 50px solid green; */
 }
 
 /* .poolLineBreaks {
@@ -1145,6 +1158,10 @@ body>footer {
   .logo {
     width: 100px;
     height: 100px;
+  }
+
+  .companyName {
+    left: -20%;
   }
 
   /* Home page */
