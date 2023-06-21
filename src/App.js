@@ -935,7 +935,7 @@ function QuoteForm() {
       {/* <div className="quoteContainer"> */}
       <h2 className="quoteHeading">Scroll down and get your FREE quote today!</h2><br />
 
-      <img src="./img/customerSupport2.jpeg" className="quoteImgSupport" alt="A picture illustrating of a customer service rep." /><br /><br />
+      <img src="./img/customerSupport2-resized.jpg" className="quoteImgSupport" alt="A picture illustrating of a customer service rep." /><br /><br />
       {/* <div className="quote-grid-item"> */}
       <InstagramEmbed className="formInstagramPost" url="https://www.instagram.com/p/Cl1YH0nuzul/" />
       {/* </div> */}
@@ -1040,7 +1040,7 @@ function Contact() {
         </p>
 
 
-        <Image className="contactSupportImage" variant="top" src="./img/customerSupport.jpeg" alt="A picture of a customer support reprensenative on the phone." />
+        <Image className="contactSupportImage" variant="top" src="./img/customerSupport-resized.jpeg" alt="A picture of a customer support reprensenative on the phone." />
 
 
         {/* <Card.Text>
