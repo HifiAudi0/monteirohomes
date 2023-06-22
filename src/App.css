@@ -1178,11 +1178,15 @@ body>footer {
     font-size: 1rem;
     font-weight: bold;
     letter-spacing: 1px;
+    margin-left: auto;
+    margin-right: auto;
+    /* border: 10px solid green; */
   }
 
   .logo {
     width: 100px;
     height: 100px;
+    margin-left: 40px;
   }
 
   /* #navbar {
@@ -1192,14 +1196,16 @@ body>footer {
   } */
 
   #nav-link-quote {
-    margin-left: unset;
+    /* margin-left: unset; */
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .companyName {
     left: -18%;
     width: 220px;
     margin-top: -70px;
-    margin-left: 155px;
+    margin-left: 205px;
     /* border: 2px solid green; */
 
     font-size: 1.8rem;
