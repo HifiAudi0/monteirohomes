@@ -161,15 +161,15 @@ function Home() {
 
 
 
-      <div className="home-socials">
+      <div className="home-socials alignedPara">
 
         <a href="https://www.facebook.com/profile.php?id=100064311003388s" target="_blank">
-          <img className="rounded-circle home-social-icons" src="./img/fb.png" alt="Facebook logo" />
+          <img className="rounded-circle home-social-icons home-social-icons-facebook" src="./img/fb.png" alt="Facebook logo" />
           <span className="home-social-text">facebook.com/MonteiroHomes</span>
         </a><br className="home-social-responsiveness" />
 
         <a href="tel:(647)885-2384">
-          <Image className="rounded-circle home-social-icons" src="./img/phone.png" alt="A phone number to reach Phil at." />
+          <Image className="rounded-circle home-social-icons home-social-icons-phone" src="./img/phone.png" alt="A phone number to reach Phil at." />
           <span className="home-social-text">Phil @ (647) 885-2384</span>
         </a><br className="home-social-responsiveness" /><br className="home-socials-large-screens" />
 

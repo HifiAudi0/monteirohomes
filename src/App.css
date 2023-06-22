@@ -629,12 +629,20 @@ button.active {
 
 }
 
+.home-social-icons-facebook {
+  margin-left: 10px;
+}
+
+.home-social-icons-phone {
+  margin-left: 10px;
+}
+
 .home-social-email {
-  margin-left: 140px;
+  margin-left: 150px;
 }
 
 .home-social-instagram {
-  margin-left: -270px;
+  margin-left: -240px;
 }
 
 .home-social-responsiveness {
@@ -651,6 +659,7 @@ button.active {
   margin-right: 10px;
   width: 60px;
   height: 60px;
+  margin-top: 5px;
 
 }
 
@@ -689,7 +698,7 @@ button.active {
 }
 
 .home-social-text-email {
-  margin-left: 50px;
+  margin-left: 30px;
 }
 
 a:hover,
@@ -1051,13 +1060,22 @@ body>footer {
     margin-left: 15px;
   }
 
-  .home-socials {
+  /* .home-socials {
     text-align: left;
-  }
+  } */
 
   .home-social-icons {
     width: 30px;
     height: 30px;
+    margin-top: 5px;
+  }
+
+  .home-social-icons-facebook {
+    margin-left: -10px;
+  }
+
+  .home-social-icons-phone {
+    margin-left: -100px;
   }
 
   .home-social-icons-email {
@@ -1065,7 +1083,7 @@ body>footer {
   }
 
   .home-social-email {
-    margin-left: 0px;
+    margin-left: -70px;
   }
 
   .home-social-instagram {
@@ -1239,6 +1257,14 @@ body>footer {
   .home-social-icons {
     width: 30px;
     height: 30px;
+  }
+
+  .home-social-icons-facebook {
+    margin-left: unset;
+  }
+
+  .home-social-icons-phone {
+    margin-left: unset;
   }
 
   .home-social-icons-email {
