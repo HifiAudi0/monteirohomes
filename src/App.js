@@ -150,7 +150,9 @@ function Home() {
 
       {/* </div> */}
       {/* <img className="companyName" src="./img/companyName.svg" /> */}
-
+      <div className="rightToLeft-lineBreaks">
+        <br /> <br /> <br />
+      </div>
       <div className="text-container">
         <p id="target-id" className="target">SERVICING THE GTA<br />FULL HOME RENOVATION & DESIGN<br />CUSTOM FINANCING AVAILABLE</p>
       </div >

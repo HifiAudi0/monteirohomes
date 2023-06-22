@@ -47,6 +47,9 @@ li {
 }
 
 
+.rightToLeft-lineBreaks {
+  display: none;
+}
 
 .target {
   font-size: 2rem;
@@ -1032,7 +1035,9 @@ body>footer {
     height: 100px;
   }
 
-
+  .rightToLeft-lineBreaks {
+    display: block;
+  }
 
   /* Home page */
   .home-social-text {
