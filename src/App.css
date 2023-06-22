@@ -1032,11 +1032,15 @@ body>footer {
 
 /* MEDIA QUERIES */
 
+
+
 /* above iPad */
 @media only screen and (min-width: 768px) and (max-width: 1450px) {
 
   .nav-link {
-    font-size: 0.8rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-right: 10px;
   }
 
   .logo {
@@ -1190,6 +1194,16 @@ body>footer {
     /* border: 20px solid red; */
   }
 
+}
+
+
+
+@media only screen and (min-width: 950px) and (max-width: 1040px) {
+  .nav-link {
+    font-size: 0.75rem;
+    font-weight: bold;
+    margin-right: 0px;
+  }
 }
 
 
