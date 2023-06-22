@@ -78,15 +78,25 @@ var navDarkColor = "black";
 function ChangeNavColor(props) {
   useEffect(() => {
     const allNavLinks = document.querySelectorAll(".nav-link")
-
+    const navCompanyName = document.querySelectorAll(".companyName")
     // console.log("PROPS..........", props.color);
 
     allNavLinks.forEach((link) => {
       // link.classList.add = "nav-color-dark";
       //link.setAttribute("id", "nav-not-homepage");
       link.style.color = props.color
+
       // link.classList.remove("nav-color-light");
     });
+
+    navCompanyName.forEach((aLink) => {
+      // link.classList.add = "nav-color-dark";
+      //link.setAttribute("id", "nav-not-homepage");
+      aLink.style.color = props.color
+
+      // link.classList.remove("nav-color-light");
+    });
+
   }, []);
 
   return (
