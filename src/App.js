@@ -530,13 +530,13 @@ function Bath() {
           <div className="bath-grid-item">
             <img src="./img/bath/bath5.jpg" className="bath-image image-border zoomD pointer" alt="A picture of a finished bathroom renovation." />
           </div>
-          <div className="bath-grid-item">
+          {/* <div className="bath-grid-item">
             <img src="./img/bath/bath6.jpg" className="bath-image image-border zoomD pointer" alt="A picture of a finished bathroom renovation." />
           </div>
 
           <div className="bath-grid-item">
             <img src="./img/bath/bath7.jpg" className="bath-image image-border zoomD pointer" alt="A picture of a finished bathroom renovation." />
-          </div>
+          </div> */}
           <div className="bath-grid-item">
             <img src="./img/bath/bath9.jpg" className="bath-image image-border zoomD pointer" alt="A picture of a finished bathroom renovation." />
           </div>
