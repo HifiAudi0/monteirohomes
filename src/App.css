@@ -5,6 +5,9 @@
 @font-face {
   font-family: "Roboto";
   src: url("../public/fonts/Roboto/Roboto-Medium.ttf") format('truetype');
+
+  font-family: "Impact";
+  src: url("../public/fonts/Impact/Impacted.ttf") format('truetype');
 }
 
 
@@ -68,16 +71,20 @@ li {
 }
 
 .companyName {
-  z-index: 3;
-  width: 400px;
-  height: 200px;
+  /* z-index: 3; */
+  width: 350px;
+  height: 50px;
   /* border: 100px solid red; */
   margin-left: auto;
   margin-right: auto;
-  padding-left: 100px;
+  padding-left: 140px;
   display: block;
   position: relative;
-  margin-top: -70px;
+  margin-top: -20px;
+  /* border: 10px solid green; */
+  font-family: 'Impact', 'Open Sans', 'Roboto', sans-serif;
+  text-transform: uppercase;
+
 }
 
 /* .nav-color-dark {

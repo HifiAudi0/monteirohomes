@@ -19,7 +19,7 @@ body {
     font-weight: bold;
     /* color: white; */
     animation-name: rightToLeft;
-    animation-duration: 7.5s;
+    animation-duration: 9.5s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     font-size: 1.8rem;
@@ -33,7 +33,7 @@ body {
 
 @keyframes rightToLeft {
     0% {
-        transform: translateX(800px);
+        transform: translateX(600px);
     }
 
     100% {

@@ -139,7 +139,8 @@ function Home() {
 
 
       {/* </div> */}
-      <img className="companyName" src="./img/companyName.svg" />
+      {/* <img className="companyName" src="./img/companyName.svg" /> */}
+      <h2 className="companyName">Monteiro Homes</h2>
 
       <div className="text-container">
         <p id="target-id" className="target">SERVICING THE GTA<br />FULL HOME RENOVATION & DESIGN<br />CUSTOM FINANCING AVAILABLE</p>
@@ -153,7 +154,7 @@ function Home() {
 
         <a href="https://www.facebook.com/profile.php?id=100064311003388s" target="_blank">
           <img className="rounded-circle home-social-icons" src="./img/fb.png" alt="Facebook logo" />
-          <span className="home-social-text">facebook.com/profile.php?id=100064311003388</span>
+          <span className="home-social-text">facebook.com/MonteiroHomes</span>
         </a><br className="home-social-responsiveness" />
 
         <a href="tel:(647)885-2384">
