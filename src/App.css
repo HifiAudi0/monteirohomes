@@ -68,22 +68,37 @@ li {
   letter-spacing: 4px;
   margin-top: -9px;
   margin-right: 20px;
+
+}
+
+
+#nav-link-quote {
+  margin-left: -150px;
 }
 
 .companyName {
-  /* z-index: 3; */
-  width: 350px;
+  z-index: 3;
+  width: 250px;
   height: 50px;
   /* border: 100px solid red; */
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 140px;
+  /* margin-left: auto;
+  margin-right: auto; */
+
   display: block;
   position: relative;
-  margin-top: -20px;
+
   /* border: 10px solid green; */
   font-family: 'Impact', 'Open Sans', 'Roboto', sans-serif;
   text-transform: uppercase;
+  color: black;
+
+  left: -42%;
+  margin-top: 20px;
+  margin-left: 160px;
+
+  /* border: 2px solid red; */
+  font-size: 2.2rem;
+
 
 }
 
@@ -611,11 +626,11 @@ button.active {
 }
 
 .home-social-email {
-  margin-left: 130px;
+  margin-left: 140px;
 }
 
 .home-social-instagram {
-  margin-left: -40px;
+  margin-left: -270px;
 }
 
 .home-social-responsiveness {
@@ -1016,6 +1031,8 @@ body>footer {
     height: 100px;
   }
 
+
+
   /* Home page */
   .home-social-text {
     font-size: 0.7rem;
@@ -1167,8 +1184,26 @@ body>footer {
     height: 100px;
   }
 
+  /* #navbar {
+    z-index: 3;
+    border: 10px solid yellow;
+    left: 5%;
+  } */
+
+  #nav-link-quote {
+    margin-left: unset;
+  }
+
   .companyName {
-    left: -20%;
+    left: -18%;
+    width: 200px;
+    margin-top: -70px;
+    margin-left: 155px;
+    /* border: 2px solid green; */
+
+    font-size: 1.8rem;
+
+
   }
 
   /* Home page */

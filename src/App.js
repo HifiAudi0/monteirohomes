@@ -140,7 +140,6 @@ function Home() {
 
       {/* </div> */}
       {/* <img className="companyName" src="./img/companyName.svg" /> */}
-      <h2 className="companyName">Monteiro Homes</h2>
 
       <div className="text-container">
         <p id="target-id" className="target">SERVICING THE GTA<br />FULL HOME RENOVATION & DESIGN<br />CUSTOM FINANCING AVAILABLE</p>
@@ -201,7 +200,7 @@ function Links() {
       </nav> */}
       <Router>
 
-        <Navbar scrolling dark expand="md"> {/* transparent bg */}
+        <Navbar scrolling dark expand="md" id="navbar"> {/* transparent bg */}
 
           <Nav className="mx-auto">
 
@@ -247,12 +246,13 @@ function Links() {
             <a href="/Faq" className="nav-link">FAQ</a>
 
             <img className="logo" src="./img/logo.png" alt="A picture of the Monterio homes logo." />
+            <span><p className="companyName">onteiro Homes</p></span>
 
 
             {/* 
               <a href="/Gallery" className="nav-link">GALLERY</a> */}
 
-            <a href="/Quote" className="nav-link">QUOTE</a>
+            <a href="/Quote" className="nav-link" id="nav-link-quote">QUOTE</a>
 
 
             <a href="/About" className="nav-link">ABOUT US</a>
