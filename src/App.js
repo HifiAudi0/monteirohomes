@@ -486,7 +486,7 @@ function Bath() {
       {/* <!-- (A) LIGHTBOX CONTAINER --> */}
       <div id="lightbox"></div>
 
-      <br />    <br />    <br />    <br />    <br />    <br />    <br />    <br />
+      <br />
       <div className="kitchenHeading">
         <h3>Transform Your Bathroom into a Personal Oasis</h3>
         <h4>Professional Bathroom Renovation Services Tailored to Your Style and Needs.</h4>
