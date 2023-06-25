@@ -13,6 +13,9 @@ import './textRightToLeft.css';
 import './imageZoom.css';
 
 import { motion } from "framer-motion";
+import { useInView } from "framer-motion";
+// import { useRef } from "react";
+
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
@@ -864,6 +867,25 @@ function Faq() {
   );
 }
 
+function Section({ children }) {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
+  return (
+    <section ref={ref}>
+      <span
+        style={{
+          transform: isInView ? "none" : "translateX(-200px)",
+          opacity: isInView ? 1 : 0,
+          transition: "all 0.4s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+        }}
+      >
+        {children}
+      </span>
+    </section>
+  );
+}
+
 function Quote() {
   // const node = document.createElement("div");
   // node.classList.add("quoteContainer");
@@ -871,6 +893,8 @@ function Quote() {
 
   //  node.appendChild(elements[0]);
   // document.body.insertAdjacentHTML('beforeend', elements[0]);
+
+
 
 
   return (
@@ -948,7 +972,10 @@ function QuoteForm() {
       {/* <div className="quoteContainer"> */}
       <h2 className="quoteHeading">Scroll down and get your FREE quote today!</h2><br />
 
-      <img src="./img/customerSupport2-resized.jpg" className="quoteImgSupport" alt="A picture illustrating of a customer service rep." /><br /><br />
+      <Section>
+        <img src="./img/customerSupport2-resized.jpg" className="quoteImgSupport" alt="A picture illustrating of a customer service rep." />
+      </Section>
+      <br /><br />
       {/* <div className="quote-grid-item"> */}
       <InstagramEmbed className="formInstagramPost" url="https://www.instagram.com/p/Cl1YH0nuzul/" />
       {/* </div> */}
@@ -987,23 +1014,29 @@ function About() {
 
       {/* <img className="canadianFlagIcon" src="./img/canadian-flag-icon.png" /> */}
 
+      <Section>
+        {/* <div className="about-grid-container"> */}
 
-      {/* <div className="about-grid-container"> */}
+        <div className="about-grid-item about-grid-item-top">
 
-      <div className="about-grid-item about-grid-item-top">
+          <img src="./img/van.jpg" className="vanPic" alt="A picture of the Monterio Homes logo on the company van." />
 
-        <img src="./img/van.jpg" className="vanPic" alt="A picture of the Monterio Homes logo on the company van." />
-        <br /><img className="canadianFlag" src="./img/canadianflag.jpeg" /><br /><br /><p>Support local Canadian businesses</p>
-      </div>
+          <br /><img className="canadianFlag" src="./img/canadianflag.jpeg" /><br /><br />
+          <p>Support local Canadian businesses</p>
 
-      <div className="about-grid-item">
-        <h3 className="aboutUsHeading">About Us</h3>
+        </div>
 
-        <h3 className="aboutUsHeading">Canadian Family-Owned Contractor with 8 Years of Trusted Service</h3><br />
-        <p>Welcome to our family-owned contracting business, where we have been proudly serving our community for the past 8 years. As a small business, we understand the importance of personalized service and building strong relationships with our clients..<br /><br /> With a passion for craftsmanship and a commitment to excellence, we have earned a reputation for delivering top-quality work and exceeding customer expectations. Our team of skilled professionals brings a wealth of experience and expertise to every project, ensuring attention to detail and meticulous execution..<br /><br /> From home renovations and remodeling to repairs and installations, we offer a comprehensive range of services tailored to meet your specific needs. As a family-owned business, we prioritize open communication, honesty, and integrity in all our interactions. We take pride in our work, treating every project as if it were our own, and ensuring customer satisfaction is our top priority..<br /><br /> With us, you can expect personalized attention, reliable service, and a finished result that will transform your space into something exceptional. Trust our family to enhance your home with our trusted contracting services.</p><br /><br />
-      </div>
+        <div className="about-grid-item">
+
+          <h3 className="aboutUsHeading">About Us</h3>
+
+          <h3 className="aboutUsHeading">Canadian Family-Owned Contractor with 8 Years of Trusted Service</h3><br />
+          <p>Welcome to our family-owned contracting business, where we have been proudly serving our community for the past 8 years. As a small business, we understand the importance of personalized service and building strong relationships with our clients..<br /><br /> With a passion for craftsmanship and a commitment to excellence, we have earned a reputation for delivering top-quality work and exceeding customer expectations. Our team of skilled professionals brings a wealth of experience and expertise to every project, ensuring attention to detail and meticulous execution..<br /><br /> From home renovations and remodeling to repairs and installations, we offer a comprehensive range of services tailored to meet your specific needs. As a family-owned business, we prioritize open communication, honesty, and integrity in all our interactions. We take pride in our work, treating every project as if it were our own, and ensuring customer satisfaction is our top priority..<br /><br /> With us, you can expect personalized attention, reliable service, and a finished result that will transform your space into something exceptional. Trust our family to enhance your home with our trusted contracting services.</p><br /><br />
+
+        </div>
+      </Section >
       {/* </div> */}
-      <br /><br /><br /><br /><br />
+      < br /><br /><br /><br /><br />
 
       <Footer />
     </>
