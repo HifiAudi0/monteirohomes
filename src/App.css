@@ -1,5 +1,6 @@
 * {
   font-family: 'Open Sans', 'Roboto', sans-serif;
+
 }
 
 @font-face {
@@ -11,14 +12,12 @@
 }
 
 
-body {
-  background: #191c29;
-
-}
+body {}
 
 html,
 body {
   height: 100%;
+  background-color: white;
 }
 
 h3 {
@@ -26,7 +25,7 @@ h3 {
 }
 
 p {
-  color: white;
+  color: black;
   font-size: 1.5rem;
   margin-left: 30px;
 }
@@ -40,6 +39,69 @@ li {
   text-decoration: none;
   list-style-type: none;
   font-size: 1.5rem;
+}
+
+
+.counter,
+.numbers {
+  color: white;
+  font-size: 40px;
+}
+
+figure {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 40px;
+  margin-inline-end: 40px;
+  position: relative;
+}
+
+figure figcaption {
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  /* flex-direction: column;
+  text-align: center; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* width: 100%;
+  height: 100%; */
+  color: #fff;
+  padding: 20px;
+}
+
+figcaption {
+  margin-left: -100px;
+  width: 300px;
+  height: 100px;
+}
+
+#overTopImageGradient {
+
+  background-image:
+    url('../public/img/bath/bath1.jpg');
+
+
+
+}
+
+#overTopImageGradient:hover {
+
+  background-image:
+    repeating-radial-gradient(circle, rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.75));
+  width: 50%;
+  height: 400px;
+  background-size: cover;
+  color: white;
+  padding: 20px;
 }
 
 .pointer {
@@ -81,7 +143,7 @@ li {
 
 .companyName {
   z-index: 3;
-  width: 250px;
+  width: 450px;
   height: 50px;
   /* border: 100px solid red; */
   /* margin-left: auto;
@@ -95,13 +157,16 @@ li {
   text-transform: uppercase;
   color: black;
 
-  left: -42%;
+  /* left: -42%;
   margin-top: 20px;
-  margin-left: 160px;
+  margin-left: 160px; */
 
   /* border: 2px solid red; */
-  font-size: 2.2rem;
+  font-size: 4.2rem;
   letter-spacing: 2px;
+  position: absolute;
+  top: 600px;
+  left: 350px;
 
 
 }
@@ -125,9 +190,10 @@ li {
 }
 
 #background-video {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   object-fit: cover;
+
   position: fixed;
   left: 0;
   right: 0;
@@ -140,6 +206,7 @@ li {
   background-repeat: no-repeat;
   background-size: cover;
   background-size: 100% 100%;
+  position: relative;
 
 
 
@@ -185,6 +252,9 @@ button.active {
   /* margin-left: -120%;
   margin-right: 2.5rem; */
   z-index: 1;
+  position: absolute;
+  top: 600px;
+  left: 200px;
 }
 
 /* .bgImage {
@@ -425,6 +495,8 @@ button.active {
 .basementHeading {
   text-align: center;
   color: white;
+  font-size: 48px;
+  text-transform: uppercase;
 }
 
 .basementPara {
@@ -783,7 +855,7 @@ a:active {
 }
 
 .quoteForm {
-  background-color: green;
+  background-color: white;
 
   /* margin: 0 auto; */
   border: 2px solid black;
@@ -813,7 +885,14 @@ a:active {
 .formInputText {
   width: 300px;
   text-align: center;
-  border: 2px solid black;
+  /* border: 2px solid black; */
+
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid black;
 
 }
 
@@ -1246,9 +1325,11 @@ body>footer {
     /* border: 2px solid green; */
 
     font-size: 1.8rem;
-
-
+    color: white;
+    z-index: 10;
+    position: relative;
   }
+
 
   /* Home page */
 

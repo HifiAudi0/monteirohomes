@@ -52,7 +52,15 @@ import './ButtonAnimation.css';
 
 import './textAnimation.css';
 
+import './hamburgerMenu.css';
+
+import 'animate.css';
+
 // import $ from 'jquery';
+
+import CountUp from "react-countup";
+
+import './scrollDownArrow.css';
 
 const container = {
   hidden: { opacity: 1, scale: 0 },
@@ -132,8 +140,10 @@ function Home() {
 
       <ChangeNavColor color={navDarkColor} />
 
-
       <div id="home"></div>
+
+
+
 
       {/* <div className="bgImage"> */}
 
@@ -150,7 +160,8 @@ function Home() {
         Did not load video.
       </video>
 
-
+      <img className="logo" src="./img/logo.png" alt="A picture of the Monterio homes logo." />
+      <span><p className="companyName">onteiro Homes</p></span>
       {/* </div> */}
       {/* <img className="companyName" src="./img/companyName.svg" /> */}
       <div className="rightToLeft-lineBreaks">
@@ -163,7 +174,7 @@ function Home() {
       <br />
 
 
-
+      {/* 
       <div className="home-socials alignedPara">
 
         <a href="https://www.facebook.com/profile.php?id=100064311003388s" target="_blank">
@@ -189,12 +200,35 @@ function Home() {
           </span>
         </a>
 
-      </div >
+      </div > */}
+
+      <div className="scroll-prompt" scroll-prompt="" ng-show="showPrompt" style={{ opacity: 1 }}>
+        <div className="scroll-prompt-arrow-container">
+          <div className="scroll-prompt-arrow"><div></div></div>
+          <div className="scroll-prompt-arrow"><div></div></div>
+        </div>
+      </div>
+
+      <Services />
+      <Quote />
+      {/* <Bath /> */}
     </>
   );
 }
 
+
+
 function Links() {
+
+
+  function openNavbar() {
+    document.querySelector("#navbar").style.width = "100%";
+    document.querySelectorAll(".open")[0].style.opacity = 0;
+  }
+  function closeNavbar() {
+    document.querySelector("#navbar").style.width = "0";
+    document.querySelectorAll(".open")[0].style.opacity = 1;
+  }
 
   return (
     <>
@@ -213,37 +247,15 @@ function Links() {
 
 
       </nav> */}
+
       <Router>
 
-        <Navbar scrolling dark expand="md" id="navbar"> {/* transparent bg */}
-
+        {/* <Navbar scrolling dark expand="md" id="navbar">
           <Nav className="mx-auto">
-
-
-
-
 
             <Link to={"/Home"} className="nav-link" id="navLink">HOME
             </Link>
 
-
-            {/* <Dropdown>
-                <Dropdown.Toggle id="dropdown-button-dark-example1" className="services-dropdown" variant="secondary">
-                  Services
-                </Dropdown.Toggle>
-
-                <Dropdown.Menu variant="dark">
-                  <Dropdown.Item href="#/action-1" active>
-                    Action
-                  </Dropdown.Item>
-                  <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                  <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-                  <Dropdown.Divider />
-                  <Dropdown.Item href="#/action-4">Separated link</Dropdown.Item>
-                </Dropdown.Menu>
-              </Dropdown> */}
-
-            {/* <LinkContainer to={"/Products"}> */}
             <NavDropdown title="Services & Gallery" className="nav-fontstyle nav-link">
               <NavDropdown.Item className="nav-fontstyle" eventKey="4.1" href="/services">ALL SERVICES</NavDropdown.Item>
               <NavDropdown.Divider />
@@ -255,7 +267,7 @@ function Links() {
               <NavDropdown.Item className="nav-fontstyle" eventKey="4.4" href="/pool">POOLS</NavDropdown.Item>
               <NavDropdown.Item className="nav-fontstyle" eventKey="4.4" href="/deck">FENCING, DECKS & PATIOS</NavDropdown.Item>
             </NavDropdown>
-            {/* </LinkContainer> */}
+
 
 
             <a href="/Faq" className="nav-link">FAQ</a>
@@ -264,8 +276,7 @@ function Links() {
             <span><p className="companyName">onteiro Homes</p></span>
 
 
-            {/* 
-              <a href="/Gallery" className="nav-link">GALLERY</a> */}
+   
 
             <a href="/Quote" className="nav-link" id="nav-link-quote">QUOTE</a>
 
@@ -274,7 +285,22 @@ function Links() {
 
             <a href="/Contact" className="nav-link">CONTACT</a>
             <br />
-          </Nav></Navbar>
+          </Nav></Navbar> */}
+
+        <body>
+          <span className="open" onClick={openNavbar}>&#9776; Menu</span>
+          <div id="navbar" className="overlay">
+            <a href="javascript:void(0);" onClick={closeNavbar} className="close">&#9932;</a>
+            <div className="overlay-content">
+              <a href="http://www.google.com">Home</a>
+              <a href="javascript:void(o);">Portfolio</a>
+              <a href="javascript:void(o);">Services</a>
+              <a href="javascript:void(o);">About</a>
+              <a href="javascript:void(o);">Contact</a>
+            </div>
+          </div>
+        </body>
+        {/* </html> */}
 
         <Routes>
           <Route path="/" element={<Home />} />
@@ -295,12 +321,24 @@ function Links() {
 
           </Route>
         </Routes>
-      </Router>
+      </Router >
 
 
     </>
   );
 }
+
+
+function Counter({ number, title }) {
+  return (
+    <div className="number">
+      <CountUp duration={10} className="counter" end={number} /><br />
+      <span>{title}</span>
+    </div>
+  );
+}
+
+
 
 function Services() {
 
@@ -308,68 +346,89 @@ function Services() {
 
   return (
     <>
-      <ChangeNavColor color={navLightColor} />
 
-      <RemoveQuoteForm />
-      <br /><br />
-      <h3 className="basementHeading">Comprehensive Renovation Services for Your Dream Home Transformation</h3>
-      <h4 className="basementHeading">From Kitchen to Bathroom, Deck to Basement - We've Got You Covered!</h4>
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}>
+
+        <ChangeNavColor color={navLightColor} />
+
+        <RemoveQuoteForm />
+
+        <div className="numbers">
+          <Counter number={60} title="Customers Serviced" />
+          <Counter number={8} title="+ Years in business" />
+        </div>
+
+        <h1 class="animate__animated animate__bounce">An animated element</h1>
+
+        <figure>
+          <img width="421" height="461" src="https://www.dreammaker-remodel.com/wp-content/uploads/2021/08/bathroom-remodeling.jpg" class="attachment-421x461 size-421x461" alt="" decoding="async" loading="lazy" srcset="https://www.dreammaker-remodel.com/wp-content/uploads/2021/08/bathroom-remodeling.jpg 421w, https://www.dreammaker-remodel.com/wp-content/uploads/2021/08/bathroom-remodeling-274x300.jpg 274w" sizes="(max-width: 421px) 100vw, 421px" />                      <figcaption>
+            <strong><span>Bathroom Remodeling</span></strong>
+            <button><a href="https://www.dreammaker-remodel.com/services/bathroom-remodeling/">Call Us</a></button>
+          </figcaption>
+        </figure>
+
+        <br /><br />
+        <h3 className="basementHeading">Comprehensive Renovation Services for Your Dream Home Transformation</h3>
+        <h4 className="basementHeading">From Kitchen to Bathroom, Deck to Basement - We've Got You Covered!</h4>
 
 
-      <br /><br />
-      <p className="servicesPara">Welcome to our expert home renovation services! As a trusted and experienced contractor, we take great pride in transforming houses into dream homes. Our dedicated team of professionals is committed to delivering exceptional results that exceed your expectations. Whether you're looking to update your kitchen, remodel your bathroom, or renovate your entire living space, we have the expertise and skills to bring your vision to life.<br /><br /> We understand that every home is unique, and we work closely with our clients to create personalized designs that reflect their style and preferences. From concept to completion, we handle every aspect of the renovation process with meticulous attention to detail, ensuring a seamless and stress-free experience for our clients. Our services encompass a wide range of specialties, including flooring, painting, plumbing, electrical work, cabinetry, and more.<br /><br /> With a focus on quality craftsmanship and using premium materials, we strive to enhance the beauty, functionality, and value of your home. We are committed to delivering projects on time and within budget, without compromising on quality. Customer satisfaction is our top priority, and we go the extra mile to ensure that our clients are delighted with the final results. Trust us with your home renovation needs, and let us turn your house into the home of your dreams. Contact us today to discuss your project and schedule a consultation.
-      </p>
+        <br /><br />
+        <p className="servicesPara">Welcome to our expert home renovation services! As a trusted and experienced contractor, we take great pride in transforming houses into dream homes. Our dedicated team of professionals is committed to delivering exceptional results that exceed your expectations. Whether you're looking to update your kitchen, remodel your bathroom, or renovate your entire living space, we have the expertise and skills to bring your vision to life.<br /><br /> We understand that every home is unique, and we work closely with our clients to create personalized designs that reflect their style and preferences. From concept to completion, we handle every aspect of the renovation process with meticulous attention to detail, ensuring a seamless and stress-free experience for our clients. Our services encompass a wide range of specialties, including flooring, painting, plumbing, electrical work, cabinetry, and more.<br /><br /> With a focus on quality craftsmanship and using premium materials, we strive to enhance the beauty, functionality, and value of your home. We are committed to delivering projects on time and within budget, without compromising on quality. Customer satisfaction is our top priority, and we go the extra mile to ensure that our clients are delighted with the final results. Trust us with your home renovation needs, and let us turn your house into the home of your dreams. Contact us today to discuss your project and schedule a consultation.
+        </p>
 
-      {/* <a href="https://www.mythrillfiction.com/the-dark-rider" alt="Mythrill" target="_blank"> */}
-      {/* <h3 className="headingHover">Hover over the image to see the AFTER image.</h3> */}
+        {/* <a href="https://www.mythrillfiction.com/the-dark-rider" alt="Mythrill" target="_blank"> */}
+        {/* <h3 className="headingHover">Hover over the image to see the AFTER image.</h3> */}
 
 
-      {/* <span p>BEFORE</span>
+        {/* <span p>BEFORE</span>
       <span p>AFTER</span> */}
-      <span className="servicesImageContainer servicesImageContainerBefore">
+        <span className="servicesImageContainer servicesImageContainerBefore">
 
-        <img src="./img/before_basement.jpg" className="beforeAfterImg" alt="A basement picture before renovation." />
+          <img src="./img/before_basement.jpg" className="beforeAfterImg" alt="A basement picture before renovation." />
 
-        <p className="beforeAfterText">BEFORE</p>
-      </span>
-
-
-      {/* </a> */}
-      <span className="servicesImageContainer ">
-        <img src="./img/after_basement.jpg" className="beforeAfterImg" alt="A basement picture after renovation." />
-        <p className="beforeAfterText">AFTER</p>
-      </span >
-      <br />
-
-      <span className="servicesImageContainer servicesImageContainerBefore">
-        <img src="./img/before_kitchen.jpg" className="beforeAfterImg" alt="A kitchen picture before renovation." />
-        <p className="beforeAfterText">BEFORE</p>
-      </span >
-
-      <span className="servicesImageContainer">
-        <img src="./img/after_kitchen.jpg" className="beforeAfterImg" alt="A kitchen picture after renovation." />
-        <p className="beforeAfterText">AFTER</p>
-      </span >
-      <br />
+          <p className="beforeAfterText">BEFORE</p>
+        </span>
 
 
+        {/* </a> */}
+        <span className="servicesImageContainer ">
+          <img src="./img/after_basement.jpg" className="beforeAfterImg" alt="A basement picture after renovation." />
+          <p className="beforeAfterText">AFTER</p>
+        </span >
+        <br />
+
+        <span className="servicesImageContainer servicesImageContainerBefore">
+          <img src="./img/before_kitchen.jpg" className="beforeAfterImg" alt="A kitchen picture before renovation." />
+          <p className="beforeAfterText">BEFORE</p>
+        </span >
+
+        <span className="servicesImageContainer">
+          <img src="./img/after_kitchen.jpg" className="beforeAfterImg" alt="A kitchen picture after renovation." />
+          <p className="beforeAfterText">AFTER</p>
+        </span >
+        <br />
 
 
 
-      <span className="servicesImageContainer servicesImageContainerBefore">
-        <img src="./img/before_walkway.jpg" className="beforeImgThree beforeAfterImg" alt="A walkway picture before renovation." />
-        <p className="beforeAfterText">BEFORE</p>
-      </span >
-      <span className="servicesImageContainer">
-        {/* <p className="title title-before before-after" >BEFORE</p>
+
+
+        <span className="servicesImageContainer servicesImageContainerBefore">
+          <img src="./img/before_walkway.jpg" className="beforeImgThree beforeAfterImg" alt="A walkway picture before renovation." />
+          <p className="beforeAfterText">BEFORE</p>
+        </span >
+        <span className="servicesImageContainer">
+          {/* <p className="title title-before before-after" >BEFORE</p>
         <p className="title title-after before-after">AFTER</p> */}
-        <img src="./img/after_walkway.jpg" className="afterImgThree beforeAfterImg" alt="A walkway picture after renovation." />
-        <p className="beforeAfterText">AFTER</p>
-      </span >
-      <br /> <br /> <br /> <br />
+          <img src="./img/after_walkway.jpg" className="afterImgThree beforeAfterImg" alt="A walkway picture after renovation." />
+          <p className="beforeAfterText">AFTER</p>
+        </span >
+        <br /> <br /> <br /> <br />
 
 
-      <Footer />
+      </motion.div>
     </>
   );
 }
@@ -512,9 +571,13 @@ function Bath() {
         <div className="bath-grid-container">
           <div className="bath-grid-item">
 
-            <img src="./img/bath/bath1.jpg" className="bath-image image-border zoomD pointer" alt="A picture of a finished bathroom renovation." />
+            <div id='overTopImageGradient'>aaaaaaa</div>
 
+            <img src="./img/bath/bath1.jpg" className="bath-image image-border zoomD pointer" alt="A picture of a finished bathroom renovation." />
           </div>
+
+
+
           <div className="bath-grid-item">
             <img src="./img/bath/bath2.jpg" className="bath-image image-border zoomD pointer" alt="A picture of a finished bathroom renovation." />
           </div>
