@@ -221,6 +221,7 @@ function Home() {
       <Faq />
       <Quote />
       {/* <Bath /> */}
+      <Location />
       <Contact />
     </>
   );
@@ -314,6 +315,7 @@ function Links() {
             <a href="/bath">Baths</a>
             <a href="#faq">Faq</a>
             <a href="#quote">Quote</a>
+            <a href="#location">Location & Hours</a>
             <a href="/Home#contact">Contact</a>
           </div>
         </div>
@@ -335,6 +337,8 @@ function Links() {
         <Route path="/Quote" element={<Quote />} />
         <Route path="/Contact" element={<Contact />} />
         <Route path="/About" element={<About />} />
+        <Route path="/Location" element={<Location />} />
+
         <Route path="*">
 
         </Route>
@@ -417,50 +421,66 @@ function Services() {
 
         {/* <span p>BEFORE</span>
       <span p>AFTER</span> */}
-        <span className="servicesImageContainer servicesImageContainerBefore">
 
-          <img src="./img/before_basement.jpg" className="beforeAfterImg" alt="A basement picture before renovation." />
-
-          <p className="beforeAfterText">BEFORE</p>
-        </span>
-
-
-        {/* </a> */}
-        <span className="servicesImageContainer ">
-          <img src="./img/after_basement.jpg" className="beforeAfterImg" alt="A basement picture after renovation." />
-          <p className="beforeAfterText">AFTER</p>
-        </span >
+        {/* <span className="servicesImageContainer servicesImageContainerBefore"> */}
+        <p className="servicesHeadingBefore">BEFORE
+          <span className="servicesHeadingAfter">AFTER
+          </span>
+        </p>
         <br />
+        <div className="services-flex-container">
+          <div className="services-flex-item-left">
+            <img src="./img/before_basement.jpg" className="beforeAfterImg" alt="A basement picture before renovation." />
 
-        <span className="servicesImageContainer servicesImageContainerBefore">
-          <img src="./img/before_kitchen.jpg" className="beforeAfterImg" alt="A kitchen picture before renovation." />
-          <p className="beforeAfterText">BEFORE</p>
-        </span >
+            <p className="beforeAfterText">BEFORE</p>
 
-        <span className="servicesImageContainer">
-          <img src="./img/after_kitchen.jpg" className="beforeAfterImg" alt="A kitchen picture after renovation." />
-          <p className="beforeAfterText">AFTER</p>
-        </span >
-        <br />
+          </div>
+
+          <div className="services-flex-item-right">
+            {/* </a> */}
+            <span className="servicesImageContainer ">
+              <img src="./img/after_basement.jpg" className="beforeAfterImg" alt="A basement picture after renovation." />
+              <p className="beforeAfterText">AFTER</p>
+            </span >
+            <br />
+          </div>
+          <div className="services-flex-item-left">
+
+            <span className="servicesImageContainer servicesImageContainerBefore">
+              <img src="./img/before_kitchen.jpg" className="beforeAfterImg" alt="A kitchen picture before renovation." />
+              <p className="beforeAfterText">BEFORE</p>
+            </span >
+          </div>
+          <div className="services-flex-item-right">
+
+            <span className="servicesImageContainer">
+              <img src="./img/after_kitchen.jpg" className="beforeAfterImg" alt="A kitchen picture after renovation." />
+              <p className="beforeAfterText">AFTER</p>
+            </span >
+            <br />
+          </div>
 
 
+          <div className="services-flex-item-left">
 
 
+            <span className="servicesImageContainer servicesImageContainerBefore">
+              <img src="./img/before_walkway.jpg" className="beforeImgThree beforeAfterImg" alt="A walkway picture before renovation." />
+              <p className="beforeAfterText">BEFORE</p>
+            </span >
+          </div>
+          <div className="services-flex-item-right">
 
-        <span className="servicesImageContainer servicesImageContainerBefore">
-          <img src="./img/before_walkway.jpg" className="beforeImgThree beforeAfterImg" alt="A walkway picture before renovation." />
-          <p className="beforeAfterText">BEFORE</p>
-        </span >
-        <span className="servicesImageContainer">
-          {/* <p className="title title-before before-after" >BEFORE</p>
+            <span className="servicesImageContainer">
+              {/* <p className="title title-before before-after" >BEFORE</p>
         <p className="title title-after before-after">AFTER</p> */}
-          <img src="./img/after_walkway.jpg" className="afterImgThree beforeAfterImg" alt="A walkway picture after renovation." />
-          <p className="beforeAfterText">AFTER</p>
-        </span >
-        <br /> <br /> <br /> <br />
-
-
-      </motion.div>
+              <img src="./img/after_walkway.jpg" className="afterImgThree beforeAfterImg" alt="A walkway picture after renovation." />
+              <p className="beforeAfterText">AFTER</p>
+            </span >
+            <br /> <br /> <br /> <br />
+          </div>
+        </div>
+      </motion.div >
     </>
   );
 }
@@ -1140,6 +1160,14 @@ function About() {
       < br /><br /><br /><br /><br />
 
       <Footer />
+    </>
+  );
+}
+
+function Location() {
+  return (
+    <>
+      <iframe src="https://goo.gl/maps/2dEvuazaZWoZUEFg7" width="600" height="450" style={{ border: 0 }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </>
   );
 }

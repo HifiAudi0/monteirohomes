@@ -319,16 +319,70 @@ button.active {
 /* ALL SERVICES PAGE */
 
 
-.servicesImageContainer {
+/* .servicesImageContainer {
   position: relative;
   text-align: center;
   color: white;
 
+} */
+
+/* .servicesImageContainerBefore {
+} */
+
+.servicesHeadingBefore {
+  color: black;
+  margin-left: 20rem;
+  font-size: 40px;
+  border: 10px solid red;
+  width: 200px;
+  font-weight: bold;
 }
 
-.servicesImageContainerBefore {
-  /* margin-left: 30%; */
+.servicesHeadingAfter {
+
+  margin-left: 30rem;
+  border: 10px solid red;
+
+
+
 }
+
+.services-flex-container {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  font-size: 30px;
+  margin-left: 10%;
+  /* text-align: center; */
+  /* box-sizing: border-box; */
+}
+
+.services-flex-item-left {
+  background-color: #f1f1f1;
+  padding: 10px;
+  flex: 50%;
+
+  /* background-color: red; */
+  /* padding-left: -200px; */
+  /* margin-left: -200px; */
+  /* box-sizing: border-box; */
+}
+
+.services-flex-item-right {
+  /* background-color: dodgerblue; */
+  padding: 10px;
+  /* margin-left: -200px; */
+  flex: 50%;
+  /* box-sizing: border-box; */
+}
+
+/* Responsive layout - makes a one column-layout instead of a two-column layout */
+/* @media (max-width: 800px) {
+  .flex-item-right, .flex-item-left {
+    flex: 100%;
+  }
+} */
 
 .servicesPara {
   margin-left: 15%;
@@ -338,21 +392,24 @@ button.active {
 .beforeAfterImg {
   width: 400px;
   height: 400px;
-  margin-left: 25px;
-  margin-top: 25px;
-  /* margin-left: auto;
-  margin-right: auto;
-  display: block; */
-  margin-left: 40%;
+  border: 20px solid red;
+  /* margin-left: 25px;
+  margin-top: 25px; */
+
+  /* margin-left: 40%; */
 }
 
+/* margin-left: auto;
+  margin-right: auto;
+  display: block; */
 
-.beforeAfterText {
+
+/* .beforeAfterText {
   position: absolute;
   top: 50%;
   left: 70%;
   font-weight: bold;
-}
+} */
 
 /* ALL SERVICES PAGE */
 
