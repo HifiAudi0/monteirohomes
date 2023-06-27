@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes, Link, NavLink, useNavigate } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Link, NavLink, useNavigate, useLocation } from 'react-router-dom';
 import { LinkContainer } from "react-router-bootstrap";
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
@@ -122,9 +122,9 @@ function ChangeNavColor(props) {
 function App() {
   return (
     <>
-
-      <Links />
-
+      <Router>
+        <Links />
+      </Router>
 
 
 
@@ -137,6 +137,9 @@ function Home() {
 
   return (
     <>
+
+      <span id='home'></span>
+      {/* <h1 className="page-mainHeading">Get a FREE quote!</h1> */}
 
       <ChangeNavColor color={navDarkColor} />
 
@@ -160,8 +163,10 @@ function Home() {
         Did not load video.
       </video>
 
-      <img className="logo" src="./img/logo.png" alt="A picture of the Monterio homes logo." />
-      <span><p className="companyName">onteiro Homes</p></span>
+
+      <img className="logo animate__animated animate__heartBeat animate__infinite" src="./img/logo.png" alt="A picture of the Monterio homes logo." />
+      <span><p className="companyName animate__animated animate__heartBeat animate__infinite">onteiro Homes</p></span>
+
       {/* </div> */}
       {/* <img className="companyName" src="./img/companyName.svg" /> */}
       <div className="rightToLeft-lineBreaks">
@@ -209,9 +214,14 @@ function Home() {
         </div>
       </div>
 
-      <Services />
+      <div class="animate__animated animate__fadeInLeft animate__delay-2s">Example
+        <Services />
+      </div>
+
+      <Faq />
       <Quote />
       {/* <Bath /> */}
+      <Contact />
     </>
   );
 }
@@ -229,6 +239,13 @@ function Links() {
     document.querySelector("#navbar").style.width = "0";
     document.querySelectorAll(".open")[0].style.opacity = 1;
   }
+
+  // var location = useLocation();
+  // console.log("LOCATION............", location.pathname);
+
+  // if (location.pathName == "/Home") {
+
+  // }
 
   return (
     <>
@@ -248,9 +265,9 @@ function Links() {
 
       </nav> */}
 
-      <Router>
 
-        {/* <Navbar scrolling dark expand="md" id="navbar">
+
+      {/* <Navbar scrolling dark expand="md" id="navbar">
           <Nav className="mx-auto">
 
             <Link to={"/Home"} className="nav-link" id="navLink">HOME
@@ -287,41 +304,42 @@ function Links() {
             <br />
           </Nav></Navbar> */}
 
-        <body>
-          <span className="open" onClick={openNavbar}>&#9776; Menu</span>
-          <div id="navbar" className="overlay">
-            <a href="javascript:void(0);" onClick={closeNavbar} className="close">&#9932;</a>
-            <div className="overlay-content">
-              <a href="http://www.google.com">Home</a>
-              <a href="javascript:void(o);">Portfolio</a>
-              <a href="javascript:void(o);">Services</a>
-              <a href="javascript:void(o);">About</a>
-              <a href="javascript:void(o);">Contact</a>
-            </div>
+      <body>
+        <span className="open" onClick={openNavbar}>&#9776; Menu</span>
+        <div id="navbar" className="overlay">
+          <a href="javascript:void(0);" onClick={closeNavbar} className="close">&#9932;</a>
+          <div className="overlay-content">
+            <a href="/Home">Home</a>
+            <a href="#services">All Services</a>
+            <a href="/bath">Baths</a>
+            <a href="#faq">Faq</a>
+            <a href="#quote">Quote</a>
+            <a href="/Home#contact">Contact</a>
           </div>
-        </body>
-        {/* </html> */}
+        </div>
+      </body>
+      {/* </html> */}
 
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/Home" element={<Home />} />
-          <Route path="/Services" element={<Services />} />
-          <Route path="/kitchen" element={<Kitchen />} />
-          <Route path="/bath" element={<Bath />} />
-          <Route path="/basement" element={<Basement />} />
-          <Route path="/garage" element={<Services />} />
-          <Route path="/pool" element={<Pool />} />
-          <Route path="/deck" element={<Deck />} />
-          <Route path="/Faq" element={<Faq />} />
-          {/* <Route path="/Gallery" element={<Gallery />} /> */}
-          <Route path="/Quote" element={<Quote />} />
-          <Route path="/Contact" element={<Contact />} />
-          <Route path="/About" element={<About />} />
-          <Route path="*">
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/Home" element={<Home />} />
+        <Route path="/Services" element={<Services />} />
+        <Route path="/kitchen" element={<Kitchen />} />
+        <Route path="/bath" element={<Bath />} />
+        <Route path="/basement" element={<Basement />} />
+        <Route path="/garage" element={<Services />} />
+        <Route path="/pool" element={<Pool />} />
+        <Route path="/deck" element={<Deck />} />
+        <Route path="/Faq" element={<Faq />} />
+        {/* <Route path="/Gallery" element={<Gallery />} /> */}
+        <Route path="/Quote" element={<Quote />} />
+        <Route path="/Contact" element={<Contact />} />
+        <Route path="/About" element={<About />} />
+        <Route path="*">
 
-          </Route>
-        </Routes>
-      </Router >
+        </Route>
+      </Routes>
+
 
 
     </>
@@ -342,10 +360,24 @@ function Counter({ number, title }) {
 
 function Services() {
 
+  // const activiateImgOverlay = (e) => {
+  //   // document.querySelector("")
+  //   console.log("e............", e)
+  //   const image = document.querySelectorAll("e");
+  //   console.log("image", image);
+
+  //   for (let i = 0; i < image.length; ++i) {
+  //     image[i].classList.add = "callUsBtn";
+  //   }
+
+
 
 
   return (
     <>
+
+      <span id='services'></span>
+
 
       <motion.div
         initial="hidden"
@@ -364,15 +396,15 @@ function Services() {
         <h1 class="animate__animated animate__bounce">An animated element</h1>
 
         <figure>
-          <img width="421" height="461" src="https://www.dreammaker-remodel.com/wp-content/uploads/2021/08/bathroom-remodeling.jpg" class="attachment-421x461 size-421x461" alt="" decoding="async" loading="lazy" srcset="https://www.dreammaker-remodel.com/wp-content/uploads/2021/08/bathroom-remodeling.jpg 421w, https://www.dreammaker-remodel.com/wp-content/uploads/2021/08/bathroom-remodeling-274x300.jpg 274w" sizes="(max-width: 421px) 100vw, 421px" />                      <figcaption>
+          <img width="421" height="461" src="./img/bath/bath1.jpg" className="pointer" alt="" decoding="async" loading="lazy" />                      <figcaption>
             <strong><span>Bathroom Remodeling</span></strong>
-            <button><a href="https://www.dreammaker-remodel.com/services/bathroom-remodeling/">Call Us</a></button>
+            <button><a href="tel:(647)885-2384">Call Us</a></button>
           </figcaption>
         </figure>
 
         <br /><br />
-        <h3 className="basementHeading">Comprehensive Renovation Services for Your Dream Home Transformation</h3>
-        <h4 className="basementHeading">From Kitchen to Bathroom, Deck to Basement - We've Got You Covered!</h4>
+        {/* <h3 className="page-mainHeading">Comprehensive Renovation Services for Your Dream Home Transformation</h3> */}
+        <h4 className="page-mainHeading">From Kitchen to Bathroom, Deck to Basement - We've Got You Covered!</h4>
 
 
         <br /><br />
@@ -833,11 +865,13 @@ function Faq() {
 
   return (
     <>
+
+      <span id='faq' name='faq'></span>
       <ChangeNavColor color={navLightColor} />
 
       <RemoveQuoteForm />
 
-
+      <h1 className="page-mainHeading">Frequently Asked Questions</h1>
       <br /><br />
       <motion.div
         initial={{ scale: 0 }}
@@ -962,6 +996,9 @@ function Quote() {
 
   return (
     <>
+      <span id='quote'></span>
+      <h1 className="page-mainHeading">Get a FREE quote!</h1>
+
       <ChangeNavColor color={navLightColor} />
       <RemoveQuoteForm />
       <QuoteForm />
@@ -1046,6 +1083,8 @@ function QuoteForm() {
       <form action="http://www.monteirohomes.com/sendEmailPM.php" method="POST" className="quoteForm">
 
         <img className="logo" src="./img/logo.png" alt="A picture of the Monterio homes logo." />
+        <img className="sslImage" src="./img/ssl.png" alt="A picture of a security icon for HTTPS/SSL." />
+
         <h3 className="formHeading">Get a free estimate today!</h3>
         <label for="name" className="formLabels">Name (required)</label><br />
         <input type='text' className="formInputText" name='name' value={form.name} onChange={handleChange} placeholder='Your name' /><br /><br />
@@ -1062,7 +1101,6 @@ function QuoteForm() {
       {/* </div> */}
       {/* </div> */}
       <br /><br />
-      <Footer />
     </>
   );
 }
@@ -1125,6 +1163,10 @@ function Contact() {
 
   return (
     <>
+
+      <span id='contact'></span>
+      <h1 className="page-mainHeading">Get in touch with us TODAY!</h1>
+
 
       <ChangeNavColor color={navLightColor} />
 
