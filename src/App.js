@@ -1228,7 +1228,7 @@ function About() {
 }
 
 
-const AnyReactComponent = ({ text }) => <div>{text}</div>;
+const AnyReactComponent = ({ text }) => <img src="./img/logo.png" width="25px" height="25px" />;
 
 function SimpleMap() {
   const defaultProps = {
@@ -1251,10 +1251,40 @@ function SimpleMap() {
           lat={43.59376155130781}
           lng={-79.61112143389911}
           text="My Marker"
-          id='A'
         // 43.59376155130781, -79.61112143389911
         // https://www.google.com/maps/@43.6198811,-79.6787644,10.5z?entry=ttu
         />
+        <AnyReactComponent
+          lat={43.32688478923172}
+          lng={-79.8071671059716}
+          text="My Marker"
+        />
+        {/* 43.32688478923172, -79.8071671059716 */}
+        <AnyReactComponent
+          lat={43.733109656168665}
+          lng={-79.75635533997215}
+          text="My Marker"
+        />
+        {/* 43.733109656168665, -79.75635533997215 */}
+        <AnyReactComponent
+          lat={43.467580697435764}
+          lng={-79.70691686494565}
+          text="My Marker"
+        />
+        {/* 43.467580697435764, -79.70691686494565 */}
+        <AnyReactComponent
+          lat={43.518390249137894}
+          lng={-79.8799515275384}
+          text="My Marker"
+        />
+        {/* 43.518390249137894, -79.8799515275384 */}
+        <AnyReactComponent
+          lat={43.79219612301752}
+          lng={-79.54429550669967}
+          text="My Marker"
+        />
+
+        {/* 43.79219612301752, -79.54429550669967 */}
       </GoogleMapReact>
     </div>
   );
