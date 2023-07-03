@@ -62,6 +62,12 @@ import CountUp from "react-countup";
 
 import './scrollDownArrow.css';
 
+
+import GoogleMapReact from 'google-map-react';
+
+
+
+
 const container = {
   hidden: { opacity: 1, scale: 0 },
   visible: {
@@ -227,6 +233,7 @@ function Home() {
   );
 }
 
+//const BASE_URL = process.env.REACT_APP_BASE_URL;
 
 
 function Links() {
@@ -1220,9 +1227,44 @@ function About() {
   );
 }
 
+
+const AnyReactComponent = ({ text }) => <div>{text}</div>;
+
+function SimpleMap() {
+  const defaultProps = {
+    center: {
+      lat: 43.6198811,
+      lng: -79.6787644
+    },
+    zoom: 10
+  };
+
+  return (
+    // Important! Always set the container height explicitly
+    <div style={{ height: '500px', width: '500px' }}>
+      <GoogleMapReact
+        bootstrapURLKeys={{ key: process.env.REACT_APP_GOOGLE_MAPS_API_KEY }}
+        defaultCenter={defaultProps.center}
+        defaultZoom={defaultProps.zoom}
+      >
+        <AnyReactComponent
+          lat={43.59376155130781}
+          lng={-79.61112143389911}
+          text="My Marker"
+          id='A'
+        // 43.59376155130781, -79.61112143389911
+        // https://www.google.com/maps/@43.6198811,-79.6787644,10.5z?entry=ttu
+        />
+      </GoogleMapReact>
+    </div>
+  );
+}
+
 function Location() {
   return (
     <>
+      <SimpleMap />
+
       <span id='location'></span>
 
       <h1 className="page-mainHeading">Hours & Location</h1>
