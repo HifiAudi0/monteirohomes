@@ -1020,6 +1020,40 @@ input:active {
   font-weight: bolder;
 }
 
+/* LOCATION & HOURS PAGE */
+
+.location-container {
+  color: white;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  padding: 10px;
+}
+
+.location-grid-item {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  margin-left: 0%;
+}
+
+.serviceAreas {
+  font-size: 3rem;
+  color: black;
+}
+
+.headingHoursOfOperation {
+  color: black;
+  font-size: 3rem;
+}
+
+.googleMap {
+  height: 900px;
+  width: 800px;
+  margin-left: -350px;
+}
+
+
 /* CONTACT PAGE */
 
 /* .contact-grid-container {

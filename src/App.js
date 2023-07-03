@@ -241,12 +241,102 @@ function Links() {
     document.querySelectorAll(".open")[0].style.opacity = 1;
   }
 
-  // var location = useLocation();
-  // console.log("LOCATION............", location.pathname);
+  var location = useLocation();
+  console.log("LOCATION............", location.pathname);
 
-  // if (location.pathName == "/Home") {
+  if (location.pathname == "/Home" || location.pathname == "/") {
+    console.log("HOME.............")
+    return (
+      <>
 
-  // }
+        <span className="open" onClick={openNavbar}>&#9776; Menu</span>
+        <div id="navbar" className="overlay">
+          <a href="javascript:void(0);" onClick={closeNavbar} className="close">&#9932;</a>
+          <div className="overlay-content">
+            <a href="/Home">Home</a>
+            <a href="#services">All Services</a>
+            <a href="/bath">Baths</a>
+            <a href="#faq">Faq</a>
+            <a href="#quote">Quote</a>
+            <a href="#location">Location & Hours</a>
+            <a href="/Home#contact">Contact</a>
+          </div>
+        </div>
+
+
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/Home" element={<Home />} />
+          <Route path="/Services" element={<Services />} />
+          <Route path="/kitchen" element={<Kitchen />} />
+          <Route path="/bath" element={<Bath />} />
+          <Route path="/basement" element={<Basement />} />
+          <Route path="/garage" element={<Services />} />
+          <Route path="/pool" element={<Pool />} />
+          <Route path="/deck" element={<Deck />} />
+          <Route path="/Faq" element={<Faq />} />
+          {/* <Route path="/Gallery" element={<Gallery />} /> */}
+          <Route path="/Quote" element={<Quote />} />
+          <Route path="/Contact" element={<Contact />} />
+          <Route path="/About" element={<About />} />
+          <Route path="/Location" element={<Location />} />
+
+          <Route path="*">
+
+          </Route>
+        </Routes>
+
+      </>
+    );
+
+  }
+
+  else {
+    console.log("SERVICES PAGE..............");
+
+    return (
+      <>
+
+        <span className="open" onClick={openNavbar}>&#9776; Menu</span>
+        <div id="navbar" className="overlay">
+          <a href="javascript:void(0);" onClick={closeNavbar} className="close">&#9932;</a>
+          <div className="overlay-content">
+            <a href="/Home">Back to Home</a>
+            <a href="#services">All Services</a>
+            <a href="/bath">Baths</a>
+            {/* <a href="#faq">Faq</a>
+            <a href="#quote">Quote</a>
+            <a href="#location">Location & Hours</a>
+            <a href="/Home#contact">Contact</a> */}
+          </div>
+        </div>
+
+
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/Home" element={<Home />} />
+          <Route path="/Services" element={<Services />} />
+          <Route path="/kitchen" element={<Kitchen />} />
+          <Route path="/bath" element={<Bath />} />
+          <Route path="/basement" element={<Basement />} />
+          <Route path="/garage" element={<Services />} />
+          <Route path="/pool" element={<Pool />} />
+          <Route path="/deck" element={<Deck />} />
+          {/* <Route path="/Faq" element={<Faq />} /> */}
+          {/* <Route path="/Gallery" element={<Gallery />} /> */}
+          {/* <Route path="/Quote" element={<Quote />} />
+          <Route path="/Contact" element={<Contact />} />
+          <Route path="/About" element={<About />} />
+          <Route path="/Location" element={<Location />} /> */}
+
+          <Route path="*">
+
+          </Route>
+        </Routes>
+
+      </>
+    );
+  }
 
   return (
     <>
@@ -305,44 +395,10 @@ function Links() {
             <br />
           </Nav></Navbar> */}
 
-      <body>
-        <span className="open" onClick={openNavbar}>&#9776; Menu</span>
-        <div id="navbar" className="overlay">
-          <a href="javascript:void(0);" onClick={closeNavbar} className="close">&#9932;</a>
-          <div className="overlay-content">
-            <a href="/Home">Home</a>
-            <a href="#services">All Services</a>
-            <a href="/bath">Baths</a>
-            <a href="#faq">Faq</a>
-            <a href="#quote">Quote</a>
-            <a href="#location">Location & Hours</a>
-            <a href="/Home#contact">Contact</a>
-          </div>
-        </div>
-      </body>
+
       {/* </html> */}
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/Home" element={<Home />} />
-        <Route path="/Services" element={<Services />} />
-        <Route path="/kitchen" element={<Kitchen />} />
-        <Route path="/bath" element={<Bath />} />
-        <Route path="/basement" element={<Basement />} />
-        <Route path="/garage" element={<Services />} />
-        <Route path="/pool" element={<Pool />} />
-        <Route path="/deck" element={<Deck />} />
-        <Route path="/Faq" element={<Faq />} />
-        {/* <Route path="/Gallery" element={<Gallery />} /> */}
-        <Route path="/Quote" element={<Quote />} />
-        <Route path="/Contact" element={<Contact />} />
-        <Route path="/About" element={<About />} />
-        <Route path="/Location" element={<Location />} />
 
-        <Route path="*">
-
-        </Route>
-      </Routes>
 
 
 
@@ -1167,7 +1223,60 @@ function About() {
 function Location() {
   return (
     <>
-      <iframe src="https://goo.gl/maps/2dEvuazaZWoZUEFg7" width="600" height="450" style={{ border: 0 }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <span id='location'></span>
+
+      <h1 className="page-mainHeading">Hours & Location</h1>
+      {/* <iframe src="https://goo.gl/maps/2dEvuazaZWoZUEFg7" width="600" height="450" style={{ border: 0 }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> */}
+      <div className="location-container">
+        <div className="location-grid-item">
+
+          <img src="./img/GoogleMaps.png" className="googleMap" alt="A map of Monteiro Homes serivce area across the GTA." />
+        </div>
+        <div className="location-grid-item">
+
+          <h3 className="serviceAreas">Service areas</h3>
+
+          <ul>
+            <li className="alignedPara footer-service-area-text">
+              <img className="checkmark" src='./img/checkmark.png' alt="A picture of a checkmark indicating we service the following area." />
+              Georgetown
+            </li>
+            <li className="alignedPara footer-service-area-text">
+              <img className="checkmark" src='./img/checkmark.png' alt="A picture of a checkmark indicating we service the following area." />
+              Milton
+            </li>
+            <li className="alignedPara footer-service-area-text">
+              <img className="checkmark" src='./img/checkmark.png' alt="A picture of a checkmark indicating we service the following area." />
+              Oakville
+            </li>
+            <li className="alignedPara footer-service-area-text">
+              <img className="checkmark" src='./img/checkmark.png' alt="A picture of a checkmark indicating we service the following area." />
+              Burlington
+            </li>
+            <li className="alignedPara footer-service-area-text">
+              <img className="checkmark" src='./img/checkmark.png' alt="A picture of a checkmark indicating we service the following area." />
+              Etobicoke
+            </li>
+            <li className="alignedPara footer-service-area-text">
+              <img className="checkmark" src='./img/checkmark.png' alt="A picture of a checkmark indicating we service the following area." />
+              Vaughan
+            </li>
+            <li className="alignedPara footer-service-area-text">
+              <img className="checkmark" src='./img/checkmark.png' alt="A picture of a checkmark indicating we service the following area." />
+              Brampton
+            </li>
+            <li className="alignedPara footer-service-area-text">
+              <img className="checkmark" src='./img/checkmark.png' alt="A picture of a checkmark indicating we service the following area." />
+              and many more!
+            </li>
+          </ul>
+
+          <br /><br />
+          <h3 className="headingHoursOfOperation">Hours of operation</h3>
+          <p className="alignedPara">Monday - Friday 9 AM - 5 PM</p>
+
+        </div>
+      </div>
     </>
   );
 }
