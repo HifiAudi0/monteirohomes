@@ -645,7 +645,47 @@ function Kitchen() {
   );
 }
 
+function CallNow() {
+  return (
+    <>
+      <a href="tel:(647)885-2384" className="buttonText">Call Now</a>
+    </>
+  );
+}
 
+function EmailNow() {
+  return (
+    <>
+      <a href="mailto:phil@monteirohomes.ca" className="buttonText">Email Now</a>
+    </>
+  );
+}
+
+function ZoomIn() {
+  return (
+    <>
+      <a href className="buttonZoomInText">Click picture to Zoom-In</a>
+    </>
+  );
+}
+
+function ImageOverlay() {
+  return (
+    <>
+      <div className="middle">
+
+        <CallNow />
+
+        <div className="betweenButtons"></div>
+        <EmailNow />
+        <div className="betweenButtons"></div>
+
+        <ZoomIn />
+
+      </div>
+    </>
+  );
+}
 
 
 function Bath() {
@@ -686,30 +726,46 @@ function Bath() {
         <div className="bath-grid-container">
           <div className="bath-grid-item">
 
-            <div id='overTopImageGradient'>aaaaaaa</div>
+            <div className="imageContainer">
 
-            <img src="./img/bath/bath1.jpg" className="bath-image image-border zoomD pointer" alt="A picture of a finished bathroom renovation." />
+              <img src="./img/bath/bath1.jpg" className="bath-image image-border zoomD pointer image" alt="A picture of a finished bathroom renovation." />
+              <ImageOverlay />
+            </div>
           </div>
-
-
 
           <div className="bath-grid-item">
-            <img src="./img/bath/bath2.jpg" className="bath-image image-border zoomD pointer" alt="A picture of a finished bathroom renovation." />
-          </div>
-          <div className="bath-grid-item">
-            <img src="./img/bath/bath3.jpg" className="bath-image image-border zoomD pointer" alt="A picture of a finished bathroom renovation." />
-          </div>
-          <div className="bath-grid-item">
-            <img src="./img/bath/bath4.jpg" className="bath-image image-border zoomD pointer" alt="A picture of a finished bathroom renovation." />
+            <div className="imageContainer">
+              <img src="./img/bath/bath2.jpg" className="bath-image image-border zoomD pointer image" alt="A picture of a finished bathroom renovation." />
+
+              <ImageOverlay />
+            </div>
           </div>
 
+          <div className="bath-grid-item">
+            <div className="imageContainer">
+              <img src="./img/bath/bath3.jpg" className="bath-image image-border zoomD pointer image" alt="A picture of a finished bathroom renovation." />
+              <ImageOverlay />
+            </div>
+          </div>
+
+          <div className="bath-grid-item">
+            <div className="imageContainer">
+              <img src="./img/bath/bath4.jpg" className="bath-image image-border zoomD pointer image" alt="A picture of a finished bathroom renovation." />
+              <ImageOverlay />
+            </div>
+          </div>
           <div className="bath-grid-item">
             <p className="alignedPara">We specialize in providing exceptional bathroom renovation services that will transform your bathroom into a luxurious and functional retreat. Our team of skilled professionals understands the importance of a well-designed and comfortable bathroom, and we are dedicated to creating a space that reflects your personal style and meets your specific needs.<br /> <br />  Whether you're looking to update your fixtures, replace outdated tiles, or completely remodel your bathroom, we offer a wide range of services to suit your requirements. Our expertise includes bathroom layout redesign, bathtub and shower installations, vanity and countertop replacements, flooring upgrades, and lighting enhancements.<br /> <br />
               We work closely with you to understand your vision, offering creative solutions and expert advice to maximize the potential of your bathroom. With meticulous attention to detail and a commitment to using high-quality materials, we ensure a stunning end result that exceeds your expectations.<br /> <br />  From project management to timely completion, we handle every aspect of the renovation process with professionalism and care. Our goal is to create a bathroom that not only enhances your daily routine but also adds value to your home. Trust us with your bathroom renovation needs, and let us transform your bathroom into a space of relaxation, rejuvenation, and beauty. </p>
           </div>
 
           <div className="bath-grid-item">
-            <img src="./img/bath/bath5.jpg" className="bath-image image-border zoomD pointer" alt="A picture of a finished bathroom renovation." />
+            <div className="imageContainer">
+
+              <img src="./img/bath/bath5.jpg" className="bath-image image-border zoomD pointer image" alt="A picture of a finished bathroom renovation." />
+              <ImageOverlay />
+
+            </div>
           </div>
           {/* <div className="bath-grid-item">
             <img src="./img/bath/bath6.jpg" className="bath-image image-border zoomD pointer" alt="A picture of a finished bathroom renovation." />
@@ -719,9 +775,11 @@ function Bath() {
             <img src="./img/bath/bath7.jpg" className="bath-image image-border zoomD pointer" alt="A picture of a finished bathroom renovation." />
           </div> */}
           <div className="bath-grid-item">
-            <img src="./img/bath/bath9.jpg" className="bath-image image-border zoomD pointer" alt="A picture of a finished bathroom renovation." />
+            <div className="imageContainer">
+              <img src="./img/bath/bath9.jpg" className="bath-image image-border zoomD pointer image" alt="A picture of a finished bathroom renovation." />
+              <ImageOverlay />
+            </div>
           </div>
-
         </div >
       </motion.div >
       <br /> <br /> <br />
