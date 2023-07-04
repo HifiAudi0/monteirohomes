@@ -1228,7 +1228,7 @@ function About() {
 }
 
 
-const AnyReactComponent = ({ text }) => <img src="./img/logo.png" width="25px" height="25px" />;
+const AnyReactComponent = ({ text }) => <img src="./img/logo.png" width="35px" height="35px" />;
 
 function SimpleMap() {
   const defaultProps = {
@@ -1285,6 +1285,12 @@ function SimpleMap() {
         />
 
         {/* 43.79219612301752, -79.54429550669967 */}
+        <AnyReactComponent
+          lat={43.64306043598669}
+          lng={-79.5129355733097}
+          text="My Marker"
+        />
+        {/* 43.64306043598669, -79.5129355733097 */}
       </GoogleMapReact>
     </div>
   );
