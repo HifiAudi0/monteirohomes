@@ -67,6 +67,8 @@ import GoogleMapReact from 'google-map-react';
 
 import './imageSlider.css';
 
+import './scrollAnimation.css';
+
 
 
 
@@ -128,6 +130,8 @@ function ChangeNavColor(props) {
 
 
 function App() {
+
+
   return (
     <>
       <Router>
@@ -534,6 +538,40 @@ function ImageSlider(props) {
   );
 }
 
+// const boxes = props.box;
+
+// function ScrollAnimation() {
+//    const boxes = document.querySelectorAll(".box");
+
+
+//   console.log("boxes", boxes)
+
+//   window.addEventListener("scroll", checkBoxes);
+
+
+//   checkBoxes();
+
+//   function checkBoxes() {
+//     const triggerBottom = (window.innerHeight / 5) * 4;
+
+//     boxes.forEach((box) => {
+//       const boxTop = box.getBoundingClientRect().top;
+
+//       if (boxTop < triggerBottom) {
+//         box.classList.add("show");
+//       } else {
+//         box.classList.remove("show");
+//       }
+//     });
+//   }
+
+
+//   return (
+//     <>
+//     </>
+//   );
+// }
+
 
 
 function Services() {
@@ -552,22 +590,59 @@ function Services() {
 
 
 
+  useEffect(() => {
+
+
+    const boxes = document.querySelectorAll(".box");
+
+
+    console.log("boxes", boxes)
+
+    window.addEventListener("scroll", checkBoxes);
+
+
+    checkBoxes();
+
+
+
+    function checkBoxes() {
+      const triggerBottom = (window.innerHeight / 5) * 4;
+
+      boxes.forEach((box) => {
+        const boxTop = box.getBoundingClientRect().top;
+
+        if (boxTop < triggerBottom) {
+          box.classList.add("show");
+        } else {
+          box.classList.remove("show");
+        }
+      });
+    }
+
+  }, []);
+
+
   return (
     <>
 
+      {/* <ScrollAnimation box={document.querySelectorAll(".box")} /> */}
+
+      <div className="scrollAnimation">
 
 
 
-      <motion.div
+
+
+        {/* <motion.div
         whileInView={{ left: "100%" }}
         initial={{ left: 0 }}
         transition={{
           duration: 1.75,
           delay: 1
         }}
-      >
+      > */}
 
-        <ChangeNavColor color={navLightColor} />
+        < ChangeNavColor color={navLightColor} />
 
         <RemoveQuoteForm />
 
@@ -587,17 +662,20 @@ function Services() {
 
         <br /><br />
         {/* <h3 className="page-mainHeading">Comprehensive Renovation Services for Your Dream Home Transformation</h3> */}
-        <span id='services'></span>
-        <h4 className="page-mainHeading">From Kitchen to Bathroom, Deck to Basement - We've Got You Covered!</h4>
+        <div className="box">
+          <span id='services'></span>
+          <h4 className="page-mainHeading">From Kitchen to Bathroom, Deck to Basement - We've Got You Covered!</h4>
+        </div>
 
+        <div className="box">
+          <br /><br />
+          <p className="servicesPara">Welcome to our expert home renovation services! As a trusted and experienced contractor, we take great pride in transforming houses into dream homes. Our dedicated team of professionals is committed to delivering exceptional results that exceed your expectations. Whether you're looking to update your kitchen, remodel your bathroom, or renovate your entire living space, we have the expertise and skills to bring your vision to life.<br /><br /> We understand that every home is unique, and we work closely with our clients to create personalized designs that reflect their style and preferences. From concept to completion, we handle every aspect of the renovation process with meticulous attention to detail, ensuring a seamless and stress-free experience for our clients. Our services encompass a wide range of specialties, including flooring, painting, plumbing, electrical work, cabinetry, and more.<br /><br /> With a focus on quality craftsmanship and using premium materials, we strive to enhance the beauty, functionality, and value of your home. We are committed to delivering projects on time and within budget, without compromising on quality. Customer satisfaction is our top priority, and we go the extra mile to ensure that our clients are delighted with the final results. Trust us with your home renovation needs, and let us turn your house into the home of your dreams. Contact us today to discuss your project and schedule a consultation.
+          </p>
+        </div>
 
-        <br /><br />
-        <p className="servicesPara">Welcome to our expert home renovation services! As a trusted and experienced contractor, we take great pride in transforming houses into dream homes. Our dedicated team of professionals is committed to delivering exceptional results that exceed your expectations. Whether you're looking to update your kitchen, remodel your bathroom, or renovate your entire living space, we have the expertise and skills to bring your vision to life.<br /><br /> We understand that every home is unique, and we work closely with our clients to create personalized designs that reflect their style and preferences. From concept to completion, we handle every aspect of the renovation process with meticulous attention to detail, ensuring a seamless and stress-free experience for our clients. Our services encompass a wide range of specialties, including flooring, painting, plumbing, electrical work, cabinetry, and more.<br /><br /> With a focus on quality craftsmanship and using premium materials, we strive to enhance the beauty, functionality, and value of your home. We are committed to delivering projects on time and within budget, without compromising on quality. Customer satisfaction is our top priority, and we go the extra mile to ensure that our clients are delighted with the final results. Trust us with your home renovation needs, and let us turn your house into the home of your dreams. Contact us today to discuss your project and schedule a consultation.
-        </p>
-
-
-        <ImageSlider firstImageUrl="./img/before_basement.jpg" secondImageUrl="./img/after_basement.jpg" />
-
+        <div className="box">
+          <ImageSlider firstImageUrl="./img/before_basement.jpg" secondImageUrl="./img/after_basement.jpg" />
+        </div>
 
         <ImageSlider firstImageUrl="./img/before_kitchen.jpg" secondImageUrl="./img/after_kitchen.jpg" />
 
@@ -676,7 +754,8 @@ function Services() {
             <br /> <br /> <br /> <br />
           </div>
         </div> */}
-      </motion.div >
+        {/* </motion.div > */}
+      </div>
     </>
   );
 }
