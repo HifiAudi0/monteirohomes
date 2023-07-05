@@ -572,23 +572,7 @@ function ImageSlider(props) {
 //   );
 // }
 
-
-
-function Services() {
-
-  // const activiateImgOverlay = (e) => {
-  //   // document.querySelector("")
-  //   console.log("e............", e)
-  //   const image = document.querySelectorAll("e");
-  //   console.log("image", image);
-
-  //   for (let i = 0; i < image.length; ++i) {
-  //     image[i].classList.add = "callUsBtn";
-  //   }
-
-  const scrollRef = useRef(null)
-
-
+function ScrollAnimation() {
 
   useEffect(() => {
 
@@ -625,11 +609,39 @@ function Services() {
   return (
     <>
 
+    </>
+  );
+}
+
+
+
+function Services() {
+
+  // const activiateImgOverlay = (e) => {
+  //   // document.querySelector("")
+  //   console.log("e............", e)
+  //   const image = document.querySelectorAll("e");
+  //   console.log("image", image);
+
+  //   for (let i = 0; i < image.length; ++i) {
+  //     image[i].classList.add = "callUsBtn";
+  //   }
+
+  const scrollRef = useRef(null)
+
+
+
+
+
+
+  return (
+    <>
+
       {/* <ScrollAnimation box={document.querySelectorAll(".box")} /> */}
 
       <div className="scrollAnimation">
 
-
+        <ScrollAnimation />
 
 
 
@@ -1223,95 +1235,102 @@ function Faq() {
   return (
     <>
 
+
+      <ScrollAnimation />
+
       <span id='faq' name='faq'></span>
       <ChangeNavColor color={navLightColor} />
 
       <RemoveQuoteForm />
-
-      <h1 className="page-mainHeading">Frequently Asked Questions</h1>
+      <div className="box">
+        <h1 className="page-mainHeading">Frequently Asked Questions</h1>
+      </div>
       <br /><br />
-      <motion.div
-        initial={{ scale: 0 }}
-        animate={{ rotate: 360, scale: 1 }}
-        transition={{
-          type: "spring",
+      <div className="box">
+        <motion.div
+          initial={{ scale: 0 }}
+          animate={{ rotate: 360, scale: 1 }}
+          transition={{
+            type: "spring",
 
-          stiffness: 260,
-          damping: 20
-        }}>
-        <Image src="./img/faq.png" className="faq" alt="A picture illustrating frequently asked questions." /><br />
-        <br />
-      </motion.div >
+            stiffness: 260,
+            damping: 20
+          }}>
+          <Image src="./img/faq.png" className="faq" alt="A picture illustrating frequently asked questions." /><br />
 
-
-      <motion.div
-        initial={{ scale: 0 }}
-        animate={{ rotate: 360, scale: 1 }}
-        transition={{
-          type: "spring",
-          stiffness: 260,
-          damping: 20
-        }}>
-        <div>
-          <h3 className="faq-heading">You have questions?</h3>
-          <h3 className="faq-heading" id="faq-heading-answers">We have answers!</h3><br />
-        </div>
-      </motion.div >
-
-      <motion.div
-        initial={{ scale: 0 }}
-        animate={{ rotate: 360, scale: 1 }}
-        transition={{
-          type: "spring",
-          stiffness: 160,
-          damping: 20
-        }}>
-        <Accordion className="accordion">
-          <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
-            aria-controls="panel1a-content"
-            id="panel1a-header"
-          >
-            <Typography className="accordHeading">How much will it cost to do the job?</Typography>
-          </AccordionSummary>
-          <AccordionDetails>
-            <Typography className="accordPara">
-              All our work is customized for your individual needs.<br /><br /> We will provide you with a free estimate after we have a chance to discuss your project with you.
-            </Typography>
-          </AccordionDetails>
-        </Accordion>
-        <Accordion className="accordion">
-          <AccordionSummary aria-controls="panel2a-content" id="panel2a-header">
-            <Typography className="accordHeading">Why should I choose Monteiro Homes?</Typography>
-          </AccordionSummary>
-          <AccordionDetails>
-            <Typography className="accordPara">
-              We are a family owned and operated business. We take great pride in our work and treat every project as if it were our own home.<br /><br />We are fully licensed and have been in business for over 8 years. We have many satisfied customers and would be happy to provide you with references.
-            </Typography>
-          </AccordionDetails>
-        </Accordion>
-        <Accordion className="accordion">
-          <AccordionSummary aria-controls="panel2a-content" id="panel2a-header">
-            <Typography className="accordHeading">What areas do you service?</Typography>
-          </AccordionSummary>
-          <AccordionDetails>
-            <Typography className="accordPara">
-              We provide our services all throughout the GTA and surrounding areas.<br /><br /> Including but not limited to: Georgetown, Milton, Oakville, Burlington, Etobicoke, Vaughan, Brampton and more.<br /><br /> If your unsure if we service your area, please contact us.
-            </Typography>
-          </AccordionDetails>
-        </Accordion>
-        <Accordion className="accordion">
-          <AccordionSummary aria-controls="panel2a-content" id="panel2a-header">
-            <Typography className="accordHeading">What payment methods do you accept?</Typography>
-          </AccordionSummary>
-          <AccordionDetails>
-            <Typography className="accordPara">
-              We accept cash, cheque, e-transfer. Credit cards are not accepted.<br /><br /> Financing is available, please contact us for more information.
-            </Typography>
-          </AccordionDetails>
-        </Accordion>
-      </motion.div>
-
+          <br />
+        </motion.div >
+      </div>
+      <div className="box">
+        <motion.div
+          initial={{ scale: 0 }}
+          animate={{ rotate: 360, scale: 1 }}
+          transition={{
+            type: "spring",
+            stiffness: 260,
+            damping: 20
+          }}>
+          <div>
+            <h3 className="faq-heading">You have questions?</h3>
+            <h3 className="faq-heading" id="faq-heading-answers">We have answers!</h3><br />
+          </div>
+        </motion.div >
+      </div>
+      <div className="box">
+        <motion.div
+          initial={{ scale: 0 }}
+          animate={{ rotate: 360, scale: 1 }}
+          transition={{
+            type: "spring",
+            stiffness: 160,
+            damping: 20
+          }}>
+          <Accordion className="accordion">
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel1a-content"
+              id="panel1a-header"
+            >
+              <Typography className="accordHeading">How much will it cost to do the job?</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography className="accordPara">
+                All our work is customized for your individual needs.<br /><br /> We will provide you with a free estimate after we have a chance to discuss your project with you.
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
+          <Accordion className="accordion">
+            <AccordionSummary aria-controls="panel2a-content" id="panel2a-header">
+              <Typography className="accordHeading">Why should I choose Monteiro Homes?</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography className="accordPara">
+                We are a family owned and operated business. We take great pride in our work and treat every project as if it were our own home.<br /><br />We are fully licensed and have been in business for over 8 years. We have many satisfied customers and would be happy to provide you with references.
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
+          <Accordion className="accordion">
+            <AccordionSummary aria-controls="panel2a-content" id="panel2a-header">
+              <Typography className="accordHeading">What areas do you service?</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography className="accordPara">
+                We provide our services all throughout the GTA and surrounding areas.<br /><br /> Including but not limited to: Georgetown, Milton, Oakville, Burlington, Etobicoke, Vaughan, Brampton and more.<br /><br /> If your unsure if we service your area, please contact us.
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
+          <Accordion className="accordion">
+            <AccordionSummary aria-controls="panel2a-content" id="panel2a-header">
+              <Typography className="accordHeading">What payment methods do you accept?</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography className="accordPara">
+                We accept cash, cheque, e-transfer. Credit cards are not accepted.<br /><br /> Financing is available, please contact us for more information.
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
+        </motion.div>
+      </div>
       <div className="faqLineBreaks">
         <br /> <br />  <br /> <br />  <br /> <br />  <br /> <br />  <br /> <br />  <br /> <br />  <br /> <br />  <br /> <br /> <br />
       </div>
