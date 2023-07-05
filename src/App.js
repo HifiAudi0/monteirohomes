@@ -548,19 +548,24 @@ function Services() {
   //     image[i].classList.add = "callUsBtn";
   //   }
 
+  const scrollRef = useRef(null)
 
 
 
   return (
     <>
 
-      <span id='services'></span>
+
 
 
       <motion.div
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}>
+        whileInView={{ left: "100%" }}
+        initial={{ left: 0 }}
+        transition={{
+          duration: 1.75,
+          delay: 1
+        }}
+      >
 
         <ChangeNavColor color={navLightColor} />
 
@@ -570,18 +575,19 @@ function Services() {
           <Counter number={60} title="Customers Serviced" />
           <Counter number={8} title="+ Years in business" />
         </div>
-
-        <h1 className="animate__animated animate__bounce">An animated element</h1>
+        {/* 
+        <h1 class="animate__animated animate__bounce">An animated element</h1>
 
         <figure>
           <img width="421" height="461" src="./img/bath/bath1.jpg" className="pointer" alt="" decoding="async" loading="lazy" />                      <figcaption>
             <strong><span>Bathroom Remodeling</span></strong>
             <button><a href="tel:(647)885-2384">Call Us</a></button>
           </figcaption>
-        </figure>
+        </figure> */}
 
         <br /><br />
         {/* <h3 className="page-mainHeading">Comprehensive Renovation Services for Your Dream Home Transformation</h3> */}
+        <span id='services'></span>
         <h4 className="page-mainHeading">From Kitchen to Bathroom, Deck to Basement - We've Got You Covered!</h4>
 
 
@@ -1230,7 +1236,7 @@ function Faq() {
       <div className="faqLineBreaks">
         <br /> <br />  <br /> <br />  <br /> <br />  <br /> <br />  <br /> <br />  <br /> <br />  <br /> <br />  <br /> <br /> <br />
       </div>
-      <Footer />
+
 
     </>
   );
