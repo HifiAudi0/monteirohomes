@@ -447,12 +447,12 @@ function ImageSlider(props) {
         <div className="sliderContainer">
           <div className="image-container">
             <img
-              className="image-before slider-image"
+              className="image-before slider-image imagesInSlider"
               src={props.firstImageUrl}
               alt="color photo"
             />
             <img
-              className="image-after slider-image"
+              className="image-after slider-image imagesInSlider"
               src={props.secondImageUrl}
               alt="black and white"
             />
@@ -589,6 +589,15 @@ function Services() {
         <p className="servicesPara">Welcome to our expert home renovation services! As a trusted and experienced contractor, we take great pride in transforming houses into dream homes. Our dedicated team of professionals is committed to delivering exceptional results that exceed your expectations. Whether you're looking to update your kitchen, remodel your bathroom, or renovate your entire living space, we have the expertise and skills to bring your vision to life.<br /><br /> We understand that every home is unique, and we work closely with our clients to create personalized designs that reflect their style and preferences. From concept to completion, we handle every aspect of the renovation process with meticulous attention to detail, ensuring a seamless and stress-free experience for our clients. Our services encompass a wide range of specialties, including flooring, painting, plumbing, electrical work, cabinetry, and more.<br /><br /> With a focus on quality craftsmanship and using premium materials, we strive to enhance the beauty, functionality, and value of your home. We are committed to delivering projects on time and within budget, without compromising on quality. Customer satisfaction is our top priority, and we go the extra mile to ensure that our clients are delighted with the final results. Trust us with your home renovation needs, and let us turn your house into the home of your dreams. Contact us today to discuss your project and schedule a consultation.
         </p>
 
+
+        <ImageSlider firstImageUrl="./img/before_basement.jpg" secondImageUrl="./img/after_basement.jpg" />
+
+
+        <ImageSlider firstImageUrl="./img/before_kitchen.jpg" secondImageUrl="./img/after_kitchen.jpg" />
+
+
+        <ImageSlider firstImageUrl="./img/before_walkway.jpg" secondImageUrl="./img/after_walkway.jpg" />
+
         {/* <a href="https://www.mythrillfiction.com/the-dark-rider" alt="Mythrill" target="_blank"> */}
         {/* <h3 className="headingHover">Hover over the image to see the AFTER image.</h3> */}
 
@@ -597,7 +606,7 @@ function Services() {
       <span p>AFTER</span> */}
 
         {/* <span className="servicesImageContainer servicesImageContainerBefore"> */}
-        <p className="servicesHeadingBefore">BEFORE
+        {/* <p className="servicesHeadingBefore">BEFORE
           <span className="servicesHeadingAfter">AFTER
           </span>
         </p>
@@ -620,7 +629,7 @@ function Services() {
           </div>
 
           <div className="services-flex-item-right">
-            {/* </a> */}
+    
             <span className="servicesImageContainer ">
               <img src="./img/after_basement.jpg" className="beforeAfterImg" alt="A basement picture after renovation." />
               <p className="beforeAfterText">AFTER</p>
@@ -655,14 +664,12 @@ function Services() {
           <div className="services-flex-item-right">
 
             <span className="servicesImageContainer">
-              {/* <p className="title title-before before-after" >BEFORE</p>
-        <p className="title title-after before-after">AFTER</p> */}
               <img src="./img/after_walkway.jpg" className="afterImgThree beforeAfterImg" alt="A walkway picture after renovation." />
               <p className="beforeAfterText">AFTER</p>
             </span >
             <br /> <br /> <br /> <br />
           </div>
-        </div>
+        </div> */}
       </motion.div >
     </>
   );
