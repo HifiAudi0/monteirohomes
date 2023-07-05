@@ -427,16 +427,18 @@ function Counter({ number, title }) {
 
 
 
-function ImageSlider() {
+function ImageSlider(props) {
   window.addEventListener("DOMContentLoaded", (event) => {
 
 
   });
 
   const sliderChanged = (e) => {
-    const container = document.querySelector('.sliderContainer');
+    const container = document.querySelectorAll('.sliderContainer');
     // document.querySelector('.slider').addEventListener('input', (e) => {
-    container.style.setProperty('--position', `${e.target.value}%`);
+    for (let i = 0; i < container.length; ++i) {
+      container[i].style.setProperty('--position', `${e.target.value}%`);
+    }
     // })
   }
   return (
@@ -446,12 +448,12 @@ function ImageSlider() {
           <div className="image-container">
             <img
               className="image-before slider-image"
-              src="https://www.monteirohomes.com/img/before_basement.jpg"
+              src={props.firstImageUrl}
               alt="color photo"
             />
             <img
               className="image-after slider-image"
-              src="https://www.monteirohomes.com/img/after_basement.jpg"
+              src={props.secondImageUrl}
               alt="black and white"
             />
           </div>
@@ -600,7 +602,15 @@ function Services() {
           </span>
         </p>
         <br />
-        <ImageSlider />
+
+        <ImageSlider firstImageUrl="./img/before_basement.jpg" secondImageUrl="./img/after_basement.jpg" />
+
+
+        <ImageSlider firstImageUrl="./img/before_kitchen.jpg" secondImageUrl="./img/after_kitchen.jpg" />
+
+
+        <ImageSlider firstImageUrl="./img/before_walkway.jpg" secondImageUrl="./img/after_walkway.jpg" />
+
         <div className="services-flex-container">
           <div className="services-flex-item-left">
             <img src="./img/before_basement.jpg" className="beforeAfterImg" alt="A basement picture before renovation." />
