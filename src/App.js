@@ -65,6 +65,8 @@ import './scrollDownArrow.css';
 
 import GoogleMapReact from 'google-map-react';
 
+import './imageSlider.css';
+
 
 
 
@@ -220,7 +222,7 @@ function Home() {
         </div>
       </div>
 
-      <div class="animate__animated animate__fadeInLeft animate__delay-2s">Example
+      <div className="animate__animated animate__fadeInLeft animate__delay-2s">Example
         <Services />
       </div>
 
@@ -425,6 +427,113 @@ function Counter({ number, title }) {
 
 
 
+function ImageSlider() {
+  window.addEventListener("DOMContentLoaded", (event) => {
+
+
+  });
+
+  const sliderChanged = (e) => {
+    const container = document.querySelector('.sliderContainer');
+    // document.querySelector('.slider').addEventListener('input', (e) => {
+    container.style.setProperty('--position', `${e.target.value}%`);
+    // })
+  }
+  return (
+    <>
+      <main>
+        <div className="sliderContainer">
+          <div className="image-container">
+            <img
+              className="image-before slider-image"
+              src="https://www.monteirohomes.com/img/before_basement.jpg"
+              alt="color photo"
+            />
+            <img
+              className="image-after slider-image"
+              src="https://www.monteirohomes.com/img/after_basement.jpg"
+              alt="black and white"
+            />
+          </div>
+          {/* <!-- step="10" --> */}
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value="50"
+            aria-label="Percentage of before photo shown"
+            className="slider"
+            onChange={sliderChanged}
+          />
+          <div className="slider-line" aria-hidden="true"></div>
+          <div className="slider-button" aria-hidden="true">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="30"
+              fill="currentColor"
+              viewBox="0 0 256 256"
+            >
+              <rect width="256" height="256" fill="none"></rect>
+              <line
+                x1="128"
+                y1="40"
+                x2="128"
+                y2="216"
+                fill="none"
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="16"
+              ></line>
+              <line
+                x1="96"
+                y1="128"
+                x2="16"
+                y2="128"
+                fill="none"
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="16"
+              ></line>
+              <polyline
+                points="48 160 16 128 48 96"
+                fill="none"
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="16"
+              ></polyline>
+              <line
+                x1="160"
+                y1="128"
+                x2="240"
+                y2="128"
+                fill="none"
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="16"
+              ></line>
+              <polyline
+                points="208 96 240 128 208 160"
+                fill="none"
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="16"
+              ></polyline>
+            </svg>
+          </div>
+        </div>
+      </main>
+    </>
+  );
+}
+
+
+
 function Services() {
 
   // const activiateImgOverlay = (e) => {
@@ -460,7 +569,7 @@ function Services() {
           <Counter number={8} title="+ Years in business" />
         </div>
 
-        <h1 class="animate__animated animate__bounce">An animated element</h1>
+        <h1 className="animate__animated animate__bounce">An animated element</h1>
 
         <figure>
           <img width="421" height="461" src="./img/bath/bath1.jpg" className="pointer" alt="" decoding="async" loading="lazy" />                      <figcaption>
@@ -491,6 +600,7 @@ function Services() {
           </span>
         </p>
         <br />
+        <ImageSlider />
         <div className="services-flex-container">
           <div className="services-flex-item-left">
             <img src="./img/before_basement.jpg" className="beforeAfterImg" alt="A basement picture before renovation." />
@@ -688,102 +798,106 @@ function ImageOverlay() {
 }
 
 
+
 function Bath() {
   return (
 
     <>
 
-      <ChangeNavColor color={navLightColor} />
+      <body className="servicesPageBody">
 
-      <RemoveQuoteForm />
+        <ChangeNavColor color={navLightColor} />
+
+        <RemoveQuoteForm />
 
 
-      <ImageZoom />
+        <ImageZoom />
 
-      {/* <!-- (A) LIGHTBOX CONTAINER --> */}
-      <div id="lightbox"></div>
+        {/* <!-- (A) LIGHTBOX CONTAINER --> */}
+        <div id="lightbox"></div>
 
-      <br />
-      <div className="kitchenHeading">
-        <h3>Transform Your Bathroom into a Personal Oasis</h3>
-        <h4>Professional Bathroom Renovation Services Tailored to Your Style and Needs.</h4>
-      </div>
+        <br />
+        <div className="kitchenHeading">
+          <h3>Transform Your Bathroom into a Personal Oasis</h3>
+          <h4>Professional Bathroom Renovation Services Tailored to Your Style and Needs.</h4>
+        </div>
 
-      <motion.div
-        className="box"
-        initial={{ opacity: 0, scale: 0.5 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{
-          duration: 0.3,
-          ease: [0, 0.71, 0.2, 1.01],
-          scale: {
-            type: "spring",
-            damping: 5,
-            stiffness: 100,
-            restDelta: 0.001
-          }
-        }}>
-        <div className="bath-grid-container">
-          <div className="bath-grid-item">
+        <motion.div
+          className="box"
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            duration: 0.3,
+            ease: [0, 0.71, 0.2, 1.01],
+            scale: {
+              type: "spring",
+              damping: 5,
+              stiffness: 100,
+              restDelta: 0.001
+            }
+          }}>
+          <div className="bath-grid-container">
+            <div className="bath-grid-item">
 
-            <div className="imageContainer">
+              <div className="imageContainer">
 
-              <img src="./img/bath/bath1.jpg" className="bath-image image-border zoomD pointer image" alt="A picture of a finished bathroom renovation." />
-              <ImageOverlay />
+                <img src="./img/bath/bath1.jpg" className="bath-image image-border zoomD pointer image" alt="A picture of a finished bathroom renovation." />
+                <ImageOverlay />
+              </div>
             </div>
-          </div>
 
-          <div className="bath-grid-item">
-            <div className="imageContainer">
-              <img src="./img/bath/bath2.jpg" className="bath-image image-border zoomD pointer image" alt="A picture of a finished bathroom renovation." />
+            <div className="bath-grid-item">
+              <div className="imageContainer">
+                <img src="./img/bath/bath2.jpg" className="bath-image image-border zoomD pointer image" alt="A picture of a finished bathroom renovation." />
 
-              <ImageOverlay />
+                <ImageOverlay />
+              </div>
             </div>
-          </div>
 
-          <div className="bath-grid-item">
-            <div className="imageContainer">
-              <img src="./img/bath/bath3.jpg" className="bath-image image-border zoomD pointer image" alt="A picture of a finished bathroom renovation." />
-              <ImageOverlay />
+            <div className="bath-grid-item">
+              <div className="imageContainer">
+                <img src="./img/bath/bath3.jpg" className="bath-image image-border zoomD pointer image" alt="A picture of a finished bathroom renovation." />
+                <ImageOverlay />
+              </div>
             </div>
-          </div>
 
-          <div className="bath-grid-item">
-            <div className="imageContainer">
-              <img src="./img/bath/bath4.jpg" className="bath-image image-border zoomD pointer image" alt="A picture of a finished bathroom renovation." />
-              <ImageOverlay />
+            <div className="bath-grid-item">
+              <div className="imageContainer">
+                <img src="./img/bath/bath4.jpg" className="bath-image image-border zoomD pointer image" alt="A picture of a finished bathroom renovation." />
+                <ImageOverlay />
+              </div>
             </div>
-          </div>
-          <div className="bath-grid-item">
-            <p className="alignedPara">We specialize in providing exceptional bathroom renovation services that will transform your bathroom into a luxurious and functional retreat. Our team of skilled professionals understands the importance of a well-designed and comfortable bathroom, and we are dedicated to creating a space that reflects your personal style and meets your specific needs.<br /> <br />  Whether you're looking to update your fixtures, replace outdated tiles, or completely remodel your bathroom, we offer a wide range of services to suit your requirements. Our expertise includes bathroom layout redesign, bathtub and shower installations, vanity and countertop replacements, flooring upgrades, and lighting enhancements.<br /> <br />
-              We work closely with you to understand your vision, offering creative solutions and expert advice to maximize the potential of your bathroom. With meticulous attention to detail and a commitment to using high-quality materials, we ensure a stunning end result that exceeds your expectations.<br /> <br />  From project management to timely completion, we handle every aspect of the renovation process with professionalism and care. Our goal is to create a bathroom that not only enhances your daily routine but also adds value to your home. Trust us with your bathroom renovation needs, and let us transform your bathroom into a space of relaxation, rejuvenation, and beauty. </p>
-          </div>
-
-          <div className="bath-grid-item">
-            <div className="imageContainer">
-
-              <img src="./img/bath/bath5.jpg" className="bath-image image-border zoomD pointer image" alt="A picture of a finished bathroom renovation." />
-              <ImageOverlay />
-
+            <div className="bath-grid-item">
+              <p className="alignedPara">We specialize in providing exceptional bathroom renovation services that will transform your bathroom into a luxurious and functional retreat. Our team of skilled professionals understands the importance of a well-designed and comfortable bathroom, and we are dedicated to creating a space that reflects your personal style and meets your specific needs.<br /> <br />  Whether you're looking to update your fixtures, replace outdated tiles, or completely remodel your bathroom, we offer a wide range of services to suit your requirements. Our expertise includes bathroom layout redesign, bathtub and shower installations, vanity and countertop replacements, flooring upgrades, and lighting enhancements.<br /> <br />
+                We work closely with you to understand your vision, offering creative solutions and expert advice to maximize the potential of your bathroom. With meticulous attention to detail and a commitment to using high-quality materials, we ensure a stunning end result that exceeds your expectations.<br /> <br />  From project management to timely completion, we handle every aspect of the renovation process with professionalism and care. Our goal is to create a bathroom that not only enhances your daily routine but also adds value to your home. Trust us with your bathroom renovation needs, and let us transform your bathroom into a space of relaxation, rejuvenation, and beauty. </p>
             </div>
-          </div>
-          {/* <div className="bath-grid-item">
+
+            <div className="bath-grid-item">
+              <div className="imageContainer">
+
+                <img src="./img/bath/bath5.jpg" className="bath-image image-border zoomD pointer image" alt="A picture of a finished bathroom renovation." />
+                <ImageOverlay />
+
+              </div>
+            </div>
+            {/* <div className="bath-grid-item">
             <img src="./img/bath/bath6.jpg" className="bath-image image-border zoomD pointer" alt="A picture of a finished bathroom renovation." />
           </div>
 
           <div className="bath-grid-item">
             <img src="./img/bath/bath7.jpg" className="bath-image image-border zoomD pointer" alt="A picture of a finished bathroom renovation." />
           </div> */}
-          <div className="bath-grid-item">
-            <div className="imageContainer">
-              <img src="./img/bath/bath9.jpg" className="bath-image image-border zoomD pointer image" alt="A picture of a finished bathroom renovation." />
-              <ImageOverlay />
+            <div className="bath-grid-item">
+              <div className="imageContainer">
+                <img src="./img/bath/bath9.jpg" className="bath-image image-border zoomD pointer image" alt="A picture of a finished bathroom renovation." />
+                <ImageOverlay />
+              </div>
             </div>
-          </div>
-        </div >
-      </motion.div >
-      <br /> <br /> <br />
-      <Footer />
+          </div >
+        </motion.div >
+        <br /> <br /> <br />
+      </body>
+
     </>
   );
 }
