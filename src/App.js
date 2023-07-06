@@ -70,6 +70,10 @@ import './imageSlider.css';
 import './scrollAnimation.css';
 
 
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
+
+
 
 const container = {
   hidden: { opacity: 1, scale: 0 },
@@ -686,6 +690,103 @@ function Services() {
         </div>
 
         <div className="box">
+          <Row sm={1} md={2} className="g-4">
+
+            <Col>
+
+
+              <Card>
+                <Card.Img variant="top" src="./img/kitchen/kitchen7.jpg" />
+                <Card.Body>
+                  <Card.Title>Kitchens</Card.Title>
+                  <Card.Text>
+                    This is a longer card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </Card.Text>
+                </Card.Body>
+                <Button variant="primary buttonServices">Visit Kitchen Section</Button>
+              </Card>
+
+            </Col>
+            <Col>
+
+
+              <Card>
+                <Card.Img variant="top" src="./img/bath/bath18.jpg" />
+                <Card.Body>
+                  <Card.Title>Baths</Card.Title>
+                  <Card.Text>
+                    This is a longer card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </Card.Text>
+                </Card.Body>
+                <Button variant="primary buttonServices">Check out our Bath Section</Button>
+              </Card>
+
+            </Col>
+          </Row>
+        </div>
+
+        <div className="box">
+
+          <Row sm={1} md={2} className="g-4">
+            <Col>
+              <Card>
+                <Card.Img variant="top" src="./img/basement/basement3.jpg" />
+                <Card.Body>
+                  <Card.Title>Basement</Card.Title>
+                  <Card.Text>
+                    This is a longer card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </Card.Text>
+                </Card.Body>
+                <Button variant="primary buttonServices">The Basement Section</Button>
+              </Card>
+            </Col>
+            <Col>
+              <Card>
+                <Card.Img variant="top" src="./img/pools/pool2.jpg" />
+                <Card.Body>
+                  <Card.Title>Pools</Card.Title>
+                  <Card.Text>
+                    This is a longer card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </Card.Text>
+                </Card.Body>
+                <Button variant="primary buttonServices">Our Pool Section</Button>
+              </Card>
+            </Col>
+          </Row>
+        </div>
+
+
+        <div className="box">
+
+          <Row sm={1} md={2} className="g-4">
+
+            <Col>
+              <Card>
+                <Card.Img variant="top" src="./img/fencingDeckPatio/patio3.jpg" />
+                <Card.Body>
+                  <Card.Title>Fencing, Decks & Patios</Card.Title>
+                  <Card.Text>
+                    This is a longer card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </Card.Text>
+                </Card.Body>
+                <Button variant="primary buttonServices">See our Fencing, Decks & Patio section</Button>
+              </Card>
+            </Col>
+          </Row>
+        </div>
+
+
+        <div className="box">
           <h1 className="page-mainHeading">Before and After Gallery</h1>
         </div>
 
@@ -773,7 +874,7 @@ function Services() {
           </div>
         </div> */}
         {/* </motion.div > */}
-      </div>
+      </div >
     </>
   );
 }
