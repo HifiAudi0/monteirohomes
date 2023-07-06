@@ -13,6 +13,13 @@ body {
     font: bold 1rem Consolas;
 } */
 
+:root {
+    --highlight: #ff9f1a;
+    --font: #fff;
+    --numbers: #ff9f1a;
+    --underline: #fff;
+}
+
 .open,
 .close {
     display: inline-block;
@@ -42,7 +49,7 @@ body {
 
 .navNumbers {
     font-size: 2rem;
-    color: #ff9f1a;
+    color: var(--numbers);
     margin-right: 10px;
 
 }
@@ -76,7 +83,7 @@ body {
 
 .overlay-content a {
     font-size: 4rem;
-    color: #fff;
+    color: var(--font);
     display: block;
     padding: 10px;
     margin-bottom: 4px;
@@ -93,13 +100,13 @@ body {
     width: 0%;
     transform: translateX(-50%);
     height: 3px;
-    background: #fff;
+    background: var(--underline);
     transition: 0.3s;
     display: block;
 }
 
 .overlay-content a:hover {
-    color: #ff9f1a;
+    color: var(--highlight);
 }
 
 .overlay-content a:hover:after {
