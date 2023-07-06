@@ -279,13 +279,17 @@ function Links() {
         <div id="navbar" className="overlay">
           <a href="javascript:void(0);" onClick={closeNavbar} className="close">&#9932;</a>
           <div className="overlay-content">
-            <a href="/Home">Home</a>
-            <a href="#services">All Services</a>
-            <a href="/bath">Baths</a>
-            <a href="#faq">Faq</a>
-            <a href="#quote">Quote</a>
-            <a href="#location">Location & Hours</a>
-            <a href="/Home#contact">Contact</a>
+            <a href="/Home"><span className="navNumbers">1</span>Home</a>
+            <a href="#services"><span className="navNumbers">2</span>All Services</a>
+            <a className="navSubcategory" href="/kitchen"><span className="navNumbers">2.1</span>Kitchen</a>
+            <a className="navSubcategory" href="/bath"><span className="navNumbers">2.2</span>Bath</a>
+            <a className="navSubcategory" href="/basement"><span className="navNumbers">2.3</span>Basement</a>
+            <a className="navSubcategory" href="/pool"><span className="navNumbers">2.4</span>Pool</a>
+            <a className="navSubcategory" href="/deck"><span className="navNumbers">2.5</span>Fencing, Deck & Patio</a>
+            <a href="#faq"><span className="navNumbers">3</span>Faq</a>
+            <a href="#quote"><span className="navNumbers">4</span>Quote</a>
+            <a href="#location"><span className="navNumbers">5</span>Location & Hours</a>
+            <a href="#contact"><span className="navNumbers">6</span>Contact</a>
           </div>
         </div>
 
@@ -329,7 +333,11 @@ function Links() {
           <div className="overlay-content">
             <a href="/Home">Back to Home</a>
             <a href="#services">All Services</a>
-            <a href="/bath">Baths</a>
+            <a href="/kitchen">Kitchen</a>
+            <a href="/bath">Bath</a>
+            <a href="/basement">Basement</a>
+            <a href="/pool">Pool</a>
+            <a href="/deck">Fencing, Deck & Patio</a>
             {/* <a href="#faq">Faq</a>
             <a href="#quote">Quote</a>
             <a href="#location">Location & Hours</a>
