@@ -677,7 +677,7 @@ function Services() {
 
         < ChangeNavColor color={navLightColor} />
 
-        <RemoveQuoteForm />
+
 
         <div className="numbers">
           <Counter number={60} title="Customers Serviced" />
@@ -905,7 +905,7 @@ function Kitchen() {
     <>
       <ChangeNavColor color={navLightColor} />
 
-      <RemoveQuoteForm />
+
 
 
       <ImageZoom />
@@ -1046,7 +1046,7 @@ function Bath() {
 
         <ChangeNavColor color={navLightColor} />
 
-        <RemoveQuoteForm />
+
 
 
         <ImageZoom />
@@ -1147,7 +1147,7 @@ function Basement() {
 
       <ChangeNavColor color={navLightColor} />
 
-      <RemoveQuoteForm />
+
 
 
       <br /> <br /> <br /> <br />
@@ -1194,7 +1194,7 @@ function Garage() {
     <>
       <ChangeNavColor color={navLightColor} />
 
-      <RemoveQuoteForm />
+
 
 
       <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
@@ -1215,7 +1215,7 @@ function Pool() {
     <>
       <ChangeNavColor color={navLightColor} />
 
-      <RemoveQuoteForm />
+
 
 
       <ImageZoom />
@@ -1276,7 +1276,7 @@ function Deck() {
     <>
       <ChangeNavColor color={navLightColor} />
 
-      <RemoveQuoteForm />
+
 
 
       <h3 className="basementHeading">Enhance Your Outdoor Living with Our Fencing, Deck & Patio Renovation Services</h3>
@@ -1308,7 +1308,7 @@ function Gallery() {
     <>
       <ChangeNavColor color={navLightColor} />
 
-      <RemoveQuoteForm />
+
 
 
       <br />  <br />  <br />  <br />  <br />  <br />  <br />  <br />  <br />
@@ -1366,7 +1366,7 @@ function Faq() {
       <span id='faq' name='faq'></span>
       <ChangeNavColor color={navLightColor} />
 
-      <RemoveQuoteForm />
+
       <div className="box">
         <h1 className="page-mainHeading">Frequently Asked Questions</h1>
       </div>
@@ -1501,7 +1501,7 @@ function Quote() {
       <h1 className="page-mainHeading">Get a FREE quote!</h1>
 
       <ChangeNavColor color={navLightColor} />
-      <RemoveQuoteForm />
+
       <QuoteForm />
 
     </>
@@ -1620,7 +1620,7 @@ function About() {
     <>
       <ChangeNavColor color={navLightColor} />
 
-      <RemoveQuoteForm />
+
 
       {/* <img className="canadianFlagIcon" src="./img/canadian-flag-icon.png" /> */}
 
@@ -1828,7 +1828,7 @@ function Contact() {
 
       <ChangeNavColor color={navLightColor} />
 
-      <RemoveQuoteForm />
+
 
 
 
