@@ -354,6 +354,13 @@ button.active {
 
 }
 
+.buttonServices {
+  height: 100px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
 .services-flex-container {
   display: flex;
 
