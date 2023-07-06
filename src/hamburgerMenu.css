@@ -35,6 +35,18 @@ body {
     position: unset;
 }
 
+.navSubcategory {
+    margin-left: 5rem;
+    text-align: left;
+}
+
+.navNumbers {
+    font-size: 2rem;
+    color: #ff9f1a;
+    margin-right: 10px;
+
+}
+
 .overlay {
     position: fixed;
     width: 0;
@@ -51,11 +63,13 @@ body {
 }
 
 .overlay-content {
-    text-align: center;
+    text-align: left;
+    margin-left: 25rem;
+
     position: relative;
     width: 100%;
     padding-top: 50px;
-    margin-top: 40%;
+    margin-top: 15%;
     text-transform: uppercase;
 
 }
@@ -75,7 +89,7 @@ body {
     content: "";
     position: absolute;
     bottom: 0;
-    left: 50%;
+    left: 15%;
     width: 0%;
     transform: translateX(-50%);
     height: 3px;
