@@ -846,6 +846,12 @@ button.active {
 .about-grid-item-top {
   background-color: #FF212B;
   background-image: unset;
+  /* display: unset;
+  align-items: unset;
+  justify-content: unset; */
+  /* display: grid;
+  align-items: inherit;
+  justify-content: inherit; */
 }
 
 .vanPic {
@@ -874,6 +880,10 @@ button.active {
 
 /* CONTACT PAGE */
 
+.spanSameLine {
+  display: inline-block;
+
+}
 
 .socials {
   position: relative;
