@@ -71,7 +71,6 @@ import './scrollAnimation.css';
 
 
 
-
 const container = {
   hidden: { opacity: 1, scale: 0 },
   visible: {
@@ -234,6 +233,7 @@ function Home() {
       <Quote />
       {/* <Bath /> */}
       <Location />
+      <About />
       <Contact />
     </>
   );
@@ -686,14 +686,20 @@ function Services() {
         </div>
 
         <div className="box">
+          <h1 className="page-mainHeading">Before and After Gallery</h1>
+        </div>
+
+        <div className="box">
           <ImageSlider firstImageUrl="./img/before_basement.jpg" secondImageUrl="./img/after_basement.jpg" />
         </div>
 
-        <ImageSlider firstImageUrl="./img/before_kitchen.jpg" secondImageUrl="./img/after_kitchen.jpg" />
+        <div className="box">
+          <ImageSlider firstImageUrl="./img/before_kitchen.jpg" secondImageUrl="./img/after_kitchen.jpg" />
+        </div>
 
-
-        <ImageSlider firstImageUrl="./img/before_walkway.jpg" secondImageUrl="./img/after_walkway.jpg" />
-
+        <div className="box">
+          <ImageSlider firstImageUrl="./img/before_walkway.jpg" secondImageUrl="./img/after_walkway.jpg" />
+        </div>
         {/* <a href="https://www.mythrillfiction.com/the-dark-rider" alt="Mythrill" target="_blank"> */}
         {/* <h3 className="headingHover">Hover over the image to see the AFTER image.</h3> */}
 
@@ -931,13 +937,14 @@ function Bath() {
         <div id="lightbox"></div>
 
         <br />
-        <div className="kitchenHeading">
-          <h3>Transform Your Bathroom into a Personal Oasis</h3>
-          <h4>Professional Bathroom Renovation Services Tailored to Your Style and Needs.</h4>
+        <div className="box">
+          <div className="kitchenHeading">
+            <h3>Transform Your Bathroom into a Personal Oasis</h3>
+            <h4>Professional Bathroom Renovation Services Tailored to Your Style and Needs.</h4>
+          </div>
         </div>
-
         <motion.div
-          className="box"
+          className=""
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{
@@ -1446,34 +1453,42 @@ function QuoteForm() {
     // <form action="http://162.240.97.142:52940/sendMailFlask" method="POST">
     <>
       {/* <div className="quoteContainer"> */}
-      <h2 className="quoteHeading">Scroll down and get your FREE quote today!</h2><br />
+      <div className="box">
+        <h2 className="quoteHeading">Scroll down and get your FREE quote today!</h2><br />
+      </div>
 
       <Section>
-        <img src="./img/customerSupport2-resized.jpg" className="quoteImgSupport" alt="A picture illustrating of a customer service rep." />
+        <div className="box">
+          <img src="./img/customerSupport2-resized.jpg" className="quoteImgSupport" alt="A picture illustrating of a customer service rep." />
+        </div>
       </Section>
       <br /><br />
       {/* <div className="quote-grid-item"> */}
-      <InstagramEmbed className="formInstagramPost" url="https://www.instagram.com/p/Cl1YH0nuzul/" />
+      <div className="box">
+        <InstagramEmbed className="formInstagramPost" url="https://www.instagram.com/p/Cl1YH0nuzul/" />
+      </div>
       {/* </div> */}
       {/* <div className="quote-grid-item"> */}
-      <form action="http://www.monteirohomes.com/sendEmailPM.php" method="POST" className="quoteForm">
+      <div className="box">
+        <form action="http://www.monteirohomes.com/sendEmailPM.php" method="POST" className="quoteForm">
 
-        <img className="logo" src="./img/logo.png" alt="A picture of the Monterio homes logo." />
-        <img className="sslImage" src="./img/ssl.png" alt="A picture of a security icon for HTTPS/SSL." />
+          <img className="logo" src="./img/logo.png" alt="A picture of the Monterio homes logo." />
+          <img className="sslImage" src="./img/ssl.png" alt="A picture of a security icon for HTTPS/SSL." />
 
-        <h3 className="formHeading">Get a free estimate today!</h3>
-        <label for="name" className="formLabels">Name (required)</label><br />
-        <input type='text' className="formInputText" name='name' value={form.name} onChange={handleChange} placeholder='Your name' /><br /><br />
-        {errors['name'] && <span className="error">{errors['name']}</span>}
-        <label for="email" className="formLabels">Emil address (required)</label><br />
-        <input type='email' className="formInputText" name='email' value={form.email} onChange={handleChange} placeholder='Your email' /><br /><br />
-        {errors['email'] && <span className="error">{errors['email']}</span>}
-        <label for="message" className="formLabels">Your message (required)</label><br />
-        <textarea name='message' className="formInputText" id="formInputMessage" value={form.message} onChange={handleChange} placeholder='Your message' /><br /><br />
-        {errors['message'] && <span className="error">{errors['message']}</span>}
-        <button type='submit' className="formSubmitBtn">SEND MESSAGE</button><br /><br />
+          <h3 className="formHeading">Get a free estimate today!</h3>
+          <label for="name" className="formLabels">Name (required)</label><br />
+          <input type='text' className="formInputText" name='name' value={form.name} onChange={handleChange} placeholder='Your name' /><br /><br />
+          {errors['name'] && <span className="error">{errors['name']}</span>}
+          <label for="email" className="formLabels">Emil address (required)</label><br />
+          <input type='email' className="formInputText" name='email' value={form.email} onChange={handleChange} placeholder='Your email' /><br /><br />
+          {errors['email'] && <span className="error">{errors['email']}</span>}
+          <label for="message" className="formLabels">Your message (required)</label><br />
+          <textarea name='message' className="formInputText" id="formInputMessage" value={form.message} onChange={handleChange} placeholder='Your message' /><br /><br />
+          {errors['message'] && <span className="error">{errors['message']}</span>}
+          <button type='submit' className="formSubmitBtn">SEND MESSAGE</button><br /><br />
 
-      </form>
+        </form>
+      </div>
       {/* </div> */}
       {/* </div> */}
       <br /><br />
@@ -1492,30 +1507,37 @@ function About() {
       {/* <img className="canadianFlagIcon" src="./img/canadian-flag-icon.png" /> */}
 
       <Section>
+
         {/* <div className="about-grid-container"> */}
 
-        <div className="about-grid-item about-grid-item-top">
-
-          <img src="./img/van.jpg" className="vanPic" alt="A picture of the Monterio Homes logo on the company van." />
-
-          <br /><img className="canadianFlag" src="./img/canadianflag.jpeg" /><br /><br />
-          <p>Support local Canadian businesses</p>
-
+        <div className="box">
+          <h4 className="page-mainHeading">From Kitchen to Bathroom, Deck to Basement - We've Got You Covered!</h4>
         </div>
 
-        <div className="about-grid-item">
+        <div className="box">
+          <div className="about-grid-item about-grid-item-top">
+            <img src="./img/van.jpg" className="vanPic" alt="A picture of the Monterio Homes logo on the company van." />
+          </div>
+          <div className="box">
+            <br /><img className="canadianFlag" src="./img/canadianflag.jpeg" /><br /><br />
+            <p>Support local Canadian businesses</p>
+          </div>
+        </div>
+        <div className="box">
+          <div className="about-grid-item">
 
-          <h3 className="aboutUsHeading">About Us</h3>
 
-          <h3 className="aboutUsHeading">Canadian Family-Owned Contractor with 8 Years of Trusted Service</h3><br />
-          <p>Welcome to our family-owned contracting business, where we have been proudly serving our community for the past 8 years. As a small business, we understand the importance of personalized service and building strong relationships with our clients..<br /><br /> With a passion for craftsmanship and a commitment to excellence, we have earned a reputation for delivering top-quality work and exceeding customer expectations. Our team of skilled professionals brings a wealth of experience and expertise to every project, ensuring attention to detail and meticulous execution..<br /><br /> From home renovations and remodeling to repairs and installations, we offer a comprehensive range of services tailored to meet your specific needs. As a family-owned business, we prioritize open communication, honesty, and integrity in all our interactions. We take pride in our work, treating every project as if it were our own, and ensuring customer satisfaction is our top priority..<br /><br /> With us, you can expect personalized attention, reliable service, and a finished result that will transform your space into something exceptional. Trust our family to enhance your home with our trusted contracting services.</p><br /><br />
+            <h3 className="aboutUsHeading">About Us</h3>
 
+            <h3 className="aboutUsHeading">Canadian Family-Owned Contractor with 8 Years of Trusted Service</h3><br />
+            <p>Welcome to our family-owned contracting business, where we have been proudly serving our community for the past 8 years. As a small business, we understand the importance of personalized service and building strong relationships with our clients..<br /><br /> With a passion for craftsmanship and a commitment to excellence, we have earned a reputation for delivering top-quality work and exceeding customer expectations. Our team of skilled professionals brings a wealth of experience and expertise to every project, ensuring attention to detail and meticulous execution..<br /><br /> From home renovations and remodeling to repairs and installations, we offer a comprehensive range of services tailored to meet your specific needs. As a family-owned business, we prioritize open communication, honesty, and integrity in all our interactions. We take pride in our work, treating every project as if it were our own, and ensuring customer satisfaction is our top priority..<br /><br /> With us, you can expect personalized attention, reliable service, and a finished result that will transform your space into something exceptional. Trust our family to enhance your home with our trusted contracting services.</p><br /><br />
+          </div>
         </div>
       </Section >
       {/* </div> */}
       < br /><br /><br /><br /><br />
 
-      <Footer />
+
     </>
   );
 }
@@ -1534,58 +1556,61 @@ function SimpleMap() {
 
   return (
     // Important! Always set the container height explicitly
-    <div style={{ height: '500px', width: '500px' }}>
-      <GoogleMapReact
-        bootstrapURLKeys={{ key: process.env.REACT_APP_GOOGLE_MAPS_API_KEY }}
-        defaultCenter={defaultProps.center}
-        defaultZoom={defaultProps.zoom}
-      >
-        <AnyReactComponent
-          lat={43.59376155130781}
-          lng={-79.61112143389911}
-          text="My Marker"
-        // 43.59376155130781, -79.61112143389911
-        // https://www.google.com/maps/@43.6198811,-79.6787644,10.5z?entry=ttu
-        />
-        <AnyReactComponent
-          lat={43.32688478923172}
-          lng={-79.8071671059716}
-          text="My Marker"
-        />
-        {/* 43.32688478923172, -79.8071671059716 */}
-        <AnyReactComponent
-          lat={43.733109656168665}
-          lng={-79.75635533997215}
-          text="My Marker"
-        />
-        {/* 43.733109656168665, -79.75635533997215 */}
-        <AnyReactComponent
-          lat={43.467580697435764}
-          lng={-79.70691686494565}
-          text="My Marker"
-        />
-        {/* 43.467580697435764, -79.70691686494565 */}
-        <AnyReactComponent
-          lat={43.518390249137894}
-          lng={-79.8799515275384}
-          text="My Marker"
-        />
-        {/* 43.518390249137894, -79.8799515275384 */}
-        <AnyReactComponent
-          lat={43.79219612301752}
-          lng={-79.54429550669967}
-          text="My Marker"
-        />
+    <div className="box">
+      <div style={{ height: '500px', width: '500px' }}>
+        <GoogleMapReact
+          bootstrapURLKeys={{ key: process.env.REACT_APP_GOOGLE_MAPS_API_KEY }}
+          defaultCenter={defaultProps.center}
+          defaultZoom={defaultProps.zoom}
+        >
 
-        {/* 43.79219612301752, -79.54429550669967 */}
-        <AnyReactComponent
-          lat={43.64306043598669}
-          lng={-79.5129355733097}
-          text="My Marker"
-        />
-        {/* 43.64306043598669, -79.5129355733097 */}
-      </GoogleMapReact>
-    </div>
+          <AnyReactComponent
+            lat={43.59376155130781}
+            lng={-79.61112143389911}
+            text="My Marker"
+          // 43.59376155130781, -79.61112143389911
+          // https://www.google.com/maps/@43.6198811,-79.6787644,10.5z?entry=ttu
+          />
+          <AnyReactComponent
+            lat={43.32688478923172}
+            lng={-79.8071671059716}
+            text="My Marker"
+          />
+          {/* 43.32688478923172, -79.8071671059716 */}
+          <AnyReactComponent
+            lat={43.733109656168665}
+            lng={-79.75635533997215}
+            text="My Marker"
+          />
+          {/* 43.733109656168665, -79.75635533997215 */}
+          <AnyReactComponent
+            lat={43.467580697435764}
+            lng={-79.70691686494565}
+            text="My Marker"
+          />
+          {/* 43.467580697435764, -79.70691686494565 */}
+          <AnyReactComponent
+            lat={43.518390249137894}
+            lng={-79.8799515275384}
+            text="My Marker"
+          />
+          {/* 43.518390249137894, -79.8799515275384 */}
+          <AnyReactComponent
+            lat={43.79219612301752}
+            lng={-79.54429550669967}
+            text="My Marker"
+          />
+
+          {/* 43.79219612301752, -79.54429550669967 */}
+          <AnyReactComponent
+            lat={43.64306043598669}
+            lng={-79.5129355733097}
+            text="My Marker"
+          />
+          {/* 43.64306043598669, -79.5129355733097 */}
+        </GoogleMapReact>
+      </div>
+    </div >
   );
 }
 
@@ -1673,8 +1698,9 @@ function Contact() {
     <>
 
       <span id='contact'></span>
-      <h1 className="page-mainHeading">Get in touch with us TODAY!</h1>
-
+      <div className="box">
+        <h1 className="page-mainHeading">Get in touch with us TODAY!</h1>
+      </div>
 
       <ChangeNavColor color={navLightColor} />
 
@@ -1690,17 +1716,19 @@ function Contact() {
         <h3 className="contactUsHeading">Contact Us</h3>
 
       </div> */}
+      <div className="box">
 
-      <div className="contact-grid-item">
-        <br /> <br /> <br /> <br /> <br /> <br />
-        <h3 className="contactUsHeading">Don't hesitate to get in touch with us today!</h3><br />
-        <p className="alignedPara contactPara">We would love to hear from you! Please feel free to reach out to us with any inquiries or to discuss your upcoming project. Our team of experts is here to assist you every step of the way.
-          <span className="alignedpara contactPara contactParaResponsive"><br /><br /> Whether you have questions about our services, need a consultation, or want to schedule an appointment, we are just a phone call or email away..<br /><br /> Don't hesitate to contact us and let us help you bring your home renovation dreams to life. We look forward to working with you!<br /><br /></span>
-        </p>
+        <div className="contact-grid-item">
+          <br /> <br /> <br /> <br /> <br /> <br />
+          <h3 className="contactUsHeading">Don't hesitate to get in touch with us today!</h3><br />
+          <p className="alignedPara contactPara">We would love to hear from you! Please feel free to reach out to us with any inquiries or to discuss your upcoming project. Our team of experts is here to assist you every step of the way.
+            <span className="alignedpara contactPara contactParaResponsive"><br /><br /> Whether you have questions about our services, need a consultation, or want to schedule an appointment, we are just a phone call or email away..<br /><br /> Don't hesitate to contact us and let us help you bring your home renovation dreams to life. We look forward to working with you!<br /><br /></span>
+          </p>
+        </div>
+        <div className="box">
 
-
-        <Image className="contactSupportImage" variant="top" src="./img/customerSupport-resized.jpeg" alt="A picture of a customer support reprensenative on the phone." />
-
+          <Image className="contactSupportImage" variant="top" src="./img/customerSupport-resized.jpeg" alt="A picture of a customer support reprensenative on the phone." />
+        </div>
 
         {/* <Card.Text>
             Some quick example text to build on the card title and make up the
@@ -1713,30 +1741,36 @@ function Contact() {
           <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
         </ListGroup> */}
 
+        <div className="box">
 
-        <a href="mailto:phil@monteirohomes.ca" className="contactCardLink">
+          <a href="mailto:phil@monteirohomes.ca" className="contactCardLink">
 
-          {/* <span p className="contactCardText">Email us</span> */}
+            {/* <span p className="contactCardText">Email us</span> */}
 
-          {/* 
+            {/* 
                 <button class="custom-btn btn-11">Read More</button> */}
 
-          <button className="buttonEmailUs custom-btn btn-11">
 
-            <img className="rounded-circle glow-effect-links footer-socail-icon" src="./img/email.png" width="60px" height="60px" alt="An email to each Phil at." />
-            <span className="buttonEmailUsText">EMAIL US</span>
+            <button className="buttonEmailUs custom-btn btn-11">
+              <img className="rounded-circle glow-effect-links footer-socail-icon" src="./img/email.png" width="60px" height="60px" alt="An email to each Phil at." />
+              <span className="buttonEmailUsText">EMAIL US</span>
 
-          </button>
-        </a>
+            </button>
+
+          </a>
+        </div>
         <br />
         {/* <Image className="rounded-circle glow-effect-links footer-socail-icon" src="./img/phone.png" width="60px" height="60px" alt="A phone number to reach Phil at." /> */}
         {/* <span p className="contactCardText">Call us</span> */}
-        <a href="tel:(647)885-2384">
-          <button className="buttonCallUs custom-btn btn-11">
-            <Image className="rounded-circle glow-effect-links footer-socail-icon" src="./img/phone.png" width="60px" height="60px" alt="A phone number to reach Phil at." />
-            <span className="buttonCallUsText">CALL US</span>
-          </button>
-        </a>
+        <div className="box">
+
+          <a href="tel:(647)885-2384">
+            <button className="buttonCallUs custom-btn btn-11">
+              <Image className="rounded-circle glow-effect-links footer-socail-icon" src="./img/phone.png" width="60px" height="60px" alt="A phone number to reach Phil at." />
+              <span className="buttonCallUsText">CALL US</span>
+            </button>
+          </a>
+        </div>
       </div >
 
       {/* <ContactForm /> */}
@@ -1754,7 +1788,7 @@ function Contact() {
 
       <br /><br />
 
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
