@@ -12,7 +12,7 @@ import './textRightToLeft.css';
 // import './motion-container.css';
 import './imageZoom.css';
 
-import { motion } from "framer-motion";
+import { motion, useScroll } from "framer-motion";
 import { useInView } from "framer-motion";
 // import { useRef } from "react";
 
@@ -149,6 +149,8 @@ function App() {
 
 function Home() {
 
+  const { scrollYProgress } = useScroll();
+
 
   return (
     <>
@@ -162,6 +164,13 @@ function Home() {
 
 
 
+
+      <motion.div
+        className="progress-bar"
+        style={{ scaleX: scrollYProgress }}
+      />
+
+      {/* <code>useScroll</code> demo */}
 
       {/* <div className="bgImage"> */}
 
@@ -1658,7 +1667,7 @@ function SimpleMap() {
   return (
     // Important! Always set the container height explicitly
     <div className="box">
-      <div style={{ height: '500px', width: '500px' }}>
+      <div style={{ height: '500px', width: '600px' }}>
         <GoogleMapReact
           bootstrapURLKeys={{ key: process.env.REACT_APP_GOOGLE_MAPS_API_KEY }}
           defaultCenter={defaultProps.center}
@@ -1718,60 +1727,66 @@ function SimpleMap() {
 function Location() {
   return (
     <>
-      <SimpleMap />
+
 
       <span id='location'></span>
+      <div className="box">
 
-      <h1 className="page-mainHeading">Hours & Location</h1>
+        <h1 className="page-mainHeading">Hours & Location</h1>
+      </div>
       {/* <iframe src="https://goo.gl/maps/2dEvuazaZWoZUEFg7" width="600" height="450" style={{ border: 0 }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> */}
       <div className="location-container">
         <div className="location-grid-item">
 
-          <img src="./img/GoogleMaps.png" className="googleMap" alt="A map of Monteiro Homes serivce area across the GTA." />
+          {/* <img src="./img/GoogleMaps.png" className="googleMap" alt="A map of Monteiro Homes serivce area across the GTA." /> */}
+          <SimpleMap />
         </div>
+
         <div className="location-grid-item">
+          <div className="box">
 
-          <h3 className="serviceAreas">Service areas</h3>
 
-          <ul>
-            <li className="alignedPara footer-service-area-text">
-              <img className="checkmark" src='./img/checkmark.png' alt="A picture of a checkmark indicating we service the following area." />
-              Georgetown
-            </li>
-            <li className="alignedPara footer-service-area-text">
-              <img className="checkmark" src='./img/checkmark.png' alt="A picture of a checkmark indicating we service the following area." />
-              Milton
-            </li>
-            <li className="alignedPara footer-service-area-text">
-              <img className="checkmark" src='./img/checkmark.png' alt="A picture of a checkmark indicating we service the following area." />
-              Oakville
-            </li>
-            <li className="alignedPara footer-service-area-text">
-              <img className="checkmark" src='./img/checkmark.png' alt="A picture of a checkmark indicating we service the following area." />
-              Burlington
-            </li>
-            <li className="alignedPara footer-service-area-text">
-              <img className="checkmark" src='./img/checkmark.png' alt="A picture of a checkmark indicating we service the following area." />
-              Etobicoke
-            </li>
-            <li className="alignedPara footer-service-area-text">
-              <img className="checkmark" src='./img/checkmark.png' alt="A picture of a checkmark indicating we service the following area." />
-              Vaughan
-            </li>
-            <li className="alignedPara footer-service-area-text">
-              <img className="checkmark" src='./img/checkmark.png' alt="A picture of a checkmark indicating we service the following area." />
-              Brampton
-            </li>
-            <li className="alignedPara footer-service-area-text">
-              <img className="checkmark" src='./img/checkmark.png' alt="A picture of a checkmark indicating we service the following area." />
-              and many more!
-            </li>
-          </ul>
+            <h3 className="serviceAreas">Service areas</h3>
 
-          <br /><br />
-          <h3 className="headingHoursOfOperation">Hours of operation</h3>
-          <p className="alignedPara">Monday - Friday 9 AM - 5 PM</p>
+            <ul>
+              <li className="alignedPara footer-service-area-text">
+                <img className="checkmark" src='./img/checkmark.png' alt="A picture of a checkmark indicating we service the following area." />
+                Georgetown
+              </li>
+              <li className="alignedPara footer-service-area-text">
+                <img className="checkmark" src='./img/checkmark.png' alt="A picture of a checkmark indicating we service the following area." />
+                Milton
+              </li>
+              <li className="alignedPara footer-service-area-text">
+                <img className="checkmark" src='./img/checkmark.png' alt="A picture of a checkmark indicating we service the following area." />
+                Oakville
+              </li>
+              <li className="alignedPara footer-service-area-text">
+                <img className="checkmark" src='./img/checkmark.png' alt="A picture of a checkmark indicating we service the following area." />
+                Burlington
+              </li>
+              <li className="alignedPara footer-service-area-text">
+                <img className="checkmark" src='./img/checkmark.png' alt="A picture of a checkmark indicating we service the following area." />
+                Etobicoke
+              </li>
+              <li className="alignedPara footer-service-area-text">
+                <img className="checkmark" src='./img/checkmark.png' alt="A picture of a checkmark indicating we service the following area." />
+                Vaughan
+              </li>
+              <li className="alignedPara footer-service-area-text">
+                <img className="checkmark" src='./img/checkmark.png' alt="A picture of a checkmark indicating we service the following area." />
+                Brampton
+              </li>
+              <li className="alignedPara footer-service-area-text">
+                <img className="checkmark" src='./img/checkmark.png' alt="A picture of a checkmark indicating we service the following area." />
+                and many more!
+              </li>
+            </ul>
 
+            <br /><br />
+            <h3 className="headingHoursOfOperation">Hours of operation</h3>
+            <p className="alignedPara">Monday - Friday 9 AM - 5 PM</p>
+          </div>
         </div>
       </div>
     </>

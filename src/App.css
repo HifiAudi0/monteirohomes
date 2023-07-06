@@ -54,6 +54,19 @@ li {
   font-size: 40px;
 }
 
+
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 20px;
+  background: black;
+  transform-origin: 0%;
+  z-index: 10;
+}
+
+
 figure {
   display: block;
   margin-block-start: 1em;
@@ -1012,7 +1025,8 @@ a:active {
 }
 
 .footer-service-area-text {
-  text-shadow: 2px 2px black;
+  text-shadow: 2px 2px white;
+  color: black;
 
 }
 
@@ -1146,7 +1160,7 @@ input:active {
   color: white;
   text-align: center;
   display: grid;
-  grid-template-columns: 70% 30%;
+  grid-template-columns: 60% 40%;
   padding: 10px;
 }
 
