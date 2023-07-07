@@ -443,10 +443,17 @@ function Links() {
 
 function Counter({ number, title }) {
   return (
-    <div className="number">
-      <CountUp duration={10} className="counter" end={number} /><br />
-      <span>{title}</span>
-    </div>
+    <>
+      {/* <img className="counterCardImage" src="./img/numberCounterCard1.png" /> */}
+
+
+
+      <CountUp duration={15} className="counter" end={number} start={0} enableScrollSpy={true} scrollSpyDelay={3000} />
+      <span className="counterTitle">{title}</span>
+
+
+
+    </>
   );
 }
 
@@ -679,10 +686,24 @@ function Services() {
 
 
 
-        <div className="numbers">
-          <Counter number={60} title="Customers Serviced" />
-          <Counter number={8} title="+ Years in business" />
-        </div>
+
+        <Row sm={1} md={2} className="g-4">
+
+          <Col>
+            <img className="handsImage" src="./img/hands2.svg" />
+            <div className="counterCardContainerFirst">
+              <Counter number={60} title="+ Total Customers served" />
+
+            </div>
+          </Col>
+          <Col>
+
+            <img className="diamondImage" src="./img/diamond.svg" />
+            <div className="counterCardContainerSecond">
+              <Counter number={8} title="+ years in business" />
+            </div>
+          </Col>
+        </Row >
         {/* 
         <h1 class="animate__animated animate__bounce">An animated element</h1>
 
@@ -693,7 +714,8 @@ function Services() {
           </figcaption>
         </figure> */}
 
-        <br /><br />
+        < br /><br />   <br /><br />   <br /><br />   <br /><br />
+        <br /><br />   <br /><br />   <br /><br />   <br /><br />
         {/* <h3 className="page-mainHeading">Comprehensive Renovation Services for Your Dream Home Transformation</h3> */}
         <div className="box">
           <span id='services'></span>
