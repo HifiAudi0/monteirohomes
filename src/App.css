@@ -98,7 +98,7 @@ li {
 
 .progress-bar {
   position: fixed;
-  top: 0;
+  bottom: 0;
   left: 0;
   right: 0;
   height: 20px;
@@ -333,8 +333,8 @@ button.active {
   margin-bottom: auto; */
   /* display: block;
   text-align: center; */
-  top: 40%;
-  left: 40%;
+  top: 3%;
+  left: 25%;
 }
 
 .sslImage {
@@ -342,8 +342,8 @@ button.active {
   height: 100px;
   z-index: 1;
   position: absolute;
-  top: 85%;
-  left: 05%;
+  bottom: 17%;
+  left: 25%;
 }
 
 /* .bgImage {
@@ -1151,7 +1151,7 @@ a:active {
 }
 
 .formLabels {
-  color: white;
+  color: black;
   font-size: 1.4rem;
 
 }

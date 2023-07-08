@@ -238,10 +238,10 @@ function Home() {
         </div>
       </div>
 
-      <div className="animate__animated animate__fadeInLeft animate__delay-2s">Example
-        <Services />
-      </div>
-
+      {/* <div className="animate__animated animate__fadeInLeft animate__delay-2s">Example
+       
+      </div> */}
+      <Services />
       <Faq />
       <Quote />
       {/* <Bath /> */}
@@ -1615,7 +1615,7 @@ function QuoteForm() {
           <img className="logo" src="./img/logo.png" alt="A picture of the Monterio homes logo." />
           <img className="sslImage" src="./img/ssl.png" alt="A picture of a security icon for HTTPS/SSL." />
 
-          <h3 className="formHeading">Get a free estimate today!</h3>
+          <h3 className="formHeading">Get a free estimate today!</h3><br />
           <label for="name" className="formLabels">Name (required)</label><br />
           <input type='text' className="formInputText" name='name' value={form.name} onChange={handleChange} placeholder='Your name' /><br /><br />
           {errors['name'] && <span className="error">{errors['name']}</span>}
@@ -1625,6 +1625,7 @@ function QuoteForm() {
           <label for="message" className="formLabels">Your message (required)</label><br />
           <textarea name='message' className="formInputText" id="formInputMessage" value={form.message} onChange={handleChange} placeholder='Your message' /><br /><br />
           {errors['message'] && <span className="error">{errors['message']}</span>}
+          <br />       <br />       <br />
           <button type='submit' className="formSubmitBtn">SEND MESSAGE</button><br /><br />
 
         </form>
