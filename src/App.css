@@ -101,10 +101,42 @@ li {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 20px;
+  height: 30px;
   background: black;
   transform-origin: 0%;
   z-index: 10;
+}
+
+
+.scrollStartText {
+  z-index: 14;
+  color: white;
+  text-align: left;
+  font-size: 24px;
+  position: fixed;
+  bottom: 0;
+}
+
+/* .scrollFinishText {
+  z-index: 14;
+  color: white;
+  text-align: right;
+  font-size: 24px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+} */
+
+.scrollFinishText {
+  z-index: 14;
+  color: white;
+  text-align: right;
+  font-size: 24px;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
 }
 
 

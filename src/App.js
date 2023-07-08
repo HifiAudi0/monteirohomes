@@ -152,6 +152,29 @@ function Home() {
   const { scrollYProgress } = useScroll();
 
 
+
+  scrollYProgress.onChange(y => {
+
+    console.log("y............", y);
+    // console.log(typeof (y))
+    const str = y.toString();
+    const result = Number(str.slice(2, 4));
+    console.log("result............", result);
+    var value = 50 + result;
+    console.log("value............", value)
+
+    if (y == 1) {
+      console.log("y isssssssssssssssssssssssssssssss 1");
+      document.querySelector(".scrollFinishText").style.width = "150px";
+      document.querySelector(".scrollFinishText").style.height = "150px";
+    }
+    else {
+      document.querySelector(".scrollFinishText").style.width = `${value}px`;
+      document.querySelector(".scrollFinishText").style.height = `${value}px`;
+    }
+  })
+
+
   return (
     <>
 
@@ -167,8 +190,12 @@ function Home() {
 
       <motion.div
         className="progress-bar"
-        style={{ scaleX: scrollYProgress }}
-      />
+        style={{ scaleX: scrollYProgress }}>
+      </motion.div>
+      <span className="scrollStartText">Start</span>
+      {/* <span className="scrollFinishText">Finish</span> */}
+
+      <img src="./img/logo.png" className="scrollFinishText" />
 
       {/* <code>useScroll</code> demo */}
 
