@@ -478,9 +478,9 @@ function Counter({ number, title }) {
       {/* <img className="counterCardImage" src="./img/numberCounterCard1.png" /> */}
 
 
-
-      <CountUp duration={15} className="counter" end={number} start={0} enableScrollSpy={true} scrollSpyDelay={3000} />
-      <span className="counterTitle">{title}</span>
+      <span className="counterTitle">
+        <CountUp duration={15} className="counter" end={number} start={0} enableScrollSpy={true} scrollSpyDelay={3000} />
+        {title}</span>
 
 
 
@@ -718,12 +718,12 @@ function Services() {
 
 
 
-        <Row sm={1} md={2} className="g-4">
+        <Row xs={1} sm={1} md={2} className="g-4 counterContainer">
 
           <Col>
             <img className="handsImage" src="./img/hands2.svg" />
             <div className="counterCardContainerFirst">
-              <Counter number={60} title="+ Total Customers served" />
+              <Counter number={60} title=" + Total Customers served" />
 
             </div>
           </Col>
@@ -731,7 +731,7 @@ function Services() {
 
             <img className="diamondImage" src="./img/diamond.svg" />
             <div className="counterCardContainerSecond">
-              <Counter number={8} title="+ years in business" />
+              <Counter number={8} title=" + years in business" />
             </div>
           </Col>
         </Row >
@@ -1689,10 +1689,11 @@ function About() {
         <div className="box">
           <div className="about-grid-item about-grid-item-top">
             <img src="./img/van.jpg" className="vanPic" alt="A picture of the Monterio Homes logo on the company van." />
-          </div>
-          <div className="box">
-            <br /><img className="canadianFlag" src="./img/canadianflag.jpeg" /><br /><br />
-            <p>Support local Canadian businesses</p>
+
+            <div className="box">
+              <br /><img className="canadianFlag" src="./img/canadianflag.jpeg" /><br /><br />
+              <p>Support local Canadian businesses</p>
+            </div>
           </div>
         </div>
         <div className="box">
