@@ -51,22 +51,36 @@ body {
   touch-action: pan-x pan-y;
 }
 
+.counterContainer {
+  margin-top: 400px;
+}
+
 
 .handsImage {
   width: 16rem;
   height: 15rem;
   margin-left: 15%;
+  /* border: 50px solid blue; */
+  /* z-index: 110; */
+  position: relative;
 }
 
 .diamondImage {
   width: 16rem;
   height: 15rem;
   margin-left: 5%;
+  position: relative;
 
 }
 
 .counterCardContainerFirst {
   /* position: relative; */
+  margin-left: 150px;
+}
+
+.counterCardContainerSecond {
+  /* position: relative; */
+  margin-left: 150px;
 }
 
 .counter {
@@ -77,10 +91,11 @@ body {
   left: 160px; */
   font-weight: bold;
   /* position: absolute; */
+  position: relative;
 }
 
 .counterTitle {
-  top: 50px;
+  /* top: 50px; */
   color: black;
   /* position: absolute; */
   /* top: 120px;
@@ -88,6 +103,7 @@ body {
   font-size: 40px;
   font-weight: bold;
   margin-top: 100px;
+  position: relative;
 
 }
 
@@ -98,6 +114,7 @@ body {
   position: relative;
   text-align: center;
   /* height: 14rem; */
+  position: relative;
 }
 
 
@@ -276,10 +293,10 @@ figcaption:hover {
   font-size: 4.2rem;
   letter-spacing: 2px;
   position: absolute;
-  top: 600px;
+  top: 500px;
   left: 50%;
 
-  top: 40%;
+  /* top: 40%; */
 
 
 }
@@ -370,7 +387,7 @@ button.active {
   margin-bottom: auto; */
   /* display: block;
   text-align: center; */
-  top: 41%;
+  top: 500px;
   left: 36%;
 }
 
@@ -1666,6 +1683,7 @@ body>footer {
     height: 100px;
     margin-left: 40px;
     left: 5%;
+    top: 41%;
 
   }
 
@@ -1686,6 +1704,42 @@ body>footer {
     margin-left: unset;
     margin-top: 320px;
     /* border: 100px solid green; */
+  }
+
+  .counterContainer {
+    margin-top: -800px;
+  }
+
+  .handsImage {
+    width: 10rem;
+    height: 9rem;
+  }
+
+  .diamondImage {
+    width: 10rem;
+    height: 9rem;
+    margin-left: 15%;
+  }
+
+  .counterCardContainerFirst {
+    /* position: relative; */
+    margin-left: unset;
+    text-align: center;
+  }
+
+  .counterCardContainerSecond {
+    /* position: relative; */
+    /* margin-left: 150px; */
+    text-align: center;
+    margin-left: unset;
+  }
+
+  .counter {
+    font-size: 20px;
+  }
+
+  .counterTitle {
+    font-size: 20px;
   }
 
   /* #navbar {
