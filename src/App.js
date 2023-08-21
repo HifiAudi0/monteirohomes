@@ -1625,7 +1625,7 @@ function QuoteForm() {
     <>
       {/* <div className="quoteContainer"> */}
       <div className="box">
-        <h2 className="quoteHeading">Scroll down and get your FREE quote today!</h2><br />
+        <h2 className="page-mainHeading" id="quote">Scroll down and get your FREE quote today!</h2><br />
       </div>
 
       <Section>
@@ -1729,7 +1729,7 @@ function SimpleMap() {
   return (
     // Important! Always set the container height explicitly
     <div className="box">
-      <div style={{ height: '500px', width: '600px' }}>
+      <div className="simpleMap">
         <GoogleMapReact
           bootstrapURLKeys={{ key: process.env.REACT_APP_GOOGLE_MAPS_API_KEY }}
           defaultCenter={defaultProps.center}

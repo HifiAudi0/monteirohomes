@@ -1141,6 +1141,10 @@ a:active {
   color: white;
 }
 
+#quote {
+  height: 170px;
+}
+
 /* .quote-grid-item {
   padding: 20px;
   font-size: 30px;
@@ -1252,6 +1256,11 @@ input:active {
   font-size: 30px;
   text-align: center;
   margin-left: 0%;
+}
+
+.simpleMap {
+  height: 500px;
+  width: 600px;
 }
 
 .serviceAreas {
@@ -1646,16 +1655,37 @@ body>footer {
     font-size: 1rem;
     font-weight: bold;
     letter-spacing: 1px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 30px;
+    margin-right: 0;
     /* border: 10px solid green; */
   }
+
 
   .logo {
     width: 100px;
     height: 100px;
     margin-left: 40px;
+    left: 5%;
 
+  }
+
+  .companyName {
+    /* left: -18%;
+    width: 220px;
+    margin-top: -70px;
+    margin-left: 205px; */
+    /* border: 2px solid green; */
+
+    /* font-size: 1.8rem; */
+    color: black;
+    z-index: 10;
+    position: relative;
+    font-size: 1.5rem;
+    left: 50%;
+    top: 41%;
+    margin-left: unset;
+    margin-top: 320px;
+    /* border: 100px solid green; */
   }
 
   /* #navbar {
@@ -1670,18 +1700,7 @@ body>footer {
     margin-right: auto;
   }
 
-  .companyName {
-    left: -18%;
-    width: 220px;
-    margin-top: -70px;
-    margin-left: 205px;
-    /* border: 2px solid green; */
 
-    font-size: 1.8rem;
-    color: black;
-    z-index: 10;
-    position: relative;
-  }
 
   /* #background-video {
     width: 100vw;
@@ -1846,6 +1865,12 @@ body>footer {
     display: none;
   }
 
+  .page-mainHeading {
+    height: 250px;
+    padding-top: 50px;
+    font-size: 30px;
+  }
+
 
   /* Quote */
   /* .quoteContainer {
@@ -1899,6 +1924,14 @@ body>footer {
 
   .quoteImg {
     left: 15%;
+  }
+
+  .location-container {
+    grid-template-columns: 100%;
+  }
+
+  .simpleMap {
+    width: 100%;
   }
 
   /* Footer */

@@ -115,3 +115,21 @@ body {
 .overlay-content a:hover:after {
     width: 25%;
 }
+
+
+/* iPad and below */
+@media only screen and (max-width: 900px) {
+
+    .overlay-content {
+        text-align: center;
+        margin-left: 0rem;
+        padding-top: 0px;
+        margin-top: 2%;
+    }
+
+
+    .overlay-content a {
+        font-size: 1.2rem;
+    }
+
+}
