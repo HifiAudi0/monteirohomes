@@ -172,8 +172,12 @@ function Home() {
       document.querySelector(".scrollFinishText").style.width = `${value}px`;
       document.querySelector(".scrollFinishText").style.height = `${value}px`;
     }
-  })
 
+
+  })
+  // useEffect(() => {
+  //   console.log("re-rendered......................")
+  // }, []);
 
   return (
     <>
@@ -756,7 +760,7 @@ function Services() {
         </div>
 
         <div className="box">
-          <Row sm={1} md={2} className="g-4">
+          <Row xs={1} sm={1} md={2} className="g-4">
 
             <Col>
 
@@ -797,7 +801,7 @@ function Services() {
 
         <div className="box">
 
-          <Row sm={1} md={2} className="g-4">
+          <Row xs={1} sm={1} md={2} className="g-4">
             <Col>
               <Card>
                 <Card.Img variant="top" src="./img/basement/basement3.jpg" />
@@ -1639,7 +1643,7 @@ function QuoteForm() {
       <div className="box">
         <form action="http://www.monteirohomes.com/sendEmailPM.php" method="POST" className="quoteForm">
 
-          <img className="logo" src="./img/logo.png" alt="A picture of the Monterio homes logo." />
+          <img className="logo" id="quoteLogo" src="./img/logo.png" alt="A picture of the Monterio homes logo." />
           <img className="sslImage" src="./img/ssl.png" alt="A picture of a security icon for HTTPS/SSL." />
 
           <h3 className="formHeading">Get a free estimate today!</h3><br />
