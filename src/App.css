@@ -320,8 +320,8 @@ figcaption:hover {
 }
 
 #background-video {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   object-fit: cover;
 
   position: fixed;
@@ -907,6 +907,18 @@ button.active {
   text-transform: uppercase;
 }
 
+.serviceSectionCards {
+  margin: 15px;
+}
+
+.serviceSectionCardPool {
+  height: 1030px;
+}
+
+.serviceSectionIntroText {
+  opacity: 0.5;
+}
+
 .faq-heading {
 
   text-align: center;
@@ -1088,7 +1100,7 @@ button.active {
 .social-icons {
   text-decoration: none;
   position: relative;
-
+  margin-left: -80px;
 }
 
 .home-social-text {
@@ -1116,7 +1128,7 @@ a:active {
 
 .social-text {
   margin-left: 15px;
-  color: white;
+  color: black;
   font-size: 2.5rem;
   font-weight: bolder;
   /* text-shadow: 2px 2px black; */
@@ -1288,6 +1300,11 @@ input:active {
 .headingHoursOfOperation {
   color: black;
   font-size: 3rem;
+  margin-left: 150px;
+}
+
+.hoursOfOperation {
+  margin-left: 350px;
 }
 
 .googleMap {
@@ -1339,6 +1356,7 @@ input:active {
   width: 270px;
   height: 270px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0);
+  position: relative;
 }
 
 .buttonEmailUs {
@@ -1469,13 +1487,14 @@ body>footer {
   margin-left: -40px;
 }
 
-.hoursOfOperation {
-  color: greenyellow;
-}
+
 
 
 .social-text {
   font-size: 1.4rem;
+
+
+
 }
 
 /* FOOTER */
@@ -1569,7 +1588,7 @@ body>footer {
   }
 
   .social-icons {
-    margin-left: 25%;
+    /* margin-left: 25%; */
   }
 
 
@@ -1754,7 +1773,17 @@ body>footer {
     margin-right: auto;
   }
 
+  .serviceSectionCardPool {
+    height: 340px;
+  }
 
+  .headingHoursOfOperation {
+    margin-left: unset;
+  }
+
+  .hoursOfOperation {
+    text-align: center;
+  }
 
   /* #background-video {
     width: 100vw;
@@ -2032,6 +2061,8 @@ body>footer {
   .contactSupportImage {
     width: 270px;
     height: 270px;
+    position: absolute;
+    top: -600px;
   }
 
   .buttonEmailUs {
