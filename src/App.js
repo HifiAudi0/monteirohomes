@@ -755,8 +755,15 @@ function Services() {
 
         <div className="box">
           <br /><br />
-          <p className="servicesPara">Welcome to our expert home renovation services! As a trusted and experienced contractor, we take great pride in transforming houses into dream homes. Our dedicated team of professionals is committed to delivering exceptional results that exceed your expectations. Whether you're looking to update your kitchen, remodel your bathroom, or renovate your entire living space, we have the expertise and skills to bring your vision to life.<br /><br /> We understand that every home is unique, and we work closely with our clients to create personalized designs that reflect their style and preferences. From concept to completion, we handle every aspect of the renovation process with meticulous attention to detail, ensuring a seamless and stress-free experience for our clients. Our services encompass a wide range of specialties, including flooring, painting, plumbing, electrical work, cabinetry, and more.<br /><br /> With a focus on quality craftsmanship and using premium materials, we strive to enhance the beauty, functionality, and value of your home. We are committed to delivering projects on time and within budget, without compromising on quality. Customer satisfaction is our top priority, and we go the extra mile to ensure that our clients are delighted with the final results. Trust us with your home renovation needs, and let us turn your house into the home of your dreams. Contact us today to discuss your project and schedule a consultation.
-          </p>
+          <Card className="serviceSectionCards serviceSectionIntroText">
+            <Card.Body>
+              <Card.Text>
+                <p className="servicesPara">Welcome to our expert home renovation services! As a trusted and experienced contractor, we take great pride in transforming houses into dream homes. Our dedicated team of professionals is committed to delivering exceptional results that exceed your expectations. Whether you're looking to update your kitchen, remodel your bathroom, or renovate your entire living space, we have the expertise and skills to bring your vision to life.<br /><br /> We understand that every home is unique, and we work closely with our clients to create personalized designs that reflect their style and preferences. From concept to completion, we handle every aspect of the renovation process with meticulous attention to detail, ensuring a seamless and stress-free experience for our clients. Our services encompass a wide range of specialties, including flooring, painting, plumbing, electrical work, cabinetry, and more.<br /><br /> With a focus on quality craftsmanship and using premium materials, we strive to enhance the beauty, functionality, and value of your home. We are committed to delivering projects on time and within budget, without compromising on quality. Customer satisfaction is our top priority, and we go the extra mile to ensure that our clients are delighted with the final results. Trust us with your home renovation needs, and let us turn your house into the home of your dreams. Contact us today to discuss your project and schedule a consultation.
+                </p>
+              </Card.Text>
+            </Card.Body>
+          </Card>
+
         </div>
 
         <div className="box">
@@ -765,7 +772,7 @@ function Services() {
             <Col>
 
 
-              <Card>
+              <Card className="serviceSectionCards">
                 <Card.Img variant="top" src="./img/kitchen/kitchen7.jpg" />
                 <Card.Body>
                   <Card.Title>Kitchens</Card.Title>
@@ -782,7 +789,7 @@ function Services() {
             <Col>
 
 
-              <Card>
+              <Card className="serviceSectionCards">
                 <Card.Img variant="top" src="./img/bath/bath18.jpg" />
                 <Card.Body>
                   <Card.Title>Baths</Card.Title>
@@ -803,7 +810,7 @@ function Services() {
 
           <Row xs={1} sm={1} md={2} className="g-4">
             <Col>
-              <Card>
+              <Card className="serviceSectionCards">
                 <Card.Img variant="top" src="./img/basement/basement3.jpg" />
                 <Card.Body>
                   <Card.Title>Basement</Card.Title>
@@ -817,8 +824,8 @@ function Services() {
               </Card>
             </Col>
             <Col>
-              <Card>
-                <Card.Img variant="top" src="./img/pools/pool2.jpg" />
+              <Card className="serviceSectionCards">
+                <Card.Img variant="top" src="./img/pools/pool2.jpg" className="serviceSectionCardPool" />
                 <Card.Body>
                   <Card.Title>Pools</Card.Title>
                   <Card.Text>
@@ -839,7 +846,7 @@ function Services() {
           <Row sm={1} md={2} className="g-4">
 
             <Col>
-              <Card>
+              <Card className="serviceSectionCards">
                 <Card.Img variant="top" src="./img/fencingDeckPatio/patio3.jpg" />
                 <Card.Body>
                   <Card.Title>Fencing, Decks & Patios</Card.Title>
@@ -1848,7 +1855,7 @@ function Location() {
 
             <br /><br />
             <h3 className="headingHoursOfOperation">Hours of operation</h3>
-            <p className="alignedPara">Monday - Friday 9 AM - 5 PM</p>
+            <p className="alignedPara footer-service-area-text hoursOfOperation">Monday - Friday <br />9 AM - 5 PM</p>
           </div>
         </div>
       </div>
@@ -1906,7 +1913,7 @@ function Contact() {
         </div>
         <div className="box">
 
-          <Image className="contactSupportImage" variant="top" src="./img/customerSupport-resized.jpeg" alt="A picture of a customer support reprensenative on the phone." />
+          <Image className="contactSupportImage" src="./img/customerSupport-resized.jpeg" alt="A picture of a customer support reprensenative on the phone." />
         </div>
 
         {/* <Card.Text>
@@ -1967,7 +1974,7 @@ function Contact() {
 
       <br /><br />
 
-      {/* <Footer /> */}
+      <NewFooter />
     </>
   );
 }
@@ -2075,6 +2082,7 @@ function UncontrolledInput() {
     </form>
   );
 }
+
 
 function Footer() {
   return (
@@ -2197,6 +2205,57 @@ function Footer() {
 
       </footer>
 
+    </>
+  );
+}
+
+function NewFooter() {
+  return (
+    <>
+
+      <footer className="footer">
+        <div className="footer-grid-container">
+          <div className="footer-grid-item">
+            <div className="box">
+              <br /><br />
+              <Card className="serviceSectionCards serviceSectionIntroText">
+                <Card.Body>
+                  <Card.Text>
+                    <p className="servicesPara">
+                      <h4 className="footer-socials-heading">Socials</h4>
+                      <div className="">
+                        <a className="social-icons" href="https://www.facebook.com/profile.php?id=100064311003388" target="_blank">
+                          <img className="rounded-circle glow-effect-links footer-social-icon" src="./img/fb.png" width="60px" height="60px" alt="Facebook logo" /><span className="social-text" p>facebook.com/monteirohomes</span>
+                        </a><br />
+
+                        <a className="social-icons" href="tel:647-885-2384">
+                          <Image className="rounded-circle glow-effect-links footer-social-icon" src="./img/phone.png" width="60px" height="60px" alt="A phone number icon to reach Phil at." />
+                          <span className="social-text" p>Phil @ (647) 885-2384</span>
+                        </a><br />
+
+                        <a className="social-icons" href="mailto:phil@monteirohomes.ca">
+                          <img className="rounded-circle glow-effect-links footer-social-icon" src="./img/email.png" width="60px" height="60px" alt="An email icon to each Phil at." />
+                          <span className="social-text">phil@monteirohomes.ca</span>
+                        </a><br />
+
+
+                        <a className="social-icons" href="https://www.instagram.com/monteirohomes/" target="_blank">
+                          <Image className="rounded-circle glow-effect-links footer-social-icon" src="./img/instagram.png" width="60px" height="60px" alt="Instagram logo" /><span className="social-text" p>instagram.com/monteirohomes/</span>
+                        </a>
+                      </div>
+                    </p>
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+
+            </div>
+
+
+          </div>
+        </div>
+
+
+      </footer >
     </>
   );
 }
