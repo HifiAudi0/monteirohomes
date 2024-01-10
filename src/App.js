@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes, Link, NavLink, useNavigate } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Link, NavLink, useNavigate, useLocation } from 'react-router-dom';
 import { LinkContainer } from "react-router-bootstrap";
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
@@ -53,6 +53,8 @@ import './ButtonAnimation.css';
 import './textAnimation.css';
 
 // import $ from 'jquery';
+
+import './hamburgerMenu.css';
 
 const container = {
   hidden: { opacity: 1, scale: 0 },
@@ -115,8 +117,9 @@ function App() {
   return (
     <>
 
-      <Links />
-
+      <Router>
+        <Links />
+      </Router>
 
 
 
@@ -193,29 +196,16 @@ function Home() {
     </>
   );
 }
-
+/* BEFORE hamburger menu (working)
 function Links() {
 
   return (
     <>
 
-      {/* <nav className="navbar navbar-expand-lg navbar-dark mx-auto">
 
-        <div className="" id="navbarNavAltMarkup">
-          <div className="navbar-nav">
-            <a className="nav-link fw-bold fs-3 active " aria-current="page" href="#home">HOME</a>
-            <a className="nav-link fw-bold fs-3" href="/Services">SERVICES</a>
-            <a className="nav-link fw-bold fs-3" href="#quote">QUOTE</a>
-            <a className="nav-link fw-bold fs-3" href="#faq">FAQ</a>
-            <a className="nav-link fw-bold fs-3" href="#contact">CONTACT</a>
-          </div>
-        </div>
-
-
-      </nav> */}
       <Router>
 
-        <Navbar scrolling dark expand="md" id="navbar"> {/* transparent bg */}
+        <Navbar scrolling dark expand="md" id="navbar"> 
 
           <Nav className="mx-auto">
 
@@ -227,23 +217,7 @@ function Links() {
             </Link>
 
 
-            {/* <Dropdown>
-                <Dropdown.Toggle id="dropdown-button-dark-example1" className="services-dropdown" variant="secondary">
-                  Services
-                </Dropdown.Toggle>
-
-                <Dropdown.Menu variant="dark">
-                  <Dropdown.Item href="#/action-1" active>
-                    Action
-                  </Dropdown.Item>
-                  <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                  <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-                  <Dropdown.Divider />
-                  <Dropdown.Item href="#/action-4">Separated link</Dropdown.Item>
-                </Dropdown.Menu>
-              </Dropdown> */}
-
-            {/* <LinkContainer to={"/Products"}> */}
+  
             <NavDropdown title="Services & Gallery" className="nav-fontstyle nav-link">
               <NavDropdown.Item className="nav-fontstyle" eventKey="4.1" href="/services">ALL SERVICES</NavDropdown.Item>
               <NavDropdown.Divider />
@@ -255,8 +229,7 @@ function Links() {
               <NavDropdown.Item className="nav-fontstyle" eventKey="4.4" href="/pool">POOLS</NavDropdown.Item>
               <NavDropdown.Item className="nav-fontstyle" eventKey="4.4" href="/deck">FENCING, DECKS & PATIOS</NavDropdown.Item>
             </NavDropdown>
-            {/* </LinkContainer> */}
-
+          
 
             <a href="/Faq" className="nav-link">FAQ</a>
 
@@ -264,8 +237,6 @@ function Links() {
             <span><p className="companyName">onteiro Homes</p></span>
 
 
-            {/* 
-              <a href="/Gallery" className="nav-link">GALLERY</a> */}
 
             <a href="/Quote" className="nav-link" id="nav-link-quote">QUOTE</a>
 
@@ -287,7 +258,6 @@ function Links() {
           <Route path="/pool" element={<Pool />} />
           <Route path="/deck" element={<Deck />} />
           <Route path="/Faq" element={<Faq />} />
-          {/* <Route path="/Gallery" element={<Gallery />} /> */}
           <Route path="/Quote" element={<Quote />} />
           <Route path="/Contact" element={<Contact />} />
           <Route path="/About" element={<About />} />
@@ -301,6 +271,131 @@ function Links() {
     </>
   );
 }
+*/
+
+function Links() {
+
+
+  function openNavbar() {
+    document.querySelector("#navbar").style.width = "100%";
+    document.querySelectorAll(".open")[0].style.opacity = 0;
+  }
+  function closeNavbar() {
+    document.querySelector("#navbar").style.width = "0";
+    document.querySelectorAll(".open")[0].style.opacity = 1;
+  }
+
+  var location = useLocation();
+  console.log("LOCATION............", location.pathname);
+
+  // if (location.pathname == "/Home" || location.pathname == "/") {
+  console.log("HOME.............")
+  return (
+    <>
+
+      <span className="open" onClick={openNavbar}>&#9776; Menu</span>
+      <div id="navbar" className="overlay">
+        <a href="javascript:void(0);" onClick={closeNavbar} className="close">&#9932;</a>
+
+        <div className="overlay-content">
+          <a href="/Home"><span className="navNumbers">1</span>Home</a>
+          <a href="/Services"><span className="navNumbers">2</span>All Services</a>
+          <a className="navSubcategory" href="/kitchen"><span className="navNumbers">2.1</span>Kitchen</a>
+          <a className="navSubcategory" href="/bath"><span className="navNumbers">2.2</span>Bath</a>
+          <a className="navSubcategory" href="/basement"><span className="navNumbers">2.3</span>Basement</a>
+          <a className="navSubcategory" href="/pool"><span className="navNumbers">2.4</span>Pool</a>
+          <a className="navSubcategory" href="/deck"><span className="navNumbers">2.5</span>Fencing, Deck & Patio</a>
+          <a href="/Faq"><span className="navNumbers">3</span>Faq</a>
+          <a href="/Quote"><span className="navNumbers">4</span>Quote</a>
+          {/* <a href="/ocation"><span className="navNumbers">5</span>Location & Hours</a> */}
+          <a href="/About"><span className="navNumbers">5</span>About Us</a>
+          <a href="/Contact"><span className="navNumbers">6</span>Contact</a>
+        </div>
+      </div>
+
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/Home" element={<Home />} />
+        <Route path="/Services" element={<Services />} />
+        <Route path="/kitchen" element={<Kitchen />} />
+        <Route path="/bath" element={<Bath />} />
+        <Route path="/basement" element={<Basement />} />
+        <Route path="/garage" element={<Services />} />
+        <Route path="/pool" element={<Pool />} />
+        <Route path="/deck" element={<Deck />} />
+        <Route path="/Faq" element={<Faq />} />
+        {/* <Route path="/Gallery" element={<Gallery />} /> */}
+        <Route path="/Quote" element={<Quote />} />
+        <Route path="/Contact" element={<Contact />} />
+        <Route path="/About" element={<About />} />
+        {/* <Route path="/Location" element={<Location />} /> */}
+
+        <Route path="*">
+
+        </Route>
+      </Routes>
+
+    </>
+  );
+
+  // }
+  /*
+    else {
+      console.log("SERVICES PAGE..............");
+  
+      return (
+        <>
+  
+          <span className="open" onClick={openNavbar}>&#9776; Menu</span>
+          <div id="navbar" className="overlay">
+            <a href="javascript:void(0);" onClick={closeNavbar} className="close">&#9932;</a>
+            <div className="overlay-content">
+              <a href="/Home">Back to Home</a>
+              <a href="#services">All Services</a>
+              <a href="/kitchen">Kitchen</a>
+              <a href="/bath">Bath</a>
+              <a href="/basement">Basement</a>
+              <a href="/pool">Pool</a>
+              <a href="/deck">Fencing, Deck & Patio</a>
+            </div>
+          </div>
+  
+  
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/Home" element={<Home />} />
+            <Route path="/Services" element={<Services />} />
+            <Route path="/kitchen" element={<Kitchen />} />
+            <Route path="/bath" element={<Bath />} />
+            <Route path="/basement" element={<Basement />} />
+            <Route path="/garage" element={<Services />} />
+            <Route path="/pool" element={<Pool />} />
+            <Route path="/deck" element={<Deck />} />
+  
+  
+            <Route path="*">
+  
+            </Route>
+          </Routes>
+  
+        </>
+      );
+    }
+    */
+}
+
+{/* <a href="#faq">Faq</a>
+            <a href="#quote">Quote</a>
+            <a href="#location">Location & Hours</a>
+            <a href="/Home#contact">Contact</a> */}
+
+{/* <Route path="/Faq" element={<Faq />} /> */ }
+{/* <Route path="/Gallery" element={<Gallery />} /> */ }
+{/* <Route path="/Quote" element={<Quote />} />
+          <Route path="/Contact" element={<Contact />} />
+          <Route path="/About" element={<About />} />
+          <Route path="/Location" element={<Location />} /> */}
 
 function Services() {
 
