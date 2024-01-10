@@ -354,6 +354,7 @@ button.active {
 .kitchenHeading {
   text-align: center;
   color: white;
+  margin-top: 2rem;
 }
 
 .kitchen {
@@ -426,6 +427,7 @@ button.active {
 .basementHeading {
   text-align: center;
   color: white;
+  margin-top: 4rem;
 }
 
 .basementPara {
@@ -512,6 +514,7 @@ button.active {
   width: 200px;
   height: 200px;
   margin-left: 45%;
+  margin-top: 2rem;
 }
 
 .faq-heading {
@@ -568,6 +571,7 @@ button.active {
   width: 60%;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 4rem;
 }
 
 .about-grid-item-top {
@@ -752,6 +756,7 @@ a:active {
 .quoteHeading {
   text-align: center;
   color: white;
+  margin-top: 4rem;
 }
 
 /* .quote-grid-item {
@@ -871,6 +876,7 @@ input:active {
   height: 1440px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 4rem;
 }
 
 .contactUsHeading {

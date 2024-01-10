@@ -141,6 +141,20 @@ body {
 
 }
 
+@media only screen and (min-width: 900px) and (max-width: 1060px) {
+
+    .open,
+    .close {
+        left: 23rem;
+        /* color: green; */
+    }
+
+    .close {
+        margin-left: 23rem;
+    }
+}
+
+
 /* iPad and below */
 @media only screen and (max-width: 900px) {
 
@@ -156,26 +170,31 @@ body {
         font-size: 1.2rem;
     }
 
-    /* .open,
+    .open,
     .close {
-        margin-left: 5rem;
+        margin-left: 9rem;
         left: 0;
-    } */
+        /* color: yellow; */
+    }
+
+    .close {
+        margin-left: 9rem;
+    }
 
 }
 
 
-@media only screen and (min-width: 420px) and (max-width: 900px) {
+/* @media only screen and (min-width: 420px) and (max-width: 900px) {
 
     .open,
     .close {
-        margin-left: 20rem;
+        margin-left: 10rem;
         left: 0;
-        /* color: blue; */
+        color: blue;
     }
 
     .close {
-        margin-left: 20rem;
+        margin-left: 10rem;
     }
 }
 
@@ -186,10 +205,10 @@ body {
     .close {
         margin-left: 8rem;
         left: 0;
-        /* color: red; */
+         color: red; 
     }
 
     .close {
         margin-left: 8rem;
     }
-}
+} */
