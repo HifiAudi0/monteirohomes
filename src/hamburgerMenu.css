@@ -94,7 +94,7 @@ body {
 }
 
 .overlay-content a {
-    font-size: 1rem;
+    font-size: 2rem;
     color: var(--font);
     display: block;
     padding: 10px;
@@ -102,6 +102,8 @@ body {
     text-decoration: none;
     transition: 0.3s;
     position: relative;
+    /* margin: auto;
+    width: 50%; */
 }
 
 .overlay-content a:after {
@@ -163,11 +165,16 @@ body {
         margin-left: 0rem;
         padding-top: 0px;
         margin-top: 2%;
+
     }
 
 
     .overlay-content a {
         font-size: 1.2rem;
+        /* margin: unset;
+        width: unset; */
+        left: -2rem;
+
     }
 
     .open,
@@ -179,6 +186,11 @@ body {
 
     .close {
         margin-left: 9rem;
+    }
+
+    .navSubcategory {
+        margin-left: 10rem;
+
     }
 
 }
