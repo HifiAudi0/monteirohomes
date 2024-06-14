@@ -1,0 +1,13 @@
+{
+    "name": "mhomes/public_html",
+    "autoload": {
+        "psr-4": {
+            "Mhomes\\PublicHtml\\": "src/"
+        }
+    },
+    "require": {
+        "phpmailer/phpmailer": "^6.8",
+        "vlucas/phpdotenv": "^5.5",
+        "wildbit/postmark-php": "^4.0"
+    }
+}
