@@ -1097,10 +1097,69 @@ button.active {
 
 }
 
+
+@keyframes socialsMenuPopOut {
+  100% {
+    height: 35%;
+  }
+}
+
+@keyframes socialsPopOut {
+  0% {
+    transform: translateX(180%);
+  }
+
+  100% {
+    transform: translateX(30%);
+  }
+}
+
+.animationCleanUp {
+  height: 35%;
+}
+
+.socialsBg {
+  height: 5%;
+  width: 10%;
+  position: absolute;
+  left: 90%;
+  z-index: 20;
+  top: 40%;
+  background-color: #373333;
+  overflow: hidden;
+
+}
+
+
+.socialsIconsGroup {}
+
+.socialsBg:hover {
+  animation: socialsMenuPopOut 1s linear 1;
+  /* animation: socialsPopOut 5s linear 1; */
+}
+
+.socialsPopOut {
+  animation: socialsPopOut 2s linear 1;
+
+}
+
+
+.socialsHamburgerIcon {
+  /* width: 2rem;
+  height: 2rem; */
+  font-size: 2rem;
+  color: white;
+}
+
+.socialsMenuText {
+  color: white;
+}
+
 .social-icons {
   text-decoration: none;
   position: relative;
-  margin-left: -80px;
+  /* margin-left: -80px; */
+  right: -40%;
 }
 
 .home-social-text {
@@ -1423,39 +1482,58 @@ input:active {
 
 /* FOOTER */
 .footer {
-  color: white;
+  /* color: white; */
   text-transform: uppercase;
   /* background-color: #484A4C; */
-  background-color: transparent;
+  /* background-color: transparent; */
   /* position: fixed; */
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
+  /* left: 0;
+  bottom: 0; */
+  /* width: 100%; */
   /* position: fixed; */
+
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+
 
 }
 
+/* 
 body>footer {
   position: sticky;
   top: 100vh;
   bottom: 0;
-}
+} */
 
 .footer-grid-container {
-  display: grid;
+  /* display: grid;
   grid-template-columns: 25% 30% 45%;
-  grid-template-rows: 400px;
+  grid-template-rows: 400px; */
   padding: 10px;
+  border: 10px solid red;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-grid-item {
   /* background-color: rgba(255, 255, 255, 0.8); */
-  padding: 20px;
-  font-size: 30px;
+  /* padding: 20px; */
+  /* font-size: 30px; */
   text-align: center;
-  margin-right: 10px;
+  /* margin-right: 10px; */
   /* border: 1px dotted white; */
+  background-color: #ffffff10;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 10px solid green;
+  z-index: 20;
+  height: 20vh;
+  width: 20vw;
 }
 
 .footer-social-icon {
@@ -1474,8 +1552,8 @@ body>footer {
 }
 
 .footer-socials-heading {
-  text-align: left;
-  margin-left: 150px;
+  /* text-align: left;
+  margin-left: 150px; */
 }
 
 .checkmark {

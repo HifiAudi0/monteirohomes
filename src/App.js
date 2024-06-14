@@ -233,6 +233,8 @@ function Home() {
 
       <br />
 
+      <Socials />
+
 
       {/* 
       <div className="home-socials alignedPara">
@@ -279,6 +281,59 @@ function Home() {
       <Location />
       <About />
       <Contact />
+    </>
+  );
+}
+
+function Socials() {
+  window.onload = () => {
+    // document.querySelector('.socialsBg').addEventListener('animationstart', function () {
+    //   document.querySelector('.socialsIconsGroup').classList.add('socialsPopOut');
+    // });
+
+
+    /*
+    document.querySelector('.socialsBg').addEventListener('animationstart', function () {
+      document.querySelectorAll('.social-icons').forEach(element => {
+        element?.classList.add('socialsPopOut');
+      });
+    });
+
+    document.querySelector('.socialsBg').addEventListener('animationend', function () {
+      document.querySelector('.socialsBg').style.height = "35%";
+    });
+*/
+
+
+  }
+  return (
+    <>
+      {/* <div className="socialsBg">
+        <div className="socialsHamburgerIcon"><p className="socialsMenuText">&#9776;
+          SOCIALS</p>
+        </div>
+        <div className="socialsIconsGroup">
+          <a className="social-icons textAnimation" href="https://www.facebook.com/profile.php?id=100064311003388" target="_blank">
+            <img className="rounded-circle glow-effect-links footer-social-icon" src="./img/fb.png" width="60px" height="60px" alt="Facebook logo" />
+          </a><br />
+
+          <a className="social-icons textAnimation" href="tel:647-885-2384">
+            <Image className="rounded-circle glow-effect-links footer-social-icon" src="./img/phone.png" width="60px" height="60px" alt="A phone number icon to reach Phil at." />
+
+          </a><br />
+
+          <a className="social-icons textAnimation" href="mailto:phil@monteirohomes.ca">
+            <img className="rounded-circle glow-effect-links footer-social-icon" src="./img/email.png" width="60px" height="60px" alt="An email icon to each Phil at." />
+
+          </a><br />
+
+
+          <a className="social-icons textAnimation" href="https://www.instagram.com/monteirohomes/" target="_blank">
+            <Image className="rounded-circle glow-effect-links footer-social-icon" src="./img/instagram.png" width="60px" height="60px" alt="Instagram logo" />
+          </a>
+        </div>
+      </div> */}
+      {/* </div> */}
     </>
   );
 }
@@ -2177,7 +2232,19 @@ function Footer() {
               </a>
 
 
-              {/* <a className="social-icons" href="https://www.facebook.com/profile.php?id=100064311003388s" target="_blank">
+
+
+            </div>
+          </div>
+        </div>
+
+      </footer>
+
+    </>
+  );
+}
+
+{/* <a className="social-icons" href="https://www.facebook.com/profile.php?id=100064311003388s" target="_blank">
                 <FacebookRoundedIcon className="footer-social-material-icon" sx={{ fontSize: 40 }} style={{ color: 'white' }} />
                 <span className="social-text" p>Facebook</span>
 
@@ -2199,62 +2266,42 @@ function Footer() {
                 <span className="social-text" p>Instagram</span>
               </a> */}
 
-            </div>
-          </div>
-        </div>
-
-      </footer>
-
-    </>
-  );
-}
 
 function NewFooter() {
   return (
     <>
 
-      <footer className="footer">
+      <footer>
         <div className="footer-grid-container">
           <div className="footer-grid-item">
             <div className="box">
-              <br /><br />
-              <Card className="serviceSectionCards serviceSectionIntroText">
-                <Card.Body>
-                  <Card.Text>
-                    <p className="servicesPara">
-                      <h4 className="footer-socials-heading">Socials</h4>
-                      <div className="">
-                        <a className="social-icons" href="https://www.facebook.com/profile.php?id=100064311003388" target="_blank">
-                          <img className="rounded-circle glow-effect-links footer-social-icon" src="./img/fb.png" width="60px" height="60px" alt="Facebook logo" /><span className="social-text" p>facebook.com/monteirohomes</span>
-                        </a><br />
+              <p>
+                <h4 className="footer-socials-heading">Socials</h4>
 
-                        <a className="social-icons" href="tel:647-885-2384">
-                          <Image className="rounded-circle glow-effect-links footer-social-icon" src="./img/phone.png" width="60px" height="60px" alt="A phone number icon to reach Phil at." />
-                          <span className="social-text" p>Phil @ (647) 885-2384</span>
-                        </a><br />
+                <a className="social-icons" href="https://www.facebook.com/profile.php?id=100064311003388" target="_blank">
+                  <img className="rounded-circle glow-effect-links footer-social-icon" src="./img/fb.png" width="60px" height="60px" alt="Facebook logo" />
+                  {/* <span className="social-text" p>facebook.com/monteirohomes</span> */}
+                </a>
 
-                        <a className="social-icons" href="mailto:phil@monteirohomes.ca">
-                          <img className="rounded-circle glow-effect-links footer-social-icon" src="./img/email.png" width="60px" height="60px" alt="An email icon to each Phil at." />
-                          <span className="social-text">phil@monteirohomes.ca</span>
-                        </a><br />
+                <a className="social-icons" href="tel:647-885-2384">
+                  <Image className="rounded-circle glow-effect-links footer-social-icon" src="./img/phone.png" width="60px" height="60px" alt="A phone number icon to reach Phil at." />
+                  {/* <span className="social-text" p>Phil @ (647) 885-2384</span> */}
+                </a>
+
+                <a className="social-icons" href="mailto:phil@monteirohomes.ca">
+                  <img className="rounded-circle glow-effect-links footer-social-icon" src="./img/email.png" width="60px" height="60px" alt="An email icon to each Phil at." />
+                  {/* <span className="social-text">phil@monteirohomes.ca</span> */}
+                </a>
 
 
-                        <a className="social-icons" href="https://www.instagram.com/monteirohomes/" target="_blank">
-                          <Image className="rounded-circle glow-effect-links footer-social-icon" src="./img/instagram.png" width="60px" height="60px" alt="Instagram logo" /><span className="social-text" p>instagram.com/monteirohomes/</span>
-                        </a>
-                      </div>
-                    </p>
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-
+                <a className="social-icons" href="https://www.instagram.com/monteirohomes/" target="_blank">
+                  <Image className="rounded-circle glow-effect-links footer-social-icon" src="./img/instagram.png" width="60px" height="60px" alt="Instagram logo" />
+                  {/* <span className="social-text" p>instagram.com/monteirohomes/</span> */}
+                </a>
+              </p>
             </div>
-
-
           </div>
-        </div>
-
-
+        </div >
       </footer >
     </>
   );
