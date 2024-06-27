@@ -235,7 +235,6 @@ function Home() {
 
       <br />
 
-      <Socials />
 
 
       {/* 
@@ -754,9 +753,6 @@ function Services() {
     <>
 
       {/* <ScrollAnimation box={document.querySelectorAll(".box")} /> */}
-
-      < br /><br />   <br /><br />   <br /><br />   <br /><br />
-      < br /><br />   <br /><br />   <br /><br />   <br /><br />
       <div className="scrollAnimation">
 
         <ScrollAnimation />
