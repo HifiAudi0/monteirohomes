@@ -11,7 +11,7 @@ body {
 .scroll-prompt {
     position: absolute;
     z-index: 998;
-    bottom: -80px;
+    bottom: 35vh;
     left: 50%;
     margin-left: -80px;
     width: 160px;

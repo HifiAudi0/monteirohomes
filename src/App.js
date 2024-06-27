@@ -1698,41 +1698,46 @@ function QuoteForm() {
     <>
       {/* <div className="quoteContainer"> */}
       <div className="box">
-        <h2 className="page-mainHeading" id="quote">Scroll down and get your FREE quote today!</h2><br />
+        <h2 className="page-mainHeading" id="quote">Get your FREE quote today!</h2><br />
       </div>
 
-      <Section>
+
+
+      <div className="quote-container">
+
+
+
+        {/* <div className="quote-grid-item"> */}
+
+        {/* <div className="box">
+            <InstagramEmbed className="formInstagramPost" url="https://www.instagram.com/p/Cl1YH0nuzul/" />
+          </div> */}
+
+        {/* </div> */}
+        {/* <div className="quote-grid-item"> */}
         <div className="box">
-          <img src="./img/customerSupport2-resized.jpg" className="quoteImgSupport" alt="A picture illustrating of a customer service rep." />
-        </div>
-      </Section>
-      <br /><br />
-      {/* <div className="quote-grid-item"> */}
-      <div className="box">
-        <InstagramEmbed className="formInstagramPost" url="https://www.instagram.com/p/Cl1YH0nuzul/" />
-      </div>
-      {/* </div> */}
-      {/* <div className="quote-grid-item"> */}
-      <div className="box">
-        <form action="http://www.monteirohomes.com/sendEmailPM.php" method="POST" className="quoteForm">
+          <form className="quoteForm" action="http://www.monteirohomes.com/sendEmailPM.php" method="POST">
 
-          <img className="logo" id="quoteLogo" src="./img/logo.png" alt="A picture of the Monterio homes logo." />
-          <img className="sslImage" src="./img/ssl.png" alt="A picture of a security icon for HTTPS/SSL." />
+            <img src="./img/customerSupport2-resized.jpg" className="quoteImgSupport" alt="A picture illustrating of a customer service rep." />
+            <img className="logo" id="quoteLogo" src="./img/logo.png" alt="A picture of the Monterio homes logo." />
+            <img className="sslImage" src="./img/ssl.png" alt="A picture of a security icon for HTTPS/SSL." />
 
-          <h3 className="formHeading">Get a free estimate today!</h3><br />
-          <label for="name" className="formLabels">Name (required)</label><br />
-          <input type='text' className="formInputText" name='name' value={form.name} onChange={handleChange} placeholder='Your name' /><br /><br />
-          {errors['name'] && <span className="error">{errors['name']}</span>}
-          <label for="email" className="formLabels">Emil address (required)</label><br />
-          <input type='email' className="formInputText" name='email' value={form.email} onChange={handleChange} placeholder='Your email' /><br /><br />
-          {errors['email'] && <span className="error">{errors['email']}</span>}
-          <label for="message" className="formLabels">Your message (required)</label><br />
-          <textarea name='message' className="formInputText" id="formInputMessage" value={form.message} onChange={handleChange} placeholder='Your message' /><br /><br />
-          {errors['message'] && <span className="error">{errors['message']}</span>}
-          <br />       <br />       <br />
-          <button type='submit' className="formSubmitBtn">SEND MESSAGE</button><br /><br />
+            <h3 className="formHeading">Get a free estimate today!</h3><br />
+            <label for="name" className="formLabels">Name (required)</label><br />
+            <input type='text' className="formInputText" name='name' value={form.name} onChange={handleChange} placeholder='Your name' /><br /><br />
+            {errors['name'] && <span className="error">{errors['name']}</span>}
+            <label for="email" className="formLabels">Emil address (required)</label><br />
+            <input type='email' className="formInputText" name='email' value={form.email} onChange={handleChange} placeholder='Your email' /><br /><br />
+            {errors['email'] && <span className="error">{errors['email']}</span>}
+            <label for="message" className="formLabels">Your message (required)</label><br />
+            <textarea name='message' className="formInputText" id="formInputMessage" value={form.message} onChange={handleChange} placeholder='Your message' /><br /><br />
+            {errors['message'] && <span className="error">{errors['message']}</span>}
+            <br />       <br />       <br />
+            <button type='submit' className="formSubmitBtn">SEND MESSAGE</button><br /><br />
 
-        </form>
+          </form>
+
+        </div >
       </div>
       {/* </div> */}
       {/* </div> */}
