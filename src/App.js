@@ -534,7 +534,7 @@ function Counter({ number, title }) {
 
 
       <span className="counterTitle">
-        <CountUp duration={15} className="counter" end={number} start={0} enableScrollSpy={true} scrollSpyDelay={3000} />
+        <CountUp duration={8} className="counter" end={number} start={0} enableScrollSpy={true} scrollSpyDelay={0} delay={0} />
         {title}</span>
 
 
