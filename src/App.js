@@ -753,43 +753,17 @@ function Services() {
 
       {/* <ScrollAnimation box={document.querySelectorAll(".box")} /> */}
 
+      < br /><br />   <br /><br />   <br /><br />   <br /><br />
+      < br /><br />   <br /><br />   <br /><br />   <br /><br />
       <div className="scrollAnimation">
 
         <ScrollAnimation />
-
-
-
-        {/* <motion.div
-        whileInView={{ left: "100%" }}
-        initial={{ left: 0 }}
-        transition={{
-          duration: 1.75,
-          delay: 1
-        }}
-      > */}
 
         < ChangeNavColor color={navLightColor} />
 
 
 
 
-        <Row xs={1} sm={1} md={2} className="g-4 counterContainer">
-
-          <Col>
-            <img className="handsImage" src="./img/hands2.svg" />
-            <div className="counterCardContainerFirst">
-              <Counter number={60} title=" + Total Customers served" />
-
-            </div>
-          </Col>
-          <Col>
-
-            <img className="diamondImage" src="./img/diamond.svg" />
-            <div className="counterCardContainerSecond">
-              <Counter number={8} title=" + years in business" />
-            </div>
-          </Col>
-        </Row >
         {/* 
         <h1 class="animate__animated animate__bounce">An animated element</h1>
 
@@ -810,11 +784,46 @@ function Services() {
 
         <div className="box">
           <br /><br />
+
+
           <Card className="serviceSectionCards serviceSectionIntroText">
             <Card.Body>
               <Card.Text>
-                <p className="servicesPara">Welcome to our expert home renovation services! As a trusted and experienced contractor, we take great pride in transforming houses into dream homes. Our dedicated team of professionals is committed to delivering exceptional results that exceed your expectations. Whether you're looking to update your kitchen, remodel your bathroom, or renovate your entire living space, we have the expertise and skills to bring your vision to life.<br /><br /> We understand that every home is unique, and we work closely with our clients to create personalized designs that reflect their style and preferences. From concept to completion, we handle every aspect of the renovation process with meticulous attention to detail, ensuring a seamless and stress-free experience for our clients. Our services encompass a wide range of specialties, including flooring, painting, plumbing, electrical work, cabinetry, and more.<br /><br /> With a focus on quality craftsmanship and using premium materials, we strive to enhance the beauty, functionality, and value of your home. We are committed to delivering projects on time and within budget, without compromising on quality. Customer satisfaction is our top priority, and we go the extra mile to ensure that our clients are delighted with the final results. Trust us with your home renovation needs, and let us turn your house into the home of your dreams. Contact us today to discuss your project and schedule a consultation.
-                </p>
+                <div className="services-container">
+                  <div className="services-item">
+
+                    {/* <Row xs={1} sm={1} md={2} className="g-4 counterContainer">
+
+                      <Col> */}
+                    <img className="handsImage" src="./img/hands2.svg" />
+                    <div className="counterCardContainerFirst">
+                      <Counter number={60} title=" + Total Customers served" />
+
+                    </div><br />
+                    {/* </Col>
+                      <Col>
+
+                        <img className="diamondImage" src="./img/diamond.svg" />
+                        <div className="counterCardContainerSecond">
+                          <Counter number={8} title=" + years in business" />
+                        </div>
+                      </Col>
+                    </Row > */}
+                    <p className="servicesPara">Welcome to our expert home renovation services! As a trusted and experienced contractor, we take great pride in transforming houses into dream homes.<br /><br />Our dedicated team of professionals is committed to delivering exceptional results that exceed your expectations.<br /><br /> Whether you're looking to update your kitchen, remodel your bathroom, or renovate your entire living space, we have the expertise and skills to bring your vision to life.<br /><br /> We are committed to delivering projects on time and within budget, without compromising on quality. Customer satisfaction is our top priority, and we go the extra mile to ensure that our clients are delighted with the final results.  </p>
+                  </div>
+
+                  <div className="services-item">
+
+                    <img className="diamondImage" src="./img/diamond.svg" />
+                    <div className="counterCardContainerSecond">
+                      <Counter number={8} title=" + years in business" />
+                    </div><br />
+                    <p className="servicesPara"> We understand that every home is unique, and we work closely with our clients to create personalized designs that reflect their style and preferences.<br /><br /> From concept to completion, we handle every aspect of the renovation process with meticulous attention to detail, ensuring a seamless and stress-free experience for our clients. Our services encompass a wide range of specialties, including flooring, painting, plumbing, electrical work, cabinetry, and more.
+
+                      <br /><br />With a focus on quality craftsmanship and using premium materials, we strive to enhance the beauty, functionality, and value of your home.Trust us with your home renovation needs, and let us turn your house into the home of your dreams. Contact us today to discuss your project and schedule a consultation.
+                    </p>
+                  </div>
+                </div>
               </Card.Text>
             </Card.Body>
           </Card>
@@ -1857,63 +1866,70 @@ function Location() {
       <span id='location'></span>
       <div className="box">
 
+
         <h1 className="page-mainHeading">Hours & Location</h1>
       </div>
       {/* <iframe src="https://goo.gl/maps/2dEvuazaZWoZUEFg7" width="600" height="450" style={{ border: 0 }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> */}
-      <div className="location-container">
-        <div className="location-grid-item">
-
-          {/* <img src="./img/GoogleMaps.png" className="googleMap" alt="A map of Monteiro Homes serivce area across the GTA." /> */}
-          <SimpleMap />
-        </div>
-
-        <div className="location-grid-item">
-          <div className="box">
 
 
-            <h3 className="serviceAreas">Service areas</h3>
 
-            <ul>
-              <li className="alignedPara footer-service-area-text">
-                <img className="checkmark" src='./img/checkmark.png' alt="A picture of a checkmark indicating we service the following area." />
-                Georgetown
-              </li>
-              <li className="alignedPara footer-service-area-text">
-                <img className="checkmark" src='./img/checkmark.png' alt="A picture of a checkmark indicating we service the following area." />
-                Milton
-              </li>
-              <li className="alignedPara footer-service-area-text">
-                <img className="checkmark" src='./img/checkmark.png' alt="A picture of a checkmark indicating we service the following area." />
-                Oakville
-              </li>
-              <li className="alignedPara footer-service-area-text">
-                <img className="checkmark" src='./img/checkmark.png' alt="A picture of a checkmark indicating we service the following area." />
-                Burlington
-              </li>
-              <li className="alignedPara footer-service-area-text">
-                <img className="checkmark" src='./img/checkmark.png' alt="A picture of a checkmark indicating we service the following area." />
-                Etobicoke
-              </li>
-              <li className="alignedPara footer-service-area-text">
-                <img className="checkmark" src='./img/checkmark.png' alt="A picture of a checkmark indicating we service the following area." />
-                Vaughan
-              </li>
-              <li className="alignedPara footer-service-area-text">
-                <img className="checkmark" src='./img/checkmark.png' alt="A picture of a checkmark indicating we service the following area." />
-                Brampton
-              </li>
-              <li className="alignedPara footer-service-area-text">
-                <img className="checkmark" src='./img/checkmark.png' alt="A picture of a checkmark indicating we service the following area." />
-                and many more!
-              </li>
-            </ul>
+      {/* <img src="./img/GoogleMaps.png" className="googleMap" alt="A map of Monteiro Homes serivce area across the GTA." /> */}
+      <div className="box">
+        <div className="location-container">
+          <div className="location-grid-item">
+            <SimpleMap />
+          </div >
 
-            <br /><br />
-            <h3 className="headingHoursOfOperation">Hours of operation</h3>
-            <p className="alignedPara footer-service-area-text hoursOfOperation">Monday - Friday <br />9 AM - 5 PM</p>
-          </div>
-        </div>
-      </div>
+          <Card className="serviceSectionCards serviceSectionIntroText">
+
+            <div className="location-grid-item">
+
+              <h3 className="serviceAreas">Service areas</h3>
+
+              <ul>
+                <li className="alignedPara footer-service-area-text">
+                  <img className="checkmark" src='./img/checkmark.png' alt="A picture of a checkmark indicating we service the following area." />
+                  Georgetown
+                </li>
+                <li className="alignedPara footer-service-area-text">
+                  <img className="checkmark" src='./img/checkmark.png' alt="A picture of a checkmark indicating we service the following area." />
+                  Milton
+                </li>
+                <li className="alignedPara footer-service-area-text">
+                  <img className="checkmark" src='./img/checkmark.png' alt="A picture of a checkmark indicating we service the following area." />
+                  Oakville
+                </li>
+                <li className="alignedPara footer-service-area-text">
+                  <img className="checkmark" src='./img/checkmark.png' alt="A picture of a checkmark indicating we service the following area." />
+                  Burlington
+                </li>
+                <li className="alignedPara footer-service-area-text">
+                  <img className="checkmark" src='./img/checkmark.png' alt="A picture of a checkmark indicating we service the following area." />
+                  Etobicoke
+                </li>
+                <li className="alignedPara footer-service-area-text">
+                  <img className="checkmark" src='./img/checkmark.png' alt="A picture of a checkmark indicating we service the following area." />
+                  Vaughan
+                </li>
+                <li className="alignedPara footer-service-area-text">
+                  <img className="checkmark" src='./img/checkmark.png' alt="A picture of a checkmark indicating we service the following area." />
+                  Brampton
+                </li>
+                <li className="alignedPara footer-service-area-text">
+                  <img className="checkmark" src='./img/checkmark.png' alt="A picture of a checkmark indicating we service the following area." />
+                  and many more!
+                </li>
+              </ul>
+
+              <div className="location-grid-item">
+                <h3 className="headingHoursOfOperation">Hours of operation</h3>
+                <p className="alignedPara hoursOfOperation">Monday - Friday <br />9 AM - 5 PM</p>
+              </div>
+            </div >
+
+          </Card>
+        </div >
+      </div >
     </>
   );
 }
@@ -1961,14 +1977,82 @@ function Contact() {
 
         <div className="contact-grid-item">
           <br /> <br /> <br /> <br /> <br /> <br />
-          <h3 className="contactUsHeading">Don't hesitate to get in touch with us today!</h3><br />
-          <p className="alignedPara contactPara">We would love to hear from you! Please feel free to reach out to us with any inquiries or to discuss your upcoming project. Our team of experts is here to assist you every step of the way.
-            <span className="alignedpara contactPara contactParaResponsive"><br /><br /> Whether you have questions about our services, need a consultation, or want to schedule an appointment, we are just a phone call or email away..<br /><br /> Don't hesitate to contact us and let us help you bring your home renovation dreams to life. We look forward to working with you!<br /><br /></span>
-          </p>
-        </div>
+          <Card className="serviceSectionCards serviceSectionIntroText">
+            <Card.Body>
+              <Card.Text>
+
+                <div className="grid-container">
+
+                  <div className="grid-item">
+
+                    <Image className="contactSupportImage" src="./img/customerSupport-resized.jpeg" alt="A picture of a customer support reprensenative on the phone." /><br /><br />
+                    <h4 className="contactUsSubHeading">We want to hear from you!</h4> <br />
+                    <p className="alignedPara">Please feel free to reach out to us with any inquiries or to discuss your upcoming project. Our team of experts is here to assist you every step of the way.</p>
+
+
+                  </div>
+
+
+                  <div className="grid-item">
+                    <a href="mailto:phil@monteirohomes.ca" className="contactCardLink">
+                      <button className="buttonEmailUs custom-btn btn-11">
+                        <img className="rounded-circle glow-effect-links footer-socail-icon" src="./img/email.png" width="60px" height="60px" alt="An email to each Phil at." />
+                        <span className="buttonEmailUsText">EMAIL US</span>
+
+                      </button>
+                    </a>
+                    <h4 className="contactUsSubHeading">You have questions, we have answers.</h4> <br />
+                    <p className="alignedpara contactParaResponsive">Whether you need a consultation, or want to schedule an appointment, we are just a phone call or email away..<br /><br /> </p>
+                  </div>
+
+                  <div className="grid-item">
+
+
+                    <a href="tel:(647)885-2384">
+                      <button className="buttonCallUs custom-btn btn-11">
+                        <Image className="rounded-circle glow-effect-links footer-socail-icon" src="./img/phone.png" width="60px" height="60px" alt="A phone number to reach Phil at." />
+                        <span className="buttonCallUsText">CALL US</span>
+                      </button>
+                    </a>
+
+                    <h4 className="contactUsSubHeading">We will work with you.</h4> <br />
+                    <p className="alignedPara">Don't hesitate to contact us and let us help you bring your home renovation dreams to life. We look forward to working with you!</p><br /><br />
+                  </div>
+                </div>
+
+
+              </Card.Text>
+            </Card.Body>
+
+
+            <div className="socials-container">
+              <a className="social-icons textAnimation" href="https://www.facebook.com/profile.php?id=100064311003388" target="_blank">
+                <img className="rounded-circle glow-effect-links footer-social-icon" src="./img/fb.png" width="60px" height="60px" alt="Facebook logo" />
+                {/* <span className="social-text" p>facebook.com/monteirohomes</span> */}
+              </a>
+
+              <a className="social-icons textAnimation" href="tel:647-885-2384">
+                <Image className="rounded-circle glow-effect-links footer-social-icon" src="./img/phone.png" width="60px" height="60px" alt="A phone number icon to reach Phil at." />
+                {/* <span className="social-text" p>Phil @ (647) 885-2384</span> */}
+              </a>
+
+
+
+              <a className="social-icons textAnimation" href="mailto:phil@monteirohomes.ca">
+                <img className="rounded-circle glow-effect-links footer-social-icon" src="./img/email.png" width="60px" height="60px" alt="An email icon to each Phil at." />
+                {/* <span className="social-text">phil@monteirohomes.ca</span> */}
+              </a>
+
+              <a className="social-icons textAnimation" href="https://www.instagram.com/monteirohomes/" target="_blank">
+                <Image className="rounded-circle glow-effect-links footer-social-icon" src="./img/instagram.png" width="60px" height="60px" alt="Instagram logo" />
+                {/* <span className="social-text" p>instagram.com/monteirohomes/</span> */}
+              </a>
+
+            </div>
+          </Card>
+        </div >
         <div className="box">
 
-          <Image className="contactSupportImage" src="./img/customerSupport-resized.jpeg" alt="A picture of a customer support reprensenative on the phone." />
         </div>
 
         {/* <Card.Text>
@@ -1984,34 +2068,12 @@ function Contact() {
 
         <div className="box">
 
-          <a href="mailto:phil@monteirohomes.ca" className="contactCardLink">
 
-            {/* <span p className="contactCardText">Email us</span> */}
-
-            {/* 
-                <button class="custom-btn btn-11">Read More</button> */}
-
-
-            <button className="buttonEmailUs custom-btn btn-11">
-              <img className="rounded-circle glow-effect-links footer-socail-icon" src="./img/email.png" width="60px" height="60px" alt="An email to each Phil at." />
-              <span className="buttonEmailUsText">EMAIL US</span>
-
-            </button>
-
-          </a>
         </div>
         <br />
         {/* <Image className="rounded-circle glow-effect-links footer-socail-icon" src="./img/phone.png" width="60px" height="60px" alt="A phone number to reach Phil at." /> */}
         {/* <span p className="contactCardText">Call us</span> */}
-        <div className="box">
 
-          <a href="tel:(647)885-2384">
-            <button className="buttonCallUs custom-btn btn-11">
-              <Image className="rounded-circle glow-effect-links footer-socail-icon" src="./img/phone.png" width="60px" height="60px" alt="A phone number to reach Phil at." />
-              <span className="buttonCallUsText">CALL US</span>
-            </button>
-          </a>
-        </div>
       </div >
 
       {/* <ContactForm /> */}
@@ -2029,7 +2091,7 @@ function Contact() {
 
       <br /><br />
 
-      <NewFooter />
+      {/* <NewFooter /> */}
     </>
   );
 }
