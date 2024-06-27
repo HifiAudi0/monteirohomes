@@ -56,6 +56,8 @@ import './hamburgerMenu.css';
 
 import 'animate.css';
 
+import "./glowing_button.css";
+
 // import $ from 'jquery';
 
 import CountUp from "react-countup";
@@ -2026,25 +2028,25 @@ function Contact() {
 
 
             <div className="socials-container">
-              <a className="social-icons textAnimation" href="https://www.facebook.com/profile.php?id=100064311003388" target="_blank">
-                <img className="rounded-circle glow-effect-links footer-social-icon" src="./img/fb.png" width="60px" height="60px" alt="Facebook logo" />
+              <a className="social-icons textAnimation glow-effect" href="https://www.facebook.com/profile.php?id=100064311003388" target="_blank">
+                <img className="footer-social-icon glow-effect" src="./img/fb.png" alt="Facebook logo" />
                 {/* <span className="social-text" p>facebook.com/monteirohomes</span> */}
               </a>
 
-              <a className="social-icons textAnimation" href="tel:647-885-2384">
-                <Image className="rounded-circle glow-effect-links footer-social-icon" src="./img/phone.png" width="60px" height="60px" alt="A phone number icon to reach Phil at." />
+              <a className="social-icons textAnimation glow-effect" href="tel:647-885-2384">
+                <Image className="footer-social-icon glow-effect" src="./img/phone.png" width="60px" height="60px" alt="A phone number icon to reach Phil at." />
                 {/* <span className="social-text" p>Phil @ (647) 885-2384</span> */}
               </a>
 
 
 
-              <a className="social-icons textAnimation" href="mailto:phil@monteirohomes.ca">
-                <img className="rounded-circle glow-effect-links footer-social-icon" src="./img/email.png" width="60px" height="60px" alt="An email icon to each Phil at." />
+              <a className="social-icons textAnimation glow-effect" href="mailto:phil@monteirohomes.ca">
+                <img className="footer-social-icon glow-effect" src="./img/email.png" width="60px" height="60px" alt="An email icon to each Phil at." />
                 {/* <span className="social-text">phil@monteirohomes.ca</span> */}
               </a>
 
-              <a className="social-icons textAnimation" href="https://www.instagram.com/monteirohomes/" target="_blank">
-                <Image className="rounded-circle glow-effect-links footer-social-icon" src="./img/instagram.png" width="60px" height="60px" alt="Instagram logo" />
+              <a className="social-icons textAnimation glow-effect" href="https://www.instagram.com/monteirohomes/" target="_blank">
+                <Image className="footer-social-icon glow-effect" src="./img/instagram.png" width="60px" height="60px" alt="Instagram logo" />
                 {/* <span className="social-text" p>instagram.com/monteirohomes/</span> */}
               </a>
 
@@ -2284,13 +2286,13 @@ function Footer() {
               </a><br />
 
               <a className="social-icons textAnimation" href="mailto:phil@monteirohomes.ca">
-                <img className="rounded-circle glow-effect-links footer-social-icon" src="./img/email.png" width="60px" height="60px" alt="An email icon to each Phil at." />
+                <img className="rounded-circle glow-effect-links footer-social-icon glow-effect" src="./img/email.png" width="60px" height="60px" alt="An email icon to each Phil at." />
                 <span className="social-text">phil@monteirohomes.ca</span>
               </a><br />
 
 
               <a className="social-icons textAnimation" href="https://www.instagram.com/monteirohomes/" target="_blank">
-                <Image className="rounded-circle glow-effect-links footer-social-icon" src="./img/instagram.png" width="60px" height="60px" alt="Instagram logo" /><span className="social-text" p>instagram.com/monteirohomes/</span>
+                <Image className="rounded-circle glow-effect-links footer-social-icon glow-effect" src="./img/instagram.png" width="60px" height="60px" alt="Instagram logo" /><span className="social-text" p>instagram.com/monteirohomes/</span>
               </a>
 
 
