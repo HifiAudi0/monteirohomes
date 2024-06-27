@@ -531,6 +531,22 @@ button.active {
   margin-right: 15%;
 }
 
+.informative-icons {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+
+  position: relative;
+}
+
+.informative-icons-left {
+  margin-left: 35%;
+}
+
+.informative-icons-right {
+  margin-left: 35%;
+}
+
 .beforeAfterImg {
   width: 400px;
   height: 400px;
@@ -909,13 +925,14 @@ button.active {
 
 .page-mainHeading {
   font-size: 40px;
-  width: 100%;
+  min-width: 100vw;
   height: 200px;
   text-align: center;
   padding-top: 75px;
   background-color: black;
   color: white;
   text-transform: uppercase;
+  margin-left: 3.5vw;
 }
 
 .serviceSectionCards {
