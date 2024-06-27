@@ -775,9 +775,11 @@ function Services() {
         < br /><br />   <br /><br />   <br /><br />   <br /><br />
         <br /><br />   <br /><br />   <br /><br />   <br /><br />
         {/* <h3 className="page-mainHeading">Comprehensive Renovation Services for Your Dream Home Transformation</h3> */}
+
+
         <div className="box">
           <span id='services'></span>
-          <h4 className="page-mainHeading">From Kitchen to Bathroom, Deck to Basement - We've Got You Covered!</h4>
+          <h4 className="page-mainHeading">Service you can trust!</h4>
         </div>
 
         <div className="box">
@@ -795,7 +797,7 @@ function Services() {
                       <Col> */}
                     <img className="handsImage" src="./img/hands2.svg" />
                     <div className="counterCardContainerFirst">
-                      <Counter number={60} title=" + Total Customers served" />
+                      <Counter number={70} title=" + Total Customers served" />
 
                     </div><br />
                     {/* </Col>
@@ -807,18 +809,27 @@ function Services() {
                         </div>
                       </Col>
                     </Row > */}
-                    <p className="servicesPara">Welcome to our expert home renovation services! As a trusted and experienced contractor, we take great pride in transforming houses into dream homes.<br /><br />Our dedicated team of professionals is committed to delivering exceptional results that exceed your expectations.<br /><br /> Whether you're looking to update your kitchen, remodel your bathroom, or renovate your entire living space, we have the expertise and skills to bring your vision to life.<br /><br /> We are committed to delivering projects on time and within budget, without compromising on quality. Customer satisfaction is our top priority, and we go the extra mile to ensure that our clients are delighted with the final results.  </p>
+                    <p className="servicesPara">Welcome to our expert home renovation services! As a <strong>trusted and experienced contractor,</strong> we take great pride in transforming houses into dream homes.<br /><br />
+                      <img className="informative-icons informative-icons-left" src="./img/icons/goal.png" />
+                      <br /><br />Our dedicated team of professionals is committed to delivering <strong>exceptional results</strong> that exceed your expectations.
+                      <br /><br /> Whether you're looking to update your kitchen, remodel your bathroom, or renovate your entire living space, we have the expertise and skills to bring your vision to life.<br /><br />
+                      <img className="informative-icons informative-icons-left" src="./img/icons/time.png" />
+                      <br /><br /> We are committed to  <strong>delivering projects on time and within budget</strong>, without compromising on quality. Customer satisfaction is our top priority, and we go the extra mile to ensure that our clients are delighted with the final results.  </p>
                   </div>
 
                   <div className="services-item">
 
                     <img className="diamondImage" src="./img/diamond.svg" />
                     <div className="counterCardContainerSecond">
-                      <Counter number={8} title=" + years in business" />
+                      <Counter number={10} title=" + years in business" />
                     </div><br />
-                    <p className="servicesPara"> We understand that every home is unique, and we work closely with our clients to create personalized designs that reflect their style and preferences.<br /><br /> From concept to completion, we handle every aspect of the renovation process with meticulous attention to detail, ensuring a seamless and stress-free experience for our clients. Our services encompass a wide range of specialties, including flooring, painting, plumbing, electrical work, cabinetry, and more.
+                    <p className="servicesPara"> We understand that every home is unique, and we work closely with our clients to create personalized designs that reflect their style and preferences.<br /><br />
 
-                      <br /><br />With a focus on quality craftsmanship and using premium materials, we strive to enhance the beauty, functionality, and value of your home.Trust us with your home renovation needs, and let us turn your house into the home of your dreams. Contact us today to discuss your project and schedule a consultation.
+                      <img className="informative-icons informative-icons-right" src="./img/icons/project.png" />
+                      <br /><br /> <strong>From concept to completion</strong>, we handle every aspect of the renovation process with meticulous attention to detail, ensuring a seamless and stress-free experience for our clients. Our services encompass a wide range of specialties, including flooring, painting, plumbing, electrical work, cabinetry, and more.<br /><br />
+
+                      <img className="informative-icons informative-icons-right" src="./img/icons/equipment.png" />
+                      <br /><br />With a focus on<strong> quality craftsmanship and using premium materials,</strong> we strive to enhance the beauty, functionality, and value of your home.Trust us with your home renovation needs, and let us turn your house into the home of your dreams. Contact us today to discuss your project and schedule a consultation.
                     </p>
                   </div>
                 </div>
@@ -827,6 +838,13 @@ function Services() {
           </Card>
 
         </div>
+
+        <br /><br />
+        <div className="box">
+          <span id='services'></span>
+          <h4 className="page-mainHeading">From Kitchen to Bathroom, Deck to Basement - We've Got You Covered!</h4>
+        </div>
+        <br /><br />
 
         <div className="box">
           <Row xs={1} sm={1} md={2} className="g-4">
@@ -924,10 +942,11 @@ function Services() {
           </Row>
         </div>
 
-
+        <br /><br />
         <div className="box">
           <h1 className="page-mainHeading">Before and After Gallery</h1>
         </div>
+        <br />
 
         <div className="box">
           <ImageSlider firstImageUrl="./img/before_basement.jpg" secondImageUrl="./img/after_basement.jpg" />
@@ -1488,7 +1507,7 @@ function Faq() {
       <span id='faq' name='faq'></span>
       <ChangeNavColor color={navLightColor} />
 
-
+      <br /><br />
       <div className="box">
         <h1 className="page-mainHeading">Frequently Asked Questions</h1>
       </div>
@@ -1578,9 +1597,7 @@ function Faq() {
           </Accordion>
         </motion.div>
       </div>
-      <div className="faqLineBreaks">
-        <br /> <br />  <br /> <br />  <br /> <br />  <br /> <br />  <br /> <br />  <br /> <br />  <br /> <br />  <br /> <br /> <br />
-      </div>
+
 
 
     </>
@@ -1865,12 +1882,13 @@ function Location() {
   return (
     <>
 
-
+      <br /><br />
       <span id='location'></span>
       <div className="box">
 
 
         <h1 className="page-mainHeading">Hours & Location</h1>
+        <br />
       </div>
       {/* <iframe src="https://goo.gl/maps/2dEvuazaZWoZUEFg7" width="600" height="450" style={{ border: 0 }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> */}
 
@@ -1933,6 +1951,7 @@ function Location() {
           </Card>
         </div >
       </div >
+      <br /><br />
     </>
   );
 }
