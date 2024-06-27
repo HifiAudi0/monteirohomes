@@ -9,8 +9,9 @@ body {
     width: 900px;
     margin: auto;
     overflow-x: hidden;
-    height: 1300px;
-    margin-top: -940px;
+    height: 500px;
+    margin-top: 940px;
+    border: 20px solid red;
     /* border: 20px solid red; */
 
 
