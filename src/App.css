@@ -932,7 +932,7 @@ button.active {
   background-color: black;
   color: white;
   text-transform: uppercase;
-  margin-left: 3.5vw;
+  /* margin-left: 3.5vw; */
 }
 
 .serviceSectionCards {
@@ -975,7 +975,15 @@ button.active {
 }
 
 .aboutUsHeading {
-  text-shadow: 1px 1px black
+  text-shadow: 1px 1px black;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.localPara {
+  color: white;
+  text-shadow: 1px 1px black;
+  font-size: 2rem;
 }
 
 /* .about-grid-container {
@@ -988,7 +996,8 @@ button.active {
 } */
 
 .about-grid-item {
-  /* background-color: rgba(255, 255, 255, 0.8); */
+  background-color: #FF212B;
+  background-image: unset;
   padding: 20px;
   font-size: 30px;
   text-align: center;
@@ -996,7 +1005,7 @@ button.active {
   margin: 20px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0);
   /* border: 2px solid white; */
-  background-image: url("../public/img/canadian-bg.png");
+  /* background-image: url("../public/img/canadian-bg.png"); */
   background-repeat: repeat;
   background-size: stretch;
   background-size: 100% 100%;
@@ -1032,8 +1041,8 @@ button.active {
 }
 
 .canadianFlag {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   margin-top: 50px;
   margin-left: auto;
   margin-right: auto;

@@ -1774,27 +1774,37 @@ function About() {
         {/* <div className="about-grid-container"> */}
 
         <div className="box">
-          <h4 className="page-mainHeading">From Kitchen to Bathroom, Deck to Basement - We've Got You Covered!</h4>
+          <h4 className="page-mainHeading">Canadian Family-Owned Business with 10+ Years of Trusted Experience</h4>
         </div>
-
+        {/* 
         <div className="box">
           <div className="about-grid-item about-grid-item-top">
-            <img src="./img/van.jpg" className="vanPic" alt="A picture of the Monterio Homes logo on the company van." />
 
-            <div className="box">
-              <br /><img className="canadianFlag" src="./img/canadianflag.jpeg" /><br /><br />
-              <p>Support local Canadian businesses</p>
-            </div>
+
+
           </div>
-        </div>
+        </div> */}
+
         <div className="box">
           <div className="about-grid-item">
 
+            <br />
+            <h3 className="aboutUsHeading">Get to know us better!</h3>
+            {/* <h3 className="aboutUsHeading">Canadian Family-Owned Contractor with 10 Years of Trusted Service</h3> */}
+            <br />
 
-            <h3 className="aboutUsHeading">About Us</h3>
+            <img src="./img/van.jpg" className="vanPic" alt="A picture of the Monterio Homes logo on the company van." />
 
-            <h3 className="aboutUsHeading">Canadian Family-Owned Contractor with 8 Years of Trusted Service</h3><br />
-            <p>Welcome to our family-owned contracting business, where we have been proudly serving our community for the past 8 years. As a small business, we understand the importance of personalized service and building strong relationships with our clients..<br /><br /> With a passion for craftsmanship and a commitment to excellence, we have earned a reputation for delivering top-quality work and exceeding customer expectations. Our team of skilled professionals brings a wealth of experience and expertise to every project, ensuring attention to detail and meticulous execution..<br /><br /> From home renovations and remodeling to repairs and installations, we offer a comprehensive range of services tailored to meet your specific needs. As a family-owned business, we prioritize open communication, honesty, and integrity in all our interactions. We take pride in our work, treating every project as if it were our own, and ensuring customer satisfaction is our top priority..<br /><br /> With us, you can expect personalized attention, reliable service, and a finished result that will transform your space into something exceptional. Trust our family to enhance your home with our trusted contracting services.</p><br /><br />
+            <br />  <br />
+            <p className="localPara">Welcome to our family-owned contracting business, where we have been proudly serving our community for the past 8 years. As a small business, we understand the importance of personalized service and building strong relationships with our clients..<br /><br />
+              {/* <br /><br /> With a passion for craftsmanship and a commitment to excellence, we have earned a reputation for delivering top-quality work and exceeding customer expectations. Our team of skilled professionals brings a wealth of experience and expertise to every project, ensuring attention to detail and meticulous execution..<br /> */}
+
+              <img className="canadianFlag" src="./img/canadianflag.jpeg" /><br />
+
+              <br /><br /> From home renovations and remodeling to repairs and installations, we offer a comprehensive range of services tailored to meet your specific needs. As a family-owned business, we prioritize open communication, honesty, and integrity in all our interactions. We take pride in our work, treating every project as if it were our own, and ensuring customer satisfaction is our top priority..
+              {/* <br /><br /> With us, you can expect personalized attention, reliable service, and a finished result that will transform your space into something exceptional. Trust our family to enhance your home with our trusted contracting services. */}
+            </p>
+            <br /><br />
           </div>
         </div>
       </Section >
@@ -1976,7 +1986,7 @@ function Contact() {
   return (
     <>
 
-      <span id='contact'></span>
+
       <div className="box">
         <h1 className="page-mainHeading">Get in touch with us TODAY!</h1>
       </div>
@@ -1997,85 +2007,82 @@ function Contact() {
       </div> */}
       <div className="box">
 
-        <div className="contact-grid-item">
-          <br /> <br /> <br /> <br /> <br /> <br />
-          <Card className="serviceSectionCards serviceSectionIntroText">
-            <Card.Body>
-              <Card.Text>
 
-                <div className="grid-container">
+        <br /> <br />
+        <Card className="serviceSectionCards serviceSectionIntroText">
+          <Card.Body>
+            <Card.Text>
 
-                  <div className="grid-item">
+              <div className="grid-container">
 
-                    <Image className="contactSupportImage" src="./img/customerSupport-resized.jpeg" alt="A picture of a customer support reprensenative on the phone." /><br /><br />
-                    <h4 className="contactUsSubHeading">We want to hear from you!</h4> <br />
-                    <p className="alignedPara">Please feel free to reach out to us with any inquiries or to discuss your upcoming project. Our team of experts is here to assist you every step of the way.</p>
+                <div className="grid-item">
 
-
-                  </div>
+                  <Image className="contactSupportImage" src="./img/customerSupport-resized.jpeg" alt="A picture of a customer support reprensenative on the phone." /><br /><br />
+                  <h4 className="contactUsSubHeading">We want to hear from you!</h4> <br />
+                  <p className="alignedPara">Please feel free to reach out to us with any inquiries or to discuss your upcoming project. Our team of experts is here to assist you every step of the way.</p>
 
 
-                  <div className="grid-item">
-                    <a href="mailto:phil@monteirohomes.ca" className="contactCardLink">
-                      <button className="buttonEmailUs custom-btn btn-11">
-                        <img className="rounded-circle glow-effect-links footer-socail-icon" src="./img/email.png" width="60px" height="60px" alt="An email to each Phil at." />
-                        <span className="buttonEmailUsText">EMAIL US</span>
-
-                      </button>
-                    </a>
-                    <h4 className="contactUsSubHeading">You have questions, we have answers.</h4> <br />
-                    <p className="alignedpara contactParaResponsive">Whether you need a consultation, or want to schedule an appointment, we are just a phone call or email away..<br /><br /> </p>
-                  </div>
-
-                  <div className="grid-item">
-
-
-                    <a href="tel:(647)885-2384">
-                      <button className="buttonCallUs custom-btn btn-11">
-                        <Image className="rounded-circle glow-effect-links footer-socail-icon" src="./img/phone.png" width="60px" height="60px" alt="A phone number to reach Phil at." />
-                        <span className="buttonCallUsText">CALL US</span>
-                      </button>
-                    </a>
-
-                    <h4 className="contactUsSubHeading">We will work with you.</h4> <br />
-                    <p className="alignedPara">Don't hesitate to contact us and let us help you bring your home renovation dreams to life. We look forward to working with you!</p><br /><br />
-                  </div>
                 </div>
 
 
-              </Card.Text>
-            </Card.Body>
+                <div className="grid-item">
+                  <a href="mailto:phil@monteirohomes.ca" className="contactCardLink">
+                    <button className="buttonEmailUs custom-btn btn-11">
+                      <img className="rounded-circle glow-effect-links footer-socail-icon" src="./img/email.png" width="60px" height="60px" alt="An email to each Phil at." />
+                      <span className="buttonEmailUsText">EMAIL US</span>
+
+                    </button>
+                  </a>
+                  <h4 className="contactUsSubHeading">You have questions, we have answers.</h4> <br />
+                  <p className="alignedpara contactParaResponsive">Whether you need a consultation, or want to schedule an appointment, we are just a phone call or email away..<br /><br /> </p>
+                </div>
+
+                <div className="grid-item">
 
 
-            <div className="socials-container">
-              <a className="social-icons textAnimation glow-effect" href="https://www.facebook.com/profile.php?id=100064311003388" target="_blank">
-                <img className="footer-social-icon glow-effect" src="./img/fb.png" alt="Facebook logo" />
-                {/* <span className="social-text" p>facebook.com/monteirohomes</span> */}
-              </a>
+                  <a href="tel:(647)885-2384">
+                    <button className="buttonCallUs custom-btn btn-11">
+                      <Image className="rounded-circle glow-effect-links footer-socail-icon" src="./img/phone.png" width="60px" height="60px" alt="A phone number to reach Phil at." />
+                      <span className="buttonCallUsText">CALL US</span>
+                    </button>
+                  </a>
 
-              <a className="social-icons textAnimation glow-effect" href="tel:647-885-2384">
-                <Image className="footer-social-icon glow-effect" src="./img/phone.png" width="60px" height="60px" alt="A phone number icon to reach Phil at." />
-                {/* <span className="social-text" p>Phil @ (647) 885-2384</span> */}
-              </a>
+                  <h4 className="contactUsSubHeading">We will work with you.</h4> <br />
+                  <p className="alignedPara">Don't hesitate to contact us and let us help you bring your home renovation dreams to life. We look forward to working with you!</p><br /><br />
+                </div>
+              </div>
+
+
+            </Card.Text>
+          </Card.Body>
+
+
+          <div className="socials-container">
+            <a className="social-icons textAnimation glow-effect" href="https://www.facebook.com/profile.php?id=100064311003388" target="_blank">
+              <img className="footer-social-icon glow-effect" src="./img/fb.png" alt="Facebook logo" />
+              {/* <span className="social-text" p>facebook.com/monteirohomes</span> */}
+            </a>
+
+            <a className="social-icons textAnimation glow-effect" href="tel:647-885-2384">
+              <Image className="footer-social-icon glow-effect" src="./img/phone.png" width="60px" height="60px" alt="A phone number icon to reach Phil at." />
+              {/* <span className="social-text" p>Phil @ (647) 885-2384</span> */}
+            </a>
 
 
 
-              <a className="social-icons textAnimation glow-effect" href="mailto:phil@monteirohomes.ca">
-                <img className="footer-social-icon glow-effect" src="./img/email.png" width="60px" height="60px" alt="An email icon to each Phil at." />
-                {/* <span className="social-text">phil@monteirohomes.ca</span> */}
-              </a>
+            <a className="social-icons textAnimation glow-effect" href="mailto:phil@monteirohomes.ca">
+              <img className="footer-social-icon glow-effect" src="./img/email.png" width="60px" height="60px" alt="An email icon to each Phil at." />
+              {/* <span className="social-text">phil@monteirohomes.ca</span> */}
+            </a>
 
-              <a className="social-icons textAnimation glow-effect" href="https://www.instagram.com/monteirohomes/" target="_blank">
-                <Image className="footer-social-icon glow-effect" src="./img/instagram.png" width="60px" height="60px" alt="Instagram logo" />
-                {/* <span className="social-text" p>instagram.com/monteirohomes/</span> */}
-              </a>
+            <a className="social-icons textAnimation glow-effect" href="https://www.instagram.com/monteirohomes/" target="_blank">
+              <Image className="footer-social-icon glow-effect" src="./img/instagram.png" width="60px" height="60px" alt="Instagram logo" />
+              {/* <span className="social-text" p>instagram.com/monteirohomes/</span> */}
+            </a>
 
-            </div>
-          </Card>
-        </div >
-        <div className="box">
-
-        </div>
+          </div>
+        </Card>
+        <br /><br /><br /><br /><br /><br />
 
         {/* <Card.Text>
             Some quick example text to build on the card title and make up the
@@ -2088,11 +2095,8 @@ function Contact() {
           <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
         </ListGroup> */}
 
-        <div className="box">
 
 
-        </div>
-        <br />
         {/* <Image className="rounded-circle glow-effect-links footer-socail-icon" src="./img/phone.png" width="60px" height="60px" alt="A phone number to reach Phil at." /> */}
         {/* <span p className="contactCardText">Call us</span> */}
 
@@ -2110,8 +2114,6 @@ function Contact() {
                 <span className="social-text" p>Phil @ (647) 885-2384</span>
               </a><br /> */}
 
-
-      <br /><br />
 
       {/* <NewFooter /> */}
     </>
