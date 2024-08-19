@@ -14,7 +14,7 @@ body,
     position: relative;
 }
 
-.kitchenSlide {
+.slide {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -44,6 +44,42 @@ body,
 .bathSlide3 {
     background-image: url("../public/img/bath/bath2.jpg");
 }
+
+.basementSlide1 {
+    background-image: url("../public/img/basement/basement1.jpg");
+}
+
+.basementSlide2 {
+    background-image: url("../public/img/basement/basement2.jpg");
+}
+
+.basementSlide3 {
+    background-image: url("../public/img/basement/basement3.jpg");
+}
+
+.poolSlide1 {
+    background-image: url("../public/img/pools/pool2.jpg");
+}
+
+.poolSlide2 {
+    background-image: url("../public/img/pools/pool3.jpg");
+}
+
+.poolSlide3 {
+    background-image: url("../public/img/pools/pool4.jpg");
+}
+
+.patioSlide1 {
+    background-image: url("../public/img/patio/patio1.jpg");
+}
+
+.patioSlide2 {
+    background-image: url("../public/img/patio/patio2.jpg");
+}
+
+/* .patioSlide3 {
+    background-image: url("../public/img/patio/patio4.jpg");
+} */
 
 .slide-content {
     display: flex;
