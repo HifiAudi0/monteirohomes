@@ -761,6 +761,21 @@ function Services() {
       bathArrowRight = document.querySelector("#bathArrowRight"),
       bathCurrent = 0;
 
+    var basementSliderImages = document.querySelectorAll(".basementSlide"),
+      basementArrowLeft = document.querySelector("#basementArrowLeft"),
+      basementArrowRight = document.querySelector("#basementArrowRight"),
+      basementCurrent = 0;
+
+    var poolSliderImages = document.querySelectorAll(".poolSlide"),
+      poolArrowLeft = document.querySelector("#poolArrowLeft"),
+      poolArrowRight = document.querySelector("#poolArrowRight"),
+      poolCurrent = 0;
+
+    var patioSliderImages = document.querySelectorAll(".patioSlide"),
+      patioArrowLeft = document.querySelector("#patioArrowLeft"),
+      patioArrowRight = document.querySelector("#patioArrowRight"),
+      patioCurrent = 0;
+
     // Clear all images
     function reset(whichSection) {
       if (whichSection === "kitchen") {
@@ -773,6 +788,21 @@ function Services() {
           bathSliderImages[i].style.display = "none";
         }
       }
+      else if (whichSection === "basement") {
+        for (let i = 0; i < basementSliderImages.length; i++) {
+          basementSliderImages[i].style.display = "none";
+        }
+      }
+      else if (whichSection === "pool") {
+        for (let i = 0; i < poolSliderImages.length; i++) {
+          poolSliderImages[i].style.display = "none";
+        }
+      }
+      else if (whichSection === "patio") {
+        for (let i = 0; i < patioSliderImages.length; i++) {
+          patioSliderImages[i].style.display = "none";
+        }
+      }
     }
 
     // Init slider
@@ -780,6 +810,9 @@ function Services() {
       reset();
       kitchenSliderImages[0].style.display = "block";
       bathSliderImages[0].style.display = "block";
+      basementSliderImages[0].style.display = "block";
+      poolSliderImages[0].style.display = "block";
+      patioSliderImages[0].style.display = "block";
     }
 
     // Show prev
@@ -790,8 +823,20 @@ function Services() {
         kitchenCurrent--;
       }
       else if (whichSection === "bath") {
-        bathSliderImages[kitchenCurrent - 1].style.display = "block";
+        bathSliderImages[bathCurrent - 1].style.display = "block";
         bathCurrent--;
+      }
+      else if (whichSection === "basement") {
+        basementSliderImages[basementCurrent - 1].style.display = "block";
+        basementCurrent--;
+      }
+      else if (whichSection === "pool") {
+        poolSliderImages[poolCurrent - 1].style.display = "block";
+        poolCurrent--;
+      }
+      else if (whichSection === "patio") {
+        patioSliderImages[patioCurrent - 1].style.display = "block";
+        patioCurrent--;
       }
     }
 
@@ -805,6 +850,18 @@ function Services() {
       else if (whichSection === "bath") {
         bathSliderImages[bathCurrent + 1].style.display = "block";
         bathCurrent++;
+      }
+      else if (whichSection === "basement") {
+        basementSliderImages[basementCurrent + 1].style.display = "block";
+        basementCurrent++;
+      }
+      else if (whichSection === "pool") {
+        poolSliderImages[poolCurrent + 1].style.display = "block";
+        poolCurrent++;
+      }
+      else if (whichSection === "patio") {
+        patioSliderImages[patioCurrent + 1].style.display = "block";
+        patioCurrent++;
       }
     }
 
@@ -828,6 +885,36 @@ function Services() {
     bathArrowRight.addEventListener("click", function () {
       if (bathCurrent === bathSliderImages.length - 1) bathCurrent = -1;
       slideRight("bath");
+    });
+
+    basementArrowLeft.addEventListener("click", function () {
+      if (basementCurrent === 0) basementCurrent = basementSliderImages.length;
+      slideLeft("basement");
+    });
+
+    basementArrowRight.addEventListener("click", function () {
+      if (basementCurrent === basementSliderImages.length - 1) basementCurrent = -1;
+      slideRight("basement");
+    });
+
+    poolArrowLeft.addEventListener("click", function () {
+      if (poolCurrent === 0) poolCurrent = poolSliderImages.length;
+      slideLeft("pool");
+    });
+
+    poolArrowRight.addEventListener("click", function () {
+      if (poolCurrent === poolSliderImages.length - 1) poolCurrent = -1;
+      slideRight("pool");
+    });
+
+    patioArrowLeft.addEventListener("click", function () {
+      if (patioCurrent === 0) patioCurrent = patioSliderImages.length;
+      slideLeft("patio");
+    });
+
+    patioArrowRight.addEventListener("click", function () {
+      if (patioCurrent === patioSliderImages.length - 1) patioCurrent = -1;
+      slideRight("patio");
     });
 
     startSlide();
@@ -960,17 +1047,17 @@ function Services() {
                 <div class="wrap">
                   <div id="kitchenArrowLeft" class="arrow arrowLeft"></div>
                   <div id="slider">
-                    <div class="kitchenSlide kitchenSlide1">
+                    <div class="kitchenSlide kitchenSlide1 slide">
                       <div class="slide-content">
                         {/* <span>Image One</span> */}
                       </div>
                     </div>
-                    <div class="kitchenSlide kitchenSlide2">
+                    <div class="kitchenSlide kitchenSlide2 slide">
                       <div class="slide-content">
                         {/* <span>Image Two</span> */}
                       </div>
                     </div>
-                    <div class="kitchenSlide kitchenSlide3">
+                    <div class="kitchenSlide kitchenSlide3 slide">
                       <div class="slide-content">
                         {/* <span>Image Three</span> */}
                       </div>
@@ -1004,17 +1091,17 @@ function Services() {
                 <div class="wrap">
                   <div id="bathArrowLeft" class="arrow arrowLeft"></div>
                   <div id="slider">
-                    <div class="bathSlide bathSlide1">
+                    <div class="bathSlide bathSlide1 slide">
                       <div class="slide-content">
                         {/* <span>Image One</span> */}
                       </div>
                     </div>
-                    <div class="bathSlide bathSlide2">
+                    <div class="bathSlide bathSlide2 slide">
                       <div class="slide-content">
                         {/* <span>Image Two</span> */}
                       </div>
                     </div>
-                    <div class="bathSlide bathSlide3">
+                    <div class="bathSlide bathSlide3 slide">
                       <div class="slide-content">
                         {/* <span>Image Three</span> */}
                       </div>
@@ -1027,12 +1114,10 @@ function Services() {
                 <Card.Body>
                   <Card.Title>Baths</Card.Title>
                   <Card.Text>
-                    This is a longer card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
+                    Transform Your Bathroom into a Personal Oasis
+                    Professional Bathroom Renovation Services Tailored to Your Style and Needs.
                   </Card.Text>
                 </Card.Body>
-                <Button variant="primary buttonServices">Check out our Bath Section</Button>
               </Card>
 
             </Col>
@@ -1044,30 +1129,75 @@ function Services() {
           <Row xs={1} sm={1} md={2} className="g-4">
             <Col>
               <Card className="serviceSectionCards">
-                <Card.Img variant="top" src="./img/basement/basement3.jpg" />
+
+
+
+                {/* <Card.Img variant="top" src="./img/basement/basement3.jpg" /> */}
+                <div class="wrap">
+                  <div id="basementArrowLeft" class="arrow arrowLeft"></div>
+                  <div id="slider">
+                    <div class="basementSlide basementSlide1 slide">
+                      <div class="slide-content">
+                        {/* <span>Image One</span> */}
+                      </div>
+                    </div>
+                    <div class="basementSlide basementSlide2 slide">
+                      <div class="slide-content">
+                        {/* <span>Image Two</span> */}
+                      </div>
+                    </div>
+                    <div class="basementSlide basementSlide3 slide">
+                      <div class="slide-content">
+                        {/* <span>Image Three</span> */}
+                      </div>
+                    </div>
+                  </div>
+                  <div id="basementArrowRight" class="arrow arrowRight"></div>
+                </div>
+
+
                 <Card.Body>
                   <Card.Title>Basement</Card.Title>
                   <Card.Text>
-                    This is a longer card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
+                    Transform your basement area, everything is custom built to suite your budget and needs.
                   </Card.Text>
                 </Card.Body>
-                <Button variant="primary buttonServices">The Basement Section</Button>
               </Card>
             </Col>
             <Col>
               <Card className="serviceSectionCards">
-                <Card.Img variant="top" src="./img/pools/pool2.jpg" className="serviceSectionCardPool" />
+
+
+                <div class="wrap">
+                  <div id="poolArrowLeft" class="arrow arrowLeft"></div>
+                  <div id="slider">
+                    <div class="poolSlide poolSlide1 slide">
+                      <div class="slide-content">
+                        {/* <span>Image One</span> */}
+                      </div>
+                    </div>
+                    <div class="poolSlide poolSlide2 slide">
+                      <div class="slide-content">
+                        {/* <span>Image Two</span> */}
+                      </div>
+                    </div>
+                    <div class="poolSlide poolSlide3 slide">
+                      <div class="slide-content">
+                        {/* <span>Image Three</span> */}
+                      </div>
+                    </div>
+                  </div>
+                  <div id="poolArrowRight" class="arrow arrowRight"></div>
+                </div>
+
+
                 <Card.Body>
                   <Card.Title>Pools</Card.Title>
                   <Card.Text>
-                    This is a longer card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
+                    Completely custom built heated pools with all the bells and whistles.
                   </Card.Text>
                 </Card.Body>
-                <Button variant="primary buttonServices">Our Pool Section</Button>
+                {/* <Button variant="primary buttonServices">Our Pool Section</Button> */}
               </Card>
             </Col>
           </Row>
@@ -1080,16 +1210,38 @@ function Services() {
 
             <Col>
               <Card className="serviceSectionCards">
-                <Card.Img variant="top" src="./img/fencingDeckPatio/patio3.jpg" />
+
+
+
+                <div class="wrap">
+                  <div id="patioArrowLeft" class="arrow arrowLeft"></div>
+                  <div id="slider">
+                    <div class="patioSlide patioSlide1 slide">
+                      <div class="slide-content">
+                        {/* <span>Image One</span> */}
+                      </div>
+                    </div>
+                    <div class="patioSlide patioSlide2 slide">
+                      <div class="slide-content">
+                        {/* <span>Image Two</span> */}
+                      </div>
+                    </div>
+                    {/* <div class="patioSlide patioSlide3 slide">
+                      <div class="slide-content">
+                      </div>
+                    </div> */}
+                  </div>
+                  <div id="patioArrowRight" class="arrow arrowRight"></div>
+                </div>
+
+
                 <Card.Body>
                   <Card.Title>Fencing, Decks & Patios</Card.Title>
                   <Card.Text>
-                    This is a longer card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
+                    Customized Solutions for Beautiful and Functional Outdoor Spaces
                   </Card.Text>
                 </Card.Body>
-                <Button variant="primary buttonServices">See our Fencing, Decks & Patio section</Button>
+                {/* <Button variant="primary buttonServices">See our Fencing, Decks & Patio section</Button> */}
               </Card>
             </Col>
           </Row>
