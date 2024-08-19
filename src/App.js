@@ -371,16 +371,21 @@ function Links() {
           <a href="javascript:void(0);" onClick={closeNavbar} className="close">&#9932;</a>
           <div className="overlay-content">
             <a href="/Home"><span className="navNumbers">1</span>Home</a>
-            <a href="#services"><span className="navNumbers">2</span>All Services</a>
-            <a className="navSubcategory" href="/kitchen"><span className="navNumbers">2.1</span>Kitchen</a>
+
+
+            <a href="#trust"><span className="navNumbers">2</span>Trust</a>
+            <a href="#services"><span className="navNumbers">3</span>Services</a>
+            {/* <a className="navSubcategory" href="/kitchen"><span className="navNumbers">2.1</span>Kitchen</a>
             <a className="navSubcategory" href="/bath"><span className="navNumbers">2.2</span>Bath</a>
             <a className="navSubcategory" href="/basement"><span className="navNumbers">2.3</span>Basement</a>
             <a className="navSubcategory" href="/pool"><span className="navNumbers">2.4</span>Pool</a>
-            <a className="navSubcategory" href="/deck"><span className="navNumbers">2.5</span>Fencing, Deck & Patio</a>
-            <a href="#faq"><span className="navNumbers">3</span>Faq</a>
-            <a href="#quote"><span className="navNumbers">4</span>Quote</a>
-            <a href="#location"><span className="navNumbers">5</span>Location & Hours</a>
-            <a href="#contact"><span className="navNumbers">6</span>Contact</a>
+            <a className="navSubcategory" href="/deck"><span className="navNumbers">2.5</span>Fencing, Deck & Patio</a> */}
+
+
+            <a href="#faq"><span className="navNumbers">4</span>Faq</a>
+            <a href="#quote"><span className="navNumbers">5</span>Quote</a>
+            <a href="#location"><span className="navNumbers">6</span>Location & Hours</a>
+            <a href="#contact"><span className="navNumbers">7</span>Contact</a>
           </div>
         </div>
 
@@ -388,13 +393,17 @@ function Links() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Home" element={<Home />} />
-          <Route path="/Services" element={<Services />} />
+
+
+          {/* <Route path="/Services" element={<Services />} />
           <Route path="/kitchen" element={<Kitchen />} />
           <Route path="/bath" element={<Bath />} />
           <Route path="/basement" element={<Basement />} />
           <Route path="/garage" element={<Services />} />
           <Route path="/pool" element={<Pool />} />
-          <Route path="/deck" element={<Deck />} />
+          <Route path="/deck" element={<Deck />} /> */}
+
+
           <Route path="/Faq" element={<Faq />} />
           {/* <Route path="/Gallery" element={<Gallery />} /> */}
           <Route path="/Quote" element={<Quote />} />
@@ -423,16 +432,21 @@ function Links() {
           <a href="javascript:void(0);" onClick={closeNavbar} className="close">&#9932;</a>
           <div className="overlay-content">
             <a href="/Home">Back to Home</a>
-            <a href="#services">All Services</a>
+
+            {/* <a href="#services">All Services</a>
             <a href="/kitchen">Kitchen</a>
             <a href="/bath">Bath</a>
             <a href="/basement">Basement</a>
             <a href="/pool">Pool</a>
-            <a href="/deck">Fencing, Deck & Patio</a>
+            <a href="/deck">Fencing, Deck & Patio</a> */}
+
+
             {/* <a href="#faq">Faq</a>
             <a href="#quote">Quote</a>
             <a href="#location">Location & Hours</a>
             <a href="/Home#contact">Contact</a> */}
+
+
           </div>
         </div>
 
@@ -440,13 +454,17 @@ function Links() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Home" element={<Home />} />
-          <Route path="/Services" element={<Services />} />
+
+
+          {/* <Route path="/Services" element={<Services />} />
           <Route path="/kitchen" element={<Kitchen />} />
           <Route path="/bath" element={<Bath />} />
           <Route path="/basement" element={<Basement />} />
           <Route path="/garage" element={<Services />} />
           <Route path="/pool" element={<Pool />} />
-          <Route path="/deck" element={<Deck />} />
+          <Route path="/deck" element={<Deck />} /> */}
+
+
           {/* <Route path="/Faq" element={<Faq />} /> */}
           {/* <Route path="/Gallery" element={<Gallery />} /> */}
           {/* <Route path="/Quote" element={<Quote />} />
@@ -954,7 +972,7 @@ function Services() {
 
 
         <div className="box">
-          <span id='services'></span>
+          <span id='trust'></span>
           <h4 className="page-mainHeading">Service you can trust!</h4>
         </div>
 
@@ -2293,6 +2311,7 @@ function Contact() {
 
 
       <div className="box">
+        <span id='contact'></span>
         <h1 className="page-mainHeading">Get in touch with us TODAY!</h1>
       </div>
 
