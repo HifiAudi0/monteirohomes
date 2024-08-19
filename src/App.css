@@ -1862,7 +1862,7 @@ body>footer {
     width: 100px;
     height: 100px;
     margin-left: 40px;
-    left: 5%;
+    left: -10%;
     top: 41%;
 
   }
@@ -1878,12 +1878,13 @@ body>footer {
     color: black;
     z-index: 10;
     position: relative;
-    font-size: 1.5rem;
-    left: 50%;
-    top: 41%;
+    font-size: 1.8rem;
+    left: 38%;
+    /* top: 71%; */
     margin-left: unset;
-    margin-top: 320px;
-    /* border: 100px solid green; */
+    margin-top: -32%;
+
+    /* border: 10px solid green; */
   }
 
   .counterContainer {
@@ -1899,6 +1900,7 @@ body>footer {
     width: 10rem;
     height: 9rem;
     margin-left: 15%;
+    margin-top: 2rem;
   }
 
   .counterCardContainerFirst {
@@ -1915,11 +1917,11 @@ body>footer {
   }
 
   .counter {
-    font-size: 20px;
+    font-size: 28px;
   }
 
   .counterTitle {
-    font-size: 20px;
+    font-size: 28px;
   }
 
   /* #navbar {
@@ -1932,6 +1934,14 @@ body>footer {
     /* margin-left: unset; */
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .services-container {
+
+    grid-template-columns: 100%;
+    min-width: 80vw;
+    margin-left: -10%;
+
   }
 
   .serviceSectionCardPool {
