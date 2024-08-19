@@ -12,7 +12,7 @@
     "@testing-library/react": "^16.0.0",
     "@testing-library/user-event": "^14.5.2",
     "animate.css": "^4.1.1",
-    "framer-motion": "^11.2.10",
+    "framer-motion": "^11.3.28",
     "google-map-react": "^2.2.1",
     "monteirohomes": "file:",
     "react": "^18.3.1",
@@ -28,8 +28,8 @@
     "yup": "^1.4.0"
   },
   "scripts": {
-    "start": "set PORT=39999 && react-scripts start",
-    "build": "react-scripts build",
+    "start": "set PORT=39999 && react-scripts --openssl-legacy-provider start",
+    "build": "react-scripts --openssl-legacy-provider build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

@@ -5,10 +5,10 @@
 
 @font-face {
   font-family: "Roboto";
-  src: url("../public/fonts/Roboto/Roboto-Medium.ttf") format('truetype');
+  src: url("./fonts/Roboto/Roboto-Medium.ttf") format('truetype');
 
   font-family: "Impact";
-  src: url("../public/fonts/Impact/Impacted.ttf") format('truetype');
+  src: url("./fonts/Impact/Impacted.ttf") format('truetype');
 }
 
 
@@ -215,8 +215,8 @@ figcaption:hover {
 
 #overTopImageGradient {
 
-  background-image:
-    url('../public/img/bath/bath1.jpg');
+  /* background-image:
+    url('/img/bath/bath1.jpg'); */
 
 
 
