@@ -370,7 +370,7 @@ function Links() {
         <div id="navbar" className="overlay">
           <a href="javascript:void(0);" onClick={closeNavbar} className="close">&#9932;</a>
           <div className="overlay-content">
-            <a href="/Home"><span className="navNumbers">1</span>Home</a>
+            <a href="#home"><span className="navNumbers">1</span>Home</a>
 
 
             <a href="#trust"><span className="navNumbers">2</span>Trust</a>
@@ -1050,18 +1050,6 @@ function Services() {
 
 
 
-
-
-
-
-
-
-
-                {/* 
-                <Card.Img variant="top" src="./img/kitchen/kitchen7.jpg" /> */}
-
-
-
                 <div class="wrap">
                   <div id="kitchenArrowLeft" class="arrow arrowLeft"></div>
                   <div id="slider">
@@ -1369,9 +1357,6 @@ function Kitchen() {
     <>
       <ChangeNavColor color={navLightColor} />
 
-
-
-
       <ImageZoom />
 
       <br />  <br />  <br />
@@ -1379,15 +1364,10 @@ function Kitchen() {
       {/* <!-- (A) LIGHTBOX CONTAINER --> */}
       <div id="lightbox"></div>
 
-
-
-
-
       <div className="kitchenHeading">
         <h3>Elevate Your Culinary Space with Our Kitchen Renovation Services</h3>
         <h4>Customized Solutions for a Beautiful and Functional Kitchen Transformation.</h4>
       </div>
-
 
 
       <div className="kitchen-container">
