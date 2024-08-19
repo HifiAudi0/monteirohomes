@@ -58,7 +58,8 @@ import 'animate.css';
 
 import "./glowing_button.css";
 
-// import $ from 'jquery';
+
+//import $ from 'jquery';
 
 import CountUp from "react-countup";
 
@@ -70,6 +71,9 @@ import GoogleMapReact from 'google-map-react';
 import './imageSlider.css';
 
 import './scrollAnimation.css';
+
+import "./imageSliderNewerOne.css"
+
 
 
 import Col from 'react-bootstrap/Col';
@@ -745,6 +749,60 @@ function Services() {
   const scrollRef = useRef(null)
 
 
+  useEffect(() => {
+
+    var sliderImages = document.querySelectorAll(".slide"),
+      arrowLeft = document.querySelector("#arrow-left"),
+      arrowRight = document.querySelector("#arrow-right"),
+      current = 0;
+
+    // Clear all images
+    function reset() {
+      for (let i = 0; i < sliderImages.length; i++) {
+        sliderImages[i].style.display = "none";
+      }
+    }
+
+    // Init slider
+    function startSlide() {
+      reset();
+      sliderImages[0].style.display = "block";
+    }
+
+    // Show prev
+    function slideLeft() {
+      reset();
+      sliderImages[current - 1].style.display = "block";
+      current--;
+    }
+
+    // Show next
+    function slideRight() {
+      reset();
+      sliderImages[current + 1].style.display = "block";
+      current++;
+    }
+
+    // Left arrow click
+    arrowLeft.addEventListener("click", function () {
+      if (current === 0) {
+        current = sliderImages.length;
+      }
+      slideLeft();
+    });
+
+    // Right arrow click
+    arrowRight.addEventListener("click", function () {
+      if (current === sliderImages.length - 1) {
+        current = -1;
+      }
+      slideRight();
+    });
+
+    startSlide();
+
+  }, []);
+
 
 
 
@@ -853,16 +911,54 @@ function Services() {
 
 
               <Card className="serviceSectionCards">
-                <Card.Img variant="top" src="./img/kitchen/kitchen7.jpg" />
+
+
+
+
+
+
+
+
+
+
+                {/* 
+                <Card.Img variant="top" src="./img/kitchen/kitchen7.jpg" /> */}
+
+
+
+                <div class="wrap">
+                  <div id="arrow-left" class="arrow"></div>
+                  <div id="slider">
+                    <div class="slide kitchenSlide1">
+                      <div class="slide-content">
+                        {/* <span>Image One</span> */}
+                      </div>
+                    </div>
+                    <div class="slide kitchenSlide2">
+                      <div class="slide-content">
+                        {/* <span>Image Two</span> */}
+                      </div>
+                    </div>
+                    <div class="slide kitchenSlide3">
+                      <div class="slide-content">
+                        {/* <span>Image Three</span> */}
+                      </div>
+                    </div>
+                  </div>
+                  <div id="arrow-right" class="arrow"></div>
+                </div>
+
+
+
+
                 <Card.Body>
                   <Card.Title>Kitchens</Card.Title>
                   <Card.Text>
-                    This is a longer card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
+                    Elevate Your Culinary Space with Our Kitchen Renovation Services
+                    Customized Solutions for a Beautiful and Functional Kitchen Transformation.
                   </Card.Text>
                 </Card.Body>
-                <Button variant="primary buttonServices">Visit Kitchen Section</Button>
+                {/* <Button variant="primary buttonServices">Visit Kitchen Section</Button> */}
               </Card>
 
             </Col>
@@ -870,7 +966,33 @@ function Services() {
 
 
               <Card className="serviceSectionCards">
-                <Card.Img variant="top" src="./img/bath/bath18.jpg" />
+
+
+
+                {/* <Card.Img variant="top" src="./img/bath/bath18.jpg" /> */}
+                <div class="wrap">
+                  <div id="arrow-left" class="arrow"></div>
+                  <div id="slider">
+                    <div class="slide bathSlide1">
+                      <div class="slide-content">
+                        {/* <span>Image One</span> */}
+                      </div>
+                    </div>
+                    <div class="slide bathSlide2">
+                      <div class="slide-content">
+                        {/* <span>Image Two</span> */}
+                      </div>
+                    </div>
+                    <div class="slide bathSlide3">
+                      <div class="slide-content">
+                        {/* <span>Image Three</span> */}
+                      </div>
+                    </div>
+                  </div>
+                  <div id="arrow-right" class="arrow"></div>
+                </div>
+
+
                 <Card.Body>
                   <Card.Title>Baths</Card.Title>
                   <Card.Text>
