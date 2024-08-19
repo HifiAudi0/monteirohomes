@@ -433,6 +433,7 @@ button.active {
   width: 60px;
   height: 60px;
 
+
 }
 
 
@@ -1506,7 +1507,7 @@ input:active {
 
 .buttonEmailUs {
   margin-bottom: 40px;
-
+  width: 11rem;
 }
 
 .buttonEmailUsText {
@@ -1517,7 +1518,7 @@ input:active {
 
 .buttonCallUs {
   margin-bottom: 40px;
-
+  width: 9rem;
 }
 
 .buttonCallUsText {
@@ -1827,6 +1828,8 @@ body>footer {
     margin-left: 30%;
     /* border: 20px solid red; */
   }
+
+
 
 }
 
@@ -2146,6 +2149,16 @@ body>footer {
 
   }
 
+  #quoteLogo {
+    text-align: center;
+    top: 24%;
+    left: 25%;
+  }
+
+  .sslImage {
+    left: 20%;
+  }
+
 
   #formInputMessage {
     height: 250px;
@@ -2182,10 +2195,7 @@ body>footer {
   }
 
 
-  .footer-social-icon {
-    width: 30px;
-    height: 30px;
-  }
+  .footer-social-icon {}
 
   .social-text {
     font-size: 0.7rem;
@@ -2219,8 +2229,9 @@ body>footer {
   .contactSupportImage {
     width: 270px;
     height: 270px;
-    position: absolute;
-    top: -600px;
+    position: relative;
+    /* top: -0vh; */
+    margin-left: -3rem;
   }
 
   .buttonEmailUs {
@@ -2233,7 +2244,7 @@ body>footer {
 
   .buttonCallUs {
     margin-top: -70px;
-    margin-left: 55px;
+    margin-left: 0px;
     bottom: 15px;
   }
 
