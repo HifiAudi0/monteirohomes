@@ -751,9 +751,9 @@ function Services() {
 
   useEffect(() => {
 
-    var sliderImages = document.querySelectorAll(".slide"),
-      arrowLeft = document.querySelector("#arrow-left"),
-      arrowRight = document.querySelector("#arrow-right"),
+    var sliderImages = document.querySelectorAll(".kitchenSlide"),
+      kitchenArrowLeft = document.querySelector("#kitchenArrowLeft"),
+      kitchenArrowRight = document.querySelector("#kitchenArrowRight"),
       current = 0;
 
     // Clear all images
@@ -784,7 +784,7 @@ function Services() {
     }
 
     // Left arrow click
-    arrowLeft.addEventListener("click", function () {
+    kitchenArrowLeft.addEventListener("click", function () {
       if (current === 0) {
         current = sliderImages.length;
       }
@@ -792,7 +792,7 @@ function Services() {
     });
 
     // Right arrow click
-    arrowRight.addEventListener("click", function () {
+    kitchenArrowRight.addEventListener("click", function () {
       if (current === sliderImages.length - 1) {
         current = -1;
       }
@@ -927,25 +927,25 @@ function Services() {
 
 
                 <div class="wrap">
-                  <div id="arrow-left" class="arrow"></div>
+                  <div id="kitchenArrowLeft" class="arrow arrowLeft"></div>
                   <div id="slider">
-                    <div class="slide kitchenSlide1">
+                    <div class="kitchenSlide kitchenSlide1">
                       <div class="slide-content">
                         {/* <span>Image One</span> */}
                       </div>
                     </div>
-                    <div class="slide kitchenSlide2">
+                    <div class="kitchenSlide kitchenSlide2">
                       <div class="slide-content">
                         {/* <span>Image Two</span> */}
                       </div>
                     </div>
-                    <div class="slide kitchenSlide3">
+                    <div class="kitchenSlide kitchenSlide3">
                       <div class="slide-content">
                         {/* <span>Image Three</span> */}
                       </div>
                     </div>
                   </div>
-                  <div id="arrow-right" class="arrow"></div>
+                  <div id="kitchenArrowRight" class="arrow arrowRight"></div>
                 </div>
 
 
@@ -971,25 +971,25 @@ function Services() {
 
                 {/* <Card.Img variant="top" src="./img/bath/bath18.jpg" /> */}
                 <div class="wrap">
-                  <div id="arrow-left" class="arrow"></div>
+                  <div id="bathArrowLeft" class="arrow arrowLeft"></div>
                   <div id="slider">
-                    <div class="slide bathSlide1">
+                    <div class="bathSlide bathSlide1">
                       <div class="slide-content">
                         {/* <span>Image One</span> */}
                       </div>
                     </div>
-                    <div class="slide bathSlide2">
+                    <div class="bathSlide bathSlide2">
                       <div class="slide-content">
                         {/* <span>Image Two</span> */}
                       </div>
                     </div>
-                    <div class="slide bathSlide3">
+                    <div class="bathSlide bathSlide3">
                       <div class="slide-content">
                         {/* <span>Image Three</span> */}
                       </div>
                     </div>
                   </div>
-                  <div id="arrow-right" class="arrow"></div>
+                  <div id="bathArrowRight" class="arrow arrowRight"></div>
                 </div>
 
 

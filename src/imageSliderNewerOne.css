@@ -14,7 +14,7 @@ body,
     position: relative;
 }
 
-.slide {
+.kitchenSlide {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -68,14 +68,14 @@ body,
     border-style: solid;
 }
 
-#arrow-left {
+.arrowLeft {
     border-width: 30px 40px 30px 0;
     border-color: transparent #fff transparent transparent;
     left: 0;
     margin-left: 30px;
 }
 
-#arrow-right {
+.arrowRight {
     border-width: 30px 0 30px 40px;
     border-color: transparent transparent transparent #fff;
     right: 0;
