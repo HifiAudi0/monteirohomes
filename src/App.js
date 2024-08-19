@@ -751,52 +751,83 @@ function Services() {
 
   useEffect(() => {
 
-    var sliderImages = document.querySelectorAll(".kitchenSlide"),
+    var kitchenSliderImages = document.querySelectorAll(".kitchenSlide"),
       kitchenArrowLeft = document.querySelector("#kitchenArrowLeft"),
       kitchenArrowRight = document.querySelector("#kitchenArrowRight"),
-      current = 0;
+      kitchenCurrent = 0;
+
+    var bathSliderImages = document.querySelectorAll(".bathSlide"),
+      bathArrowLeft = document.querySelector("#bathArrowLeft"),
+      bathArrowRight = document.querySelector("#bathArrowRight"),
+      bathCurrent = 0;
 
     // Clear all images
-    function reset() {
-      for (let i = 0; i < sliderImages.length; i++) {
-        sliderImages[i].style.display = "none";
+    function reset(whichSection) {
+      if (whichSection === "kitchen") {
+        for (let i = 0; i < kitchenSliderImages.length; i++) {
+          kitchenSliderImages[i].style.display = "none";
+        }
+      }
+      else if (whichSection === "bath") {
+        for (let i = 0; i < bathSliderImages.length; i++) {
+          bathSliderImages[i].style.display = "none";
+        }
       }
     }
 
     // Init slider
     function startSlide() {
       reset();
-      sliderImages[0].style.display = "block";
+      kitchenSliderImages[0].style.display = "block";
+      bathSliderImages[0].style.display = "block";
     }
 
     // Show prev
-    function slideLeft() {
+    function slideLeft(whichSection) {
       reset();
-      sliderImages[current - 1].style.display = "block";
-      current--;
+      if (whichSection === "kitchen") {
+        kitchenSliderImages[kitchenCurrent - 1].style.display = "block";
+        kitchenCurrent--;
+      }
+      else if (whichSection === "bath") {
+        bathSliderImages[kitchenCurrent - 1].style.display = "block";
+        bathCurrent--;
+      }
     }
 
     // Show next
-    function slideRight() {
-      reset();
-      sliderImages[current + 1].style.display = "block";
-      current++;
+    function slideRight(whichSection) {
+      reset(whichSection);
+      if (whichSection === "kitchen") {
+        kitchenSliderImages[kitchenCurrent + 1].style.display = "block";
+        kitchenCurrent++;
+      }
+      else if (whichSection === "bath") {
+        bathSliderImages[bathCurrent + 1].style.display = "block";
+        bathCurrent++;
+      }
     }
 
-    // Left arrow click
     kitchenArrowLeft.addEventListener("click", function () {
-      if (current === 0) {
-        current = sliderImages.length;
-      }
-      slideLeft();
+      if (kitchenCurrent === 0) kitchenCurrent = kitchenSliderImages.length;
+      slideLeft("kitchen");
     });
 
-    // Right arrow click
+
     kitchenArrowRight.addEventListener("click", function () {
-      if (current === sliderImages.length - 1) {
-        current = -1;
-      }
-      slideRight();
+      if (kitchenCurrent === kitchenSliderImages.length - 1) kitchenCurrent = -1;
+      slideRight("kitchen");
+    });
+
+    bathArrowLeft.addEventListener("click", function () {
+      if (bathCurrent === 0) bathCurrent = bathSliderImages.length;
+      slideLeft("bath");
+    });
+
+
+    bathArrowRight.addEventListener("click", function () {
+      if (bathCurrent === bathSliderImages.length - 1) bathCurrent = -1;
+      slideRight("bath");
     });
 
     startSlide();
