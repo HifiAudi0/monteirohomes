@@ -2033,7 +2033,7 @@ function QuoteForm() {
         {/* <div className="quote-grid-item"> */}
         <div className="box">
           {/* <form className="quoteForm" action="http://www.monteirohomes.com/sendEmailPM.php" method="POST"> */}
-          <form className="quoteForm" action="http://www.monthomes.com/" method="POST">
+          <form className="quoteForm" action="https://www.monthomes.ca/#home" method="POST">
 
             <img src="./img/customerSupport2-resized.jpg" className="quoteImgSupport" alt="A picture illustrating of a customer service rep." />
             <img className="logo" id="quoteLogo" src="./img/logo.png" alt="A picture of the Monterio homes logo." />
