@@ -39,7 +39,6 @@ body {
     background-color: black;
     z-index: 12;
     width: 100vw;
-    border: 10px solid orange;
 }
 
 .close {
@@ -69,7 +68,6 @@ body {
     transition: 0.5s;
     z-index: 20;
     /* CHANGED */
-    border: 10px solid orange;
 
 }
 
@@ -82,7 +80,6 @@ body {
     padding-top: 50px;
     margin-top: 5%;
     text-transform: uppercase;
-    border: 10px solid orange;
 }
 
 .overlay-content a {
@@ -94,7 +91,6 @@ body {
     text-decoration: none;
     transition: 0.3s;
     position: relative;
-    border: 10px solid orange;
 }
 
 .overlay-content a:after {
